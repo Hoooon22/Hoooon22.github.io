@@ -1,0 +1,13 @@
+---
+layout: default
+title: TIL
+nav_order: 2
+has_children: true
+permalink: docs/til
+---
+
+# Today I Learned
+{: .no_toc }
+
+TIL has been written since July 1, 2023.
+{: .fs-6 .fw-300 }
