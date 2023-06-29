@@ -470,7 +470,7 @@
   },"67": {
     "doc": "Configuration",
     "title": "Aux links",
-    "content": "# Aux links for the upper right navigation aux_links: \"Just the Docs on GitHub\": - \"//github.com/just-the-docs/just-the-docs\" # Makes Aux links open in a new tab. Default is false aux_links_new_tab: false . ",
+    "content": "# Aux links for the upper right navigation aux_links: \"GitHub of Hoooon22\": - \"https://github.com/Hoooon22\" # Makes Aux links open in a new tab. Default is false aux_links_new_tab: false . ",
     "url": "/docs/configuration/#aux-links",
     
     "relUrl": "/docs/configuration/#aux-links"
@@ -608,29 +608,29 @@
     
     "relUrl": "/docs/index-test/"
   },"87": {
-    "doc": "Home",
-    "title": "Focus on writing good documentation",
+    "doc": "Hoooon22's Log",
+    "title": "Hoooon22’s Portfolio",
     "content": "Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages. Get started now View it on GitHub . This website documents the features of the current main branch of the Just the Docs theme. See the CHANGELOG for a list of releases, new features, and bug fixes. Just the Docs is a theme for generating static websites with Jekyll. You can write source files for your web pages using Markdown, the Liquid templating language, and HTML.1 Jekyll builds your site by converting all files that have front matter to HTML. Your Jekyll configuration file determines which theme to use, and sets general parameters for your site, such as the URL of its home page. Jekyll builds this Just the Docs theme docs website using the theme itself. These web pages show how your web pages will look by default when you use this theme. But you can easily customize the theme to make them look completely different! . Browse the docs to learn more about how to use this theme. ",
-    "url": "/#focus-on-writing-good-documentation",
+    "url": "/#hoooon22s-portfolio",
     
-    "relUrl": "/#focus-on-writing-good-documentation"
+    "relUrl": "/#hoooon22s-portfolio"
   },"88": {
-    "doc": "Home",
+    "doc": "Hoooon22's Log",
     "title": "Getting started",
     "content": "The Just the Docs Template provides the simplest, quickest, and easiest way to create a new website that uses the Just the Docs theme. To get started with creating a site, just click “use the template”! . To use the theme, you do not need to clone or fork the Just the Docs repo! You should do that only if you intend to browse the theme docs locally, contribute to the development of the theme, or develop a new theme based on Just the Docs. You can easily set the site created by the template to be published on GitHub Pages – the template README file explains how to do that, along with other details. If Jekyll is installed on your computer, you can also build and preview the created site locally. This lets you test changes before committing them, and avoids waiting for GitHub Pages.2 And you will be able to deploy your local build to a different platform than GitHub Pages. More specifically, the created site: . | uses a gem-based approach, i.e. uses a Gemfile and loads the just-the-docs gem | uses the GitHub Pages / Actions workflow to build and publish the site on GitHub Pages | . Other than that, you’re free to customize sites that you create with the template, however you like. You can easily change the versions of just-the-docs and Jekyll it uses, as well as adding further plugins. See the theme README for how to use the theme as a gem without creating a new site. ",
     "url": "/#getting-started",
     
     "relUrl": "/#getting-started"
   },"89": {
-    "doc": "Home",
+    "doc": "Hoooon22's Log",
     "title": "About the project",
     "content": "Just the Docs is © 2017-2023 by Patrick Marsceill. License . Just the Docs is distributed by an MIT license. Contributing . When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in our GitHub repo. Thank you to the contributors of Just the Docs! . | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | . Code of Conduct . Just the Docs is committed to fostering a welcoming community. View our Code of Conduct on our GitHub repository. | The source file for this page uses all three markup languages. &#8617; . | It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub. &#8617; . | . ",
     "url": "/#about-the-project",
     
     "relUrl": "/#about-the-project"
   },"90": {
-    "doc": "Home",
-    "title": "Home",
+    "doc": "Hoooon22's Log",
+    "title": "Hoooon22's Log",
     "content": " ",
     "url": "/",
     
@@ -855,14 +855,14 @@
   },"122": {
     "doc": "Navigation Structure",
     "title": "Auxiliary Links",
-    "content": "To add auxiliary links to your site (in the upper right on all pages), add it to the aux_links configuration option in your site’s _config.yml file. Example . # Aux links for the upper right navigation aux_links: \"Just the Docs on GitHub\": - \"//github.com/just-the-docs/just-the-docs\" . ",
+    "content": "To add auxiliary links to your site (in the upper right on all pages), add it to the aux_links configuration option in your site’s _config.yml file. Example . # Aux links for the upper right navigation aux_links: \"GitHub of Hoooon22\": - \"https://github.com/Hoooon22\" . ",
     "url": "/docs/navigation-structure/#auxiliary-links",
     
     "relUrl": "/docs/navigation-structure/#auxiliary-links"
   },"123": {
     "doc": "Navigation Structure",
     "title": "External Navigation Links",
-    "content": "New (v0.4.0) . To add external links to the navigation, add them to the nav_external_links configuration option in your site’s _config.yml file. External links will appear in the navigation after the links to ordinary pages, but before any collections. Example . # External navigation links nav_external_links: - title: Just the Docs on GitHub url: https://github.com/just-the-docs/just-the-docs hide_icon: false # set to true to hide the external link icon - defaults to false . The external links are decorated by an icon, which distinguishes them from internal links. You can suppress the icon by setting hide_icon: true. ",
+    "content": "New (v0.4.0) . To add external links to the navigation, add them to the nav_external_links configuration option in your site’s _config.yml file. External links will appear in the navigation after the links to ordinary pages, but before any collections. Example . # External navigation links nav_external_links: - title: GitHub of Hoooon22 url: https://github.com/Hoooon22 hide_icon: false # set to true to hide the external link icon - defaults to false . The external links are decorated by an icon, which distinguishes them from internal links. You can suppress the icon by setting hide_icon: true. ",
     "url": "/docs/navigation-structure/#external-navigation-links",
     
     "relUrl": "/docs/navigation-structure/#external-navigation-links"
