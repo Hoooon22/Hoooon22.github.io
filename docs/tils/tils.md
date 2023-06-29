@@ -3,7 +3,7 @@ layout: default
 title: TIL
 nav_order: 2
 has_children: true
-permalink: docs/til
+permalink: docs/tils
 ---
 
 # Today I Learned
