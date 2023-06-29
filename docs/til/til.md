@@ -10,4 +10,4 @@ permalink: docs/til
 {: .no_toc }
 
 TIL has been written since July 1, 2023.
-{: .fs-6 .fw-300 }
+{: .fs-4 .fw-300 }

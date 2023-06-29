@@ -14,33 +14,68 @@
     "relUrl": "/"
   },"2": {
     "doc": "Portfolio",
-    "title": "Hoooon22’s Portfolio",
-    "content": "Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages. ",
-    "url": "/docs/portfolio/#hoooon22s-portfolio",
-    
-    "relUrl": "/docs/portfolio/#hoooon22s-portfolio"
-  },"3": {
-    "doc": "Portfolio",
-    "title": "Getting started",
-    "content": " ",
-    "url": "/docs/portfolio/#getting-started",
-    
-    "relUrl": "/docs/portfolio/#getting-started"
-  },"4": {
-    "doc": "Portfolio",
     "title": "Portfolio",
-    "content": " ",
+    "content": "Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages. ",
     "url": "/docs/portfolio/",
     
     "relUrl": "/docs/portfolio/"
+  },"3": {
+    "doc": "Portfolio",
+    "title": "🙋🏻 Profile",
+    "content": ". 학력 . | 동국대학교 컴퓨터공학과 (2018.03 ~ 2023.02) | . 기타 . | 동국대학교 인간-로봇 상호작용 연구실 학부연구생 (2019.07 ~ 2021.04) | . 웹 제작 &amp; 서버 &amp; 데이터베이스 프로그래밍 개발자를 희망하는 ‘거북이🐢’ 김지훈입니다. 앞으로 나아가는 속도는 느릴지라도, 쓰러지지 않는 단단함을 지녔습니다. 저의 프로그램과 서비스로 모두에게 행복함을 선물할 수 있는 개발자가 될 것입니다. ",
+    "url": "/docs/portfolio/#profile",
+    
+    "relUrl": "/docs/portfolio/#profile"
+  },"4": {
+    "doc": "Portfolio",
+    "title": "⚒️ Skills",
+    "content": "역량의 전문성에 따라 상 · 중 · 하 수준으로 분류하였습니다. 각 항목을 누르면 상세 내용을 확인할 수 있습니다. Hard Skills . Soft Skills . Tools . | Backend | Database . MySQL . ORACLE . | Frontend . HTML . CSS . Javascript . React . | DevOps . Docker . | 커뮤니케이션 스킬 | 책임감 | 협업 능력 | 리더십 | 유연성 | 체계성 . | C/C++ | Java/Spring | HTML/CSS/JS | Python | Node.js | MySQL | ORACLE | Linux | Docker | Unity | AWS | . ",
+    "url": "/docs/portfolio/#%EF%B8%8F-skills",
+    
+    "relUrl": "/docs/portfolio/#️-skills"
   },"5": {
+    "doc": "Portfolio",
+    "title": "💻 Projects",
+    "content": "지금까지 진행했던 프로젝트를 최신순으로 구성했습니다. 각 이미지를 클릭하면, 해당 프로젝트에 대한 상세 내용을 확인할 수 있습니다. ",
+    "url": "/docs/portfolio/#-projects",
+    
+    "relUrl": "/docs/portfolio/#-projects"
+  },"6": {
+    "doc": "Portfolio",
+    "title": "🕶️ Github &amp; Study",
+    "content": " ",
+    "url": "/docs/portfolio/#%EF%B8%8Fgithub--study",
+    
+    "relUrl": "/docs/portfolio/#️github--study"
+  },"7": {
+    "doc": "Portfolio",
+    "title": "Github &amp; Site",
+    "content": "Github . 거북이처럼 코딩해도 괜찮으려나 → 2022/05/18 부터 Notion으로 이전 . Hoooon22’s Log → 2023/06/29 부터 github.io으로 이전 . ",
+    "url": "/docs/portfolio/#github--site",
+    
+    "relUrl": "/docs/portfolio/#github--site"
+  },"8": {
+    "doc": "Portfolio",
+    "title": "Previous Study",
+    "content": "TIL(Today I Learned) . 개인 개발 &amp; 공부 . 매거진 퐁당 웹사이트 제작 . ",
+    "url": "/docs/portfolio/#previous-study",
+    
+    "relUrl": "/docs/portfolio/#previous-study"
+  },"9": {
+    "doc": "Portfolio",
+    "title": "💬 Contact",
+    "content": "📧 momo990305@gmail.com . 📞 +82 10-3820-7501 . 🏠 경기도 화성시 . ",
+    "url": "/docs/portfolio/#contact",
+    
+    "relUrl": "/docs/portfolio/#contact"
+  },"10": {
     "doc": "TIL",
     "title": "Today I Learned",
     "content": "TIL has been written since July 1, 2023. ",
     "url": "/docs/til#today-i-learned",
     
     "relUrl": "/docs/til#today-i-learned"
-  },"6": {
+  },"11": {
     "doc": "TIL",
     "title": "TIL",
     "content": " ",
