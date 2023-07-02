@@ -9,10 +9,12 @@ parent: projects
 # Project - 퐁당 웹 매거진 프로젝트 Ver.02
 {: .no_toc }
 
-Project has been written since July 1, 2023.
+## Project has been written since July 1, 2023.
 {: .fs-4 .fw-300 }
 
-* Links
+<br>
+
+* __Links__
 {: .fs-4 .fw-300 }
 
 [퐁당 웹 매거진 프로젝트 Ver.01 제작 일지](https://congruous-wildebeest-c9e.notion.site/99993255375249b7b058141b0ffbcb13?pvs=4)
