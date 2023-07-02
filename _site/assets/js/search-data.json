@@ -20,36 +20,36 @@
     
     "relUrl": "/docs/tils/230629/"
   },"3": {
-    "doc": "제작 일지 - 1",
-    "title": "퐁당 웹 매거진 프로젝트 (23/07/02)",
+    "doc": "제작 일지 <1>",
+    "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;1&gt;",
     "content": " ",
-    "url": "/docs/projects/pongdang/230702/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-230702",
+    "url": "/docs/projects/pongdang/230702/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-1",
     
-    "relUrl": "/docs/projects/pongdang/230702/#퐁당-웹-매거진-프로젝트-230702"
+    "relUrl": "/docs/projects/pongdang/230702/#퐁당-웹-매거진-프로젝트-제작-일지-1"
   },"4": {
-    "doc": "제작 일지 - 1",
+    "doc": "제작 일지 <1>",
     "title": "2023.07.02 (WED)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230702/#20230702-wed",
     
     "relUrl": "/docs/projects/pongdang/230702/#20230702-wed"
   },"5": {
-    "doc": "제작 일지 - 1",
+    "doc": "제작 일지 <1>",
     "title": "1. 프로젝트 빌드 후, Servlet.service() for sevlet 오류 발생 시",
     "content": "해결법 1. 프로젝트 클린(clean)과 재빌드(rebuild)는 빌드 도구(Maven, Gradle 등)를 사용하여 프로젝트를 초기화하고 의존성을 새롭게 다운로드하여 프로젝트를 다시 빌드하는 작업입니다. 이를 통해 이전에 캐시된 클래스 파일이나 의존성 문제로 인해 발생하는 오류를 해결할 수 있습니다. 아래는 Maven과 Gradle에서 프로젝트 클린과 재빌드를 수행하는 방법입니다: . Maven을 사용하는 경우: . 프로젝트 디렉토리로 이동합니다. 명령줄 또는 터미널에서 다음 명령어를 실행합니다: mvn clean install clean: 이전 빌드에 의해 생성된 클래스 파일과 빌드 아티팩트를 제거합니다. install: 프로젝트를 빌드하고 로컬 Maven 저장소에 라이브러리를 설치합니다. Gradle을 사용하는 경우: . 프로젝트 디렉토리로 이동합니다. 명령줄 또는 터미널에서 다음 명령어를 실행합니다: gradlew clean build clean: 이전 빌드에 의해 생성된 클래스 파일과 빌드 아티팩트를 제거합니다. build: 프로젝트를 빌드하고 필요한 의존성을 다운로드합니다. 프로젝트 클린(clean)과 재빌드(rebuild)를 실행하면 이전에 발생한 빌드 오류와 관련된 문제를 해결할 수 있습니다. 이는 캐시된 클래스 파일이나 의존성이 변경되어 다시 다운로드되고 빌드되기 때문입니다. clean으로 재빌드 하니, 정상 작동한다. ",
     "url": "/docs/projects/pongdang/230702/#1-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B9%8C%EB%93%9C-%ED%9B%84-servletservice-for-sevlet-%EC%98%A4%EB%A5%98-%EB%B0%9C%EC%83%9D-%EC%8B%9C",
     
     "relUrl": "/docs/projects/pongdang/230702/#1-프로젝트-빌드-후-servletservice-for-sevlet-오류-발생-시"
   },"6": {
-    "doc": "제작 일지 - 1",
+    "doc": "제작 일지 <1>",
     "title": "2. 스프링부트 스냅샷 실행 시",
     "content": "nohup이 작동하지 않는다. java -jar build/libs/Pongdang_Server2-0.0.1-SNAPSHOT.jar &gt; test.log . 없이는 정상 작동한다. ",
     "url": "/docs/projects/pongdang/230702/#2-%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-%EC%8A%A4%EB%83%85%EC%83%B7-%EC%8B%A4%ED%96%89-%EC%8B%9C",
     
     "relUrl": "/docs/projects/pongdang/230702/#2-스프링부트-스냅샷-실행-시"
   },"7": {
-    "doc": "제작 일지 - 1",
-    "title": "제작 일지 - 1",
+    "doc": "제작 일지 <1>",
+    "title": "제작 일지 <1>",
     "content": " ",
     "url": "/docs/projects/pongdang/230702/",
     
