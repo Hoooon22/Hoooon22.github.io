@@ -1,9 +1,9 @@
 ---
 layout: default
-title: 1일 1코딩
+title: 1일 1코딩 (코딩테스트)
 nav_order: 1
 has_children: true
-parent: 코딩테스트 연습
+parent: STUDY
 ---
 
 # 1일 1코테연습
