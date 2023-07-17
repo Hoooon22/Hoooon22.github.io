@@ -280,11 +280,11 @@
     "relUrl": "/docs/projects/pongdang/230717/#20230717-mon"
   },"40": {
     "doc": "제작 일지 <4>",
-    "title": "1.",
-    "content": " ",
-    "url": "/docs/projects/pongdang/230717/#1",
+    "title": "1. 슬라이드",
+    "content": ". 구현 코드 . import React, { useState } from 'react'; import \"./Slider.css\"; import Carousel from 'react-bootstrap/Carousel'; export default function Slider() { const [index, setIndex] = useState(0); const handleSelect = (selectedIndex) =&gt; { setIndex(selectedIndex); }; return ( &lt;Carousel activeIndex={index} onSelect={handleSelect}&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;/Carousel&gt; ); } . ",
+    "url": "/docs/projects/pongdang/230717/#1-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C",
     
-    "relUrl": "/docs/projects/pongdang/230717/#1"
+    "relUrl": "/docs/projects/pongdang/230717/#1-슬라이드"
   },"41": {
     "doc": "제작 일지 <4>",
     "title": "제작 일지 <4>",
@@ -302,7 +302,7 @@
   },"43": {
     "doc": "TIL (23-07-17)",
     "title": "2023.07.17 (MON)",
-    "content": ". 📌  오늘의 TIL . | 😵‍💫 코테 연습 . | 과제 진행하기 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 어깨 | . ",
+    "content": ". 📌  오늘의 TIL . | 😵‍💫 코테 연습 . | 과제 진행하기 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 등 | . ",
     "url": "/docs/tils/230717/#20230717-mon",
     
     "relUrl": "/docs/tils/230717/#20230717-mon"
