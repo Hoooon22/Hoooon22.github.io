@@ -330,14 +330,14 @@
   },"47": {
     "doc": "전력망을 둘로 나누기",
     "title": "접근법",
-    "content": "조건 및 설명 . | n개의 송전탑이 하나의 트리 형태로 연결 | 전선들 중 하나를 끊어서, 두 전력망이 갖게 되는 송전탑의 개수를 최대한 비슷하게 맞추고자 한다. | 두 전력망의 송전탑 개수의 차이를 return | . 해결법 . | 모두 탐색을 해도 되는 문제기 때문에, BFS를 사용한다. | 매번 가장 작은 값을 저장한다. | . ",
+    "content": "조건 및 설명 . | n개의 송전탑이 하나의 트리 형태로 연결 | 전선들 중 하나를 끊어서, 두 전력망이 갖게 되는 송전탑의 개수를 최대한 비슷하게 맞추고자 한다. | 두 전력망의 송전탑 개수의 차이를 return | . 해결법 . | 모두 탐색을 해도 되는 문제기 때문에, BFS를 사용한다. | 매번 가장 작은 값을 저장한다. | 자른 기준으로, 두 개의 노드를 탐색하여 갯수를 센다. | . ",
     "url": "/docs/studies/codingtest/1day1coding/230719/#%EC%A0%91%EA%B7%BC%EB%B2%95",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230719/#접근법"
   },"48": {
     "doc": "전력망을 둘로 나누기",
     "title": "결과 코드",
-    "content": "import java.util.*; class Solution { public int solution(int n, int[][] wires) { int answer = -1; return answer; } } . ",
+    "content": "import java.util.*; class Solution { public int solution(int n, int[][] wires) { int answer = -1; public static boolean[] visited = new boolean[n]; for (int i = 0; i &lt; n; i ++) { } return answer; } public static int bfs(int start, boolean[] visited) { Queue&lt;Integer&gt; q = new LinkedList&lt;&gt;(); q.offer(start); // current node visited visited[start] = true; while(!q.isEmpty()) { int x = q.poll(); for (int i = 0; i &lt; visited.length; i++) { // ... } } } } . ",
     "url": "/docs/studies/codingtest/1day1coding/230719/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230719/#결과-코드"
