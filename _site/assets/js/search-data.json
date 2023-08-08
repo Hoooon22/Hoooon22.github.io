@@ -1,655 +1,704 @@
 {"0": {
+    "doc": "OOP",
+    "title": "객체지향 프로그래밍",
+    "content": " ",
+    "url": "/docs/studies/object/02_OOP/#%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D",
+    
+    "relUrl": "/docs/studies/object/02_OOP/#객체지향-프로그래밍"
+  },"1": {
+    "doc": "OOP",
+    "title": "2023.08.08 (TUE)",
+    "content": ". ",
+    "url": "/docs/studies/object/02_OOP/#20230808-tue",
+    
+    "relUrl": "/docs/studies/object/02_OOP/#20230808-tue"
+  },"2": {
+    "doc": "OOP",
+    "title": "개요",
+    "content": " ",
+    "url": "/docs/studies/object/02_OOP/#%EA%B0%9C%EC%9A%94",
+    
+    "relUrl": "/docs/studies/object/02_OOP/#개요"
+  },"3": {
+    "doc": "OOP",
+    "title": "OOP",
+    "content": " ",
+    "url": "/docs/studies/object/02_OOP/",
+    
+    "relUrl": "/docs/studies/object/02_OOP/"
+  },"4": {
     "doc": "1일 1코딩 (코딩테스트)",
     "title": "1일 1코테연습",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/#1%EC%9D%BC-1%EC%BD%94%ED%85%8C%EC%97%B0%EC%8A%B5",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/#1일-1코테연습"
-  },"1": {
+  },"5": {
     "doc": "1일 1코딩 (코딩테스트)",
     "title": "This Page has been written since July 11, 2023.",
     "content": ". | Links | . 이전 코테 연습 풀이 . ",
     "url": "/docs/studies/codingtest/1day1coding/#this-page-has-been-written-since-july-11-2023",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/#this-page-has-been-written-since-july-11-2023"
-  },"2": {
+  },"6": {
     "doc": "1일 1코딩 (코딩테스트)",
     "title": "1일 1코딩 (코딩테스트)",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/"
-  },"3": {
+  },"7": {
     "doc": "TIL (23-06-29)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230629/#til",
     
     "relUrl": "/docs/tils/230629/#til"
-  },"4": {
+  },"8": {
     "doc": "TIL (23-06-29)",
     "title": "2023.06.29 (WED)",
     "content": ". 📌 오늘의 TIL . | 💻 깃허브 블로그 제작 . | just the Docs Theme 적용 및 틀 구현 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 구현 | . | . ✏️ 오늘의 체크 사항 . | 운동 - 가슴 | . ",
     "url": "/docs/tils/230629/#20230629-wed",
     
     "relUrl": "/docs/tils/230629/#20230629-wed"
-  },"5": {
+  },"9": {
     "doc": "TIL (23-06-29)",
     "title": "TIL (23-06-29)",
     "content": " ",
     "url": "/docs/tils/230629/",
     
     "relUrl": "/docs/tils/230629/"
-  },"6": {
-    "doc": "TIL (23-07-02)",
-    "title": "TIL",
-    "content": " ",
-    "url": "/docs/tils/230702/#til",
-    
-    "relUrl": "/docs/tils/230702/#til"
-  },"7": {
-    "doc": "TIL (23-07-02)",
-    "title": "2023.07.02 (SUN)",
-    "content": ". 📌 오늘의 TIL . | 💻 깃허브 블로그 제작 . | 프로젝트 메뉴 생성 및 퐁당 웹매거진 프로젝트 업로드 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 동기화 매뉴얼 | . | . ✏️ 오늘의 체크 사항 . | 운동 - 등 | . ",
-    "url": "/docs/tils/230702/#20230702-sun",
-    
-    "relUrl": "/docs/tils/230702/#20230702-sun"
-  },"8": {
-    "doc": "TIL (23-07-02)",
-    "title": "TIL (23-07-02)",
-    "content": " ",
-    "url": "/docs/tils/230702/",
-    
-    "relUrl": "/docs/tils/230702/"
-  },"9": {
+  },"10": {
     "doc": "제작 일지 <1>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;1&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230702/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-1",
     
     "relUrl": "/docs/projects/pongdang/230702/#퐁당-웹-매거진-프로젝트-제작-일지-1"
-  },"10": {
+  },"11": {
     "doc": "제작 일지 <1>",
     "title": "2023.07.02 (WED)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230702/#20230702-wed",
     
     "relUrl": "/docs/projects/pongdang/230702/#20230702-wed"
-  },"11": {
+  },"12": {
     "doc": "제작 일지 <1>",
     "title": "1. 프로젝트 빌드 후, Servlet.service() for sevlet 오류 발생 시",
     "content": "해결법 1. 프로젝트 클린(clean)과 재빌드(rebuild)는 빌드 도구(Maven, Gradle 등)를 사용하여 프로젝트를 초기화하고 의존성을 새롭게 다운로드하여 프로젝트를 다시 빌드하는 작업입니다. 이를 통해 이전에 캐시된 클래스 파일이나 의존성 문제로 인해 발생하는 오류를 해결할 수 있습니다. 아래는 Maven과 Gradle에서 프로젝트 클린과 재빌드를 수행하는 방법입니다: . Maven을 사용하는 경우: . 프로젝트 디렉토리로 이동합니다. 명령줄 또는 터미널에서 다음 명령어를 실행합니다: mvn clean install clean: 이전 빌드에 의해 생성된 클래스 파일과 빌드 아티팩트를 제거합니다. install: 프로젝트를 빌드하고 로컬 Maven 저장소에 라이브러리를 설치합니다. Gradle을 사용하는 경우: . 프로젝트 디렉토리로 이동합니다. 명령줄 또는 터미널에서 다음 명령어를 실행합니다: gradlew clean build clean: 이전 빌드에 의해 생성된 클래스 파일과 빌드 아티팩트를 제거합니다. build: 프로젝트를 빌드하고 필요한 의존성을 다운로드합니다. 프로젝트 클린(clean)과 재빌드(rebuild)를 실행하면 이전에 발생한 빌드 오류와 관련된 문제를 해결할 수 있습니다. 이는 캐시된 클래스 파일이나 의존성이 변경되어 다시 다운로드되고 빌드되기 때문입니다. clean으로 재빌드 하니, 정상 작동한다. ",
     "url": "/docs/projects/pongdang/230702/#1-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B9%8C%EB%93%9C-%ED%9B%84-servletservice-for-sevlet-%EC%98%A4%EB%A5%98-%EB%B0%9C%EC%83%9D-%EC%8B%9C",
     
     "relUrl": "/docs/projects/pongdang/230702/#1-프로젝트-빌드-후-servletservice-for-sevlet-오류-발생-시"
-  },"12": {
+  },"13": {
     "doc": "제작 일지 <1>",
     "title": "2. 스프링부트 스냅샷 실행 시",
     "content": "nohup이 작동하지 않는다. java -jar build/libs/Pongdang_Server2-0.0.1-SNAPSHOT.jar &gt; test.log . 없이는 정상 작동한다. 3. 동기화 순서 . | ./gradlew clean build | pkill -f Pongdang_Server2-0.0.1-SNAPSHOT.jar | java -jar build/libs/Pongdang_Server2-0.0.1-SNAPSHOT.jar &gt; test.log &amp; | . ",
     "url": "/docs/projects/pongdang/230702/#2-%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-%EC%8A%A4%EB%83%85%EC%83%B7-%EC%8B%A4%ED%96%89-%EC%8B%9C",
     
     "relUrl": "/docs/projects/pongdang/230702/#2-스프링부트-스냅샷-실행-시"
-  },"13": {
+  },"14": {
     "doc": "제작 일지 <1>",
     "title": "제작 일지 <1>",
     "content": " ",
     "url": "/docs/projects/pongdang/230702/",
     
     "relUrl": "/docs/projects/pongdang/230702/"
-  },"14": {
-    "doc": "제작 일지 <2>",
-    "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;2&gt;",
-    "content": " ",
-    "url": "/docs/projects/pongdang/230706/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-2",
-    
-    "relUrl": "/docs/projects/pongdang/230706/#퐁당-웹-매거진-프로젝트-제작-일지-2"
   },"15": {
-    "doc": "제작 일지 <2>",
-    "title": "2023.07.06 (THU)",
-    "content": ". ",
-    "url": "/docs/projects/pongdang/230706/#20230706-thu",
-    
-    "relUrl": "/docs/projects/pongdang/230706/#20230706-thu"
-  },"16": {
-    "doc": "제작 일지 <2>",
-    "title": "1. 메뉴 ul margin 없애기",
-    "content": ".menu ul { width : 100%; list-style-type: none; display: flex; flex-direction: row; justify-content: space-around; padding-inline-start: 0; } .menu li { text-align: center; } . padding-inline-start로 왼쪽의 padding을 없애주었다. ",
-    "url": "/docs/projects/pongdang/230706/#1-%EB%A9%94%EB%89%B4-ul-margin-%EC%97%86%EC%95%A0%EA%B8%B0",
-    
-    "relUrl": "/docs/projects/pongdang/230706/#1-메뉴-ul-margin-없애기"
-  },"17": {
-    "doc": "제작 일지 <2>",
-    "title": "2. 기반 정리",
-    "content": ". ",
-    "url": "/docs/projects/pongdang/230706/#2-%EA%B8%B0%EB%B0%98-%EC%A0%95%EB%A6%AC",
-    
-    "relUrl": "/docs/projects/pongdang/230706/#2-기반-정리"
-  },"18": {
-    "doc": "제작 일지 <2>",
-    "title": "3. 이후 계획",
-    "content": "css or js 라이버리를 사용하여, 슬라이드 및 애니메이션 효과를 적용하도록 한다. ",
-    "url": "/docs/projects/pongdang/230706/#3-%EC%9D%B4%ED%9B%84-%EA%B3%84%ED%9A%8D",
-    
-    "relUrl": "/docs/projects/pongdang/230706/#3-이후-계획"
-  },"19": {
-    "doc": "제작 일지 <2>",
-    "title": "제작 일지 <2>",
+    "doc": "TIL (23-07-02)",
+    "title": "TIL",
     "content": " ",
-    "url": "/docs/projects/pongdang/230706/",
+    "url": "/docs/tils/230702/#til",
     
-    "relUrl": "/docs/projects/pongdang/230706/"
-  },"20": {
+    "relUrl": "/docs/tils/230702/#til"
+  },"16": {
+    "doc": "TIL (23-07-02)",
+    "title": "2023.07.02 (SUN)",
+    "content": ". 📌 오늘의 TIL . | 💻 깃허브 블로그 제작 . | 프로젝트 메뉴 생성 및 퐁당 웹매거진 프로젝트 업로드 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 동기화 매뉴얼 | . | . ✏️ 오늘의 체크 사항 . | 운동 - 등 | . ",
+    "url": "/docs/tils/230702/#20230702-sun",
+    
+    "relUrl": "/docs/tils/230702/#20230702-sun"
+  },"17": {
+    "doc": "TIL (23-07-02)",
+    "title": "TIL (23-07-02)",
+    "content": " ",
+    "url": "/docs/tils/230702/",
+    
+    "relUrl": "/docs/tils/230702/"
+  },"18": {
     "doc": "TIL (23-07-06)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230706/#til",
     
     "relUrl": "/docs/tils/230706/#til"
-  },"21": {
+  },"19": {
     "doc": "TIL (23-07-06)",
     "title": "2023.07.06 (THU)",
     "content": ". 📌 오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 회의 | 오늘의 제작 일지 | . | . ✏️ 오늘의 체크 사항 . | 운동 - 등 | . ",
     "url": "/docs/tils/230706/#20230706-thu",
     
     "relUrl": "/docs/tils/230706/#20230706-thu"
-  },"22": {
+  },"20": {
     "doc": "TIL (23-07-06)",
     "title": "TIL (23-07-06)",
     "content": " ",
     "url": "/docs/tils/230706/",
     
     "relUrl": "/docs/tils/230706/"
+  },"21": {
+    "doc": "제작 일지 <2>",
+    "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;2&gt;",
+    "content": " ",
+    "url": "/docs/projects/pongdang/230706/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-2",
+    
+    "relUrl": "/docs/projects/pongdang/230706/#퐁당-웹-매거진-프로젝트-제작-일지-2"
+  },"22": {
+    "doc": "제작 일지 <2>",
+    "title": "2023.07.06 (THU)",
+    "content": ". ",
+    "url": "/docs/projects/pongdang/230706/#20230706-thu",
+    
+    "relUrl": "/docs/projects/pongdang/230706/#20230706-thu"
   },"23": {
+    "doc": "제작 일지 <2>",
+    "title": "1. 메뉴 ul margin 없애기",
+    "content": ".menu ul { width : 100%; list-style-type: none; display: flex; flex-direction: row; justify-content: space-around; padding-inline-start: 0; } .menu li { text-align: center; } . padding-inline-start로 왼쪽의 padding을 없애주었다. ",
+    "url": "/docs/projects/pongdang/230706/#1-%EB%A9%94%EB%89%B4-ul-margin-%EC%97%86%EC%95%A0%EA%B8%B0",
+    
+    "relUrl": "/docs/projects/pongdang/230706/#1-메뉴-ul-margin-없애기"
+  },"24": {
+    "doc": "제작 일지 <2>",
+    "title": "2. 기반 정리",
+    "content": ". ",
+    "url": "/docs/projects/pongdang/230706/#2-%EA%B8%B0%EB%B0%98-%EC%A0%95%EB%A6%AC",
+    
+    "relUrl": "/docs/projects/pongdang/230706/#2-기반-정리"
+  },"25": {
+    "doc": "제작 일지 <2>",
+    "title": "3. 이후 계획",
+    "content": "css or js 라이버리를 사용하여, 슬라이드 및 애니메이션 효과를 적용하도록 한다. ",
+    "url": "/docs/projects/pongdang/230706/#3-%EC%9D%B4%ED%9B%84-%EA%B3%84%ED%9A%8D",
+    
+    "relUrl": "/docs/projects/pongdang/230706/#3-이후-계획"
+  },"26": {
+    "doc": "제작 일지 <2>",
+    "title": "제작 일지 <2>",
+    "content": " ",
+    "url": "/docs/projects/pongdang/230706/",
+    
+    "relUrl": "/docs/projects/pongdang/230706/"
+  },"27": {
     "doc": "과제 진행하기",
     "title": "과제 진행하기",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230711/",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230711/"
-  },"24": {
+  },"28": {
     "doc": "과제 진행하기",
     "title": "2023.07.11 (TUE)",
     "content": ". 문제 : 프로그래머스 - LV2. 과제 진행하기 . ",
     "url": "/docs/studies/codingtest/1day1coding/230711/#20230711-tue",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230711/#20230711-tue"
-  },"25": {
+  },"29": {
     "doc": "과제 진행하기",
     "title": "접근법",
     "content": "조건 . | 과제는 시작하기로 한 시각이 되면 시작 | 새로운 과제를 할 시간이면, 기존에 하고 있던 과제를 멈추고 새로운 과제를 시작 . | 만약, 과제를 끝낸 시각에 우선순위는, 새로 시작해야 하는 과제 &gt; 잠시 멈춰둔 과제 | . | 멈춰둔 과제는 가장 최근에 멈춘 과제부터 시작 | . 해결법 . | plans 배열을 시작 시간을 기준으로 정렬한다. | 스택을 활용하여 잠시 멈춘 과제를 넣는다. | 조건 우선순위에 맞게 코드를 구현한다. | . ",
     "url": "/docs/studies/codingtest/1day1coding/230711/#%EC%A0%91%EA%B7%BC%EB%B2%95",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230711/#접근법"
-  },"26": {
+  },"30": {
     "doc": "과제 진행하기",
     "title": "결과 코드",
     "content": "import java.util.*; class Solution { public String[] solution(String[][] plans) { String[] answer = new String[plans.length]; int answer_count = 0; Queue&lt;String&gt; q_name = new LinkedList&lt;&gt;(); Queue&lt;Integer&gt; q_time = new LinkedList&lt;&gt;(); // plans 정렬 Arrays.sort(plans, new Comparator&lt;String[]&gt;() { @Override public int compare(String[] arr1, String[] arr2) { String[] time1 = arr1[1].split(\":\"); String[] time2 = arr2[1].split(\":\"); int hourCompare = Integer.parseInt(time1[0]) - Integer.parseInt(time2[0]); int minuteCompare = Integer.parseInt(time1[1]) - Integer.parseInt(time2[1]); return hourCompare != 0 ? hourCompare : minuteCompare; } }); // 시작 시간 정하기 int curTime = toMin(plans[0]); // 현재 시각 String curPlan = plans[0][0]; // 현재 과제명 int remainTime = Integer.parseInt(plans[0][2]); // 현재 과제 남은 시간 int count = 1; // 대기 중인 과제 순서 Stack&lt;String&gt; s_String = new Stack&lt;&gt;(); // 잠시 멈춘 과제명 Stack&lt;Integer&gt; s_Int = new Stack&lt;&gt;(); // 잠시 멈춘 과제 남은 시간 // 진행 while (answer_count &lt; plans.length) { curTime++; remainTime--; if (remainTime == 0) { // 시간이 다 되면 answer[answer_count] = curPlan; answer_count++; curPlan = \"\"; if (curTime == toMin(plans[count])) { // 다음 과제 시간이라면 curPlan = plans[count][0]; remainTime = Integer.parseInt(plans[count][2]); count++; if (count == plans.length) { count = 0; } } else if (!s_String.empty()) { // 잠시 멈춘 과제가 있다면 curPlan = s_String.pop(); remainTime = s_Int.pop(); } } else if (curTime == toMin(plans[count])) { // 다음 과제를 시작해야 한다면 // 저장 if (!curPlan.equals(\"\")) { s_String.push(curPlan); s_Int.push(remainTime); } curPlan = plans[count][0]; remainTime = Integer.parseInt(plans[count][2]); count++; if (count == plans.length) { count = 0; } } } return answer; } public static int toMin(String[] strs) { String[] time = strs[1].split(\":\"); return Integer.parseInt(time[0]) * 60 + Integer.parseInt(time[1]); } } . ",
     "url": "/docs/studies/codingtest/1day1coding/230711/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230711/#결과-코드"
-  },"27": {
+  },"31": {
     "doc": "TIL (23-07-11)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230711/#til",
     
     "relUrl": "/docs/tils/230711/#til"
-  },"28": {
+  },"32": {
     "doc": "TIL (23-07-11)",
     "title": "2023.07.11 (TUE)",
     "content": ". 📌  오늘의 TIL . | 프로그래머스 자바 코딩테스트 강의 신청 | 😵‍💫 코테 연습 . | 과제 진행하기 | . | . 📔 To Do Plan . | 1일 1코테연습 | 퐁당 매거진 프로젝트 | ? 백엔드 오픈소스 프로젝트 | ? 게임 서버 제작 | . ✏️  오늘의 체크 사항 . | 운동 - 어깨 | . ",
     "url": "/docs/tils/230711/#20230711-tue",
     
     "relUrl": "/docs/tils/230711/#20230711-tue"
-  },"29": {
+  },"33": {
     "doc": "TIL (23-07-11)",
     "title": "TIL (23-07-11)",
     "content": " ",
     "url": "/docs/tils/230711/",
     
     "relUrl": "/docs/tils/230711/"
-  },"30": {
+  },"34": {
     "doc": "TIL (23-07-13)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230713/#til",
     
     "relUrl": "/docs/tils/230713/#til"
-  },"31": {
+  },"35": {
     "doc": "TIL (23-07-13)",
     "title": "2023.07.13 (THU)",
     "content": ". 📌  오늘의 TIL . | 😵‍💫 코테 연습 . | 과제 진행하기 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 어깨 | . ",
     "url": "/docs/tils/230713/#20230713-thu",
     
     "relUrl": "/docs/tils/230713/#20230713-thu"
-  },"32": {
+  },"36": {
     "doc": "TIL (23-07-13)",
     "title": "TIL (23-07-13)",
     "content": " ",
     "url": "/docs/tils/230713/",
     
     "relUrl": "/docs/tils/230713/"
-  },"33": {
+  },"37": {
     "doc": "제작 일지 <3>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;3&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230713/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-3",
     
     "relUrl": "/docs/projects/pongdang/230713/#퐁당-웹-매거진-프로젝트-제작-일지-3"
-  },"34": {
+  },"38": {
     "doc": "제작 일지 <3>",
     "title": "2023.07.13 (THU)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230713/#20230713-thu",
     
     "relUrl": "/docs/projects/pongdang/230713/#20230713-thu"
-  },"35": {
+  },"39": {
     "doc": "제작 일지 <3>",
     "title": "1. Font CSS 적용",
     "content": " ",
     "url": "/docs/projects/pongdang/230713/#1-font-css-%EC%A0%81%EC%9A%A9",
     
     "relUrl": "/docs/projects/pongdang/230713/#1-font-css-적용"
-  },"36": {
+  },"40": {
     "doc": "제작 일지 <3>",
     "title": "2. 부트스트랩 라이브러리 적용",
     "content": " ",
     "url": "/docs/projects/pongdang/230713/#2-%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%A0%81%EC%9A%A9",
     
     "relUrl": "/docs/projects/pongdang/230713/#2-부트스트랩-라이브러리-적용"
-  },"37": {
+  },"41": {
     "doc": "제작 일지 <3>",
     "title": "제작 일지 <3>",
     "content": " ",
     "url": "/docs/projects/pongdang/230713/",
     
     "relUrl": "/docs/projects/pongdang/230713/"
-  },"38": {
+  },"42": {
     "doc": "제작 일지 <4>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;4&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230717/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-4",
     
     "relUrl": "/docs/projects/pongdang/230717/#퐁당-웹-매거진-프로젝트-제작-일지-4"
-  },"39": {
+  },"43": {
     "doc": "제작 일지 <4>",
     "title": "2023.07.17 (MON)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230717/#20230717-mon",
     
     "relUrl": "/docs/projects/pongdang/230717/#20230717-mon"
-  },"40": {
+  },"44": {
     "doc": "제작 일지 <4>",
     "title": "1. 슬라이드",
     "content": ". 구현 코드 . import React, { useState } from 'react'; import \"./Slider.css\"; import Carousel from 'react-bootstrap/Carousel'; export default function Slider() { const [index, setIndex] = useState(0); const handleSelect = (selectedIndex) =&gt; { setIndex(selectedIndex); }; return ( &lt;Carousel activeIndex={index} onSelect={handleSelect}&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;/Carousel&gt; ); } . ",
     "url": "/docs/projects/pongdang/230717/#1-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C",
     
     "relUrl": "/docs/projects/pongdang/230717/#1-슬라이드"
-  },"41": {
+  },"45": {
     "doc": "제작 일지 <4>",
     "title": "제작 일지 <4>",
     "content": " ",
     "url": "/docs/projects/pongdang/230717/",
     
     "relUrl": "/docs/projects/pongdang/230717/"
-  },"42": {
+  },"46": {
     "doc": "TIL (23-07-17)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230717/#til",
     
     "relUrl": "/docs/tils/230717/#til"
-  },"43": {
+  },"47": {
     "doc": "TIL (23-07-17)",
     "title": "2023.07.17 (MON)",
     "content": ". 📌  오늘의 TIL . | 😵‍💫 코테 연습 . | 과제 진행하기 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 등 | . ",
     "url": "/docs/tils/230717/#20230717-mon",
     
     "relUrl": "/docs/tils/230717/#20230717-mon"
-  },"44": {
+  },"48": {
     "doc": "TIL (23-07-17)",
     "title": "TIL (23-07-17)",
     "content": " ",
     "url": "/docs/tils/230717/",
     
     "relUrl": "/docs/tils/230717/"
-  },"45": {
+  },"49": {
     "doc": "전력망을 둘로 나누기",
     "title": "과제 진행하기",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230719/#%EA%B3%BC%EC%A0%9C-%EC%A7%84%ED%96%89%ED%95%98%EA%B8%B0",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230719/#과제-진행하기"
-  },"46": {
+  },"50": {
     "doc": "전력망을 둘로 나누기",
     "title": "2023.07.19 (WED)",
     "content": ". 문제 : 프로그래머스 - LV2. 전력망을 둘로 나누기 . ",
     "url": "/docs/studies/codingtest/1day1coding/230719/#20230719-wed",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230719/#20230719-wed"
-  },"47": {
+  },"51": {
     "doc": "전력망을 둘로 나누기",
     "title": "접근법",
     "content": "조건 및 설명 . | n개의 송전탑이 하나의 트리 형태로 연결 | 전선들 중 하나를 끊어서, 두 전력망이 갖게 되는 송전탑의 개수를 최대한 비슷하게 맞추고자 한다. | 두 전력망의 송전탑 개수의 차이를 return | . 해결법 . | 모두 탐색을 해도 되는 문제기 때문에, BFS를 사용한다. | 매번 가장 작은 값을 저장한다. | 자른 기준으로, 두 개의 노드를 탐색하여 갯수를 센다. | . ",
     "url": "/docs/studies/codingtest/1day1coding/230719/#%EC%A0%91%EA%B7%BC%EB%B2%95",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230719/#접근법"
-  },"48": {
+  },"52": {
     "doc": "전력망을 둘로 나누기",
     "title": "결과 코드",
     "content": "import java.util.*; class Solution { public int solution(int n, int[][] wires) { int answer = -1; public static boolean[] visited = new boolean[n]; for (int i = 0; i &lt; n; i ++) { } return answer; } public static int bfs(int start, boolean[] visited) { Queue&lt;Integer&gt; q = new LinkedList&lt;&gt;(); q.offer(start); // current node visited visited[start] = true; while(!q.isEmpty()) { int x = q.poll(); for (int i = 0; i &lt; visited.length; i++) { // ... } } } } . ",
     "url": "/docs/studies/codingtest/1day1coding/230719/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230719/#결과-코드"
-  },"49": {
+  },"53": {
     "doc": "전력망을 둘로 나누기",
     "title": "전력망을 둘로 나누기",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230719/",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230719/"
-  },"50": {
-    "doc": "(!) 경험치 - 정규식",
-    "title": "(!)경험치 - 정규식",
-    "content": " ",
-    "url": "/docs/studies/codingtest/1day1coding/230720/#%EA%B2%BD%ED%97%98%EC%B9%98---%EC%A0%95%EA%B7%9C%EC%8B%9D",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230720/#경험치---정규식"
-  },"51": {
-    "doc": "(!) 경험치 - 정규식",
-    "title": "2023.07.20 (THU)",
-    "content": ". ",
-    "url": "/docs/studies/codingtest/1day1coding/230720/#20230720-thu",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230720/#20230720-thu"
-  },"52": {
-    "doc": "(!) 경험치 - 정규식",
-    "title": "코딩 테스트를 보았다.",
-    "content": "쉬운 문제에서 나를 붙잡는 이슈가 생겨버렸다. ",
-    "url": "/docs/studies/codingtest/1day1coding/230720/#%EC%BD%94%EB%94%A9-%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EB%B3%B4%EC%95%98%EB%8B%A4",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230720/#코딩-테스트를-보았다"
-  },"53": {
-    "doc": "(!) 경험치 - 정규식",
-    "title": "정규식…",
-    "content": "나는 지금까지 정규식에 대해 그렇게 깊이 알고 있지 않았다. 그 문제 또한, 사실 정규식이 없어도 풀 수 있는 문제라고 생각하고 풀었지만, 나의 엄청난 무지로 인해 계속 집착하게 되었다.. 문제의 코드다. str.split(\".\"); . 내 생각 : 외 않되..? (ㅋㅋ) . 자세히 알아보기 위해서는 split 함수에 대해서 알아보자. public String[] split(String regex) // 옳게된 함수 public String[] split(String string) // 멍청한 나의 머리에서 나온.. 나는 매개변수로 단지 string을 기준으로 나누는 함수 정도로 알고 있었다. 하지만 매개변수는 정규식이었다. 정규식에서의 ”.”은 개행 문자(\\n)을 제외한 모든 문자를 나타내는 메타 문자이다. 그래서 코드가 작동하지 않은건 당연한 것이였다.. 때문에 이스케이프 문자를 사용하여 다음과 같이 수정해야 한다. str.split(\"\\\\.\"); . 이런 사소한 지식들은 경험치처럼 쌓이고 쌓여, 나의 레벨업을 돕는다.. ",
-    "url": "/docs/studies/codingtest/1day1coding/230720/#%EC%A0%95%EA%B7%9C%EC%8B%9D",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230720/#정규식"
   },"54": {
-    "doc": "(!) 경험치 - 정규식",
-    "title": "(!) 경험치 - 정규식",
-    "content": " ",
-    "url": "/docs/studies/codingtest/1day1coding/230720/",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230720/"
-  },"55": {
     "doc": "TIL (23-07-20)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230720/#til",
     
     "relUrl": "/docs/tils/230720/#til"
-  },"56": {
+  },"55": {
     "doc": "TIL (23-07-20)",
     "title": "2023.07.20 (THU)",
     "content": ". 📌  오늘의 TIL . | 😵‍💫 코테 피드백 . | (!) 경험치 - 정규식 | . | . ✏️  오늘의 체크 사항 . | 운동 - 등 | . ",
     "url": "/docs/tils/230720/#20230720-thu",
     
     "relUrl": "/docs/tils/230720/#20230720-thu"
-  },"57": {
+  },"56": {
     "doc": "TIL (23-07-20)",
     "title": "TIL (23-07-20)",
     "content": " ",
     "url": "/docs/tils/230720/",
     
     "relUrl": "/docs/tils/230720/"
+  },"57": {
+    "doc": "(!) 경험치 - 정규식",
+    "title": "(!)경험치 - 정규식",
+    "content": " ",
+    "url": "/docs/studies/codingtest/1day1coding/230720/#%EA%B2%BD%ED%97%98%EC%B9%98---%EC%A0%95%EA%B7%9C%EC%8B%9D",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230720/#경험치---정규식"
   },"58": {
+    "doc": "(!) 경험치 - 정규식",
+    "title": "2023.07.20 (THU)",
+    "content": ". ",
+    "url": "/docs/studies/codingtest/1day1coding/230720/#20230720-thu",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230720/#20230720-thu"
+  },"59": {
+    "doc": "(!) 경험치 - 정규식",
+    "title": "코딩 테스트를 보았다.",
+    "content": "쉬운 문제에서 나를 붙잡는 이슈가 생겨버렸다. ",
+    "url": "/docs/studies/codingtest/1day1coding/230720/#%EC%BD%94%EB%94%A9-%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EB%B3%B4%EC%95%98%EB%8B%A4",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230720/#코딩-테스트를-보았다"
+  },"60": {
+    "doc": "(!) 경험치 - 정규식",
+    "title": "정규식…",
+    "content": "나는 지금까지 정규식에 대해 그렇게 깊이 알고 있지 않았다. 그 문제 또한, 사실 정규식이 없어도 풀 수 있는 문제라고 생각하고 풀었지만, 나의 엄청난 무지로 인해 계속 집착하게 되었다.. 문제의 코드다. str.split(\".\"); . 내 생각 : 외 않되..? (ㅋㅋ) . 자세히 알아보기 위해서는 split 함수에 대해서 알아보자. public String[] split(String regex) // 옳게된 함수 public String[] split(String string) // 멍청한 나의 머리에서 나온.. 나는 매개변수로 단지 string을 기준으로 나누는 함수 정도로 알고 있었다. 하지만 매개변수는 정규식이었다. 정규식에서의 ”.”은 개행 문자(\\n)을 제외한 모든 문자를 나타내는 메타 문자이다. 그래서 코드가 작동하지 않은건 당연한 것이였다.. 때문에 이스케이프 문자를 사용하여 다음과 같이 수정해야 한다. str.split(\"\\\\.\"); . 이런 사소한 지식들은 경험치처럼 쌓이고 쌓여, 나의 레벨업을 돕는다.. ",
+    "url": "/docs/studies/codingtest/1day1coding/230720/#%EC%A0%95%EA%B7%9C%EC%8B%9D",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230720/#정규식"
+  },"61": {
+    "doc": "(!) 경험치 - 정규식",
+    "title": "(!) 경험치 - 정규식",
+    "content": " ",
+    "url": "/docs/studies/codingtest/1day1coding/230720/",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230720/"
+  },"62": {
     "doc": "TIL (23-07-25)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230725/#til",
     
     "relUrl": "/docs/tils/230725/#til"
-  },"59": {
+  },"63": {
     "doc": "TIL (23-07-25)",
     "title": "2023.07.25 (TUE)",
     "content": ". 📌  오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 어꺠 | . ",
     "url": "/docs/tils/230725/#20230725-tue",
     
     "relUrl": "/docs/tils/230725/#20230725-tue"
-  },"60": {
+  },"64": {
     "doc": "TIL (23-07-25)",
     "title": "TIL (23-07-25)",
     "content": " ",
     "url": "/docs/tils/230725/",
     
     "relUrl": "/docs/tils/230725/"
-  },"61": {
+  },"65": {
     "doc": "제작 일지 <5>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;5&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230725/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-5",
     
     "relUrl": "/docs/projects/pongdang/230725/#퐁당-웹-매거진-프로젝트-제작-일지-5"
-  },"62": {
+  },"66": {
     "doc": "제작 일지 <5>",
     "title": "2023.07.25 (TUE)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230725/#20230725-tue",
     
     "relUrl": "/docs/projects/pongdang/230725/#20230725-tue"
-  },"63": {
+  },"67": {
     "doc": "제작 일지 <5>",
     "title": "1. 슬라이드",
     "content": ". 구현 코드 . import React, { useState } from 'react'; import \"./Slider.css\"; import Carousel from 'react-bootstrap/Carousel'; export default function Slider() { const [index, setIndex] = useState(0); const handleSelect = (selectedIndex) =&gt; { setIndex(selectedIndex); }; return ( &lt;Carousel activeIndex={index} onSelect={handleSelect}&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;/Carousel&gt; ); } . ",
     "url": "/docs/projects/pongdang/230725/#1-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C",
     
     "relUrl": "/docs/projects/pongdang/230725/#1-슬라이드"
-  },"64": {
+  },"68": {
     "doc": "제작 일지 <5>",
     "title": "제작 일지 <5>",
     "content": " ",
     "url": "/docs/projects/pongdang/230725/",
     
     "relUrl": "/docs/projects/pongdang/230725/"
-  },"65": {
+  },"69": {
     "doc": "제작 일지 <6>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;6&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230731/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-6",
     
     "relUrl": "/docs/projects/pongdang/230731/#퐁당-웹-매거진-프로젝트-제작-일지-6"
-  },"66": {
+  },"70": {
     "doc": "제작 일지 <6>",
     "title": "2023.07.31 (MON)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230731/#20230731-mon",
     
     "relUrl": "/docs/projects/pongdang/230731/#20230731-mon"
-  },"67": {
+  },"71": {
     "doc": "제작 일지 <6>",
     "title": "1. 슬라이드 재조정",
     "content": "사이드 버튼들을 투명화 시켜, 조금 더 자연스럽게 만들어 준다. ",
     "url": "/docs/projects/pongdang/230731/#1-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C-%EC%9E%AC%EC%A1%B0%EC%A0%95",
     
     "relUrl": "/docs/projects/pongdang/230731/#1-슬라이드-재조정"
-  },"68": {
+  },"72": {
     "doc": "제작 일지 <6>",
     "title": "제작 일지 <6>",
     "content": " ",
     "url": "/docs/projects/pongdang/230731/",
     
     "relUrl": "/docs/projects/pongdang/230731/"
-  },"69": {
+  },"73": {
     "doc": "TIL (23-07-31)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230731/#til",
     
     "relUrl": "/docs/tils/230731/#til"
-  },"70": {
+  },"74": {
     "doc": "TIL (23-07-31)",
     "title": "2023.07.25 (MON)",
     "content": ". 📌  오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 어꺠 | . ",
     "url": "/docs/tils/230731/#20230725-mon",
     
     "relUrl": "/docs/tils/230731/#20230725-mon"
-  },"71": {
+  },"75": {
     "doc": "TIL (23-07-31)",
     "title": "TIL (23-07-31)",
     "content": " ",
     "url": "/docs/tils/230731/",
     
     "relUrl": "/docs/tils/230731/"
-  },"72": {
+  },"76": {
     "doc": "TIL (23-08-08)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230808/#til",
     
     "relUrl": "/docs/tils/230808/#til"
-  },"73": {
+  },"77": {
     "doc": "TIL (23-08-08)",
     "title": "2023.08.08 (TUE)",
     "content": ". 📔 To Do . | 1일 1코테연습 | 책 “오브젝트” | 퐁당 매거진 프로젝트 | . 📌  오늘의 TIL . | !! | . ✏️  오늘의 체크 사항 . | 운동 - 어꺠 | . ",
     "url": "/docs/tils/230808/#20230808-tue",
     
     "relUrl": "/docs/tils/230808/#20230808-tue"
-  },"74": {
+  },"78": {
     "doc": "TIL (23-08-08)",
     "title": "TIL (23-08-08)",
     "content": " ",
     "url": "/docs/tils/230808/",
     
     "relUrl": "/docs/tils/230808/"
-  },"75": {
+  },"79": {
     "doc": "Hoooon22's Log",
     "title": "Hoooon22’s Log",
     "content": "Web &amp; Server Delveloper . ",
     "url": "/#hoooon22s-log",
     
     "relUrl": "/#hoooon22s-log"
-  },"76": {
+  },"80": {
     "doc": "Hoooon22's Log",
     "title": "Hoooon22's Log",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"77": {
+  },"81": {
+    "doc": "오브젝트",
+    "title": "Obejct &amp; OOP",
+    "content": " ",
+    "url": "/docs/studies/object/#obejct--oop",
+    
+    "relUrl": "/docs/studies/object/#obejct--oop"
+  },"82": {
+    "doc": "오브젝트",
+    "title": "This Page has been written since August 08, 2023.",
+    "content": "참고 서적 : “오브젝트”, 조영호 . ",
+    "url": "/docs/studies/object/#this-page-has-been-written-since-august-08-2023",
+    
+    "relUrl": "/docs/studies/object/#this-page-has-been-written-since-august-08-2023"
+  },"83": {
+    "doc": "오브젝트",
+    "title": "오브젝트",
+    "content": " ",
+    "url": "/docs/studies/object/",
+    
+    "relUrl": "/docs/studies/object/"
+  },"84": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "Project - 퐁당 웹 매거진 프로젝트 Ver.02",
     "content": " ",
     "url": "/docs/projects/pongdang/#project---%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-ver02",
     
     "relUrl": "/docs/projects/pongdang/#project---퐁당-웹-매거진-프로젝트-ver02"
-  },"78": {
+  },"85": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "Project has been written since July 1, 2023.",
     "content": ". | Links | . 퐁당 웹 매거진 프로젝트 Ver.01 제작 일지 . 퐁당 웹 매거진 프로젝트 Ver.01 Github(private) . 퐁당 웹 매거진 프로젝트 Ver.02 제작 일지 . 퐁당 웹 매거진 프로젝트 Ver.02 Github(public) . ",
     "url": "/docs/projects/pongdang/#project-has-been-written-since-july-1-2023",
     
     "relUrl": "/docs/projects/pongdang/#project-has-been-written-since-july-1-2023"
-  },"79": {
+  },"86": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "퐁당 웹 매거진 프로젝트",
     "content": " ",
     "url": "/docs/projects/pongdang/",
     
     "relUrl": "/docs/projects/pongdang/"
-  },"80": {
+  },"87": {
     "doc": "Portfolio",
     "title": "Portfolio",
     "content": "Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages. ",
     "url": "/docs/portfolio/",
     
     "relUrl": "/docs/portfolio/"
-  },"81": {
+  },"88": {
     "doc": "Portfolio",
     "title": "🙋🏻 Profile",
     "content": ". 학력 . | 동국대학교 컴퓨터공학과 (2018.03 ~ 2023.02) | . 기타 . | 동국대학교 인간-로봇 상호작용 연구실 학부연구생 (2019.07 ~ 2021.04) | . 웹 제작 &amp; 서버 &amp; 데이터베이스 프로그래밍 개발자를 희망하는 ‘거북이🐢’ 김지훈입니다. 앞으로 나아가는 속도는 느릴지라도, 쓰러지지 않는 단단함을 지녔습니다. 저의 프로그램과 서비스로 모두에게 행복함을 선물할 수 있는 개발자가 될 것입니다. ",
     "url": "/docs/portfolio/#profile",
     
     "relUrl": "/docs/portfolio/#profile"
-  },"82": {
+  },"89": {
     "doc": "Portfolio",
     "title": "⚒️ Skills",
     "content": "역량의 전문성에 따라 상 · 중 · 하 수준으로 분류하였습니다. 각 항목을 누르면 상세 내용을 확인할 수 있습니다. Hard Skills . Soft Skills . Tools . | Backend | Database . MySQL . ORACLE . | Frontend . HTML . CSS . Javascript . React . | DevOps . Docker . | 커뮤니케이션 스킬 | 책임감 | 협업 능력 | 리더십 | 유연성 | 체계성 . | C/C++ | Java/Spring | HTML/CSS/JS | Python | Node.js | MySQL | ORACLE | Linux | Docker | Unity | AWS | . ",
     "url": "/docs/portfolio/#%EF%B8%8F-skills",
     
     "relUrl": "/docs/portfolio/#️-skills"
-  },"83": {
+  },"90": {
     "doc": "Portfolio",
     "title": "💻 Projects",
     "content": "지금까지 진행했던 프로젝트를 최신순으로 구성했습니다. 각 이미지를 클릭하면, 해당 프로젝트에 대한 상세 내용을 확인할 수 있습니다. ",
     "url": "/docs/portfolio/#-projects",
     
     "relUrl": "/docs/portfolio/#-projects"
-  },"84": {
+  },"91": {
     "doc": "Portfolio",
     "title": "🕶️ Github &amp; Study",
     "content": " ",
     "url": "/docs/portfolio/#%EF%B8%8Fgithub--study",
     
     "relUrl": "/docs/portfolio/#️github--study"
-  },"85": {
+  },"92": {
     "doc": "Portfolio",
     "title": "Github &amp; Site",
     "content": "Github . 거북이처럼 코딩해도 괜찮으려나 → 2022/05/18 부터 Notion으로 이전 . Hoooon22’s Log → 2023/06/29 부터 github.io으로 이전 . ",
     "url": "/docs/portfolio/#github--site",
     
     "relUrl": "/docs/portfolio/#github--site"
-  },"86": {
+  },"93": {
     "doc": "Portfolio",
     "title": "Previous Study",
     "content": "TIL(Today I Learned) . 개인 개발 &amp; 공부 . 매거진 퐁당 웹사이트 제작 . ",
     "url": "/docs/portfolio/#previous-study",
     
     "relUrl": "/docs/portfolio/#previous-study"
-  },"87": {
+  },"94": {
     "doc": "Portfolio",
     "title": "💬 Contact",
     "content": "📧 momo990305@gmail.com . 📞 +82 10-3820-7501 . 🏠 경기도 화성시 . ",
     "url": "/docs/portfolio/#contact",
     
     "relUrl": "/docs/portfolio/#contact"
-  },"88": {
+  },"95": {
     "doc": "Projects",
     "title": "Project",
     "content": "Project has been written since July 1, 2023. ",
     "url": "/docs/projects#project",
     
     "relUrl": "/docs/projects#project"
-  },"89": {
+  },"96": {
     "doc": "Projects",
     "title": "Projects",
     "content": " ",
     "url": "/docs/projects",
     
     "relUrl": "/docs/projects"
-  },"90": {
+  },"97": {
     "doc": "STUDY",
     "title": "공부",
     "content": "This Page has been written since July 17, 2023. ",
     "url": "/docs/studies#%EA%B3%B5%EB%B6%80",
     
     "relUrl": "/docs/studies#공부"
-  },"91": {
+  },"98": {
     "doc": "STUDY",
     "title": "STUDY",
     "content": " ",
     "url": "/docs/studies",
     
     "relUrl": "/docs/studies"
-  },"92": {
+  },"99": {
     "doc": "TIL",
     "title": "Today I Learned",
     "content": "TIL has been written since July 1, 2023. ",
     "url": "/docs/tils#today-i-learned",
     
     "relUrl": "/docs/tils#today-i-learned"
-  },"93": {
+  },"100": {
     "doc": "TIL",
     "title": "TIL",
     "content": " ",
