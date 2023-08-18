@@ -244,61 +244,61 @@
     
     "relUrl": "/docs/tils/230711/"
   },"35": {
-    "doc": "제작 일지 <3>",
-    "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;3&gt;",
-    "content": " ",
-    "url": "/docs/projects/pongdang/230713/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-3",
-    
-    "relUrl": "/docs/projects/pongdang/230713/#퐁당-웹-매거진-프로젝트-제작-일지-3"
-  },"36": {
-    "doc": "제작 일지 <3>",
-    "title": "2023.07.13 (THU)",
-    "content": ". ",
-    "url": "/docs/projects/pongdang/230713/#20230713-thu",
-    
-    "relUrl": "/docs/projects/pongdang/230713/#20230713-thu"
-  },"37": {
-    "doc": "제작 일지 <3>",
-    "title": "1. Font CSS 적용",
-    "content": " ",
-    "url": "/docs/projects/pongdang/230713/#1-font-css-%EC%A0%81%EC%9A%A9",
-    
-    "relUrl": "/docs/projects/pongdang/230713/#1-font-css-적용"
-  },"38": {
-    "doc": "제작 일지 <3>",
-    "title": "2. 부트스트랩 라이브러리 적용",
-    "content": " ",
-    "url": "/docs/projects/pongdang/230713/#2-%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%A0%81%EC%9A%A9",
-    
-    "relUrl": "/docs/projects/pongdang/230713/#2-부트스트랩-라이브러리-적용"
-  },"39": {
-    "doc": "제작 일지 <3>",
-    "title": "제작 일지 <3>",
-    "content": " ",
-    "url": "/docs/projects/pongdang/230713/",
-    
-    "relUrl": "/docs/projects/pongdang/230713/"
-  },"40": {
     "doc": "TIL (23-07-13)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230713/#til",
     
     "relUrl": "/docs/tils/230713/#til"
-  },"41": {
+  },"36": {
     "doc": "TIL (23-07-13)",
     "title": "2023.07.13 (THU)",
     "content": ". 📌  오늘의 TIL . | 😵‍💫 코테 연습 . | 과제 진행하기 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 어깨 | . ",
     "url": "/docs/tils/230713/#20230713-thu",
     
     "relUrl": "/docs/tils/230713/#20230713-thu"
-  },"42": {
+  },"37": {
     "doc": "TIL (23-07-13)",
     "title": "TIL (23-07-13)",
     "content": " ",
     "url": "/docs/tils/230713/",
     
     "relUrl": "/docs/tils/230713/"
+  },"38": {
+    "doc": "제작 일지 <3>",
+    "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;3&gt;",
+    "content": " ",
+    "url": "/docs/projects/pongdang/230713/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-3",
+    
+    "relUrl": "/docs/projects/pongdang/230713/#퐁당-웹-매거진-프로젝트-제작-일지-3"
+  },"39": {
+    "doc": "제작 일지 <3>",
+    "title": "2023.07.13 (THU)",
+    "content": ". ",
+    "url": "/docs/projects/pongdang/230713/#20230713-thu",
+    
+    "relUrl": "/docs/projects/pongdang/230713/#20230713-thu"
+  },"40": {
+    "doc": "제작 일지 <3>",
+    "title": "1. Font CSS 적용",
+    "content": " ",
+    "url": "/docs/projects/pongdang/230713/#1-font-css-%EC%A0%81%EC%9A%A9",
+    
+    "relUrl": "/docs/projects/pongdang/230713/#1-font-css-적용"
+  },"41": {
+    "doc": "제작 일지 <3>",
+    "title": "2. 부트스트랩 라이브러리 적용",
+    "content": " ",
+    "url": "/docs/projects/pongdang/230713/#2-%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%A0%81%EC%9A%A9",
+    
+    "relUrl": "/docs/projects/pongdang/230713/#2-부트스트랩-라이브러리-적용"
+  },"42": {
+    "doc": "제작 일지 <3>",
+    "title": "제작 일지 <3>",
+    "content": " ",
+    "url": "/docs/projects/pongdang/230713/",
+    
+    "relUrl": "/docs/projects/pongdang/230713/"
   },"43": {
     "doc": "제작 일지 <4>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;4&gt;",
@@ -489,54 +489,54 @@
     
     "relUrl": "/docs/projects/pongdang/230725/"
   },"70": {
-    "doc": "TIL (23-07-31)",
-    "title": "TIL",
-    "content": " ",
-    "url": "/docs/tils/230731/#til",
-    
-    "relUrl": "/docs/tils/230731/#til"
-  },"71": {
-    "doc": "TIL (23-07-31)",
-    "title": "2023.07.25 (MON)",
-    "content": ". 📌  오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 어꺠 | . ",
-    "url": "/docs/tils/230731/#20230725-mon",
-    
-    "relUrl": "/docs/tils/230731/#20230725-mon"
-  },"72": {
-    "doc": "TIL (23-07-31)",
-    "title": "TIL (23-07-31)",
-    "content": " ",
-    "url": "/docs/tils/230731/",
-    
-    "relUrl": "/docs/tils/230731/"
-  },"73": {
     "doc": "제작 일지 <6>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;6&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230731/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-6",
     
     "relUrl": "/docs/projects/pongdang/230731/#퐁당-웹-매거진-프로젝트-제작-일지-6"
-  },"74": {
+  },"71": {
     "doc": "제작 일지 <6>",
     "title": "2023.07.31 (MON)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230731/#20230731-mon",
     
     "relUrl": "/docs/projects/pongdang/230731/#20230731-mon"
-  },"75": {
+  },"72": {
     "doc": "제작 일지 <6>",
     "title": "1. 슬라이드 재조정",
     "content": "사이드 버튼들을 투명화 시켜, 조금 더 자연스럽게 만들어 준다. ",
     "url": "/docs/projects/pongdang/230731/#1-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C-%EC%9E%AC%EC%A1%B0%EC%A0%95",
     
     "relUrl": "/docs/projects/pongdang/230731/#1-슬라이드-재조정"
-  },"76": {
+  },"73": {
     "doc": "제작 일지 <6>",
     "title": "제작 일지 <6>",
     "content": " ",
     "url": "/docs/projects/pongdang/230731/",
     
     "relUrl": "/docs/projects/pongdang/230731/"
+  },"74": {
+    "doc": "TIL (23-07-31)",
+    "title": "TIL",
+    "content": " ",
+    "url": "/docs/tils/230731/#til",
+    
+    "relUrl": "/docs/tils/230731/#til"
+  },"75": {
+    "doc": "TIL (23-07-31)",
+    "title": "2023.07.25 (MON)",
+    "content": ". 📌  오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 어꺠 | . ",
+    "url": "/docs/tils/230731/#20230725-mon",
+    
+    "relUrl": "/docs/tils/230731/#20230725-mon"
+  },"76": {
+    "doc": "TIL (23-07-31)",
+    "title": "TIL (23-07-31)",
+    "content": " ",
+    "url": "/docs/tils/230731/",
+    
+    "relUrl": "/docs/tils/230731/"
   },"77": {
     "doc": "TIL (23-08-08)",
     "title": "TIL",
@@ -608,153 +608,265 @@
     
     "relUrl": "/docs/tils/230816/"
   },"87": {
+    "doc": "TIL (23-08-19)",
+    "title": "TIL",
+    "content": " ",
+    "url": "/docs/tils/230819/#til",
+    
+    "relUrl": "/docs/tils/230819/#til"
+  },"88": {
+    "doc": "TIL (23-08-19)",
+    "title": "2023.08.19 (SAT)",
+    "content": ". 📔 To Do (반드시!!) . | 1일 1코테연습 | AWS 자격증 시험 | 책 “오브젝트” | 퐁당 매거진 프로젝트 (업로드 사항 있을 경우) | . 😄 Want To Do (하고 싶은 것) . | 게임 서버 개발 . | 프로젝트 계획 | . | 마인크래프트 코드 개조 해보기 | 깃헙 블로그 포트폴리오 | 지원서 넣기 | . ",
+    "url": "/docs/tils/230819/#20230819-sat",
+    
+    "relUrl": "/docs/tils/230819/#20230819-sat"
+  },"89": {
+    "doc": "TIL (23-08-19)",
+    "title": "TIL (23-08-19)",
+    "content": " ",
+    "url": "/docs/tils/230819/",
+    
+    "relUrl": "/docs/tils/230819/"
+  },"90": {
+    "doc": "이론 일지 <1>",
+    "title": "게임 서버 토이 프로젝트 - 이론 일지 &lt;1&gt;",
+    "content": " ",
+    "url": "/docs/projects/gameServer/230819/#%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84-%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%EC%9D%B4%EB%A1%A0-%EC%9D%BC%EC%A7%80-1",
+    
+    "relUrl": "/docs/projects/gameServer/230819/#게임-서버-토이-프로젝트---이론-일지-1"
+  },"91": {
+    "doc": "이론 일지 <1>",
+    "title": "2023.08.19 (SAT)",
+    "content": ". ",
+    "url": "/docs/projects/gameServer/230819/#20230819-sat",
+    
+    "relUrl": "/docs/projects/gameServer/230819/#20230819-sat"
+  },"92": {
+    "doc": "이론 일지 <1>",
+    "title": "1. 프로세스",
+    "content": "프로그램에 있는 코드와 데이터를 프로세스 메모리로 불러들이는데, 이를 로딩된다고 할 수 있다. 프로세스는 RAM에 있다. 프로세스가 여러 개 실행되고 있는 것을 멀티프로세싱이라고 한다. ",
+    "url": "/docs/projects/gameServer/230819/#1-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4",
+    
+    "relUrl": "/docs/projects/gameServer/230819/#1-프로세스"
+  },"93": {
+    "doc": "이론 일지 <1>",
+    "title": "2. 스레드",
+    "content": "기본 적으로 서로 다른 프로세스는 상대방의 메모리 공간을 읽고 쓸 수 없다. 하미잔, 한 프로세스 안에 있는 스레드들은, 프로세스 안에 있는 메모리 공간을 같이 사용할 수 있다. 스레드 = 프로그램이 실행되는 기본 단위 . ",
+    "url": "/docs/projects/gameServer/230819/#2-%EC%8A%A4%EB%A0%88%EB%93%9C",
+    
+    "relUrl": "/docs/projects/gameServer/230819/#2-스레드"
+  },"94": {
+    "doc": "이론 일지 <1>",
+    "title": "이론 일지 <1>",
+    "content": " ",
+    "url": "/docs/projects/gameServer/230819/",
+    
+    "relUrl": "/docs/projects/gameServer/230819/"
+  },"95": {
+    "doc": "프로젝트 계획",
+    "title": "게임 서버 토이 프로젝트 - 프로젝트 계획",
+    "content": " ",
+    "url": "/docs/projects/gameServer/230819_2/#%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84-%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%84%ED%9A%8D",
+    
+    "relUrl": "/docs/projects/gameServer/230819_2/#게임-서버-토이-프로젝트---프로젝트-계획"
+  },"96": {
+    "doc": "프로젝트 계획",
+    "title": "2023.08.19 (SAT)",
+    "content": ". ",
+    "url": "/docs/projects/gameServer/230819_2/#20230819-sat",
+    
+    "relUrl": "/docs/projects/gameServer/230819_2/#20230819-sat"
+  },"97": {
+    "doc": "프로젝트 계획",
+    "title": "프레임워크",
+    "content": "서버(스프링부트) + 게임 프레임워크(LibGDX, 일단 써보기) . ",
+    "url": "/docs/projects/gameServer/230819_2/#%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC",
+    
+    "relUrl": "/docs/projects/gameServer/230819_2/#프레임워크"
+  },"98": {
+    "doc": "프로젝트 계획",
+    "title": "순서",
+    "content": ". | 스프링 부트 프로젝트 생성: 우선 스프링 부트 프로젝트를 생성합니다. Spring Initializr를 이용하면 간단하게 프로젝트를 생성할 수 있습니다. https://start.spring.io/ | 게임 개발 프레임워크 선택: 자바 게임 개발에서는 여러 가지 프레임워크와 라이브러리를 사용할 수 있습니다. 대표적인 예로는 LibGDX, jMonkeyEngine, LWJGL 등이 있습니다. 이 중에서 가장 인기 있는 LibGDX를 선택하고 해당 라이브러리를 스프링 부트 프로젝트에 포함시킵니다. | 게임 API 연결: 선택한 게임 프레임워크의 API를 스프링 부트에 연결합니다. 이를 위해서는 라이브러리를 확인하고 관련 API 연동 방법을 찾아보는 것이 좋습니다. | 게임 서버 개발: 스프링 부트를 이용하여 게임 서버를 구현합니다. 게임 프레임워크에서 제공하는 서버 기능을 활용하여 스프링 부트 서버와 연동합니다. | 게임 클라이언트 개발: 게임 클라이언트에서는 개발한 스프링 부트 서버와 통신하여 게임을 실행합니다. HTTP와 WebSocket을 이용하여 통신할 수 있습니다. | 요청과 응답 처리: 게임 클라이언트에서 서버로 요청을 보내고, 서버에서는 그에 대한 응답을 처리합니다. 스프링 부트에서 HTTP 요청 및 WebSocket 연결을 처리하는 Controller를 개발하면 됩니다. 이러한 방법으로 스프링 부트와 자바 게임 개발을 연결할 수 있습니다. 하지만, 이는 어려운 작업이므로 충분한 경험과 지식이 필요합니다. 또한, 자바 게임 개발과 스프링 부트가 서로 다른 도메인이므로 그에 따른 요구사항과 성능 이슈 등을 고려해야 합니다. | . ",
+    "url": "/docs/projects/gameServer/230819_2/#%EC%88%9C%EC%84%9C",
+    
+    "relUrl": "/docs/projects/gameServer/230819_2/#순서"
+  },"99": {
+    "doc": "프로젝트 계획",
+    "title": "프로젝트 계획",
+    "content": " ",
+    "url": "/docs/projects/gameServer/230819_2/",
+    
+    "relUrl": "/docs/projects/gameServer/230819_2/"
+  },"100": {
+    "doc": "게임 서버 토이 프로젝트",
+    "title": "Project - 게임 서버 토이 프로젝트",
+    "content": " ",
+    "url": "/docs/projects/gameServer/#project---%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84-%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8",
+    
+    "relUrl": "/docs/projects/gameServer/#project---게임-서버-토이-프로젝트"
+  },"101": {
+    "doc": "게임 서버 토이 프로젝트",
+    "title": "Project has been written since Aug 19, 2023.",
+    "content": ". 게임 서버 토이 프로젝트 입니다. ",
+    "url": "/docs/projects/gameServer/#project-has-been-written-since-aug-19-2023",
+    
+    "relUrl": "/docs/projects/gameServer/#project-has-been-written-since-aug-19-2023"
+  },"102": {
+    "doc": "게임 서버 토이 프로젝트",
+    "title": "게임 서버 토이 프로젝트",
+    "content": " ",
+    "url": "/docs/projects/gameServer/",
+    
+    "relUrl": "/docs/projects/gameServer/"
+  },"103": {
     "doc": "Hoooon22's Log",
     "title": "Hoooon22’s Log",
     "content": "Web &amp; Server Delveloper . ",
     "url": "/#hoooon22s-log",
     
     "relUrl": "/#hoooon22s-log"
-  },"88": {
+  },"104": {
     "doc": "Hoooon22's Log",
     "title": "Hoooon22's Log",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"89": {
+  },"105": {
     "doc": "오브젝트",
     "title": "Obejct &amp; OOP",
     "content": " ",
     "url": "/docs/studies/object/#obejct--oop",
     
     "relUrl": "/docs/studies/object/#obejct--oop"
-  },"90": {
+  },"106": {
     "doc": "오브젝트",
     "title": "This Page has been written since August 08, 2023.",
     "content": "참고 서적 : “오브젝트”, 조영호 . ",
     "url": "/docs/studies/object/#this-page-has-been-written-since-august-08-2023",
     
     "relUrl": "/docs/studies/object/#this-page-has-been-written-since-august-08-2023"
-  },"91": {
+  },"107": {
     "doc": "오브젝트",
     "title": "오브젝트",
     "content": " ",
     "url": "/docs/studies/object/",
     
     "relUrl": "/docs/studies/object/"
-  },"92": {
+  },"108": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "Project - 퐁당 웹 매거진 프로젝트 Ver.02",
     "content": " ",
     "url": "/docs/projects/pongdang/#project---%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-ver02",
     
     "relUrl": "/docs/projects/pongdang/#project---퐁당-웹-매거진-프로젝트-ver02"
-  },"93": {
+  },"109": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "Project has been written since July 1, 2023.",
     "content": ". | Links | . 퐁당 웹 매거진 프로젝트 Ver.01 제작 일지 . 퐁당 웹 매거진 프로젝트 Ver.01 Github(private) . 퐁당 웹 매거진 프로젝트 Ver.02 제작 일지 . 퐁당 웹 매거진 프로젝트 Ver.02 Github(public) . ",
     "url": "/docs/projects/pongdang/#project-has-been-written-since-july-1-2023",
     
     "relUrl": "/docs/projects/pongdang/#project-has-been-written-since-july-1-2023"
-  },"94": {
+  },"110": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "퐁당 웹 매거진 프로젝트",
     "content": " ",
     "url": "/docs/projects/pongdang/",
     
     "relUrl": "/docs/projects/pongdang/"
-  },"95": {
+  },"111": {
     "doc": "Portfolio",
     "title": "Portfolio",
     "content": "Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages. ",
     "url": "/docs/portfolio/",
     
     "relUrl": "/docs/portfolio/"
-  },"96": {
+  },"112": {
     "doc": "Portfolio",
     "title": "🙋🏻 Profile",
     "content": ". 학력 . | 동국대학교 컴퓨터공학과 (2018.03 ~ 2023.02) | . 기타 . | 동국대학교 인간-로봇 상호작용 연구실 학부연구생 (2019.07 ~ 2021.04) | . 웹 제작 &amp; 서버 &amp; 데이터베이스 프로그래밍 개발자를 희망하는 ‘거북이🐢’ 김지훈입니다. 앞으로 나아가는 속도는 느릴지라도, 쓰러지지 않는 단단함을 지녔습니다. 저의 프로그램과 서비스로 모두에게 행복함을 선물할 수 있는 개발자가 될 것입니다. ",
     "url": "/docs/portfolio/#profile",
     
     "relUrl": "/docs/portfolio/#profile"
-  },"97": {
+  },"113": {
     "doc": "Portfolio",
     "title": "⚒️ Skills",
     "content": "역량의 전문성에 따라 상 · 중 · 하 수준으로 분류하였습니다. 각 항목을 누르면 상세 내용을 확인할 수 있습니다. Hard Skills . Soft Skills . Tools . | Backend | Database . MySQL . ORACLE . | Frontend . HTML . CSS . Javascript . React . | DevOps . Docker . | 커뮤니케이션 스킬 | 책임감 | 협업 능력 | 리더십 | 유연성 | 체계성 . | C/C++ | Java/Spring | HTML/CSS/JS | Python | Node.js | MySQL | ORACLE | Linux | Docker | Unity | AWS | . ",
     "url": "/docs/portfolio/#%EF%B8%8F-skills",
     
     "relUrl": "/docs/portfolio/#️-skills"
-  },"98": {
+  },"114": {
     "doc": "Portfolio",
     "title": "💻 Projects",
     "content": "지금까지 진행했던 프로젝트를 최신순으로 구성했습니다. 각 이미지를 클릭하면, 해당 프로젝트에 대한 상세 내용을 확인할 수 있습니다. ",
     "url": "/docs/portfolio/#-projects",
     
     "relUrl": "/docs/portfolio/#-projects"
-  },"99": {
+  },"115": {
     "doc": "Portfolio",
     "title": "🕶️ Github &amp; Study",
     "content": " ",
     "url": "/docs/portfolio/#%EF%B8%8Fgithub--study",
     
     "relUrl": "/docs/portfolio/#️github--study"
-  },"100": {
+  },"116": {
     "doc": "Portfolio",
     "title": "Github &amp; Site",
     "content": "Github . 거북이처럼 코딩해도 괜찮으려나 → 2022/05/18 부터 Notion으로 이전 . Hoooon22’s Log → 2023/06/29 부터 github.io으로 이전 . ",
     "url": "/docs/portfolio/#github--site",
     
     "relUrl": "/docs/portfolio/#github--site"
-  },"101": {
+  },"117": {
     "doc": "Portfolio",
     "title": "Previous Study",
     "content": "TIL(Today I Learned) . 개인 개발 &amp; 공부 . 매거진 퐁당 웹사이트 제작 . ",
     "url": "/docs/portfolio/#previous-study",
     
     "relUrl": "/docs/portfolio/#previous-study"
-  },"102": {
+  },"118": {
     "doc": "Portfolio",
     "title": "💬 Contact",
     "content": "📧 momo990305@gmail.com . 📞 +82 10-3820-7501 . 🏠 경기도 화성시 . ",
     "url": "/docs/portfolio/#contact",
     
     "relUrl": "/docs/portfolio/#contact"
-  },"103": {
+  },"119": {
     "doc": "Projects",
     "title": "Project",
     "content": "Project has been written since July 1, 2023. ",
     "url": "/docs/projects#project",
     
     "relUrl": "/docs/projects#project"
-  },"104": {
+  },"120": {
     "doc": "Projects",
     "title": "Projects",
     "content": " ",
     "url": "/docs/projects",
     
     "relUrl": "/docs/projects"
-  },"105": {
+  },"121": {
     "doc": "STUDY",
     "title": "공부",
     "content": "This Page has been written since July 17, 2023. ",
     "url": "/docs/studies#%EA%B3%B5%EB%B6%80",
     
     "relUrl": "/docs/studies#공부"
-  },"106": {
+  },"122": {
     "doc": "STUDY",
     "title": "STUDY",
     "content": " ",
     "url": "/docs/studies",
     
     "relUrl": "/docs/studies"
-  },"107": {
+  },"123": {
     "doc": "TIL",
     "title": "Today I Learned",
     "content": "TIL has been written since July 1, 2023. ",
     "url": "/docs/tils#today-i-learned",
     
     "relUrl": "/docs/tils#today-i-learned"
-  },"108": {
+  },"124": {
     "doc": "TIL",
     "title": "TIL",
     "content": " ",
