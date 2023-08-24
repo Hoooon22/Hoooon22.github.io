@@ -132,68 +132,68 @@
     
     "relUrl": "/docs/tils/230702/"
   },"19": {
-    "doc": "TIL (23-07-06)",
-    "title": "TIL",
-    "content": " ",
-    "url": "/docs/tils/230706/#til",
-    
-    "relUrl": "/docs/tils/230706/#til"
-  },"20": {
-    "doc": "TIL (23-07-06)",
-    "title": "2023.07.06 (THU)",
-    "content": ". 📌 오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 회의 | 오늘의 제작 일지 | . | . ✏️ 오늘의 체크 사항 . | 운동 - 등 | . ",
-    "url": "/docs/tils/230706/#20230706-thu",
-    
-    "relUrl": "/docs/tils/230706/#20230706-thu"
-  },"21": {
-    "doc": "TIL (23-07-06)",
-    "title": "TIL (23-07-06)",
-    "content": " ",
-    "url": "/docs/tils/230706/",
-    
-    "relUrl": "/docs/tils/230706/"
-  },"22": {
     "doc": "제작 일지 <2>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;2&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230706/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-2",
     
     "relUrl": "/docs/projects/pongdang/230706/#퐁당-웹-매거진-프로젝트-제작-일지-2"
-  },"23": {
+  },"20": {
     "doc": "제작 일지 <2>",
     "title": "2023.07.06 (THU)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230706/#20230706-thu",
     
     "relUrl": "/docs/projects/pongdang/230706/#20230706-thu"
-  },"24": {
+  },"21": {
     "doc": "제작 일지 <2>",
     "title": "1. 메뉴 ul margin 없애기",
     "content": ".menu ul { width : 100%; list-style-type: none; display: flex; flex-direction: row; justify-content: space-around; padding-inline-start: 0; } .menu li { text-align: center; } . padding-inline-start로 왼쪽의 padding을 없애주었다. ",
     "url": "/docs/projects/pongdang/230706/#1-%EB%A9%94%EB%89%B4-ul-margin-%EC%97%86%EC%95%A0%EA%B8%B0",
     
     "relUrl": "/docs/projects/pongdang/230706/#1-메뉴-ul-margin-없애기"
-  },"25": {
+  },"22": {
     "doc": "제작 일지 <2>",
     "title": "2. 기반 정리",
     "content": ". ",
     "url": "/docs/projects/pongdang/230706/#2-%EA%B8%B0%EB%B0%98-%EC%A0%95%EB%A6%AC",
     
     "relUrl": "/docs/projects/pongdang/230706/#2-기반-정리"
-  },"26": {
+  },"23": {
     "doc": "제작 일지 <2>",
     "title": "3. 이후 계획",
     "content": "css or js 라이버리를 사용하여, 슬라이드 및 애니메이션 효과를 적용하도록 한다. ",
     "url": "/docs/projects/pongdang/230706/#3-%EC%9D%B4%ED%9B%84-%EA%B3%84%ED%9A%8D",
     
     "relUrl": "/docs/projects/pongdang/230706/#3-이후-계획"
-  },"27": {
+  },"24": {
     "doc": "제작 일지 <2>",
     "title": "제작 일지 <2>",
     "content": " ",
     "url": "/docs/projects/pongdang/230706/",
     
     "relUrl": "/docs/projects/pongdang/230706/"
+  },"25": {
+    "doc": "TIL (23-07-06)",
+    "title": "TIL",
+    "content": " ",
+    "url": "/docs/tils/230706/#til",
+    
+    "relUrl": "/docs/tils/230706/#til"
+  },"26": {
+    "doc": "TIL (23-07-06)",
+    "title": "2023.07.06 (THU)",
+    "content": ". 📌 오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 회의 | 오늘의 제작 일지 | . | . ✏️ 오늘의 체크 사항 . | 운동 - 등 | . ",
+    "url": "/docs/tils/230706/#20230706-thu",
+    
+    "relUrl": "/docs/tils/230706/#20230706-thu"
+  },"27": {
+    "doc": "TIL (23-07-06)",
+    "title": "TIL (23-07-06)",
+    "content": " ",
+    "url": "/docs/tils/230706/",
+    
+    "relUrl": "/docs/tils/230706/"
   },"28": {
     "doc": "과제 진행하기",
     "title": "과제 진행하기",
@@ -244,61 +244,61 @@
     
     "relUrl": "/docs/tils/230711/"
   },"35": {
-    "doc": "TIL (23-07-13)",
-    "title": "TIL",
-    "content": " ",
-    "url": "/docs/tils/230713/#til",
-    
-    "relUrl": "/docs/tils/230713/#til"
-  },"36": {
-    "doc": "TIL (23-07-13)",
-    "title": "2023.07.13 (THU)",
-    "content": ". 📌  오늘의 TIL . | 😵‍💫 코테 연습 . | 과제 진행하기 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 어깨 | . ",
-    "url": "/docs/tils/230713/#20230713-thu",
-    
-    "relUrl": "/docs/tils/230713/#20230713-thu"
-  },"37": {
-    "doc": "TIL (23-07-13)",
-    "title": "TIL (23-07-13)",
-    "content": " ",
-    "url": "/docs/tils/230713/",
-    
-    "relUrl": "/docs/tils/230713/"
-  },"38": {
     "doc": "제작 일지 <3>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;3&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230713/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-3",
     
     "relUrl": "/docs/projects/pongdang/230713/#퐁당-웹-매거진-프로젝트-제작-일지-3"
-  },"39": {
+  },"36": {
     "doc": "제작 일지 <3>",
     "title": "2023.07.13 (THU)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230713/#20230713-thu",
     
     "relUrl": "/docs/projects/pongdang/230713/#20230713-thu"
-  },"40": {
+  },"37": {
     "doc": "제작 일지 <3>",
     "title": "1. Font CSS 적용",
     "content": " ",
     "url": "/docs/projects/pongdang/230713/#1-font-css-%EC%A0%81%EC%9A%A9",
     
     "relUrl": "/docs/projects/pongdang/230713/#1-font-css-적용"
-  },"41": {
+  },"38": {
     "doc": "제작 일지 <3>",
     "title": "2. 부트스트랩 라이브러리 적용",
     "content": " ",
     "url": "/docs/projects/pongdang/230713/#2-%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%A0%81%EC%9A%A9",
     
     "relUrl": "/docs/projects/pongdang/230713/#2-부트스트랩-라이브러리-적용"
-  },"42": {
+  },"39": {
     "doc": "제작 일지 <3>",
     "title": "제작 일지 <3>",
     "content": " ",
     "url": "/docs/projects/pongdang/230713/",
     
     "relUrl": "/docs/projects/pongdang/230713/"
+  },"40": {
+    "doc": "TIL (23-07-13)",
+    "title": "TIL",
+    "content": " ",
+    "url": "/docs/tils/230713/#til",
+    
+    "relUrl": "/docs/tils/230713/#til"
+  },"41": {
+    "doc": "TIL (23-07-13)",
+    "title": "2023.07.13 (THU)",
+    "content": ". 📌  오늘의 TIL . | 😵‍💫 코테 연습 . | 과제 진행하기 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 어깨 | . ",
+    "url": "/docs/tils/230713/#20230713-thu",
+    
+    "relUrl": "/docs/tils/230713/#20230713-thu"
+  },"42": {
+    "doc": "TIL (23-07-13)",
+    "title": "TIL (23-07-13)",
+    "content": " ",
+    "url": "/docs/tils/230713/",
+    
+    "relUrl": "/docs/tils/230713/"
   },"43": {
     "doc": "제작 일지 <4>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;4&gt;",
@@ -559,54 +559,54 @@
     
     "relUrl": "/docs/tils/230808/"
   },"80": {
-    "doc": "TIL (23-08-16)",
-    "title": "TIL",
-    "content": " ",
-    "url": "/docs/tils/230816/#til",
-    
-    "relUrl": "/docs/tils/230816/#til"
-  },"81": {
-    "doc": "TIL (23-08-16)",
-    "title": "2023.08.08 (WED)",
-    "content": ". 📔 To Do . | 1일 1코테연습 | 퐁당 매거진 프로젝트 | AWS 자격증 시험 | 책 “오브젝트” | . 📌  오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 가슴 | . ",
-    "url": "/docs/tils/230816/#20230808-wed",
-    
-    "relUrl": "/docs/tils/230816/#20230808-wed"
-  },"82": {
-    "doc": "TIL (23-08-16)",
-    "title": "TIL (23-08-16)",
-    "content": " ",
-    "url": "/docs/tils/230816/",
-    
-    "relUrl": "/docs/tils/230816/"
-  },"83": {
     "doc": "제작 일지 <7>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;7&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230816/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-7",
     
     "relUrl": "/docs/projects/pongdang/230816/#퐁당-웹-매거진-프로젝트-제작-일지-7"
-  },"84": {
+  },"81": {
     "doc": "제작 일지 <7>",
     "title": "2023.08.16 (WED)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230816/#20230816-wed",
     
     "relUrl": "/docs/projects/pongdang/230816/#20230816-wed"
-  },"85": {
+  },"82": {
     "doc": "제작 일지 <7>",
     "title": "1. 메인페이지 1차 완성",
     "content": ". | 퐁당 매거진 홈페이지 | . 전체적으로 사이즈를 키웠고, 요구사항에 맞는 디자인을 하였다. 새롭게 깨달은 점은, 리액트에서 컴포넌트를 모을 때, ClassName을 다른 모듈이더라도 같은 이름을 쓰면 안된다는 것이였다. 이것 때문에 충돌나서 헤맸던 적이.. ",
     "url": "/docs/projects/pongdang/230816/#1-%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80-1%EC%B0%A8-%EC%99%84%EC%84%B1",
     
     "relUrl": "/docs/projects/pongdang/230816/#1-메인페이지-1차-완성"
-  },"86": {
+  },"83": {
     "doc": "제작 일지 <7>",
     "title": "제작 일지 <7>",
     "content": " ",
     "url": "/docs/projects/pongdang/230816/",
     
     "relUrl": "/docs/projects/pongdang/230816/"
+  },"84": {
+    "doc": "TIL (23-08-16)",
+    "title": "TIL",
+    "content": " ",
+    "url": "/docs/tils/230816/#til",
+    
+    "relUrl": "/docs/tils/230816/#til"
+  },"85": {
+    "doc": "TIL (23-08-16)",
+    "title": "2023.08.08 (WED)",
+    "content": ". 📔 To Do . | 1일 1코테연습 | 퐁당 매거진 프로젝트 | AWS 자격증 시험 | 책 “오브젝트” | . 📌  오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 가슴 | . ",
+    "url": "/docs/tils/230816/#20230808-wed",
+    
+    "relUrl": "/docs/tils/230816/#20230808-wed"
+  },"86": {
+    "doc": "TIL (23-08-16)",
+    "title": "TIL (23-08-16)",
+    "content": " ",
+    "url": "/docs/tils/230816/",
+    
+    "relUrl": "/docs/tils/230816/"
   },"87": {
     "doc": "이론 일지 <1>",
     "title": "게임 서버 토이 프로젝트 - 이론 일지 &lt;1&gt;",
@@ -734,216 +734,251 @@
     
     "relUrl": "/docs/projects/gameServer/230819_2/"
   },"105": {
+    "doc": "GDX 프로젝트 생성 및 개발 시작",
+    "title": "게임 서버 토이 프로젝트 - 프로젝트 계획",
+    "content": " ",
+    "url": "/docs/projects/gameServer/230822/#%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84-%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%84%ED%9A%8D",
+    
+    "relUrl": "/docs/projects/gameServer/230822/#게임-서버-토이-프로젝트---프로젝트-계획"
+  },"106": {
+    "doc": "GDX 프로젝트 생성 및 개발 시작",
+    "title": "2023.08.22 (TUE)",
+    "content": ". ",
+    "url": "/docs/projects/gameServer/230822/#20230822-tue",
+    
+    "relUrl": "/docs/projects/gameServer/230822/#20230822-tue"
+  },"107": {
+    "doc": "GDX 프로젝트 생성 및 개발 시작",
+    "title": "기본 세팅 끝",
+    "content": " ",
+    "url": "/docs/projects/gameServer/230822/#%EA%B8%B0%EB%B3%B8-%EC%84%B8%ED%8C%85-%EB%81%9D",
+    
+    "relUrl": "/docs/projects/gameServer/230822/#기본-세팅-끝"
+  },"108": {
+    "doc": "GDX 프로젝트 생성 및 개발 시작",
+    "title": "개발 순서 설계",
+    "content": ". | 맵, 플레이어 만들기 | 서버 연결 (2023.08.24 ~) | . ",
+    "url": "/docs/projects/gameServer/230822/#%EA%B0%9C%EB%B0%9C-%EC%88%9C%EC%84%9C-%EC%84%A4%EA%B3%84",
+    
+    "relUrl": "/docs/projects/gameServer/230822/#개발-순서-설계"
+  },"109": {
+    "doc": "GDX 프로젝트 생성 및 개발 시작",
+    "title": "GDX 프로젝트 생성 및 개발 시작",
+    "content": " ",
+    "url": "/docs/projects/gameServer/230822/",
+    
+    "relUrl": "/docs/projects/gameServer/230822/"
+  },"110": {
     "doc": "AWS (SAA)",
     "title": "AWS 자격증 - AWS Solution Archtect-Associate (SAA)",
     "content": " ",
     "url": "/docs/studies/aws_saa/#aws-%EC%9E%90%EA%B2%A9%EC%A6%9D---aws-solution-archtect-associate-saa",
     
     "relUrl": "/docs/studies/aws_saa/#aws-자격증---aws-solution-archtect-associate-saa"
-  },"106": {
+  },"111": {
     "doc": "AWS (SAA)",
     "title": "This Page has been written since August 19, 2023.",
     "content": " ",
     "url": "/docs/studies/aws_saa/#this-page-has-been-written-since-august-19-2023",
     
     "relUrl": "/docs/studies/aws_saa/#this-page-has-been-written-since-august-19-2023"
-  },"107": {
+  },"112": {
     "doc": "AWS (SAA)",
     "title": "AWS (SAA)",
     "content": " ",
     "url": "/docs/studies/aws_saa/",
     
     "relUrl": "/docs/studies/aws_saa/"
-  },"108": {
+  },"113": {
     "doc": "게임 서버 토이 프로젝트",
     "title": "Project - 게임 서버 토이 프로젝트",
     "content": " ",
     "url": "/docs/projects/gameServer/#project---%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84-%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8",
     
     "relUrl": "/docs/projects/gameServer/#project---게임-서버-토이-프로젝트"
-  },"109": {
+  },"114": {
     "doc": "게임 서버 토이 프로젝트",
     "title": "Project has been written since Aug 19, 2023.",
     "content": ". 게임 서버 토이 프로젝트 입니다. ",
     "url": "/docs/projects/gameServer/#project-has-been-written-since-aug-19-2023",
     
     "relUrl": "/docs/projects/gameServer/#project-has-been-written-since-aug-19-2023"
-  },"110": {
+  },"115": {
     "doc": "게임 서버 토이 프로젝트",
     "title": "게임 서버 토이 프로젝트",
     "content": " ",
     "url": "/docs/projects/gameServer/",
     
     "relUrl": "/docs/projects/gameServer/"
-  },"111": {
+  },"116": {
     "doc": "Hoooon22's Log",
     "title": "Hoooon22’s Log",
     "content": "Web &amp; Server Delveloper . ",
     "url": "/#hoooon22s-log",
     
     "relUrl": "/#hoooon22s-log"
-  },"112": {
+  },"117": {
     "doc": "Hoooon22's Log",
     "title": "Hoooon22's Log",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"113": {
+  },"118": {
     "doc": "오브젝트",
     "title": "Obejct &amp; OOP",
     "content": " ",
     "url": "/docs/studies/object/#obejct--oop",
     
     "relUrl": "/docs/studies/object/#obejct--oop"
-  },"114": {
+  },"119": {
     "doc": "오브젝트",
     "title": "This Page has been written since August 08, 2023.",
     "content": "참고 서적 : “오브젝트”, 조영호 . ",
     "url": "/docs/studies/object/#this-page-has-been-written-since-august-08-2023",
     
     "relUrl": "/docs/studies/object/#this-page-has-been-written-since-august-08-2023"
-  },"115": {
+  },"120": {
     "doc": "오브젝트",
     "title": "오브젝트",
     "content": " ",
     "url": "/docs/studies/object/",
     
     "relUrl": "/docs/studies/object/"
-  },"116": {
+  },"121": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "Project - 퐁당 웹 매거진 프로젝트 Ver.02",
     "content": " ",
     "url": "/docs/projects/pongdang/#project---%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-ver02",
     
     "relUrl": "/docs/projects/pongdang/#project---퐁당-웹-매거진-프로젝트-ver02"
-  },"117": {
+  },"122": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "Project has been written since July 1, 2023.",
     "content": ". | Links | . 퐁당 웹 매거진 프로젝트 Ver.01 제작 일지 . 퐁당 웹 매거진 프로젝트 Ver.01 Github(private) . 퐁당 웹 매거진 프로젝트 Ver.02 제작 일지 . 퐁당 웹 매거진 프로젝트 Ver.02 Github(public) . ",
     "url": "/docs/projects/pongdang/#project-has-been-written-since-july-1-2023",
     
     "relUrl": "/docs/projects/pongdang/#project-has-been-written-since-july-1-2023"
-  },"118": {
+  },"123": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "퐁당 웹 매거진 프로젝트",
     "content": " ",
     "url": "/docs/projects/pongdang/",
     
     "relUrl": "/docs/projects/pongdang/"
-  },"119": {
+  },"124": {
     "doc": "Portfolio",
     "title": "Portfolio",
     "content": "Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages. ",
     "url": "/docs/portfolio/",
     
     "relUrl": "/docs/portfolio/"
-  },"120": {
+  },"125": {
     "doc": "Portfolio",
     "title": "🙋🏻 Profile",
     "content": ". 학력 . | 동국대학교 컴퓨터공학과 (2018.03 ~ 2023.02) | . 기타 . | 동국대학교 인간-로봇 상호작용 연구실 학부연구생 (2019.07 ~ 2021.04) | . 웹 제작 &amp; 서버 &amp; 데이터베이스 프로그래밍 개발자를 희망하는 ‘거북이🐢’ 김지훈입니다. 앞으로 나아가는 속도는 느릴지라도, 쓰러지지 않는 단단함을 지녔습니다. 저의 프로그램과 서비스로 모두에게 행복함을 선물할 수 있는 개발자가 될 것입니다. ",
     "url": "/docs/portfolio/#profile",
     
     "relUrl": "/docs/portfolio/#profile"
-  },"121": {
+  },"126": {
     "doc": "Portfolio",
     "title": "⚒️ Skills",
     "content": "역량의 전문성에 따라 상 · 중 · 하 수준으로 분류하였습니다. 각 항목을 누르면 상세 내용을 확인할 수 있습니다. Hard Skills . Soft Skills . Tools . | Backend | Database . MySQL . ORACLE . | Frontend . HTML . CSS . Javascript . React . | DevOps . Docker . | 커뮤니케이션 스킬 | 책임감 | 협업 능력 | 리더십 | 유연성 | 체계성 . | C/C++ | Java/Spring | HTML/CSS/JS | Python | Node.js | MySQL | ORACLE | Linux | Docker | Unity | AWS | . ",
     "url": "/docs/portfolio/#%EF%B8%8F-skills",
     
     "relUrl": "/docs/portfolio/#️-skills"
-  },"122": {
+  },"127": {
     "doc": "Portfolio",
     "title": "💻 Projects",
     "content": "지금까지 진행했던 프로젝트를 최신순으로 구성했습니다. 각 이미지를 클릭하면, 해당 프로젝트에 대한 상세 내용을 확인할 수 있습니다. ",
     "url": "/docs/portfolio/#-projects",
     
     "relUrl": "/docs/portfolio/#-projects"
-  },"123": {
+  },"128": {
     "doc": "Portfolio",
     "title": "🕶️ Github &amp; Study",
     "content": " ",
     "url": "/docs/portfolio/#%EF%B8%8Fgithub--study",
     
     "relUrl": "/docs/portfolio/#️github--study"
-  },"124": {
+  },"129": {
     "doc": "Portfolio",
     "title": "Github &amp; Site",
     "content": "Github . 거북이처럼 코딩해도 괜찮으려나 → 2022/05/18 부터 Notion으로 이전 . Hoooon22’s Log → 2023/06/29 부터 github.io으로 이전 . ",
     "url": "/docs/portfolio/#github--site",
     
     "relUrl": "/docs/portfolio/#github--site"
-  },"125": {
+  },"130": {
     "doc": "Portfolio",
     "title": "Previous Study",
     "content": "TIL(Today I Learned) . 개인 개발 &amp; 공부 . 매거진 퐁당 웹사이트 제작 . ",
     "url": "/docs/portfolio/#previous-study",
     
     "relUrl": "/docs/portfolio/#previous-study"
-  },"126": {
+  },"131": {
     "doc": "Portfolio",
     "title": "💬 Contact",
     "content": "📧 momo990305@gmail.com . 📞 +82 10-3820-7501 . 🏠 경기도 화성시 . ",
     "url": "/docs/portfolio/#contact",
     
     "relUrl": "/docs/portfolio/#contact"
-  },"127": {
+  },"132": {
     "doc": "Projects",
     "title": "Project",
     "content": "Project has been written since July 1, 2023. ",
     "url": "/docs/projects#project",
     
     "relUrl": "/docs/projects#project"
-  },"128": {
+  },"133": {
     "doc": "Projects",
     "title": "Projects",
     "content": " ",
     "url": "/docs/projects",
     
     "relUrl": "/docs/projects"
-  },"129": {
+  },"134": {
     "doc": "STUDY",
     "title": "공부",
     "content": "This Page has been written since July 17, 2023. ",
     "url": "/docs/studies#%EA%B3%B5%EB%B6%80",
     
     "relUrl": "/docs/studies#공부"
-  },"130": {
+  },"135": {
     "doc": "STUDY",
     "title": "STUDY",
     "content": " ",
     "url": "/docs/studies",
     
     "relUrl": "/docs/studies"
-  },"131": {
+  },"136": {
     "doc": "AWS 기초",
     "title": "AWS 기초",
     "content": " ",
     "url": "/docs/studies/aws_saa/summary/",
     
     "relUrl": "/docs/studies/aws_saa/summary/"
-  },"132": {
+  },"137": {
     "doc": "AWS 기초",
     "title": "2023.08.19 (SAT)",
     "content": ". ",
     "url": "/docs/studies/aws_saa/summary/#20230819-sat",
     
     "relUrl": "/docs/studies/aws_saa/summary/#20230819-sat"
-  },"133": {
+  },"138": {
     "doc": "AWS 기초",
     "title": "1. 온프라미스와 AWS 용어 비교",
     "content": "AWS는 아마존에서 온프레미스를 클라우드 서비스로 만든 것이다. 온프라미스(On-premise)란, 기업의 서버를 클라우드 같은 원격 환경에서 운영하는 방식이 아닌, 자체적으로 보유한 전산실 서버에 직접 설치해 운영하는 방식이다. – . 온프라미스 용어 = 클라우드 용어 . | 방화벽 = 보안그룹 | ACL = NACL . | ACL(Access Control List) : 허가되지 않은 이용자가 라우터나 네트워크의 특정 자원을 접근하려고 하는 것을 차단한다. | . | 관리자 권한 = IAM | L4, 로드 밸런서 = ELB(일라스틱 로드 밸런서), 탄력적인 로드 밸련서, ALB, … . | 로드 밸런서 : 서버에 가해지는 부사(=로드)를 분산(=밸런싱)해주는 장치 또는 기술 | . | 네트워크 = VPC . | . | . ",
     "url": "/docs/studies/aws_saa/summary/#1-%EC%98%A8%ED%94%84%EB%9D%BC%EB%AF%B8%EC%8A%A4%EC%99%80-aws-%EC%9A%A9%EC%96%B4-%EB%B9%84%EA%B5%90",
     
     "relUrl": "/docs/studies/aws_saa/summary/#1-온프라미스와-aws-용어-비교"
-  },"134": {
+  },"139": {
     "doc": "TIL",
     "title": "Today I Learned",
     "content": "TIL has been written since July 1, 2023. ",
     "url": "/docs/tils#today-i-learned",
     
     "relUrl": "/docs/tils#today-i-learned"
-  },"135": {
+  },"140": {
     "doc": "TIL",
     "title": "TIL",
     "content": " ",
