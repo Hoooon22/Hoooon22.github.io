@@ -120,3 +120,5 @@ API Gateway : 서비스가 많아지면, 버전 관리 및 관리가 매우 힘�
 ## 실습 과정
 1. Lambda 생성
 2. DynamoDB, API Gateway 생성
+
+https://catalog.us-east-1.prod.workshops.aws/workshops/600420b7-5c4c-498f-9b80-bc7798963ba3/ko-KR/serverless

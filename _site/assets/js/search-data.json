@@ -1093,7 +1093,7 @@
   },"156": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "실습 과정",
-    "content": ". | Lambda 생성 | DynamoDB, API Gateway 생성 | . ",
+    "content": ". | Lambda 생성 | DynamoDB, API Gateway 생성 | . https://catalog.us-east-1.prod.workshops.aws/workshops/600420b7-5c4c-498f-9b80-bc7798963ba3/ko-KR/serverless . ",
     "url": "/docs/studies/aws_saa/aws_lecture1/#%EC%8B%A4%EC%8A%B5-%EA%B3%BC%EC%A0%95",
     
     "relUrl": "/docs/studies/aws_saa/aws_lecture1/#실습-과정"
