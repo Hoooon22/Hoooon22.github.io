@@ -953,21 +953,21 @@
   },"136": {
     "doc": "적록색약",
     "title": "조건 및 설명",
-    "content": ". | . ",
+    "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230911/#%EC%A1%B0%EA%B1%B4-%EB%B0%8F-%EC%84%A4%EB%AA%85",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230911/#조건-및-설명"
   },"137": {
     "doc": "적록색약",
     "title": "접근법",
-    "content": ". | . ",
+    "content": ". | 두 가지(색약, 색약이 아닌)으로 나눈다. | BFS로 한 구역씩 정한다. | . ",
     "url": "/docs/studies/codingtest/1day1coding/230911/#%EC%A0%91%EA%B7%BC%EB%B2%95",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230911/#접근법"
   },"138": {
     "doc": "적록색약",
     "title": "결과 코드",
-    "content": "import java.util.*; import java.io.*; public class Main { public static void main(String[] args) throws Exception { int size; BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); StringTokenizer st = new StringTokenizer(br.readLine()); size = Integer.parseInt(st.nextToken()); char[][] map = new char[size][size]; boolean[][] visited = new boolean[size][size]; for (int i = 0; i &lt; size; i++) { st = new StringTokenizer(br.readLine()); String str = st.nextToken(); for (int j = 0; j &lt; size; j++) { map[i][j] = str.charAt(j); visited[i][j] = false; } } } // 1. no Color blindness public static int bfs_no(int start, char[][] map, boolean[][] visited) { int result = 0; } } . ",
+    "content": "import java.util.*; import java.io.*; public class Main { static char[][] map; static boolean[][] visited; static ArrayDeque&lt;Char&gt; queue = new ArrayDeque&lt;&gt;(); static int no_Cb = 0; static int yes_Cb = 0; public static void main(String[] args) throws Exception { int size; BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); StringTokenizer st = new StringTokenizer(br.readLine()); size = Integer.parseInt(st.nextToken()); // input size // init map = new char[size][size]; bvisited = new boolean[size][size]; // input for (int i = 0; i &lt; size; i++) { st = new StringTokenizer(br.readLine()); String str = st.nextToken(); for (int j = 0; j &lt; size; j++) { map[i][j] = str.charAt(j); visited[i][j] = false; } } } // 1. no Color blindness public static int bfs_no(int start_x, int start_y char[][] map, boolean[][] visited) { visited[start_x][start_y] = true; queue.add(map[start_x][start_y]); while (!queue.isEmpty()) { char ch = queue.poll(); } } } . ",
     "url": "/docs/studies/codingtest/1day1coding/230911/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230911/#결과-코드"
