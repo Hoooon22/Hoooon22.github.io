@@ -1091,314 +1091,321 @@
     
     "relUrl": "/docs/studies/aws_saa/aws_lecture1/#실습"
   },"156": {
+    "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
+    "title": "실습 과정",
+    "content": ". | Lambda 생성 | DynamoDB, API Gateway 생성 | . ",
+    "url": "/docs/studies/aws_saa/aws_lecture1/#%EC%8B%A4%EC%8A%B5-%EA%B3%BC%EC%A0%95",
+    
+    "relUrl": "/docs/studies/aws_saa/aws_lecture1/#실습-과정"
+  },"157": {
     "doc": "AWS (SAA)",
     "title": "AWS 자격증 - AWS Solution Archtect-Associate (SAA)",
     "content": " ",
     "url": "/docs/studies/aws_saa/#aws-%EC%9E%90%EA%B2%A9%EC%A6%9D---aws-solution-archtect-associate-saa",
     
     "relUrl": "/docs/studies/aws_saa/#aws-자격증---aws-solution-archtect-associate-saa"
-  },"157": {
+  },"158": {
     "doc": "AWS (SAA)",
     "title": "This Page has been written since August 19, 2023.",
     "content": "다음 사이트의 자료를 참고하였습니다. (자격증) AWS아키 따는 법 -2023 . ",
     "url": "/docs/studies/aws_saa/#this-page-has-been-written-since-august-19-2023",
     
     "relUrl": "/docs/studies/aws_saa/#this-page-has-been-written-since-august-19-2023"
-  },"158": {
+  },"159": {
     "doc": "AWS (SAA)",
     "title": "AWS (SAA)",
     "content": " ",
     "url": "/docs/studies/aws_saa/",
     
     "relUrl": "/docs/studies/aws_saa/"
-  },"159": {
+  },"160": {
     "doc": "게임 서버 토이 프로젝트",
     "title": "Project - 게임 서버 토이 프로젝트",
     "content": " ",
     "url": "/docs/projects/gameServer/#project---%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84-%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8",
     
     "relUrl": "/docs/projects/gameServer/#project---게임-서버-토이-프로젝트"
-  },"160": {
+  },"161": {
     "doc": "게임 서버 토이 프로젝트",
     "title": "Project has been written since Aug 19, 2023.",
     "content": ". 게임 서버 토이 프로젝트 입니다. ",
     "url": "/docs/projects/gameServer/#project-has-been-written-since-aug-19-2023",
     
     "relUrl": "/docs/projects/gameServer/#project-has-been-written-since-aug-19-2023"
-  },"161": {
+  },"162": {
     "doc": "게임 서버 토이 프로젝트",
     "title": "게임 서버 토이 프로젝트",
     "content": " ",
     "url": "/docs/projects/gameServer/",
     
     "relUrl": "/docs/projects/gameServer/"
-  },"162": {
+  },"163": {
     "doc": "Hoooon22's Log",
     "title": "Hoooon22’s Log",
     "content": "Web &amp; Server Delveloper . ",
     "url": "/#hoooon22s-log",
     
     "relUrl": "/#hoooon22s-log"
-  },"163": {
+  },"164": {
     "doc": "Hoooon22's Log",
     "title": "Hoooon22's Log",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"164": {
+  },"165": {
     "doc": "오브젝트",
     "title": "Obejct &amp; OOP",
     "content": " ",
     "url": "/docs/studies/object/#obejct--oop",
     
     "relUrl": "/docs/studies/object/#obejct--oop"
-  },"165": {
+  },"166": {
     "doc": "오브젝트",
     "title": "This Page has been written since August 08, 2023.",
     "content": "참고 서적 : “오브젝트”, 조영호 . ",
     "url": "/docs/studies/object/#this-page-has-been-written-since-august-08-2023",
     
     "relUrl": "/docs/studies/object/#this-page-has-been-written-since-august-08-2023"
-  },"166": {
+  },"167": {
     "doc": "오브젝트",
     "title": "오브젝트",
     "content": " ",
     "url": "/docs/studies/object/",
     
     "relUrl": "/docs/studies/object/"
-  },"167": {
+  },"168": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "Project - 퐁당 웹 매거진 프로젝트 Ver.02",
     "content": " ",
     "url": "/docs/projects/pongdang/#project---%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-ver02",
     
     "relUrl": "/docs/projects/pongdang/#project---퐁당-웹-매거진-프로젝트-ver02"
-  },"168": {
+  },"169": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "Project has been written since July 1, 2023.",
     "content": ". | Links | . 퐁당 웹 매거진 프로젝트 Ver.01 제작 일지 . 퐁당 웹 매거진 프로젝트 Ver.01 Github(private) . 퐁당 웹 매거진 프로젝트 Ver.02 제작 일지 . 퐁당 웹 매거진 프로젝트 Ver.02 Github(public) . ",
     "url": "/docs/projects/pongdang/#project-has-been-written-since-july-1-2023",
     
     "relUrl": "/docs/projects/pongdang/#project-has-been-written-since-july-1-2023"
-  },"169": {
+  },"170": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "퐁당 웹 매거진 프로젝트",
     "content": " ",
     "url": "/docs/projects/pongdang/",
     
     "relUrl": "/docs/projects/pongdang/"
-  },"170": {
+  },"171": {
     "doc": "Portfolio",
     "title": "Portfolio",
     "content": "Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages. ",
     "url": "/docs/portfolio/",
     
     "relUrl": "/docs/portfolio/"
-  },"171": {
+  },"172": {
     "doc": "Portfolio",
     "title": "🙋🏻 Profile",
     "content": ". 학력 . | 동국대학교 컴퓨터공학과 (2018.03 ~ 2023.02) | . 기타 . | 동국대학교 인간-로봇 상호작용 연구실 학부연구생 (2019.07 ~ 2021.04) | . 웹 제작 &amp; 서버 &amp; 데이터베이스 프로그래밍 개발자를 희망하는 ‘거북이🐢’ 김지훈입니다. 앞으로 나아가는 속도는 느릴지라도, 쓰러지지 않는 단단함을 지녔습니다. 저의 프로그램과 서비스로 모두에게 행복함을 선물할 수 있는 개발자가 될 것입니다. ",
     "url": "/docs/portfolio/#profile",
     
     "relUrl": "/docs/portfolio/#profile"
-  },"172": {
+  },"173": {
     "doc": "Portfolio",
     "title": "⚒️ Skills",
     "content": "역량의 전문성에 따라 상 · 중 · 하 수준으로 분류하였습니다. 각 항목을 누르면 상세 내용을 확인할 수 있습니다. Hard Skills . Soft Skills . Tools . | Backend | Database . MySQL . ORACLE . | Frontend . HTML . CSS . Javascript . React . | DevOps . Docker . | 커뮤니케이션 스킬 | 책임감 | 협업 능력 | 리더십 | 유연성 | 체계성 . | C/C++ | Java/Spring | HTML/CSS/JS | Python | Node.js | MySQL | ORACLE | Linux | Docker | Unity | AWS | . ",
     "url": "/docs/portfolio/#%EF%B8%8F-skills",
     
     "relUrl": "/docs/portfolio/#️-skills"
-  },"173": {
+  },"174": {
     "doc": "Portfolio",
     "title": "💻 Projects",
     "content": "지금까지 진행했던 프로젝트를 최신순으로 구성했습니다. 각 이미지를 클릭하면, 해당 프로젝트에 대한 상세 내용을 확인할 수 있습니다. ",
     "url": "/docs/portfolio/#-projects",
     
     "relUrl": "/docs/portfolio/#-projects"
-  },"174": {
+  },"175": {
     "doc": "Portfolio",
     "title": "🕶️ Github &amp; Study",
     "content": " ",
     "url": "/docs/portfolio/#%EF%B8%8Fgithub--study",
     
     "relUrl": "/docs/portfolio/#️github--study"
-  },"175": {
+  },"176": {
     "doc": "Portfolio",
     "title": "Github &amp; Site",
     "content": "Github . 거북이처럼 코딩해도 괜찮으려나 → 2022/05/18 부터 Notion으로 이전 . Hoooon22’s Log → 2023/06/29 부터 github.io으로 이전 . ",
     "url": "/docs/portfolio/#github--site",
     
     "relUrl": "/docs/portfolio/#github--site"
-  },"176": {
+  },"177": {
     "doc": "Portfolio",
     "title": "Previous Study",
     "content": "TIL(Today I Learned) . 개인 개발 &amp; 공부 . 매거진 퐁당 웹사이트 제작 . ",
     "url": "/docs/portfolio/#previous-study",
     
     "relUrl": "/docs/portfolio/#previous-study"
-  },"177": {
+  },"178": {
     "doc": "Portfolio",
     "title": "💬 Contact",
     "content": "📧 momo990305@gmail.com . 📞 +82 10-3820-7501 . 🏠 경기도 화성시 . ",
     "url": "/docs/portfolio/#contact",
     
     "relUrl": "/docs/portfolio/#contact"
-  },"178": {
+  },"179": {
     "doc": "Projects",
     "title": "Project",
     "content": "Project has been written since July 1, 2023. ",
     "url": "/docs/projects#project",
     
     "relUrl": "/docs/projects#project"
-  },"179": {
+  },"180": {
     "doc": "Projects",
     "title": "Projects",
     "content": " ",
     "url": "/docs/projects",
     
     "relUrl": "/docs/projects"
-  },"180": {
+  },"181": {
     "doc": "STUDY",
     "title": "공부",
     "content": "This Page has been written since July 17, 2023. ",
     "url": "/docs/studies#%EA%B3%B5%EB%B6%80",
     
     "relUrl": "/docs/studies#공부"
-  },"181": {
+  },"182": {
     "doc": "STUDY",
     "title": "STUDY",
     "content": " ",
     "url": "/docs/studies",
     
     "relUrl": "/docs/studies"
-  },"182": {
+  },"183": {
     "doc": "AWS 기초 - 1",
     "title": "AWS 기초 - 1",
     "content": " ",
     "url": "/docs/studies/aws_saa/summary_1/",
     
     "relUrl": "/docs/studies/aws_saa/summary_1/"
-  },"183": {
+  },"184": {
     "doc": "AWS 기초 - 1",
     "title": "2023.08.19 (SAT)",
     "content": ". ",
     "url": "/docs/studies/aws_saa/summary_1/#20230819-sat",
     
     "relUrl": "/docs/studies/aws_saa/summary_1/#20230819-sat"
-  },"184": {
+  },"185": {
     "doc": "AWS 기초 - 1",
     "title": "1. 온프라미스와 AWS 용어 비교",
     "content": "AWS는 아마존에서 온프레미스를 클라우드 서비스로 만든 것이다. 온프라미스(On-premise)란, 기업의 서버를 클라우드 같은 원격 환경에서 운영하는 방식이 아닌, 자체적으로 보유한 전산실 서버에 직접 설치해 운영하는 방식이다. – . 온프라미스 용어 = 클라우드 용어 . | 방화벽 = 보안그룹 | ACL = NACL . | ACL(Access Control List) : 허가되지 않은 이용자가 라우터나 네트워크의 특정 자원을 접근하려고 하는 것을 차단한다. | . | 관리자 권한 = IAM | L4, 로드 밸런서 = ELB(일라스틱 로드 밸런서), 탄력적인 로드 밸련서, ALB, … . | 로드 밸런서 : 서버에 가해지는 부사(=로드)를 분산(=밸런싱)해주는 장치 또는 기술 | . | 네트워크 = VPC . | VPC는 Virtual Private Cloud로, 정의한 논리적으로 격리된 가상 네트워크에서 AWS 리소스를 시작할 수 있다. | . | 서버 = EC2(일라스틱 컴퓨트 클라우드), C2 | NAS = EFS(탄력적인 파일 시스템) . | NAS란, 네트워크 연결 스토리지로, 네트워크를 통해 효과적으로 협업할 수 있도록 데이터를 지속적으로 사용할 수 있게 하는 파일 전용 스토리지 디바이스이다. | 많은 곳에서 NAS를 사용하는 이유 : 확장 가능하며, 저렴한 스토리지를 제공하기 때문. | . | . | 디스크 = EBS (탄력적인 블록 스토어 저장장치) | DB = RDS (관계형 데이터 베이스) | . ",
     "url": "/docs/studies/aws_saa/summary_1/#1-%EC%98%A8%ED%94%84%EB%9D%BC%EB%AF%B8%EC%8A%A4%EC%99%80-aws-%EC%9A%A9%EC%96%B4-%EB%B9%84%EA%B5%90",
     
     "relUrl": "/docs/studies/aws_saa/summary_1/#1-온프라미스와-aws-용어-비교"
-  },"185": {
+  },"186": {
     "doc": "AWS 기초 - 1",
     "title": "2. AWS의 기본 구성",
     "content": ". | 사용자가 서비스를 사용하는 과정 . | 특정 서비스에 연결하려면 도메인 질의를 한다. | DNS 서비스가 응답을 한다. | 해당 도메인을 IP로 변환하여 서버에 연결한다. | 서버의 디스크의 데이터를 읽는다.(?) | 따로 요청한 데이터를 디비에서 읽어온다. | 스토리지에 저장된 이미지나 파일들을 다운받아 사용한다. | . | AWS 용어로 치환 가능하다. | Route53이 도메인에 대한 응답을 한다. (참고로 DNS포트가 53이라, Route53이다.) | 서버 EC2로 접속한다. | 로컬 디스크인 EBS에서 데이터를 읽는다. | 비지니스적으로 요청한 데이터가 있으면, Amazon DB에서 읽어온다. | S3 등등 | . | . ",
     "url": "/docs/studies/aws_saa/summary_1/#2-aws%EC%9D%98-%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%84%B1",
     
     "relUrl": "/docs/studies/aws_saa/summary_1/#2-aws의-기본-구성"
-  },"186": {
+  },"187": {
     "doc": "AWS 기초 - 1",
     "title": "3. 온프레미스, 클라우드, 하이브리드…",
     "content": ". | 온 프레미스 : 일반 데이터 센터, 물리 서버로 운영하는 데이터 센터 | 하이브리드 : 클라우드 + 온프레미스 | 클라우드 : AWS, AZURE, GCP 등 유료서비스 | 멀티클라우드 : 여러 개의 퍼블릭 클라우드를 사용하는 경우 | . ",
     "url": "/docs/studies/aws_saa/summary_1/#3-%EC%98%A8%ED%94%84%EB%A0%88%EB%AF%B8%EC%8A%A4-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%ED%95%98%EC%9D%B4%EB%B8%8C%EB%A6%AC%EB%93%9C",
     
     "relUrl": "/docs/studies/aws_saa/summary_1/#3-온프레미스-클라우드-하이브리드"
-  },"187": {
+  },"188": {
     "doc": "AWS 기초 - 1",
     "title": "4. AZ",
     "content": "AZ란, 가용영역으로 한 리전에 여러 AZ가 존재한다. ex) 서울 리전, 도쿄 리전. 아마존 서버가 존재하는 곳이다. AZ끼리는 전용선으로 연결되어 있기 때문에, 빠르게 데이터를 주고 받을 수 있다. ",
     "url": "/docs/studies/aws_saa/summary_1/#4-az",
     
     "relUrl": "/docs/studies/aws_saa/summary_1/#4-az"
-  },"188": {
+  },"189": {
     "doc": "AWS 기초 - 1",
     "title": "5. AWS 엣지 인프라 서비스",
     "content": "(1). AWS Outposts . 클라우드를 온프라미스에서도 쓸 수 있도록 확장한 것. (2). AWS Local Zones . 대형 메트로 센터를 사용한 엣지 서비스 . 엣지 컴퓨팅 : 정보 저장 및 컴퓨팅 능력을 사용자에게 더 가까이 제공하는 프로세스 . (3). AWS Wavelength . 5G 네트워크 엣지 서비스 통신사에서 클라우드 서비스 하는 것이다. ",
     "url": "/docs/studies/aws_saa/summary_1/#5-aws-%EC%97%A3%EC%A7%80-%EC%9D%B8%ED%94%84%EB%9D%BC-%EC%84%9C%EB%B9%84%EC%8A%A4",
     
     "relUrl": "/docs/studies/aws_saa/summary_1/#5-aws-엣지-인프라-서비스"
-  },"189": {
+  },"190": {
     "doc": "AWS 기초 - 2",
     "title": "AWS 기초 - 2",
     "content": " ",
     "url": "/docs/studies/aws_saa/summary_2/",
     
     "relUrl": "/docs/studies/aws_saa/summary_2/"
-  },"190": {
+  },"191": {
     "doc": "AWS 기초 - 2",
     "title": "2023.09.04 (MON)",
     "content": ". ",
     "url": "/docs/studies/aws_saa/summary_2/#20230904-mon",
     
     "relUrl": "/docs/studies/aws_saa/summary_2/#20230904-mon"
-  },"191": {
+  },"192": {
     "doc": "AWS 기초 - 2",
     "title": "1. 서버",
     "content": "(1). EC2 . | Elastic Compute Cloud의 줄임말이다. | C가 2개여서 EC2이다. | . (2). 인스턴스 패밀리 . | AWS 인스턴스 : 가상 컴퓨팅 환경으로 애플리케이션을 배포, 관리 및 확장하는데 도움이 되는 수많은 추가 기능 제공 | 인스턴스 표기법 . | | 인스턴스 패밀리 : M, T, C, X, R, IO, … (각 기능이 다르다.) | 인스턴스 세대 : 인스턴스 패밀리에 따라, 1~5세대 | 인스턴스 크기 : 인스턴스 패밀리 및 세대에 따라 다양한 크기 제공 | . | . ",
     "url": "/docs/studies/aws_saa/summary_2/#1-%EC%84%9C%EB%B2%84",
     
     "relUrl": "/docs/studies/aws_saa/summary_2/#1-서버"
-  },"192": {
+  },"193": {
     "doc": "AWS 기초 - 2",
     "title": "2. EC2 요금",
     "content": ". | 온디맨드 인스턴스 | 예약 인스턴스 | Savings Plan | 스팟 인스턴스 | . ",
     "url": "/docs/studies/aws_saa/summary_2/#2-ec2-%EC%9A%94%EA%B8%88",
     
     "relUrl": "/docs/studies/aws_saa/summary_2/#2-ec2-요금"
-  },"193": {
+  },"194": {
     "doc": "AWS 기초 - 2",
     "title": "3. 대표적인 컨테이너 관리형 서비스",
     "content": ". | . | ECS . | 간편 관리형 서비스 | AWS 전용이다. | 컨테이너가 소수일 때 커맨드로 관리 가능하지만, 많아지면 관리가 힘들어져 관리형 서비스를 사용한다. | ECS는 AWS에서 인프라를 관리해주며, 확장 등이 쉽게 가능하다. | . | . | . | EKS . | 쿠버네티스 사용의 관리 리소스가 포함됨 | 관리시간이 줄어듬 | 마스터노드의 관리를 AWS가 해줌 | 사용자는 워커노드만 관리하면 된다. | . | 워커노드 : 배포하고자 하는 어플리케이션의 실제 실행을 수행 - 마스터 서버로는 API 서버로 명령만 내릴 수 있다. - 별도의 AWS VPC에 마스터 서버가 구성된다. (사용자는 접근 불가) | . | . | . ",
     "url": "/docs/studies/aws_saa/summary_2/#3-%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EA%B4%80%EB%A6%AC%ED%98%95-%EC%84%9C%EB%B9%84%EC%8A%A4",
     
     "relUrl": "/docs/studies/aws_saa/summary_2/#3-대표적인-컨테이너-관리형-서비스"
-  },"194": {
+  },"195": {
     "doc": "AWS 기초 - 2",
     "title": "4, 람다",
     "content": ". | 대표적인 서버리스 컴퓨팅 (이 또한 관리형 서비스) | 서버 처리가 이벤트 방식이다. (람다는 이벤트 발생 시 트래픽 처리됨) | 사용자가 확장 등을 고려할 필요가 없다. | 거의 모든 것이 자동으로 처리된다. | . ",
     "url": "/docs/studies/aws_saa/summary_2/#4-%EB%9E%8C%EB%8B%A4",
     
     "relUrl": "/docs/studies/aws_saa/summary_2/#4-람다"
-  },"195": {
+  },"196": {
     "doc": "AWS 기초 - 3",
     "title": "AWS 기초 - 3",
     "content": " ",
     "url": "/docs/studies/aws_saa/summary_3%20copy/",
     
     "relUrl": "/docs/studies/aws_saa/summary_3%20copy/"
-  },"196": {
+  },"197": {
     "doc": "AWS 기초 - 3",
     "title": "2023.09.04 (MON)",
     "content": ". ",
     "url": "/docs/studies/aws_saa/summary_3%20copy/#20230904-mon",
     
     "relUrl": "/docs/studies/aws_saa/summary_3%20copy/#20230904-mon"
-  },"197": {
+  },"198": {
     "doc": "AWS 기초 - 3",
     "title": "스토리지, 데이터 베이스",
     "content": " ",
     "url": "/docs/studies/aws_saa/summary_3%20copy/#%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B2%A0%EC%9D%B4%EC%8A%A4",
     
     "relUrl": "/docs/studies/aws_saa/summary_3%20copy/#스토리지-데이터-베이스"
-  },"198": {
+  },"199": {
     "doc": "AWS 기초 - 3",
     "title": "1. AWS 스토리지 옵션",
     "content": "(1). Options . | S3 : 오브젝트 스토리지, 일반 스토리지 | S3 Glacier : S3 중 장기 보관용으로 저렴하다. | EFS : 공유 파일 스토리지, NAS와 같다. | NAS란, | . | . ",
     "url": "/docs/studies/aws_saa/summary_3%20copy/#1-aws-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%98%B5%EC%85%98",
     
     "relUrl": "/docs/studies/aws_saa/summary_3%20copy/#1-aws-스토리지-옵션"
-  },"199": {
+  },"200": {
     "doc": "TIL",
     "title": "Today I Learned",
     "content": "TIL has been written since July 1, 2023. ",
     "url": "/docs/tils#today-i-learned",
     
     "relUrl": "/docs/tils#today-i-learned"
-  },"200": {
+  },"201": {
     "doc": "TIL",
     "title": "TIL",
     "content": " ",
