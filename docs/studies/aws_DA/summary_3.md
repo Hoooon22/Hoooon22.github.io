@@ -1,7 +1,7 @@
 ---
 layout: default
 title: AWS 기초 - 3
-parent: AWS (SAA)
+parent: AWS (DA)
 grand_parent: STUDY
 ---
 
@@ -21,4 +21,6 @@ grand_parent: STUDY
 - S3 : 오브젝트 스토리지, 일반 스토리지
 - S3 Glacier : S3 중 장기 보관용으로 저렴하다.
 - EFS : 공유 파일 스토리지, NAS와 같다.
-    - NAS란, 
+    - NAS란, 네트워크를 통해 효과적으로 협업할 수 있도록 데이터를 지속적으로 사용할 수 있게 하는 파일 전용 스토리지 디바이스
+- Storage Gateway
+- EBS - EC2에서 사용하는 디스크 저장소
