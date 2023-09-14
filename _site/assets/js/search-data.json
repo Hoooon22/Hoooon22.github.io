@@ -195,54 +195,54 @@
     
     "relUrl": "/docs/projects/pongdang/230706/"
   },"28": {
-    "doc": "과제 진행하기",
-    "title": "과제 진행하기",
-    "content": " ",
-    "url": "/docs/studies/codingtest/1day1coding/230711/",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230711/"
-  },"29": {
-    "doc": "과제 진행하기",
-    "title": "2023.07.11 (TUE)",
-    "content": ". 문제 : 프로그래머스 - LV2. 과제 진행하기 . ",
-    "url": "/docs/studies/codingtest/1day1coding/230711/#20230711-tue",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230711/#20230711-tue"
-  },"30": {
-    "doc": "과제 진행하기",
-    "title": "접근법",
-    "content": "조건 . | 과제는 시작하기로 한 시각이 되면 시작 | 새로운 과제를 할 시간이면, 기존에 하고 있던 과제를 멈추고 새로운 과제를 시작 . | 만약, 과제를 끝낸 시각에 우선순위는, 새로 시작해야 하는 과제 &gt; 잠시 멈춰둔 과제 | . | 멈춰둔 과제는 가장 최근에 멈춘 과제부터 시작 | . 해결법 . | plans 배열을 시작 시간을 기준으로 정렬한다. | 스택을 활용하여 잠시 멈춘 과제를 넣는다. | 조건 우선순위에 맞게 코드를 구현한다. | . ",
-    "url": "/docs/studies/codingtest/1day1coding/230711/#%EC%A0%91%EA%B7%BC%EB%B2%95",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230711/#접근법"
-  },"31": {
-    "doc": "과제 진행하기",
-    "title": "결과 코드",
-    "content": "import java.util.*; class Solution { public String[] solution(String[][] plans) { String[] answer = new String[plans.length]; int answer_count = 0; Queue&lt;String&gt; q_name = new LinkedList&lt;&gt;(); Queue&lt;Integer&gt; q_time = new LinkedList&lt;&gt;(); // plans 정렬 Arrays.sort(plans, new Comparator&lt;String[]&gt;() { @Override public int compare(String[] arr1, String[] arr2) { String[] time1 = arr1[1].split(\":\"); String[] time2 = arr2[1].split(\":\"); int hourCompare = Integer.parseInt(time1[0]) - Integer.parseInt(time2[0]); int minuteCompare = Integer.parseInt(time1[1]) - Integer.parseInt(time2[1]); return hourCompare != 0 ? hourCompare : minuteCompare; } }); // 시작 시간 정하기 int curTime = toMin(plans[0]); // 현재 시각 String curPlan = plans[0][0]; // 현재 과제명 int remainTime = Integer.parseInt(plans[0][2]); // 현재 과제 남은 시간 int count = 1; // 대기 중인 과제 순서 Stack&lt;String&gt; s_String = new Stack&lt;&gt;(); // 잠시 멈춘 과제명 Stack&lt;Integer&gt; s_Int = new Stack&lt;&gt;(); // 잠시 멈춘 과제 남은 시간 // 진행 while (answer_count &lt; plans.length) { curTime++; remainTime--; if (remainTime == 0) { // 시간이 다 되면 answer[answer_count] = curPlan; answer_count++; curPlan = \"\"; if (curTime == toMin(plans[count])) { // 다음 과제 시간이라면 curPlan = plans[count][0]; remainTime = Integer.parseInt(plans[count][2]); count++; if (count == plans.length) { count = 0; } } else if (!s_String.empty()) { // 잠시 멈춘 과제가 있다면 curPlan = s_String.pop(); remainTime = s_Int.pop(); } } else if (curTime == toMin(plans[count])) { // 다음 과제를 시작해야 한다면 // 저장 if (!curPlan.equals(\"\")) { s_String.push(curPlan); s_Int.push(remainTime); } curPlan = plans[count][0]; remainTime = Integer.parseInt(plans[count][2]); count++; if (count == plans.length) { count = 0; } } } return answer; } public static int toMin(String[] strs) { String[] time = strs[1].split(\":\"); return Integer.parseInt(time[0]) * 60 + Integer.parseInt(time[1]); } } . ",
-    "url": "/docs/studies/codingtest/1day1coding/230711/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230711/#결과-코드"
-  },"32": {
     "doc": "TIL (23-07-11)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230711/#til",
     
     "relUrl": "/docs/tils/230711/#til"
-  },"33": {
+  },"29": {
     "doc": "TIL (23-07-11)",
     "title": "2023.07.11 (TUE)",
     "content": ". 📌  오늘의 TIL . | 프로그래머스 자바 코딩테스트 강의 신청 | 😵‍💫 코테 연습 . | 과제 진행하기 | . | . 📔 To Do Plan . | 1일 1코테연습 | 퐁당 매거진 프로젝트 | ? 백엔드 오픈소스 프로젝트 | ? 게임 서버 제작 | . ✏️  오늘의 체크 사항 . | 운동 - 어깨 | . ",
     "url": "/docs/tils/230711/#20230711-tue",
     
     "relUrl": "/docs/tils/230711/#20230711-tue"
-  },"34": {
+  },"30": {
     "doc": "TIL (23-07-11)",
     "title": "TIL (23-07-11)",
     "content": " ",
     "url": "/docs/tils/230711/",
     
     "relUrl": "/docs/tils/230711/"
+  },"31": {
+    "doc": "과제 진행하기",
+    "title": "과제 진행하기",
+    "content": " ",
+    "url": "/docs/studies/codingtest/1day1coding/230711/",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230711/"
+  },"32": {
+    "doc": "과제 진행하기",
+    "title": "2023.07.11 (TUE)",
+    "content": ". 문제 : 프로그래머스 - LV2. 과제 진행하기 . ",
+    "url": "/docs/studies/codingtest/1day1coding/230711/#20230711-tue",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230711/#20230711-tue"
+  },"33": {
+    "doc": "과제 진행하기",
+    "title": "접근법",
+    "content": "조건 . | 과제는 시작하기로 한 시각이 되면 시작 | 새로운 과제를 할 시간이면, 기존에 하고 있던 과제를 멈추고 새로운 과제를 시작 . | 만약, 과제를 끝낸 시각에 우선순위는, 새로 시작해야 하는 과제 &gt; 잠시 멈춰둔 과제 | . | 멈춰둔 과제는 가장 최근에 멈춘 과제부터 시작 | . 해결법 . | plans 배열을 시작 시간을 기준으로 정렬한다. | 스택을 활용하여 잠시 멈춘 과제를 넣는다. | 조건 우선순위에 맞게 코드를 구현한다. | . ",
+    "url": "/docs/studies/codingtest/1day1coding/230711/#%EC%A0%91%EA%B7%BC%EB%B2%95",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230711/#접근법"
+  },"34": {
+    "doc": "과제 진행하기",
+    "title": "결과 코드",
+    "content": "import java.util.*; class Solution { public String[] solution(String[][] plans) { String[] answer = new String[plans.length]; int answer_count = 0; Queue&lt;String&gt; q_name = new LinkedList&lt;&gt;(); Queue&lt;Integer&gt; q_time = new LinkedList&lt;&gt;(); // plans 정렬 Arrays.sort(plans, new Comparator&lt;String[]&gt;() { @Override public int compare(String[] arr1, String[] arr2) { String[] time1 = arr1[1].split(\":\"); String[] time2 = arr2[1].split(\":\"); int hourCompare = Integer.parseInt(time1[0]) - Integer.parseInt(time2[0]); int minuteCompare = Integer.parseInt(time1[1]) - Integer.parseInt(time2[1]); return hourCompare != 0 ? hourCompare : minuteCompare; } }); // 시작 시간 정하기 int curTime = toMin(plans[0]); // 현재 시각 String curPlan = plans[0][0]; // 현재 과제명 int remainTime = Integer.parseInt(plans[0][2]); // 현재 과제 남은 시간 int count = 1; // 대기 중인 과제 순서 Stack&lt;String&gt; s_String = new Stack&lt;&gt;(); // 잠시 멈춘 과제명 Stack&lt;Integer&gt; s_Int = new Stack&lt;&gt;(); // 잠시 멈춘 과제 남은 시간 // 진행 while (answer_count &lt; plans.length) { curTime++; remainTime--; if (remainTime == 0) { // 시간이 다 되면 answer[answer_count] = curPlan; answer_count++; curPlan = \"\"; if (curTime == toMin(plans[count])) { // 다음 과제 시간이라면 curPlan = plans[count][0]; remainTime = Integer.parseInt(plans[count][2]); count++; if (count == plans.length) { count = 0; } } else if (!s_String.empty()) { // 잠시 멈춘 과제가 있다면 curPlan = s_String.pop(); remainTime = s_Int.pop(); } } else if (curTime == toMin(plans[count])) { // 다음 과제를 시작해야 한다면 // 저장 if (!curPlan.equals(\"\")) { s_String.push(curPlan); s_Int.push(remainTime); } curPlan = plans[count][0]; remainTime = Integer.parseInt(plans[count][2]); count++; if (count == plans.length) { count = 0; } } } return answer; } public static int toMin(String[] strs) { String[] time = strs[1].split(\":\"); return Integer.parseInt(time[0]) * 60 + Integer.parseInt(time[1]); } } . ",
+    "url": "/docs/studies/codingtest/1day1coding/230711/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230711/#결과-코드"
   },"35": {
     "doc": "제작 일지 <3>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;3&gt;",
@@ -300,54 +300,54 @@
     
     "relUrl": "/docs/tils/230713/"
   },"43": {
-    "doc": "TIL (23-07-17)",
-    "title": "TIL",
-    "content": " ",
-    "url": "/docs/tils/230717/#til",
-    
-    "relUrl": "/docs/tils/230717/#til"
-  },"44": {
-    "doc": "TIL (23-07-17)",
-    "title": "2023.07.17 (MON)",
-    "content": ". 📌  오늘의 TIL . | 😵‍💫 코테 연습 . | 과제 진행하기 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 등 | . ",
-    "url": "/docs/tils/230717/#20230717-mon",
-    
-    "relUrl": "/docs/tils/230717/#20230717-mon"
-  },"45": {
-    "doc": "TIL (23-07-17)",
-    "title": "TIL (23-07-17)",
-    "content": " ",
-    "url": "/docs/tils/230717/",
-    
-    "relUrl": "/docs/tils/230717/"
-  },"46": {
     "doc": "제작 일지 <4>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;4&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230717/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-4",
     
     "relUrl": "/docs/projects/pongdang/230717/#퐁당-웹-매거진-프로젝트-제작-일지-4"
-  },"47": {
+  },"44": {
     "doc": "제작 일지 <4>",
     "title": "2023.07.17 (MON)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230717/#20230717-mon",
     
     "relUrl": "/docs/projects/pongdang/230717/#20230717-mon"
-  },"48": {
+  },"45": {
     "doc": "제작 일지 <4>",
     "title": "1. 슬라이드",
     "content": ". 구현 코드 . import React, { useState } from 'react'; import \"./Slider.css\"; import Carousel from 'react-bootstrap/Carousel'; export default function Slider() { const [index, setIndex] = useState(0); const handleSelect = (selectedIndex) =&gt; { setIndex(selectedIndex); }; return ( &lt;Carousel activeIndex={index} onSelect={handleSelect}&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;/Carousel&gt; ); } . ",
     "url": "/docs/projects/pongdang/230717/#1-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C",
     
     "relUrl": "/docs/projects/pongdang/230717/#1-슬라이드"
-  },"49": {
+  },"46": {
     "doc": "제작 일지 <4>",
     "title": "제작 일지 <4>",
     "content": " ",
     "url": "/docs/projects/pongdang/230717/",
     
     "relUrl": "/docs/projects/pongdang/230717/"
+  },"47": {
+    "doc": "TIL (23-07-17)",
+    "title": "TIL",
+    "content": " ",
+    "url": "/docs/tils/230717/#til",
+    
+    "relUrl": "/docs/tils/230717/#til"
+  },"48": {
+    "doc": "TIL (23-07-17)",
+    "title": "2023.07.17 (MON)",
+    "content": ". 📌  오늘의 TIL . | 😵‍💫 코테 연습 . | 과제 진행하기 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 등 | . ",
+    "url": "/docs/tils/230717/#20230717-mon",
+    
+    "relUrl": "/docs/tils/230717/#20230717-mon"
+  },"49": {
+    "doc": "TIL (23-07-17)",
+    "title": "TIL (23-07-17)",
+    "content": " ",
+    "url": "/docs/tils/230717/",
+    
+    "relUrl": "/docs/tils/230717/"
   },"50": {
     "doc": "전력망을 둘로 나누기",
     "title": "과제 진행하기",
@@ -489,54 +489,54 @@
     
     "relUrl": "/docs/projects/pongdang/230725/"
   },"70": {
-    "doc": "TIL (23-07-31)",
-    "title": "TIL",
-    "content": " ",
-    "url": "/docs/tils/230731/#til",
-    
-    "relUrl": "/docs/tils/230731/#til"
-  },"71": {
-    "doc": "TIL (23-07-31)",
-    "title": "2023.07.25 (MON)",
-    "content": ". 📌  오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 어꺠 | . ",
-    "url": "/docs/tils/230731/#20230725-mon",
-    
-    "relUrl": "/docs/tils/230731/#20230725-mon"
-  },"72": {
-    "doc": "TIL (23-07-31)",
-    "title": "TIL (23-07-31)",
-    "content": " ",
-    "url": "/docs/tils/230731/",
-    
-    "relUrl": "/docs/tils/230731/"
-  },"73": {
     "doc": "제작 일지 <6>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;6&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230731/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-6",
     
     "relUrl": "/docs/projects/pongdang/230731/#퐁당-웹-매거진-프로젝트-제작-일지-6"
-  },"74": {
+  },"71": {
     "doc": "제작 일지 <6>",
     "title": "2023.07.31 (MON)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230731/#20230731-mon",
     
     "relUrl": "/docs/projects/pongdang/230731/#20230731-mon"
-  },"75": {
+  },"72": {
     "doc": "제작 일지 <6>",
     "title": "1. 슬라이드 재조정",
     "content": "사이드 버튼들을 투명화 시켜, 조금 더 자연스럽게 만들어 준다. ",
     "url": "/docs/projects/pongdang/230731/#1-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C-%EC%9E%AC%EC%A1%B0%EC%A0%95",
     
     "relUrl": "/docs/projects/pongdang/230731/#1-슬라이드-재조정"
-  },"76": {
+  },"73": {
     "doc": "제작 일지 <6>",
     "title": "제작 일지 <6>",
     "content": " ",
     "url": "/docs/projects/pongdang/230731/",
     
     "relUrl": "/docs/projects/pongdang/230731/"
+  },"74": {
+    "doc": "TIL (23-07-31)",
+    "title": "TIL",
+    "content": " ",
+    "url": "/docs/tils/230731/#til",
+    
+    "relUrl": "/docs/tils/230731/#til"
+  },"75": {
+    "doc": "TIL (23-07-31)",
+    "title": "2023.07.25 (MON)",
+    "content": ". 📌  오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 어꺠 | . ",
+    "url": "/docs/tils/230731/#20230725-mon",
+    
+    "relUrl": "/docs/tils/230731/#20230725-mon"
+  },"76": {
+    "doc": "TIL (23-07-31)",
+    "title": "TIL (23-07-31)",
+    "content": " ",
+    "url": "/docs/tils/230731/",
+    
+    "relUrl": "/docs/tils/230731/"
   },"77": {
     "doc": "TIL (23-08-08)",
     "title": "TIL",
@@ -608,96 +608,96 @@
     
     "relUrl": "/docs/tils/230816/"
   },"87": {
-    "doc": "숫자 게임",
-    "title": "숫자 게임",
-    "content": " ",
-    "url": "/docs/studies/codingtest/1day1coding/230819/",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230819/"
-  },"88": {
-    "doc": "숫자 게임",
-    "title": "2023.08.19 (SAT)",
-    "content": ". 문제 : 프로그래머스 - LV3. 숫자 게임 . ",
-    "url": "/docs/studies/codingtest/1day1coding/230819/#20230819-sat",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230819/#20230819-sat"
-  },"89": {
-    "doc": "숫자 게임",
-    "title": "조건 및 설명",
-    "content": ". | N명의 팀원 | . ",
-    "url": "/docs/studies/codingtest/1day1coding/230819/#%EC%A1%B0%EA%B1%B4-%EB%B0%8F-%EC%84%A4%EB%AA%85",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230819/#조건-및-설명"
-  },"90": {
-    "doc": "숫자 게임",
-    "title": "접근법",
-    "content": ". | 남은 팀원들 중, 최소한의 숫자로 이길 수 있는 사람으로 대려감 | 두 배열을 Sort 후, 앞에서부터 서로 비교하여 count | . ",
-    "url": "/docs/studies/codingtest/1day1coding/230819/#%EC%A0%91%EA%B7%BC%EB%B2%95",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230819/#접근법"
-  },"91": {
-    "doc": "숫자 게임",
-    "title": "결과 코드",
-    "content": "import java.util.*; class Solution { public int solution(int[] A, int[] B) { int answer = 0; int count = 0; Arrays.sort(A); Arrays.sort(B); // Game Start for (int i = 0; i &lt; A.length; i++) { for (int j = count; j &lt; A.length; j++) { if (A[i] &lt; B[j]) { // 이기면 answer++; count++; break; } else { // 비기거나 지면 count++; } } } return answer; } } . ",
-    "url": "/docs/studies/codingtest/1day1coding/230819/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230819/#결과-코드"
-  },"92": {
-    "doc": "이론 일지 <1>",
-    "title": "게임 서버 토이 프로젝트 - 이론 일지 &lt;1&gt;",
-    "content": " ",
-    "url": "/docs/projects/gameServer/230819/#%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84-%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%EC%9D%B4%EB%A1%A0-%EC%9D%BC%EC%A7%80-1",
-    
-    "relUrl": "/docs/projects/gameServer/230819/#게임-서버-토이-프로젝트---이론-일지-1"
-  },"93": {
-    "doc": "이론 일지 <1>",
-    "title": "2023.08.19 (SAT)",
-    "content": ". ",
-    "url": "/docs/projects/gameServer/230819/#20230819-sat",
-    
-    "relUrl": "/docs/projects/gameServer/230819/#20230819-sat"
-  },"94": {
-    "doc": "이론 일지 <1>",
-    "title": "1. 프로세스",
-    "content": "프로그램에 있는 코드와 데이터를 프로세스 메모리로 불러들이는데, 이를 로딩된다고 할 수 있다. 프로세스는 RAM에 있다. 프로세스가 여러 개 실행되고 있는 것을 멀티프로세싱이라고 한다. ",
-    "url": "/docs/projects/gameServer/230819/#1-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4",
-    
-    "relUrl": "/docs/projects/gameServer/230819/#1-프로세스"
-  },"95": {
-    "doc": "이론 일지 <1>",
-    "title": "2. 스레드",
-    "content": "기본 적으로 서로 다른 프로세스는 상대방의 메모리 공간을 읽고 쓸 수 없다. 하미잔, 한 프로세스 안에 있는 스레드들은, 프로세스 안에 있는 메모리 공간을 같이 사용할 수 있다. 스레드 = 프로그램이 실행되는 기본 단위 . ",
-    "url": "/docs/projects/gameServer/230819/#2-%EC%8A%A4%EB%A0%88%EB%93%9C",
-    
-    "relUrl": "/docs/projects/gameServer/230819/#2-스레드"
-  },"96": {
-    "doc": "이론 일지 <1>",
-    "title": "이론 일지 <1>",
-    "content": " ",
-    "url": "/docs/projects/gameServer/230819/",
-    
-    "relUrl": "/docs/projects/gameServer/230819/"
-  },"97": {
     "doc": "TIL (23-08-19)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230819/#til",
     
     "relUrl": "/docs/tils/230819/#til"
-  },"98": {
+  },"88": {
     "doc": "TIL (23-08-19)",
     "title": "2023.08.19 (SAT)",
     "content": ". 📔 To Do (반드시!!) . | 1일 1코테연습 . | 숫자 게임 | . | AWS 자격증 시험 | 책 “오브젝트” | 퐁당 매거진 프로젝트 (업로드 사항 있을 경우) | . 😄 Want To Do (하고 싶은 것) . | 게임 서버 개발 . | 프로젝트 계획 | . | 마인크래프트 코드 개조 해보기 | 깃헙 블로그 포트폴리오 | 지원서 넣기 | . ",
     "url": "/docs/tils/230819/#20230819-sat",
     
     "relUrl": "/docs/tils/230819/#20230819-sat"
-  },"99": {
+  },"89": {
     "doc": "TIL (23-08-19)",
     "title": "TIL (23-08-19)",
     "content": " ",
     "url": "/docs/tils/230819/",
     
     "relUrl": "/docs/tils/230819/"
+  },"90": {
+    "doc": "숫자 게임",
+    "title": "숫자 게임",
+    "content": " ",
+    "url": "/docs/studies/codingtest/1day1coding/230819/",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230819/"
+  },"91": {
+    "doc": "숫자 게임",
+    "title": "2023.08.19 (SAT)",
+    "content": ". 문제 : 프로그래머스 - LV3. 숫자 게임 . ",
+    "url": "/docs/studies/codingtest/1day1coding/230819/#20230819-sat",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230819/#20230819-sat"
+  },"92": {
+    "doc": "숫자 게임",
+    "title": "조건 및 설명",
+    "content": ". | N명의 팀원 | . ",
+    "url": "/docs/studies/codingtest/1day1coding/230819/#%EC%A1%B0%EA%B1%B4-%EB%B0%8F-%EC%84%A4%EB%AA%85",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230819/#조건-및-설명"
+  },"93": {
+    "doc": "숫자 게임",
+    "title": "접근법",
+    "content": ". | 남은 팀원들 중, 최소한의 숫자로 이길 수 있는 사람으로 대려감 | 두 배열을 Sort 후, 앞에서부터 서로 비교하여 count | . ",
+    "url": "/docs/studies/codingtest/1day1coding/230819/#%EC%A0%91%EA%B7%BC%EB%B2%95",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230819/#접근법"
+  },"94": {
+    "doc": "숫자 게임",
+    "title": "결과 코드",
+    "content": "import java.util.*; class Solution { public int solution(int[] A, int[] B) { int answer = 0; int count = 0; Arrays.sort(A); Arrays.sort(B); // Game Start for (int i = 0; i &lt; A.length; i++) { for (int j = count; j &lt; A.length; j++) { if (A[i] &lt; B[j]) { // 이기면 answer++; count++; break; } else { // 비기거나 지면 count++; } } } return answer; } } . ",
+    "url": "/docs/studies/codingtest/1day1coding/230819/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230819/#결과-코드"
+  },"95": {
+    "doc": "이론 일지 <1>",
+    "title": "게임 서버 토이 프로젝트 - 이론 일지 &lt;1&gt;",
+    "content": " ",
+    "url": "/docs/projects/gameServer/230819/#%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84-%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%EC%9D%B4%EB%A1%A0-%EC%9D%BC%EC%A7%80-1",
+    
+    "relUrl": "/docs/projects/gameServer/230819/#게임-서버-토이-프로젝트---이론-일지-1"
+  },"96": {
+    "doc": "이론 일지 <1>",
+    "title": "2023.08.19 (SAT)",
+    "content": ". ",
+    "url": "/docs/projects/gameServer/230819/#20230819-sat",
+    
+    "relUrl": "/docs/projects/gameServer/230819/#20230819-sat"
+  },"97": {
+    "doc": "이론 일지 <1>",
+    "title": "1. 프로세스",
+    "content": "프로그램에 있는 코드와 데이터를 프로세스 메모리로 불러들이는데, 이를 로딩된다고 할 수 있다. 프로세스는 RAM에 있다. 프로세스가 여러 개 실행되고 있는 것을 멀티프로세싱이라고 한다. ",
+    "url": "/docs/projects/gameServer/230819/#1-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4",
+    
+    "relUrl": "/docs/projects/gameServer/230819/#1-프로세스"
+  },"98": {
+    "doc": "이론 일지 <1>",
+    "title": "2. 스레드",
+    "content": "기본 적으로 서로 다른 프로세스는 상대방의 메모리 공간을 읽고 쓸 수 없다. 하미잔, 한 프로세스 안에 있는 스레드들은, 프로세스 안에 있는 메모리 공간을 같이 사용할 수 있다. 스레드 = 프로그램이 실행되는 기본 단위 . ",
+    "url": "/docs/projects/gameServer/230819/#2-%EC%8A%A4%EB%A0%88%EB%93%9C",
+    
+    "relUrl": "/docs/projects/gameServer/230819/#2-스레드"
+  },"99": {
+    "doc": "이론 일지 <1>",
+    "title": "이론 일지 <1>",
+    "content": " ",
+    "url": "/docs/projects/gameServer/230819/",
+    
+    "relUrl": "/docs/projects/gameServer/230819/"
   },"100": {
     "doc": "프로젝트 계획",
     "title": "게임 서버 토이 프로젝트 - 프로젝트 계획",
@@ -790,61 +790,61 @@
     
     "relUrl": "/docs/tils/230824/"
   },"113": {
-    "doc": "One Walk",
-    "title": "One Walk",
-    "content": " ",
-    "url": "/docs/studies/codingtest/1day1coding/230830/",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230830/"
-  },"114": {
-    "doc": "One Walk",
-    "title": "2023.08.19 (SAT)",
-    "content": ". 문제 : 백준 - 29333. One Walk . ",
-    "url": "/docs/studies/codingtest/1day1coding/230830/#20230819-sat",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230830/#20230819-sat"
-  },"115": {
-    "doc": "One Walk",
-    "title": "조건 및 설명",
-    "content": ". | 무방향 단순 그래프 G | 주어지는 변수 : 정점의 개수 N, 간선의 개수 M, 시작점 번호 S, 도착점 번호 E | 그 다음은 M개의 줄에서 간선으로 연결된 두 정점의 번호(u,v)가 주어진다. | 단 하나가 되도록 만들 수 없다면 -1을 출력, 그렇지 않으면 모든 간선의 방향을 입력된 순서대로 한 줄에 출력 (u -&gt; v : 0, v -&gt; u : 1) | . ",
-    "url": "/docs/studies/codingtest/1day1coding/230830/#%EC%A1%B0%EA%B1%B4-%EB%B0%8F-%EC%84%A4%EB%AA%85",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230830/#조건-및-설명"
-  },"116": {
-    "doc": "One Walk",
-    "title": "접근법",
-    "content": ". | 시작점부터 시작하여, 도착점까지 한 가지만 나오는 경우를 탐색한다. | 이럴 때는, | . ",
-    "url": "/docs/studies/codingtest/1day1coding/230830/#%EC%A0%91%EA%B7%BC%EB%B2%95",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230830/#접근법"
-  },"117": {
-    "doc": "One Walk",
-    "title": "결과 코드",
-    "content": "import java.util.*; import java.io.*; public class Main { public static void main(String[] args) throws Exception { int N, M, S, E; BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); StringTokenizer st = new StringTokenizer(br.readLine()); N = Integer.parseInt(st.nextToken()); M = Integer.parseInt(st.nextToken()); S = Integer.parseInt(st.nextToken()) - 1; E = Integer.parseInt(st.nextToken()) - 1; int[] answer = new int[M]; int[][] edge = new int[M][2]; for (int i = 0; i &lt; M; i++) { st = new StringTokenizer(br.readLine()); edge[i][0] = Integer.parseInt(st.nextToken()) - 1; edge[i][1] = Integer.parseInt(st.nextToken()) - 1; } } } . ",
-    "url": "/docs/studies/codingtest/1day1coding/230830/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230830/#결과-코드"
-  },"118": {
     "doc": "TIL (23-08-30)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230830/#til",
     
     "relUrl": "/docs/tils/230830/#til"
-  },"119": {
+  },"114": {
     "doc": "TIL (23-08-30)",
     "title": "2023.08.30 (WED)",
     "content": ". 📔 To Do (반드시!!) . | 1일 1코테연습 . | One Walk | 입력 할 때는, Scanner보다 BufferedReader가 훨씬 빠르다! . | BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); . | . | . | AWS 자격증 시험 . | 기본 요약 | . | . 😄 Want To Do (하고 싶은 것) . ",
     "url": "/docs/tils/230830/#20230830-wed",
     
     "relUrl": "/docs/tils/230830/#20230830-wed"
-  },"120": {
+  },"115": {
     "doc": "TIL (23-08-30)",
     "title": "TIL (23-08-30)",
     "content": " ",
     "url": "/docs/tils/230830/",
     
     "relUrl": "/docs/tils/230830/"
+  },"116": {
+    "doc": "One Walk",
+    "title": "One Walk",
+    "content": " ",
+    "url": "/docs/studies/codingtest/1day1coding/230830/",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230830/"
+  },"117": {
+    "doc": "One Walk",
+    "title": "2023.08.19 (SAT)",
+    "content": ". 문제 : 백준 - 29333. One Walk . ",
+    "url": "/docs/studies/codingtest/1day1coding/230830/#20230819-sat",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230830/#20230819-sat"
+  },"118": {
+    "doc": "One Walk",
+    "title": "조건 및 설명",
+    "content": ". | 무방향 단순 그래프 G | 주어지는 변수 : 정점의 개수 N, 간선의 개수 M, 시작점 번호 S, 도착점 번호 E | 그 다음은 M개의 줄에서 간선으로 연결된 두 정점의 번호(u,v)가 주어진다. | 단 하나가 되도록 만들 수 없다면 -1을 출력, 그렇지 않으면 모든 간선의 방향을 입력된 순서대로 한 줄에 출력 (u -&gt; v : 0, v -&gt; u : 1) | . ",
+    "url": "/docs/studies/codingtest/1day1coding/230830/#%EC%A1%B0%EA%B1%B4-%EB%B0%8F-%EC%84%A4%EB%AA%85",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230830/#조건-및-설명"
+  },"119": {
+    "doc": "One Walk",
+    "title": "접근법",
+    "content": ". | 시작점부터 시작하여, 도착점까지 한 가지만 나오는 경우를 탐색한다. | 이럴 때는, | . ",
+    "url": "/docs/studies/codingtest/1day1coding/230830/#%EC%A0%91%EA%B7%BC%EB%B2%95",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230830/#접근법"
+  },"120": {
+    "doc": "One Walk",
+    "title": "결과 코드",
+    "content": "import java.util.*; import java.io.*; public class Main { public static void main(String[] args) throws Exception { int N, M, S, E; BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); StringTokenizer st = new StringTokenizer(br.readLine()); N = Integer.parseInt(st.nextToken()); M = Integer.parseInt(st.nextToken()); S = Integer.parseInt(st.nextToken()) - 1; E = Integer.parseInt(st.nextToken()) - 1; int[] answer = new int[M]; int[][] edge = new int[M][2]; for (int i = 0; i &lt; M; i++) { st = new StringTokenizer(br.readLine()); edge[i][0] = Integer.parseInt(st.nextToken()) - 1; edge[i][1] = Integer.parseInt(st.nextToken()) - 1; } } } . ",
+    "url": "/docs/studies/codingtest/1day1coding/230830/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230830/#결과-코드"
   },"121": {
     "doc": "TIL (23-09-01)",
     "title": "TIL",
@@ -937,61 +937,61 @@
     
     "relUrl": "/docs/projects/pongdang/230906/"
   },"134": {
-    "doc": "TIL (23-09-11)",
-    "title": "TIL",
-    "content": " ",
-    "url": "/docs/tils/230911/#til",
-    
-    "relUrl": "/docs/tils/230911/#til"
-  },"135": {
-    "doc": "TIL (23-09-11)",
-    "title": "2023.09.11 (MON)",
-    "content": ". 📔 To Do (반드시!!) . | 😵‍💫 1일 1코테연습 . | 적록색약 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . 😄 Want To Do (하고 싶은 것) . | AWS 워크샵 강의 . | AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기 | . | . ",
-    "url": "/docs/tils/230911/#20230911-mon",
-    
-    "relUrl": "/docs/tils/230911/#20230911-mon"
-  },"136": {
-    "doc": "TIL (23-09-11)",
-    "title": "TIL (23-09-11)",
-    "content": " ",
-    "url": "/docs/tils/230911/",
-    
-    "relUrl": "/docs/tils/230911/"
-  },"137": {
     "doc": "적록색약",
     "title": "적록색약",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230911/",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230911/"
-  },"138": {
+  },"135": {
     "doc": "적록색약",
     "title": "2023.09.11 (MON)",
     "content": ". 문제 : 백준 - 10026. 적록색약 . ",
     "url": "/docs/studies/codingtest/1day1coding/230911/#20230911-mon",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230911/#20230911-mon"
-  },"139": {
+  },"136": {
     "doc": "적록색약",
     "title": "조건 및 설명",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230911/#%EC%A1%B0%EA%B1%B4-%EB%B0%8F-%EC%84%A4%EB%AA%85",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230911/#조건-및-설명"
-  },"140": {
+  },"137": {
     "doc": "적록색약",
     "title": "접근법",
     "content": ". | 두 가지(색약, 색약이 아닌)으로 나눈다. | BFS로 한 구역씩 정한다. | . ",
     "url": "/docs/studies/codingtest/1day1coding/230911/#%EC%A0%91%EA%B7%BC%EB%B2%95",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230911/#접근법"
-  },"141": {
+  },"138": {
     "doc": "적록색약",
     "title": "결과 코드",
     "content": "import java.util.*; import java.io.*; public class Main { static char[][] map; static boolean[][] visited; static ArrayDeque&lt;Char&gt; queue = new ArrayDeque&lt;&gt;(); static int no_Cb = 0; static int yes_Cb = 0; public static void main(String[] args) throws Exception { int size; BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); StringTokenizer st = new StringTokenizer(br.readLine()); size = Integer.parseInt(st.nextToken()); // input size // init map = new char[size][size]; bvisited = new boolean[size][size]; // input for (int i = 0; i &lt; size; i++) { st = new StringTokenizer(br.readLine()); String str = st.nextToken(); for (int j = 0; j &lt; size; j++) { map[i][j] = str.charAt(j); visited[i][j] = false; } } } // 1. no Color blindness public static int bfs_no(int start_x, int start_y char[][] map, boolean[][] visited) { visited[start_x][start_y] = true; queue.add(map[start_x][start_y]); while (!queue.isEmpty()) { char ch = queue.poll(); } } } . ",
     "url": "/docs/studies/codingtest/1day1coding/230911/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230911/#결과-코드"
+  },"139": {
+    "doc": "TIL (23-09-11)",
+    "title": "TIL",
+    "content": " ",
+    "url": "/docs/tils/230911/#til",
+    
+    "relUrl": "/docs/tils/230911/#til"
+  },"140": {
+    "doc": "TIL (23-09-11)",
+    "title": "2023.09.11 (MON)",
+    "content": ". 📔 To Do (반드시!!) . | 😵‍💫 1일 1코테연습 . | 적록색약 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . 😄 Want To Do (하고 싶은 것) . | AWS 워크샵 강의 . | AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기 | . | . ",
+    "url": "/docs/tils/230911/#20230911-mon",
+    
+    "relUrl": "/docs/tils/230911/#20230911-mon"
+  },"141": {
+    "doc": "TIL (23-09-11)",
+    "title": "TIL (23-09-11)",
+    "content": " ",
+    "url": "/docs/tils/230911/",
+    
+    "relUrl": "/docs/tils/230911/"
   },"142": {
     "doc": "TIL (23-09-12)",
     "title": "TIL",
