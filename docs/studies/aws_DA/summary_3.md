@@ -1,7 +1,7 @@
 ---
 layout: default
 title: AWS 기초 - 3
-parent: AWS (DA)
+parent: AWS (DVA)
 grand_parent: STUDY
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기
-parent: AWS (DA)
+parent: AWS (DVA)
 grand_parent: STUDY
 ---
 

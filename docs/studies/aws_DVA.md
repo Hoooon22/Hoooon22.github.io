@@ -1,12 +1,12 @@
 ---
 layout: default
-title: AWS (DA)
+title: AWS (DVA)
 nav_order: 3
 has_children: true
 parent: STUDY
 ---
 
-# AWS 자격증 - AWS Certified Developer Associate (DA)
+# AWS 자격증 - AWS Certified Developer Associate (DVA)
 {: .no_toc }
 
 ## This Page has been written since August 19, 2023.  
