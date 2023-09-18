@@ -27,7 +27,7 @@ grand_parent: STUDY
 
 - 그룹에게 권한을 부여하는 정책이 있으며, 개인에게는 개인에게만 적용되는 인라인 정책이라는 것을 생성할 수 있다.
 
-- IAM 정책 구조  
+- **IAM 정책 구조**  
     ![출처 : 【한글자막】 AWS Certified Developer Associate 시험 합격을 위한 모든 것!](../../../../assets/images/aws_dva/스크린샷 2023-09-14 오후 10.43.31.png)
 
 - 그룹과 사용자들의 정보 보호
@@ -44,4 +44,45 @@ grand_parent: STUDY
             1. 가상 MFA 장치 : 모바일이나 기타 장비로 가능 (Like 모바일 OTP)
             2. U2F 보안 키 (물리)
             3. 하드웨어 키 팝 MFA (물리)
-            
+
+- **유저가 AWS에 접근하는 방법**
+    1. AWS Management Console (protected by password + MFA)
+    2. AWS Command Line Interface (CLI): protected by access keys
+    3. AWS Software Developer Kit (SDK) - for code: protected by access keys
+    - 다들 각자의 키를 생성하기 때문에, 개인 키는 공유하면 안된다
+        - Access Key ID ~= username
+        - Secret Access Key ~= password
+
+    - AWS CLI
+        - AWS 서비스와 상호 작용할 수 있는 오픈소스 도구
+        - AWS CLI를 사용하면 Pwershell이나 터미널에서도 AWS에서 제공하는 명령어 기능을 실행할 수 있다.
+        -> 실습 해봄
+        - CLI 권한은 IAM 권한과 같다.
+        - AWS CloudShell에서도 접속할 수 있다.
+
+    - AWS SDK
+        - 소프트웨어 개발 키트
+        - 코딩을 통해 애플리케이션 내에 심어두는 것
+
+## IAM Roles  
+    이는 사용자와 유사하지만, 실제 사용자가 사용하는 것이 아니라 AWS 서비스가 사용하는 것을 말한다.
+    
+ex) EC2 인스턴스가 AWS에서 작업을 수행할 수 있도록, EC2에게 권한을 부여하는 것이다.
+
+## IAM Security Tools
+    
+- IAM 자격 증명 보고서 (계정 레벨)
+    - 계정에 있는 사용자와 다양한 자격 증명의 상태를 포함
+- IAM 액세스 관리자 (유저 레벨)
+    - 사용자의 권한을 관리
+
+## IAM 요약
+- Users: mapped to a physical user, has a password for AWS Console
+- Groups: contains users only
+- Policies: JSON document that outlines permissions for users or groups 
+- Roles: for EC2 instances or AWS services
+- Security: MFA + Password Policy
+- AWS CLI: manage your AWS services using the command-line
+- AWS SDK: manage your AWS services using a programming language 
+- Access Keys: access AWS using the CLI or SDK
+- Audit: IAM Credential Reports & IAM Access Advisor
