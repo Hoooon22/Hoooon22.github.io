@@ -77,1986 +77,2028 @@
     "relUrl": "/docs/studies/codingtest/1day1coding/20231016/#조건-및-설명"
   },"11": {
     "doc": "기지국 설치",
-    "title": "접근법",
-    "content": ". | 아파트의 갯수만큼 visited[] 배열을 만든다. | 이미 기지국의 전파 범위안에 있는 아파트를 true로 바꾼다. | . ",
-    "url": "/docs/studies/codingtest/1day1coding/20231016/#%EC%A0%91%EA%B7%BC%EB%B2%95",
+    "title": "접근법 1",
+    "content": ". | 아파트의 갯수만큼 visited[] 배열을 만든다. | 이미 기지국의 전파 범위안에 있는 아파트를 true로 바꾼다. | 일렬로 세워져있기 때문에, 앞부터 2w+1개씩 세어준다. | . ",
+    "url": "/docs/studies/codingtest/1day1coding/20231016/#%EC%A0%91%EA%B7%BC%EB%B2%95-1",
     
-    "relUrl": "/docs/studies/codingtest/1day1coding/20231016/#접근법"
+    "relUrl": "/docs/studies/codingtest/1day1coding/20231016/#접근법-1"
   },"12": {
     "doc": "기지국 설치",
-    "title": "결과 코드",
-    "content": "/* * Title : 기지국 설치 * Link : https://school.programmers.co.kr/learn/courses/30/lessons/12979?language=java */ import java.util.*; class Solution { public int solution(int n, int[] stations, int w) { int answer = 0; // 1 . boolean[] visited = new boolean[n]; for (boolean v : visited) { v = false; } // 2. for (int st : stations) { for (int i = st-1-w ; i &lt;= st-1+w; i++) visited[i] = true; } } } . ",
-    "url": "/docs/studies/codingtest/1day1coding/20231016/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
+    "title": "임시 결과 코드 1번",
+    "content": "/* * Title : 기지국 설치 * Link : https://school.programmers.co.kr/learn/courses/30/lessons/12979?language=java */ import java.util.*; class Solution { public int solution(int n, int[] stations, int w) { int answer = 0; // 1 . boolean[] visited = new boolean[n]; for (boolean v : visited) { v = false; } // 2. for (int st : stations) { int low = st-1-w; int high = st-1+w &gt; n-1 ? n-1 : st-1+w; for (int i = low; i &lt;= high; i++) visited[i] = true; } // 3. int counter = 0; int range = 2*w+1; for (int i = 0; i &lt; n; i++) { if (!visited[i] &amp;&amp; counter &lt; range) { counter++; } if (counter == range) { for (int j = i; j &gt; i-range; j--) visited[j] = true; counter = 0; answer++; } else if ((visited[i] &amp;&amp; counter != 0) || (i == n-1 &amp;&amp; counter !=0)) { for (int j = i-1; j &gt; i-counter-1; j--) visited[j] = true; counter = 0; answer++; } } return answer; } } . 채점 결과 정확성: 53.7 효율성: 0.0 합계: 53.7 / 100.0 . 방법은 맞지만, 정확성 채점에서도 런타임 에러가 발생하였다. 더 효율적이여야 한다. 해당 방법 말고, 새로운 접근법으로 가보자. ",
+    "url": "/docs/studies/codingtest/1day1coding/20231016/#%EC%9E%84%EC%8B%9C-%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C-1%EB%B2%88",
     
-    "relUrl": "/docs/studies/codingtest/1day1coding/20231016/#결과-코드"
+    "relUrl": "/docs/studies/codingtest/1day1coding/20231016/#임시-결과-코드-1번"
   },"13": {
+    "doc": "기지국 설치",
+    "title": "접근법 2.",
+    "content": ". | 기지국 전파가 닿지 않는 구간의 개수를 센다. | 그 개수를 range를 이용하여 최소 기지국 설치 개수를 센다. | stations이 한개 이상 있기 때문에, 처음-중간-끝을 나눠서 계산한다. | . ",
+    "url": "/docs/studies/codingtest/1day1coding/20231016/#%EC%A0%91%EA%B7%BC%EB%B2%95-2",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/20231016/#접근법-2"
+  },"14": {
+    "doc": "기지국 설치",
+    "title": "임시 결과 코드 2번",
+    "content": "/* * Title : 기지국 설치 * Link : https://school.programmers.co.kr/learn/courses/30/lessons/12979?language=java */ import java.util.*; class Solution { public int solution(int n, int[] stations, int w) { int answer = 0; int range = 2*w+1; int empty_num; // 처음 empty_num = stations[0] - w - 1; // ex) 9 - 2 - 1 = 6 if (empty_num &gt; 0) { answer += empty_num / range; if (empty_num % range != 0) answer++; } // 중간 for (int i = 1; i &lt; stations.length; i++) { empty_num = (stations[i] - w) - (stations[i-1] + w) - 1; // ex) 10 - 5 -1 if (empty_num &gt; 0) { answer += empty_num / range; if (empty_num % range != 0) answer++; } } // 끝 empty_num = n - (stations[stations.length - 1] + w); if (empty_num &gt; 0) { answer += empty_num / range; if (empty_num % range != 0) answer++; } return answer; } } . 채점 결과 정확성: 70.5 효율성: 29.5 합계: 100.0 / 100.0 . ",
+    "url": "/docs/studies/codingtest/1day1coding/20231016/#%EC%9E%84%EC%8B%9C-%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C-2%EB%B2%88",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/20231016/#임시-결과-코드-2번"
+  },"15": {
     "doc": "TIL (23-06-29)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230629/#til",
     
     "relUrl": "/docs/tils/230629/#til"
-  },"14": {
+  },"16": {
     "doc": "TIL (23-06-29)",
     "title": "2023.06.29 (WED)",
     "content": ". 📌 오늘의 TIL . | 💻 깃허브 블로그 제작 . | just the Docs Theme 적용 및 틀 구현 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 구현 | . | . ✏️ 오늘의 체크 사항 . | 운동 - 가슴 | . ",
     "url": "/docs/tils/230629/#20230629-wed",
     
     "relUrl": "/docs/tils/230629/#20230629-wed"
-  },"15": {
+  },"17": {
     "doc": "TIL (23-06-29)",
     "title": "TIL (23-06-29)",
     "content": " ",
     "url": "/docs/tils/230629/",
     
     "relUrl": "/docs/tils/230629/"
-  },"16": {
+  },"18": {
     "doc": "TIL (23-07-02)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230702/#til",
     
     "relUrl": "/docs/tils/230702/#til"
-  },"17": {
+  },"19": {
     "doc": "TIL (23-07-02)",
     "title": "2023.07.02 (SUN)",
     "content": ". 📌 오늘의 TIL . | 💻 깃허브 블로그 제작 . | 프로젝트 메뉴 생성 및 퐁당 웹매거진 프로젝트 업로드 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 동기화 매뉴얼 | . | . ✏️ 오늘의 체크 사항 . | 운동 - 등 | . ",
     "url": "/docs/tils/230702/#20230702-sun",
     
     "relUrl": "/docs/tils/230702/#20230702-sun"
-  },"18": {
+  },"20": {
     "doc": "TIL (23-07-02)",
     "title": "TIL (23-07-02)",
     "content": " ",
     "url": "/docs/tils/230702/",
     
     "relUrl": "/docs/tils/230702/"
-  },"19": {
+  },"21": {
     "doc": "제작 일지 <1>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;1&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230702/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-1",
     
     "relUrl": "/docs/projects/pongdang/230702/#퐁당-웹-매거진-프로젝트-제작-일지-1"
-  },"20": {
+  },"22": {
     "doc": "제작 일지 <1>",
     "title": "2023.07.02 (WED)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230702/#20230702-wed",
     
     "relUrl": "/docs/projects/pongdang/230702/#20230702-wed"
-  },"21": {
+  },"23": {
     "doc": "제작 일지 <1>",
     "title": "1. 프로젝트 빌드 후, Servlet.service() for sevlet 오류 발생 시",
     "content": "해결법 1. 프로젝트 클린(clean)과 재빌드(rebuild)는 빌드 도구(Maven, Gradle 등)를 사용하여 프로젝트를 초기화하고 의존성을 새롭게 다운로드하여 프로젝트를 다시 빌드하는 작업입니다. 이를 통해 이전에 캐시된 클래스 파일이나 의존성 문제로 인해 발생하는 오류를 해결할 수 있습니다. 아래는 Maven과 Gradle에서 프로젝트 클린과 재빌드를 수행하는 방법입니다: . Maven을 사용하는 경우: . 프로젝트 디렉토리로 이동합니다. 명령줄 또는 터미널에서 다음 명령어를 실행합니다: mvn clean install clean: 이전 빌드에 의해 생성된 클래스 파일과 빌드 아티팩트를 제거합니다. install: 프로젝트를 빌드하고 로컬 Maven 저장소에 라이브러리를 설치합니다. Gradle을 사용하는 경우: . 프로젝트 디렉토리로 이동합니다. 명령줄 또는 터미널에서 다음 명령어를 실행합니다: gradlew clean build clean: 이전 빌드에 의해 생성된 클래스 파일과 빌드 아티팩트를 제거합니다. build: 프로젝트를 빌드하고 필요한 의존성을 다운로드합니다. 프로젝트 클린(clean)과 재빌드(rebuild)를 실행하면 이전에 발생한 빌드 오류와 관련된 문제를 해결할 수 있습니다. 이는 캐시된 클래스 파일이나 의존성이 변경되어 다시 다운로드되고 빌드되기 때문입니다. clean으로 재빌드 하니, 정상 작동한다. ",
     "url": "/docs/projects/pongdang/230702/#1-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B9%8C%EB%93%9C-%ED%9B%84-servletservice-for-sevlet-%EC%98%A4%EB%A5%98-%EB%B0%9C%EC%83%9D-%EC%8B%9C",
     
     "relUrl": "/docs/projects/pongdang/230702/#1-프로젝트-빌드-후-servletservice-for-sevlet-오류-발생-시"
-  },"22": {
+  },"24": {
     "doc": "제작 일지 <1>",
     "title": "2. 스프링부트 스냅샷 실행 시",
     "content": "nohup이 작동하지 않는다. java -jar build/libs/Pongdang_Server2-0.0.1-SNAPSHOT.jar &gt; test.log . 없이는 정상 작동한다. 3. 동기화 순서 . | ./gradlew clean build | pkill -f Pongdang_Server2-0.0.1-SNAPSHOT.jar | java -jar build/libs/Pongdang_Server2-0.0.1-SNAPSHOT.jar &gt; test.log &amp; | . ",
     "url": "/docs/projects/pongdang/230702/#2-%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-%EC%8A%A4%EB%83%85%EC%83%B7-%EC%8B%A4%ED%96%89-%EC%8B%9C",
     
     "relUrl": "/docs/projects/pongdang/230702/#2-스프링부트-스냅샷-실행-시"
-  },"23": {
+  },"25": {
     "doc": "제작 일지 <1>",
     "title": "제작 일지 <1>",
     "content": " ",
     "url": "/docs/projects/pongdang/230702/",
     
     "relUrl": "/docs/projects/pongdang/230702/"
-  },"24": {
+  },"26": {
     "doc": "제작 일지 <2>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;2&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230706/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-2",
     
     "relUrl": "/docs/projects/pongdang/230706/#퐁당-웹-매거진-프로젝트-제작-일지-2"
-  },"25": {
+  },"27": {
     "doc": "제작 일지 <2>",
     "title": "2023.07.06 (THU)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230706/#20230706-thu",
     
     "relUrl": "/docs/projects/pongdang/230706/#20230706-thu"
-  },"26": {
+  },"28": {
     "doc": "제작 일지 <2>",
     "title": "1. 메뉴 ul margin 없애기",
     "content": ".menu ul { width : 100%; list-style-type: none; display: flex; flex-direction: row; justify-content: space-around; padding-inline-start: 0; } .menu li { text-align: center; } . padding-inline-start로 왼쪽의 padding을 없애주었다. ",
     "url": "/docs/projects/pongdang/230706/#1-%EB%A9%94%EB%89%B4-ul-margin-%EC%97%86%EC%95%A0%EA%B8%B0",
     
     "relUrl": "/docs/projects/pongdang/230706/#1-메뉴-ul-margin-없애기"
-  },"27": {
+  },"29": {
     "doc": "제작 일지 <2>",
     "title": "2. 기반 정리",
     "content": ". ",
     "url": "/docs/projects/pongdang/230706/#2-%EA%B8%B0%EB%B0%98-%EC%A0%95%EB%A6%AC",
     
     "relUrl": "/docs/projects/pongdang/230706/#2-기반-정리"
-  },"28": {
+  },"30": {
     "doc": "제작 일지 <2>",
     "title": "3. 이후 계획",
     "content": "css or js 라이버리를 사용하여, 슬라이드 및 애니메이션 효과를 적용하도록 한다. ",
     "url": "/docs/projects/pongdang/230706/#3-%EC%9D%B4%ED%9B%84-%EA%B3%84%ED%9A%8D",
     
     "relUrl": "/docs/projects/pongdang/230706/#3-이후-계획"
-  },"29": {
+  },"31": {
     "doc": "제작 일지 <2>",
     "title": "제작 일지 <2>",
     "content": " ",
     "url": "/docs/projects/pongdang/230706/",
     
     "relUrl": "/docs/projects/pongdang/230706/"
-  },"30": {
+  },"32": {
     "doc": "TIL (23-07-06)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230706/#til",
     
     "relUrl": "/docs/tils/230706/#til"
-  },"31": {
+  },"33": {
     "doc": "TIL (23-07-06)",
     "title": "2023.07.06 (THU)",
     "content": ". 📌 오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 회의 | 오늘의 제작 일지 | . | . ✏️ 오늘의 체크 사항 . | 운동 - 등 | . ",
     "url": "/docs/tils/230706/#20230706-thu",
     
     "relUrl": "/docs/tils/230706/#20230706-thu"
-  },"32": {
+  },"34": {
     "doc": "TIL (23-07-06)",
     "title": "TIL (23-07-06)",
     "content": " ",
     "url": "/docs/tils/230706/",
     
     "relUrl": "/docs/tils/230706/"
-  },"33": {
+  },"35": {
     "doc": "과제 진행하기",
     "title": "과제 진행하기",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230711/",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230711/"
-  },"34": {
+  },"36": {
     "doc": "과제 진행하기",
     "title": "2023.07.11 (TUE)",
     "content": ". 문제 : 프로그래머스 - LV2. 과제 진행하기 . ",
     "url": "/docs/studies/codingtest/1day1coding/230711/#20230711-tue",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230711/#20230711-tue"
-  },"35": {
+  },"37": {
     "doc": "과제 진행하기",
     "title": "접근법",
     "content": "조건 . | 과제는 시작하기로 한 시각이 되면 시작 | 새로운 과제를 할 시간이면, 기존에 하고 있던 과제를 멈추고 새로운 과제를 시작 . | 만약, 과제를 끝낸 시각에 우선순위는, 새로 시작해야 하는 과제 &gt; 잠시 멈춰둔 과제 | . | 멈춰둔 과제는 가장 최근에 멈춘 과제부터 시작 | . 해결법 . | plans 배열을 시작 시간을 기준으로 정렬한다. | 스택을 활용하여 잠시 멈춘 과제를 넣는다. | 조건 우선순위에 맞게 코드를 구현한다. | . ",
     "url": "/docs/studies/codingtest/1day1coding/230711/#%EC%A0%91%EA%B7%BC%EB%B2%95",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230711/#접근법"
-  },"36": {
+  },"38": {
     "doc": "과제 진행하기",
     "title": "결과 코드",
     "content": "import java.util.*; class Solution { public String[] solution(String[][] plans) { String[] answer = new String[plans.length]; int answer_count = 0; Queue&lt;String&gt; q_name = new LinkedList&lt;&gt;(); Queue&lt;Integer&gt; q_time = new LinkedList&lt;&gt;(); // plans 정렬 Arrays.sort(plans, new Comparator&lt;String[]&gt;() { @Override public int compare(String[] arr1, String[] arr2) { String[] time1 = arr1[1].split(\":\"); String[] time2 = arr2[1].split(\":\"); int hourCompare = Integer.parseInt(time1[0]) - Integer.parseInt(time2[0]); int minuteCompare = Integer.parseInt(time1[1]) - Integer.parseInt(time2[1]); return hourCompare != 0 ? hourCompare : minuteCompare; } }); // 시작 시간 정하기 int curTime = toMin(plans[0]); // 현재 시각 String curPlan = plans[0][0]; // 현재 과제명 int remainTime = Integer.parseInt(plans[0][2]); // 현재 과제 남은 시간 int count = 1; // 대기 중인 과제 순서 Stack&lt;String&gt; s_String = new Stack&lt;&gt;(); // 잠시 멈춘 과제명 Stack&lt;Integer&gt; s_Int = new Stack&lt;&gt;(); // 잠시 멈춘 과제 남은 시간 // 진행 while (answer_count &lt; plans.length) { curTime++; remainTime--; if (remainTime == 0) { // 시간이 다 되면 answer[answer_count] = curPlan; answer_count++; curPlan = \"\"; if (curTime == toMin(plans[count])) { // 다음 과제 시간이라면 curPlan = plans[count][0]; remainTime = Integer.parseInt(plans[count][2]); count++; if (count == plans.length) { count = 0; } } else if (!s_String.empty()) { // 잠시 멈춘 과제가 있다면 curPlan = s_String.pop(); remainTime = s_Int.pop(); } } else if (curTime == toMin(plans[count])) { // 다음 과제를 시작해야 한다면 // 저장 if (!curPlan.equals(\"\")) { s_String.push(curPlan); s_Int.push(remainTime); } curPlan = plans[count][0]; remainTime = Integer.parseInt(plans[count][2]); count++; if (count == plans.length) { count = 0; } } } return answer; } public static int toMin(String[] strs) { String[] time = strs[1].split(\":\"); return Integer.parseInt(time[0]) * 60 + Integer.parseInt(time[1]); } } . ",
     "url": "/docs/studies/codingtest/1day1coding/230711/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230711/#결과-코드"
-  },"37": {
+  },"39": {
     "doc": "TIL (23-07-11)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230711/#til",
     
     "relUrl": "/docs/tils/230711/#til"
-  },"38": {
+  },"40": {
     "doc": "TIL (23-07-11)",
     "title": "2023.07.11 (TUE)",
     "content": ". 📌  오늘의 TIL . | 프로그래머스 자바 코딩테스트 강의 신청 | 😵‍💫 코테 연습 . | 과제 진행하기 | . | . 📔 To Do Plan . | 1일 1코테연습 | 퐁당 매거진 프로젝트 | ? 백엔드 오픈소스 프로젝트 | ? 게임 서버 제작 | . ✏️  오늘의 체크 사항 . | 운동 - 어깨 | . ",
     "url": "/docs/tils/230711/#20230711-tue",
     
     "relUrl": "/docs/tils/230711/#20230711-tue"
-  },"39": {
+  },"41": {
     "doc": "TIL (23-07-11)",
     "title": "TIL (23-07-11)",
     "content": " ",
     "url": "/docs/tils/230711/",
     
     "relUrl": "/docs/tils/230711/"
-  },"40": {
+  },"42": {
     "doc": "TIL (23-07-13)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230713/#til",
     
     "relUrl": "/docs/tils/230713/#til"
-  },"41": {
+  },"43": {
     "doc": "TIL (23-07-13)",
     "title": "2023.07.13 (THU)",
     "content": ". 📌  오늘의 TIL . | 😵‍💫 코테 연습 . | 과제 진행하기 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 어깨 | . ",
     "url": "/docs/tils/230713/#20230713-thu",
     
     "relUrl": "/docs/tils/230713/#20230713-thu"
-  },"42": {
+  },"44": {
     "doc": "TIL (23-07-13)",
     "title": "TIL (23-07-13)",
     "content": " ",
     "url": "/docs/tils/230713/",
     
     "relUrl": "/docs/tils/230713/"
-  },"43": {
+  },"45": {
     "doc": "제작 일지 <3>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;3&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230713/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-3",
     
     "relUrl": "/docs/projects/pongdang/230713/#퐁당-웹-매거진-프로젝트-제작-일지-3"
-  },"44": {
+  },"46": {
     "doc": "제작 일지 <3>",
     "title": "2023.07.13 (THU)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230713/#20230713-thu",
     
     "relUrl": "/docs/projects/pongdang/230713/#20230713-thu"
-  },"45": {
+  },"47": {
     "doc": "제작 일지 <3>",
     "title": "1. Font CSS 적용",
     "content": " ",
     "url": "/docs/projects/pongdang/230713/#1-font-css-%EC%A0%81%EC%9A%A9",
     
     "relUrl": "/docs/projects/pongdang/230713/#1-font-css-적용"
-  },"46": {
+  },"48": {
     "doc": "제작 일지 <3>",
     "title": "2. 부트스트랩 라이브러리 적용",
     "content": " ",
     "url": "/docs/projects/pongdang/230713/#2-%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%A0%81%EC%9A%A9",
     
     "relUrl": "/docs/projects/pongdang/230713/#2-부트스트랩-라이브러리-적용"
-  },"47": {
+  },"49": {
     "doc": "제작 일지 <3>",
     "title": "제작 일지 <3>",
     "content": " ",
     "url": "/docs/projects/pongdang/230713/",
     
     "relUrl": "/docs/projects/pongdang/230713/"
-  },"48": {
+  },"50": {
     "doc": "제작 일지 <4>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;4&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230717/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-4",
     
     "relUrl": "/docs/projects/pongdang/230717/#퐁당-웹-매거진-프로젝트-제작-일지-4"
-  },"49": {
+  },"51": {
     "doc": "제작 일지 <4>",
     "title": "2023.07.17 (MON)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230717/#20230717-mon",
     
     "relUrl": "/docs/projects/pongdang/230717/#20230717-mon"
-  },"50": {
+  },"52": {
     "doc": "제작 일지 <4>",
     "title": "1. 슬라이드",
     "content": ". 구현 코드 . import React, { useState } from 'react'; import \"./Slider.css\"; import Carousel from 'react-bootstrap/Carousel'; export default function Slider() { const [index, setIndex] = useState(0); const handleSelect = (selectedIndex) =&gt; { setIndex(selectedIndex); }; return ( &lt;Carousel activeIndex={index} onSelect={handleSelect}&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;/Carousel&gt; ); } . ",
     "url": "/docs/projects/pongdang/230717/#1-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C",
     
     "relUrl": "/docs/projects/pongdang/230717/#1-슬라이드"
-  },"51": {
+  },"53": {
     "doc": "제작 일지 <4>",
     "title": "제작 일지 <4>",
     "content": " ",
     "url": "/docs/projects/pongdang/230717/",
     
     "relUrl": "/docs/projects/pongdang/230717/"
-  },"52": {
+  },"54": {
     "doc": "TIL (23-07-17)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230717/#til",
     
     "relUrl": "/docs/tils/230717/#til"
-  },"53": {
+  },"55": {
     "doc": "TIL (23-07-17)",
     "title": "2023.07.17 (MON)",
     "content": ". 📌  오늘의 TIL . | 😵‍💫 코테 연습 . | 과제 진행하기 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 등 | . ",
     "url": "/docs/tils/230717/#20230717-mon",
     
     "relUrl": "/docs/tils/230717/#20230717-mon"
-  },"54": {
+  },"56": {
     "doc": "TIL (23-07-17)",
     "title": "TIL (23-07-17)",
     "content": " ",
     "url": "/docs/tils/230717/",
     
     "relUrl": "/docs/tils/230717/"
-  },"55": {
+  },"57": {
     "doc": "전력망을 둘로 나누기",
     "title": "과제 진행하기",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230719/#%EA%B3%BC%EC%A0%9C-%EC%A7%84%ED%96%89%ED%95%98%EA%B8%B0",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230719/#과제-진행하기"
-  },"56": {
+  },"58": {
     "doc": "전력망을 둘로 나누기",
     "title": "2023.07.19 (WED)",
     "content": ". 문제 : 프로그래머스 - LV2. 전력망을 둘로 나누기 . ",
     "url": "/docs/studies/codingtest/1day1coding/230719/#20230719-wed",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230719/#20230719-wed"
-  },"57": {
+  },"59": {
     "doc": "전력망을 둘로 나누기",
     "title": "접근법",
     "content": "조건 및 설명 . | n개의 송전탑이 하나의 트리 형태로 연결 | 전선들 중 하나를 끊어서, 두 전력망이 갖게 되는 송전탑의 개수를 최대한 비슷하게 맞추고자 한다. | 두 전력망의 송전탑 개수의 차이를 return | . 해결법 . | 모두 탐색을 해도 되는 문제기 때문에, BFS를 사용한다. | 매번 가장 작은 값을 저장한다. | 자른 기준으로, 두 개의 노드를 탐색하여 갯수를 센다. | . ",
     "url": "/docs/studies/codingtest/1day1coding/230719/#%EC%A0%91%EA%B7%BC%EB%B2%95",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230719/#접근법"
-  },"58": {
+  },"60": {
     "doc": "전력망을 둘로 나누기",
     "title": "결과 코드",
     "content": "import java.util.*; class Solution { public int solution(int n, int[][] wires) { int answer = -1; public static boolean[] visited = new boolean[n]; for (int i = 0; i &lt; n; i ++) { } return answer; } public static int bfs(int start, boolean[] visited) { Queue&lt;Integer&gt; q = new LinkedList&lt;&gt;(); q.offer(start); // current node visited visited[start] = true; while(!q.isEmpty()) { int x = q.poll(); for (int i = 0; i &lt; visited.length; i++) { // ... } } } } . ",
     "url": "/docs/studies/codingtest/1day1coding/230719/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230719/#결과-코드"
-  },"59": {
+  },"61": {
     "doc": "전력망을 둘로 나누기",
     "title": "전력망을 둘로 나누기",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230719/",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230719/"
-  },"60": {
+  },"62": {
     "doc": "TIL (23-07-20)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230720/#til",
     
     "relUrl": "/docs/tils/230720/#til"
-  },"61": {
+  },"63": {
     "doc": "TIL (23-07-20)",
     "title": "2023.07.20 (THU)",
     "content": ". 📌  오늘의 TIL . | 😵‍💫 코테 피드백 . | (!) 경험치 - 정규식 | . | . ✏️  오늘의 체크 사항 . | 운동 - 등 | . ",
     "url": "/docs/tils/230720/#20230720-thu",
     
     "relUrl": "/docs/tils/230720/#20230720-thu"
-  },"62": {
+  },"64": {
     "doc": "TIL (23-07-20)",
     "title": "TIL (23-07-20)",
     "content": " ",
     "url": "/docs/tils/230720/",
     
     "relUrl": "/docs/tils/230720/"
-  },"63": {
+  },"65": {
     "doc": "(!) 경험치 - 정규식",
     "title": "(!)경험치 - 정규식",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230720/#%EA%B2%BD%ED%97%98%EC%B9%98---%EC%A0%95%EA%B7%9C%EC%8B%9D",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230720/#경험치---정규식"
-  },"64": {
+  },"66": {
     "doc": "(!) 경험치 - 정규식",
     "title": "2023.07.20 (THU)",
     "content": ". ",
     "url": "/docs/studies/codingtest/1day1coding/230720/#20230720-thu",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230720/#20230720-thu"
-  },"65": {
+  },"67": {
     "doc": "(!) 경험치 - 정규식",
     "title": "코딩 테스트를 보았다.",
     "content": "쉬운 문제에서 나를 붙잡는 이슈가 생겨버렸다. ",
     "url": "/docs/studies/codingtest/1day1coding/230720/#%EC%BD%94%EB%94%A9-%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EB%B3%B4%EC%95%98%EB%8B%A4",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230720/#코딩-테스트를-보았다"
-  },"66": {
+  },"68": {
     "doc": "(!) 경험치 - 정규식",
     "title": "정규식…",
     "content": "나는 지금까지 정규식에 대해 그렇게 깊이 알고 있지 않았다. 그 문제 또한, 사실 정규식이 없어도 풀 수 있는 문제라고 생각하고 풀었지만, 나의 엄청난 무지로 인해 계속 집착하게 되었다.. 문제의 코드다. str.split(\".\"); . 내 생각 : 외 않되..? (ㅋㅋ) . 자세히 알아보기 위해서는 split 함수에 대해서 알아보자. public String[] split(String regex) // 옳게된 함수 public String[] split(String string) // 멍청한 나의 머리에서 나온.. 나는 매개변수로 단지 string을 기준으로 나누는 함수 정도로 알고 있었다. 하지만 매개변수는 정규식이었다. 정규식에서의 ”.”은 개행 문자(\\n)을 제외한 모든 문자를 나타내는 메타 문자이다. 그래서 코드가 작동하지 않은건 당연한 것이였다.. 때문에 이스케이프 문자를 사용하여 다음과 같이 수정해야 한다. str.split(\"\\\\.\"); . 이런 사소한 지식들은 경험치처럼 쌓이고 쌓여, 나의 레벨업을 돕는다.. ",
     "url": "/docs/studies/codingtest/1day1coding/230720/#%EC%A0%95%EA%B7%9C%EC%8B%9D",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230720/#정규식"
-  },"67": {
+  },"69": {
     "doc": "(!) 경험치 - 정규식",
     "title": "(!) 경험치 - 정규식",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230720/",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230720/"
-  },"68": {
+  },"70": {
     "doc": "제작 일지 <5>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;5&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230725/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-5",
     
     "relUrl": "/docs/projects/pongdang/230725/#퐁당-웹-매거진-프로젝트-제작-일지-5"
-  },"69": {
+  },"71": {
     "doc": "제작 일지 <5>",
     "title": "2023.07.25 (TUE)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230725/#20230725-tue",
     
     "relUrl": "/docs/projects/pongdang/230725/#20230725-tue"
-  },"70": {
+  },"72": {
     "doc": "제작 일지 <5>",
     "title": "1. 슬라이드",
     "content": ". 구현 코드 . import React, { useState } from 'react'; import \"./Slider.css\"; import Carousel from 'react-bootstrap/Carousel'; export default function Slider() { const [index, setIndex] = useState(0); const handleSelect = (selectedIndex) =&gt; { setIndex(selectedIndex); }; return ( &lt;Carousel activeIndex={index} onSelect={handleSelect}&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;/Carousel&gt; ); } . ",
     "url": "/docs/projects/pongdang/230725/#1-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C",
     
     "relUrl": "/docs/projects/pongdang/230725/#1-슬라이드"
-  },"71": {
+  },"73": {
     "doc": "제작 일지 <5>",
     "title": "제작 일지 <5>",
     "content": " ",
     "url": "/docs/projects/pongdang/230725/",
     
     "relUrl": "/docs/projects/pongdang/230725/"
-  },"72": {
+  },"74": {
     "doc": "TIL (23-07-25)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230725/#til",
     
     "relUrl": "/docs/tils/230725/#til"
-  },"73": {
+  },"75": {
     "doc": "TIL (23-07-25)",
     "title": "2023.07.25 (TUE)",
     "content": ". 📌  오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 어꺠 | . ",
     "url": "/docs/tils/230725/#20230725-tue",
     
     "relUrl": "/docs/tils/230725/#20230725-tue"
-  },"74": {
+  },"76": {
     "doc": "TIL (23-07-25)",
     "title": "TIL (23-07-25)",
     "content": " ",
     "url": "/docs/tils/230725/",
     
     "relUrl": "/docs/tils/230725/"
-  },"75": {
+  },"77": {
     "doc": "TIL (23-07-31)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230731/#til",
     
     "relUrl": "/docs/tils/230731/#til"
-  },"76": {
+  },"78": {
     "doc": "TIL (23-07-31)",
     "title": "2023.07.25 (MON)",
     "content": ". 📌  오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 어꺠 | . ",
     "url": "/docs/tils/230731/#20230725-mon",
     
     "relUrl": "/docs/tils/230731/#20230725-mon"
-  },"77": {
+  },"79": {
     "doc": "TIL (23-07-31)",
     "title": "TIL (23-07-31)",
     "content": " ",
     "url": "/docs/tils/230731/",
     
     "relUrl": "/docs/tils/230731/"
-  },"78": {
+  },"80": {
     "doc": "제작 일지 <6>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;6&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230731/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-6",
     
     "relUrl": "/docs/projects/pongdang/230731/#퐁당-웹-매거진-프로젝트-제작-일지-6"
-  },"79": {
+  },"81": {
     "doc": "제작 일지 <6>",
     "title": "2023.07.31 (MON)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230731/#20230731-mon",
     
     "relUrl": "/docs/projects/pongdang/230731/#20230731-mon"
-  },"80": {
+  },"82": {
     "doc": "제작 일지 <6>",
     "title": "1. 슬라이드 재조정",
     "content": "사이드 버튼들을 투명화 시켜, 조금 더 자연스럽게 만들어 준다. ",
     "url": "/docs/projects/pongdang/230731/#1-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C-%EC%9E%AC%EC%A1%B0%EC%A0%95",
     
     "relUrl": "/docs/projects/pongdang/230731/#1-슬라이드-재조정"
-  },"81": {
+  },"83": {
     "doc": "제작 일지 <6>",
     "title": "제작 일지 <6>",
     "content": " ",
     "url": "/docs/projects/pongdang/230731/",
     
     "relUrl": "/docs/projects/pongdang/230731/"
-  },"82": {
+  },"84": {
     "doc": "TIL (23-08-08)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230808/#til",
     
     "relUrl": "/docs/tils/230808/#til"
-  },"83": {
+  },"85": {
     "doc": "TIL (23-08-08)",
     "title": "2023.08.08 (TUE)",
     "content": ". 📔 To Do . | 1일 1코테연습 | 책 “오브젝트” | 퐁당 매거진 프로젝트 | . 📌  오늘의 TIL . | !! | . ✏️  오늘의 체크 사항 . | 운동 - 어꺠 | . ",
     "url": "/docs/tils/230808/#20230808-tue",
     
     "relUrl": "/docs/tils/230808/#20230808-tue"
-  },"84": {
+  },"86": {
     "doc": "TIL (23-08-08)",
     "title": "TIL (23-08-08)",
     "content": " ",
     "url": "/docs/tils/230808/",
     
     "relUrl": "/docs/tils/230808/"
-  },"85": {
+  },"87": {
     "doc": "TIL (23-08-16)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230816/#til",
     
     "relUrl": "/docs/tils/230816/#til"
-  },"86": {
+  },"88": {
     "doc": "TIL (23-08-16)",
     "title": "2023.08.08 (WED)",
     "content": ". 📔 To Do . | 1일 1코테연습 | 퐁당 매거진 프로젝트 | AWS 자격증 시험 | 책 “오브젝트” | . 📌  오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 가슴 | . ",
     "url": "/docs/tils/230816/#20230808-wed",
     
     "relUrl": "/docs/tils/230816/#20230808-wed"
-  },"87": {
+  },"89": {
     "doc": "TIL (23-08-16)",
     "title": "TIL (23-08-16)",
     "content": " ",
     "url": "/docs/tils/230816/",
     
     "relUrl": "/docs/tils/230816/"
-  },"88": {
+  },"90": {
     "doc": "제작 일지 <7>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;7&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230816/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-7",
     
     "relUrl": "/docs/projects/pongdang/230816/#퐁당-웹-매거진-프로젝트-제작-일지-7"
-  },"89": {
+  },"91": {
     "doc": "제작 일지 <7>",
     "title": "2023.08.16 (WED)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230816/#20230816-wed",
     
     "relUrl": "/docs/projects/pongdang/230816/#20230816-wed"
-  },"90": {
+  },"92": {
     "doc": "제작 일지 <7>",
     "title": "1. 메인페이지 1차 완성",
     "content": ". | 퐁당 매거진 홈페이지 | . 전체적으로 사이즈를 키웠고, 요구사항에 맞는 디자인을 하였다. 새롭게 깨달은 점은, 리액트에서 컴포넌트를 모을 때, ClassName을 다른 모듈이더라도 같은 이름을 쓰면 안된다는 것이였다. 이것 때문에 충돌나서 헤맸던 적이.. ",
     "url": "/docs/projects/pongdang/230816/#1-%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80-1%EC%B0%A8-%EC%99%84%EC%84%B1",
     
     "relUrl": "/docs/projects/pongdang/230816/#1-메인페이지-1차-완성"
-  },"91": {
+  },"93": {
     "doc": "제작 일지 <7>",
     "title": "제작 일지 <7>",
     "content": " ",
     "url": "/docs/projects/pongdang/230816/",
     
     "relUrl": "/docs/projects/pongdang/230816/"
-  },"92": {
+  },"94": {
     "doc": "숫자 게임",
     "title": "숫자 게임",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230819/",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230819/"
-  },"93": {
+  },"95": {
     "doc": "숫자 게임",
     "title": "2023.08.19 (SAT)",
     "content": ". 문제 : 프로그래머스 - LV3. 숫자 게임 . ",
     "url": "/docs/studies/codingtest/1day1coding/230819/#20230819-sat",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230819/#20230819-sat"
-  },"94": {
+  },"96": {
     "doc": "숫자 게임",
     "title": "조건 및 설명",
     "content": ". | N명의 팀원 | . ",
     "url": "/docs/studies/codingtest/1day1coding/230819/#%EC%A1%B0%EA%B1%B4-%EB%B0%8F-%EC%84%A4%EB%AA%85",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230819/#조건-및-설명"
-  },"95": {
+  },"97": {
     "doc": "숫자 게임",
     "title": "접근법",
     "content": ". | 남은 팀원들 중, 최소한의 숫자로 이길 수 있는 사람으로 대려감 | 두 배열을 Sort 후, 앞에서부터 서로 비교하여 count | . ",
     "url": "/docs/studies/codingtest/1day1coding/230819/#%EC%A0%91%EA%B7%BC%EB%B2%95",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230819/#접근법"
-  },"96": {
+  },"98": {
     "doc": "숫자 게임",
     "title": "결과 코드",
     "content": "import java.util.*; class Solution { public int solution(int[] A, int[] B) { int answer = 0; int count = 0; Arrays.sort(A); Arrays.sort(B); // Game Start for (int i = 0; i &lt; A.length; i++) { for (int j = count; j &lt; A.length; j++) { if (A[i] &lt; B[j]) { // 이기면 answer++; count++; break; } else { // 비기거나 지면 count++; } } } return answer; } } . ",
     "url": "/docs/studies/codingtest/1day1coding/230819/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230819/#결과-코드"
-  },"97": {
+  },"99": {
     "doc": "이론 일지 <1>",
     "title": "게임 서버 토이 프로젝트 - 이론 일지 &lt;1&gt;",
     "content": " ",
     "url": "/docs/projects/gameServer/230819/#%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84-%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%EC%9D%B4%EB%A1%A0-%EC%9D%BC%EC%A7%80-1",
     
     "relUrl": "/docs/projects/gameServer/230819/#게임-서버-토이-프로젝트---이론-일지-1"
-  },"98": {
+  },"100": {
     "doc": "이론 일지 <1>",
     "title": "2023.08.19 (SAT)",
     "content": ". ",
     "url": "/docs/projects/gameServer/230819/#20230819-sat",
     
     "relUrl": "/docs/projects/gameServer/230819/#20230819-sat"
-  },"99": {
+  },"101": {
     "doc": "이론 일지 <1>",
     "title": "1. 프로세스",
     "content": "프로그램에 있는 코드와 데이터를 프로세스 메모리로 불러들이는데, 이를 로딩된다고 할 수 있다. 프로세스는 RAM에 있다. 프로세스가 여러 개 실행되고 있는 것을 멀티프로세싱이라고 한다. ",
     "url": "/docs/projects/gameServer/230819/#1-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4",
     
     "relUrl": "/docs/projects/gameServer/230819/#1-프로세스"
-  },"100": {
+  },"102": {
     "doc": "이론 일지 <1>",
     "title": "2. 스레드",
     "content": "기본 적으로 서로 다른 프로세스는 상대방의 메모리 공간을 읽고 쓸 수 없다. 하미잔, 한 프로세스 안에 있는 스레드들은, 프로세스 안에 있는 메모리 공간을 같이 사용할 수 있다. 스레드 = 프로그램이 실행되는 기본 단위 . ",
     "url": "/docs/projects/gameServer/230819/#2-%EC%8A%A4%EB%A0%88%EB%93%9C",
     
     "relUrl": "/docs/projects/gameServer/230819/#2-스레드"
-  },"101": {
+  },"103": {
     "doc": "이론 일지 <1>",
     "title": "이론 일지 <1>",
     "content": " ",
     "url": "/docs/projects/gameServer/230819/",
     
     "relUrl": "/docs/projects/gameServer/230819/"
-  },"102": {
+  },"104": {
     "doc": "TIL (23-08-19)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230819/#til",
     
     "relUrl": "/docs/tils/230819/#til"
-  },"103": {
+  },"105": {
     "doc": "TIL (23-08-19)",
     "title": "2023.08.19 (SAT)",
     "content": ". 📔 To Do (반드시!!) . | 1일 1코테연습 . | 숫자 게임 | . | AWS 자격증 시험 | 책 “오브젝트” | 퐁당 매거진 프로젝트 (업로드 사항 있을 경우) | . 😄 Want To Do (하고 싶은 것) . | 게임 서버 개발 . | 프로젝트 계획 | . | 마인크래프트 코드 개조 해보기 | 깃헙 블로그 포트폴리오 | 지원서 넣기 | . ",
     "url": "/docs/tils/230819/#20230819-sat",
     
     "relUrl": "/docs/tils/230819/#20230819-sat"
-  },"104": {
+  },"106": {
     "doc": "TIL (23-08-19)",
     "title": "TIL (23-08-19)",
     "content": " ",
     "url": "/docs/tils/230819/",
     
     "relUrl": "/docs/tils/230819/"
-  },"105": {
+  },"107": {
     "doc": "프로젝트 계획",
     "title": "게임 서버 토이 프로젝트 - 프로젝트 계획",
     "content": " ",
     "url": "/docs/projects/gameServer/230819_2/#%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84-%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%84%ED%9A%8D",
     
     "relUrl": "/docs/projects/gameServer/230819_2/#게임-서버-토이-프로젝트---프로젝트-계획"
-  },"106": {
+  },"108": {
     "doc": "프로젝트 계획",
     "title": "2023.08.19 (SAT)",
     "content": ". ",
     "url": "/docs/projects/gameServer/230819_2/#20230819-sat",
     
     "relUrl": "/docs/projects/gameServer/230819_2/#20230819-sat"
-  },"107": {
+  },"109": {
     "doc": "프로젝트 계획",
     "title": "프레임워크",
     "content": "서버(스프링부트) + 게임 프레임워크(LibGDX, 일단 써보기) . ",
     "url": "/docs/projects/gameServer/230819_2/#%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC",
     
     "relUrl": "/docs/projects/gameServer/230819_2/#프레임워크"
-  },"108": {
+  },"110": {
     "doc": "프로젝트 계획",
     "title": "순서",
     "content": ". | 스프링 부트 프로젝트 생성: 우선 스프링 부트 프로젝트를 생성합니다. Spring Initializr를 이용하면 간단하게 프로젝트를 생성할 수 있습니다. https://start.spring.io/ | 게임 개발 프레임워크 선택: 자바 게임 개발에서는 여러 가지 프레임워크와 라이브러리를 사용할 수 있습니다. 대표적인 예로는 LibGDX, jMonkeyEngine, LWJGL 등이 있습니다. 이 중에서 가장 인기 있는 LibGDX를 선택하고 해당 라이브러리를 스프링 부트 프로젝트에 포함시킵니다. | 게임 API 연결: 선택한 게임 프레임워크의 API를 스프링 부트에 연결합니다. 이를 위해서는 라이브러리를 확인하고 관련 API 연동 방법을 찾아보는 것이 좋습니다. | 게임 서버 개발: 스프링 부트를 이용하여 게임 서버를 구현합니다. 게임 프레임워크에서 제공하는 서버 기능을 활용하여 스프링 부트 서버와 연동합니다. | 게임 클라이언트 개발: 게임 클라이언트에서는 개발한 스프링 부트 서버와 통신하여 게임을 실행합니다. HTTP와 WebSocket을 이용하여 통신할 수 있습니다. | 요청과 응답 처리: 게임 클라이언트에서 서버로 요청을 보내고, 서버에서는 그에 대한 응답을 처리합니다. 스프링 부트에서 HTTP 요청 및 WebSocket 연결을 처리하는 Controller를 개발하면 됩니다. 이러한 방법으로 스프링 부트와 자바 게임 개발을 연결할 수 있습니다. 하지만, 이는 어려운 작업이므로 충분한 경험과 지식이 필요합니다. 또한, 자바 게임 개발과 스프링 부트가 서로 다른 도메인이므로 그에 따른 요구사항과 성능 이슈 등을 고려해야 합니다. | . ",
     "url": "/docs/projects/gameServer/230819_2/#%EC%88%9C%EC%84%9C",
     
     "relUrl": "/docs/projects/gameServer/230819_2/#순서"
-  },"109": {
+  },"111": {
     "doc": "프로젝트 계획",
     "title": "프로젝트 계획",
     "content": " ",
     "url": "/docs/projects/gameServer/230819_2/",
     
     "relUrl": "/docs/projects/gameServer/230819_2/"
-  },"110": {
+  },"112": {
     "doc": "GDX 프로젝트 생성 및 개발 시작",
     "title": "게임 서버 토이 프로젝트 - 프로젝트 계획",
     "content": " ",
     "url": "/docs/projects/gameServer/230822/#%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84-%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%84%ED%9A%8D",
     
     "relUrl": "/docs/projects/gameServer/230822/#게임-서버-토이-프로젝트---프로젝트-계획"
-  },"111": {
+  },"113": {
     "doc": "GDX 프로젝트 생성 및 개발 시작",
     "title": "2023.08.22 (TUE)",
     "content": ". ",
     "url": "/docs/projects/gameServer/230822/#20230822-tue",
     
     "relUrl": "/docs/projects/gameServer/230822/#20230822-tue"
-  },"112": {
+  },"114": {
     "doc": "GDX 프로젝트 생성 및 개발 시작",
     "title": "기본 세팅 끝",
     "content": " ",
     "url": "/docs/projects/gameServer/230822/#%EA%B8%B0%EB%B3%B8-%EC%84%B8%ED%8C%85-%EB%81%9D",
     
     "relUrl": "/docs/projects/gameServer/230822/#기본-세팅-끝"
-  },"113": {
+  },"115": {
     "doc": "GDX 프로젝트 생성 및 개발 시작",
     "title": "개발 순서 설계",
     "content": ". | 맵, 플레이어 만들기 | 서버 연결 (2023.08.24 ~) | . ",
     "url": "/docs/projects/gameServer/230822/#%EA%B0%9C%EB%B0%9C-%EC%88%9C%EC%84%9C-%EC%84%A4%EA%B3%84",
     
     "relUrl": "/docs/projects/gameServer/230822/#개발-순서-설계"
-  },"114": {
+  },"116": {
     "doc": "GDX 프로젝트 생성 및 개발 시작",
     "title": "GDX 프로젝트 생성 및 개발 시작",
     "content": " ",
     "url": "/docs/projects/gameServer/230822/",
     
     "relUrl": "/docs/projects/gameServer/230822/"
-  },"115": {
+  },"117": {
     "doc": "TIL (23-08-24)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230824/#til",
     
     "relUrl": "/docs/tils/230824/#til"
-  },"116": {
+  },"118": {
     "doc": "TIL (23-08-24)",
     "title": "2023.08.24 (SAT)",
     "content": ". 📔 To Do (반드시!!) . | AWS 자격증 시험 . | 기본 요약 | . | . 😄 Want To Do (하고 싶은 것) . | 게임 서버 개발 . | 프로젝트 계획 | . | . ",
     "url": "/docs/tils/230824/#20230824-sat",
     
     "relUrl": "/docs/tils/230824/#20230824-sat"
-  },"117": {
+  },"119": {
     "doc": "TIL (23-08-24)",
     "title": "TIL (23-08-24)",
     "content": " ",
     "url": "/docs/tils/230824/",
     
     "relUrl": "/docs/tils/230824/"
-  },"118": {
+  },"120": {
     "doc": "One Walk",
     "title": "One Walk",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230830/",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230830/"
-  },"119": {
+  },"121": {
     "doc": "One Walk",
     "title": "2023.08.19 (SAT)",
     "content": ". 문제 : 백준 - 29333. One Walk . ",
     "url": "/docs/studies/codingtest/1day1coding/230830/#20230819-sat",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230830/#20230819-sat"
-  },"120": {
+  },"122": {
     "doc": "One Walk",
     "title": "조건 및 설명",
     "content": ". | 무방향 단순 그래프 G | 주어지는 변수 : 정점의 개수 N, 간선의 개수 M, 시작점 번호 S, 도착점 번호 E | 그 다음은 M개의 줄에서 간선으로 연결된 두 정점의 번호(u,v)가 주어진다. | 단 하나가 되도록 만들 수 없다면 -1을 출력, 그렇지 않으면 모든 간선의 방향을 입력된 순서대로 한 줄에 출력 (u -&gt; v : 0, v -&gt; u : 1) | . ",
     "url": "/docs/studies/codingtest/1day1coding/230830/#%EC%A1%B0%EA%B1%B4-%EB%B0%8F-%EC%84%A4%EB%AA%85",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230830/#조건-및-설명"
-  },"121": {
+  },"123": {
     "doc": "One Walk",
     "title": "접근법",
     "content": ". | 시작점부터 시작하여, 도착점까지 한 가지만 나오는 경우를 탐색한다. | 이럴 때는, | . ",
     "url": "/docs/studies/codingtest/1day1coding/230830/#%EC%A0%91%EA%B7%BC%EB%B2%95",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230830/#접근법"
-  },"122": {
+  },"124": {
     "doc": "One Walk",
     "title": "결과 코드",
     "content": "import java.util.*; import java.io.*; public class Main { public static void main(String[] args) throws Exception { int N, M, S, E; BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); StringTokenizer st = new StringTokenizer(br.readLine()); N = Integer.parseInt(st.nextToken()); M = Integer.parseInt(st.nextToken()); S = Integer.parseInt(st.nextToken()) - 1; E = Integer.parseInt(st.nextToken()) - 1; int[] answer = new int[M]; int[][] edge = new int[M][2]; for (int i = 0; i &lt; M; i++) { st = new StringTokenizer(br.readLine()); edge[i][0] = Integer.parseInt(st.nextToken()) - 1; edge[i][1] = Integer.parseInt(st.nextToken()) - 1; } } } . ",
     "url": "/docs/studies/codingtest/1day1coding/230830/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230830/#결과-코드"
-  },"123": {
+  },"125": {
     "doc": "TIL (23-08-30)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230830/#til",
     
     "relUrl": "/docs/tils/230830/#til"
-  },"124": {
+  },"126": {
     "doc": "TIL (23-08-30)",
     "title": "2023.08.30 (WED)",
     "content": ". 📔 To Do (반드시!!) . | 1일 1코테연습 . | One Walk | 입력 할 때는, Scanner보다 BufferedReader가 훨씬 빠르다! . | BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); . | . | . | AWS 자격증 시험 . | 기본 요약 | . | . 😄 Want To Do (하고 싶은 것) . ",
     "url": "/docs/tils/230830/#20230830-wed",
     
     "relUrl": "/docs/tils/230830/#20230830-wed"
-  },"125": {
+  },"127": {
     "doc": "TIL (23-08-30)",
     "title": "TIL (23-08-30)",
     "content": " ",
     "url": "/docs/tils/230830/",
     
     "relUrl": "/docs/tils/230830/"
-  },"126": {
+  },"128": {
     "doc": "TIL (23-09-01)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230901/#til",
     
     "relUrl": "/docs/tils/230901/#til"
-  },"127": {
+  },"129": {
     "doc": "TIL (23-09-01)",
     "title": "2023.09.01 (FRI)",
     "content": ". 📔 To Do (반드시!!) . | 1일 1코테연습 . | One Walk | . | AWS 자격증 시험 . | 기본 요약 | . | . 😄 Want To Do (하고 싶은 것) . ",
     "url": "/docs/tils/230901/#20230901-fri",
     
     "relUrl": "/docs/tils/230901/#20230901-fri"
-  },"128": {
+  },"130": {
     "doc": "TIL (23-09-01)",
     "title": "TIL (23-09-01)",
     "content": " ",
     "url": "/docs/tils/230901/",
     
     "relUrl": "/docs/tils/230901/"
-  },"129": {
+  },"131": {
     "doc": "TIL (23-09-04)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230904/#til",
     
     "relUrl": "/docs/tils/230904/#til"
-  },"130": {
+  },"132": {
     "doc": "TIL (23-09-04)",
     "title": "2023.09.04 (MON)",
     "content": ". 📔 To Do (반드시!!) . | 1일 1코테연습 . | One Walk | . | AWS 자격증 시험 . | 기본 요약 - 1 | 기본 요약 - 2 | 기본 요약 - 3 | . | . 😄 Want To Do (하고 싶은 것) . ",
     "url": "/docs/tils/230904/#20230904-mon",
     
     "relUrl": "/docs/tils/230904/#20230904-mon"
-  },"131": {
+  },"133": {
     "doc": "TIL (23-09-04)",
     "title": "TIL (23-09-04)",
     "content": " ",
     "url": "/docs/tils/230904/",
     
     "relUrl": "/docs/tils/230904/"
-  },"132": {
+  },"134": {
     "doc": "TIL (23-09-04)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230905/#til",
     
     "relUrl": "/docs/tils/230905/#til"
-  },"133": {
+  },"135": {
     "doc": "TIL (23-09-04)",
     "title": "2023.09.04 (MON)",
     "content": ". 📔 To Do (반드시!!) . | 1일 1코테연습 . | One Walk | . | AWS 자격증 시험 . | 기본 요약 - 3 | . | . 😄 Want To Do (하고 싶은 것) . ",
     "url": "/docs/tils/230905/#20230904-mon",
     
     "relUrl": "/docs/tils/230905/#20230904-mon"
-  },"134": {
+  },"136": {
     "doc": "TIL (23-09-04)",
     "title": "TIL (23-09-04)",
     "content": " ",
     "url": "/docs/tils/230905/",
     
     "relUrl": "/docs/tils/230905/"
-  },"135": {
+  },"137": {
     "doc": "제작 일지 <8>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;8&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230906/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-8",
     
     "relUrl": "/docs/projects/pongdang/230906/#퐁당-웹-매거진-프로젝트-제작-일지-8"
-  },"136": {
+  },"138": {
     "doc": "제작 일지 <8>",
     "title": "2023.09.07 (WED)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230906/#20230907-wed",
     
     "relUrl": "/docs/projects/pongdang/230906/#20230907-wed"
-  },"137": {
+  },"139": {
     "doc": "제작 일지 <8>",
     "title": "1. 라우팅 처리",
     "content": "스프링부트와 리액트를 함꼐 쓰는 중에, 다른 페이지로 가기 위한 라우팅을 해야할 때가 왔다. 1-1. 리액트 . 리액트에서는 컴포넌트로 나누어 App.js에서 라우팅 처리를 한다. function App() { return ( &lt;BrowserRouter&gt; &lt;div className=\"App\"&gt; &lt;Route path=\"/\" exact component={Main}&gt;&lt;/Route&gt; &lt;Route path=\"/test\" component={Test}&gt;&lt;/Route&gt; &lt;/div&gt; &lt;/BrowserRouter&gt; ); } . 1-2. 스프링부트 . 로컬에서는 ‘/’, ‘/test’ 모두 접속이 가능하다. 하지만 스프링부트에 연결한 서버에 접속하면, ‘/test’엔 접속이 되지 않고 404에러가 나온다. Controller를 사용하면 이 문제가 해결된다. 일단 임시로 모든 경로를 연결해준다. @Controller public class WebController implements ErrorController { @RequestMapping({\"/{path:[^\\\\.]*}\"}) public String redirect() { return \"forward:/\"; } } . ",
     "url": "/docs/projects/pongdang/230906/#1-%EB%9D%BC%EC%9A%B0%ED%8C%85-%EC%B2%98%EB%A6%AC",
     
     "relUrl": "/docs/projects/pongdang/230906/#1-라우팅-처리"
-  },"138": {
+  },"140": {
     "doc": "제작 일지 <8>",
     "title": "제작 일지 <8>",
     "content": " ",
     "url": "/docs/projects/pongdang/230906/",
     
     "relUrl": "/docs/projects/pongdang/230906/"
-  },"139": {
+  },"141": {
     "doc": "적록색약",
     "title": "적록색약",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230911/",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230911/"
-  },"140": {
+  },"142": {
     "doc": "적록색약",
     "title": "2023.09.11 (MON)",
     "content": ". 문제 : 백준 - 10026. 적록색약 . ",
     "url": "/docs/studies/codingtest/1day1coding/230911/#20230911-mon",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230911/#20230911-mon"
-  },"141": {
+  },"143": {
     "doc": "적록색약",
     "title": "조건 및 설명",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230911/#%EC%A1%B0%EA%B1%B4-%EB%B0%8F-%EC%84%A4%EB%AA%85",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230911/#조건-및-설명"
-  },"142": {
+  },"144": {
     "doc": "적록색약",
     "title": "접근법",
     "content": ". | 두 가지(색약, 색약이 아닌)으로 나눈다. | BFS로 한 구역씩 정한다. | . ",
     "url": "/docs/studies/codingtest/1day1coding/230911/#%EC%A0%91%EA%B7%BC%EB%B2%95",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230911/#접근법"
-  },"143": {
+  },"145": {
     "doc": "적록색약",
     "title": "결과 코드",
     "content": "import java.util.*; import java.io.*; public class Main { static char[][] map; static boolean[][] visited; static ArrayDeque&lt;Char&gt; queue = new ArrayDeque&lt;&gt;(); static int no_Cb = 0; static int yes_Cb = 0; public static void main(String[] args) throws Exception { int size; BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); StringTokenizer st = new StringTokenizer(br.readLine()); size = Integer.parseInt(st.nextToken()); // input size // init map = new char[size][size]; bvisited = new boolean[size][size]; // input for (int i = 0; i &lt; size; i++) { st = new StringTokenizer(br.readLine()); String str = st.nextToken(); for (int j = 0; j &lt; size; j++) { map[i][j] = str.charAt(j); visited[i][j] = false; } } } // 1. no Color blindness public static int bfs_no(int start_x, int start_y char[][] map, boolean[][] visited) { visited[start_x][start_y] = true; queue.add(map[start_x][start_y]); while (!queue.isEmpty()) { char ch = queue.poll(); } } } . ",
     "url": "/docs/studies/codingtest/1day1coding/230911/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230911/#결과-코드"
-  },"144": {
+  },"146": {
     "doc": "TIL (23-09-11)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230911/#til",
     
     "relUrl": "/docs/tils/230911/#til"
-  },"145": {
+  },"147": {
     "doc": "TIL (23-09-11)",
     "title": "2023.09.11 (MON)",
     "content": ". 📔 To Do (반드시!!) . | 😵‍💫 1일 1코테연습 . | 적록색약 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . 😄 Want To Do (하고 싶은 것) . | AWS 워크샵 강의 . | AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기 | . | . ",
     "url": "/docs/tils/230911/#20230911-mon",
     
     "relUrl": "/docs/tils/230911/#20230911-mon"
-  },"146": {
+  },"148": {
     "doc": "TIL (23-09-11)",
     "title": "TIL (23-09-11)",
     "content": " ",
     "url": "/docs/tils/230911/",
     
     "relUrl": "/docs/tils/230911/"
-  },"147": {
+  },"149": {
     "doc": "TIL (23-09-12)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230912/#til",
     
     "relUrl": "/docs/tils/230912/#til"
-  },"148": {
+  },"150": {
     "doc": "TIL (23-09-12)",
     "title": "2023.09.12 (TUE)",
     "content": ". 📔 To Do (반드시!!) . | AWS 자격증 시험 . | 기본 요약 - 3 | . | . 😄 Want To Do (하고 싶은 것) . ",
     "url": "/docs/tils/230912/#20230912-tue",
     
     "relUrl": "/docs/tils/230912/#20230912-tue"
-  },"149": {
+  },"151": {
     "doc": "TIL (23-09-12)",
     "title": "TIL (23-09-12)",
     "content": " ",
     "url": "/docs/tils/230912/",
     
     "relUrl": "/docs/tils/230912/"
-  },"150": {
+  },"152": {
     "doc": "TIL (23-09-13)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230913/#til",
     
     "relUrl": "/docs/tils/230913/#til"
-  },"151": {
+  },"153": {
     "doc": "TIL (23-09-13)",
     "title": "2023.09.13 (WED)",
     "content": ". AWS 자격증 시험 . SAA에서 DA로 변경하였다. 아무래도 지금 프로젝트와 직무 연관성이 DA쪽이 더 높은 것 같다고 판단하였다. 강의는 Udemy에서 제공하는 강사 스테판 마렉 (Stephane Maarek)의 AWS 자격증 강의이다. 평이 매우 좋고, 프리뷰를 봤는데 매우 호감이었다! . 글로벌 서비스는 리전 선택이 나오지 않는 것이 정상. EC2와 같은 서비스는 리전 선택이 필수. 또한, AWS의 모든 서비스는 모든 리전에 존재하는 것이 아니다. ",
     "url": "/docs/tils/230913/#20230913-wed",
     
     "relUrl": "/docs/tils/230913/#20230913-wed"
-  },"152": {
+  },"154": {
     "doc": "TIL (23-09-13)",
     "title": "TIL (23-09-13)",
     "content": " ",
     "url": "/docs/tils/230913/",
     
     "relUrl": "/docs/tils/230913/"
-  },"153": {
+  },"155": {
     "doc": "TIL (23-09-14)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230914/#til",
     
     "relUrl": "/docs/tils/230914/#til"
-  },"154": {
+  },"156": {
     "doc": "TIL (23-09-14)",
     "title": "2023.09.14 (THU)",
     "content": ". IAM: Users &amp; Groups . | IAM에서는 사용자를 생성하고 그룹에 배치하기 때문에, 글로벌 서비스이다. | 루트 어카운트는 기본으로 만들어진다. 이후, 루트는 사용되거나 공유되면 안된다. | 사용자와 그룹을 만들어 사용한다. | . ",
     "url": "/docs/tils/230914/#20230914-thu",
     
     "relUrl": "/docs/tils/230914/#20230914-thu"
-  },"155": {
+  },"157": {
     "doc": "TIL (23-09-14)",
     "title": "TIL (23-09-14)",
     "content": " ",
     "url": "/docs/tils/230914/",
     
     "relUrl": "/docs/tils/230914/"
-  },"156": {
+  },"158": {
     "doc": "ATM",
     "title": "ATM",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230915/",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230915/"
-  },"157": {
+  },"159": {
     "doc": "ATM",
     "title": "2023.09.15 (FRI)",
     "content": ". 문제 : 백준 - 11399. ATM . ",
     "url": "/docs/studies/codingtest/1day1coding/230915/#20230915-fri",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230915/#20230915-fri"
-  },"158": {
+  },"160": {
     "doc": "ATM",
     "title": "조건 및 설명",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230915/#%EC%A1%B0%EA%B1%B4-%EB%B0%8F-%EC%84%A4%EB%AA%85",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230915/#조건-및-설명"
-  },"159": {
+  },"161": {
     "doc": "ATM",
     "title": "접근법",
     "content": ". | 그리디를 사용하여 작은 숫자부터 Sort한 후, 계산한다. | . ",
     "url": "/docs/studies/codingtest/1day1coding/230915/#%EC%A0%91%EA%B7%BC%EB%B2%95",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230915/#접근법"
-  },"160": {
+  },"162": {
     "doc": "ATM",
     "title": "결과 코드",
     "content": "/* * Title : ATM * Link : https://www.acmicpc.net/problem/11399 */ import java.util.*; import java.io.*; public class Main { public static void main(String[] args) throws Exception { int size; int arr[]; int answer = 0; BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); StringTokenizer st = new StringTokenizer(br.readLine()); size = Integer.parseInt(st.nextToken()); arr = new int[size]; st = new StringTokenizer(br.readLine()); for (int i = 0; i &lt; size; i++) { arr[i] = Integer.parseInt(st.nextToken()); } // sort Arrays.sort(arr); // sum for (int i = 0; i &lt; size; i++) { answer += arr[i] * (size - i); } System.out.println(answer); } } . ",
     "url": "/docs/studies/codingtest/1day1coding/230915/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230915/#결과-코드"
-  },"161": {
+  },"163": {
     "doc": "상근이의 여행",
     "title": "ATM",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230917/#atm",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230917/#atm"
-  },"162": {
+  },"164": {
     "doc": "상근이의 여행",
     "title": "2023.09.17 (SUN)",
     "content": ". 문제 : 백준 - 9372. 상근이의 여행 . ",
     "url": "/docs/studies/codingtest/1day1coding/230917/#20230917-sun",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230917/#20230917-sun"
-  },"163": {
+  },"165": {
     "doc": "상근이의 여행",
     "title": "조건 및 설명",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230917/#%EC%A1%B0%EA%B1%B4-%EB%B0%8F-%EC%84%A4%EB%AA%85",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230917/#조건-및-설명"
-  },"164": {
+  },"166": {
     "doc": "상근이의 여행",
     "title": "접근법",
     "content": "1. 인접리스트로 그래프를 구현하고 2. 신장 트리로 최소 비용을 구한다. | 사실 이 문제는, 입력된 그래프가 항상 연결 그래프이므로 국가 - 1가 정답이다. | . ",
     "url": "/docs/studies/codingtest/1day1coding/230917/#%EC%A0%91%EA%B7%BC%EB%B2%95",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230917/#접근법"
-  },"165": {
+  },"167": {
     "doc": "상근이의 여행",
     "title": "결과 코드",
     "content": "/* * Title : 상근이의 여행 * Link : https://www.acmicpc.net/problem/9372 */ import java.util.*; import java.io.*; public class Main { public static void main(String[] args) throws Exception { BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); StringTokenizer st; // input int tc = Integer.parseInt(br.readLine()); // each TestCase for (int t = 0; t &lt; tc; t++) { st = new StringTokenizer(br.readLine()); int N = Integer.parseInt(st.nextToken()); // number of countries int M = Integer.parseInt(st.nextToken()); // number of planes for (int i = 0; i &lt; M; i++) { br.readLine(); // we don't need to process the plane information for this problem. } System.out.println(N-1); // the minimum number of planes Sanggeun needs to take is always N-1. } } } . ",
     "url": "/docs/studies/codingtest/1day1coding/230917/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230917/#결과-코드"
-  },"166": {
+  },"168": {
     "doc": "상근이의 여행",
     "title": "상근이의 여행",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230917/",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230917/"
-  },"167": {
+  },"169": {
     "doc": "TIL (23-09-17)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230917/#til",
     
     "relUrl": "/docs/tils/230917/#til"
-  },"168": {
+  },"170": {
     "doc": "TIL (23-09-17)",
     "title": "2023.09.17 (SUN)",
     "content": ". 그래프 - 인접 리스트 . /* * Title : 상근이의 여행 * Link : https://www.acmicpc.net/problem/9372 */ import java.util.*; import java.io.*; public class Main { public static void main(String[] args) throws Exception { BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); StringTokenizer st; int result[]; // input int tc = Integer.parseInt(br.readLine()); result = new int[tc]; // each TestCase for (int t = 0; t &lt; tc; t++) { int answer = Integer.MAX_VALUE; st = new StringTokenizer(br.readLine()); int N = Integer.parseInt(st.nextToken()); int M = Integer.parseInt(st.nextToken()); // input &amp; 인접 리스트 ArrayList&lt;ArrayList&lt;Integer&gt;&gt; graph = new ArrayList&lt;&gt;(); for (int i = 0; i &lt;= N; i++) graph.add(new ArrayList&lt;&gt;()); // 각 노드 별 리스트를 만든다. for (int i = 0; i &lt; M; i++) { // make graph st = new StringTokenizer(br.readLine()); int x = Integer.parseInt(st.nextToken()); int y = Integer.parseInt(st.nextToken()); putEdge(graph, x, y); } for (int i = 0; i &lt; N ; i++) { int check = checkEdge(graph, i); if (check &lt; answer) { answer = check; } } result[t] = answer; } for (int r:result) System.out.println(r); } public static void putEdge(ArrayList&lt;ArrayList&lt;Integer&gt;&gt; graph, int x, int y) { graph.get(x).add(y); graph.get(y).add(x); } public static int checkEdge(ArrayList&lt;ArrayList&lt;Integer&gt;&gt; graph, int x) { } } . 그래프를 표현할 때, 가장 효율적인 방법인 듯 . 신장 트리 / 최소 신장 트리 (MST) . 신장 트리란 : 그래프의 모든 정점을 사이클 없이 잇는 트리 . 최소 신장 트리 : 신장 트리에서 간선의 가중치의 합이 최소가 되는 트리 . MST는 내일 다루도록 해보고, 오늘은 신장트리를 구현하였다. | 신장트리 알고리즘 문제 . | 입력된 그래프가 항상 연결 그래프이면 정점 - 1가 정답이다. | . ",
     "url": "/docs/tils/230917/#20230917-sun",
     
     "relUrl": "/docs/tils/230917/#20230917-sun"
-  },"169": {
+  },"171": {
     "doc": "TIL (23-09-17)",
     "title": "TIL (23-09-17)",
     "content": " ",
     "url": "/docs/tils/230917/",
     
     "relUrl": "/docs/tils/230917/"
-  },"170": {
+  },"172": {
     "doc": "TIL (23-09-18)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230918/#til",
     
     "relUrl": "/docs/tils/230918/#til"
-  },"171": {
+  },"173": {
     "doc": "TIL (23-09-18)",
     "title": "2023.09.18 (MON)",
     "content": ". Message Broker . 애플리케이션, 시스템 및 서비스가 서로 간에 통신하고 정보를 교환할 수 있도록 해주는 SW . | 상호 의존적인 서비스들이 서로 다른 언어나 플랫폼으로 개발된 경우에도 통신이 가능해진다. | 메시지를 검증, 저장, 라우팅하고 이를 적절한 대상에 전달할 수 있음 | 메시지 큐를 이용함 | . ",
     "url": "/docs/tils/230918/#20230918-mon",
     
     "relUrl": "/docs/tils/230918/#20230918-mon"
-  },"172": {
+  },"174": {
     "doc": "TIL (23-09-18)",
     "title": "TIL (23-09-18)",
     "content": " ",
     "url": "/docs/tils/230918/",
     
     "relUrl": "/docs/tils/230918/"
-  },"173": {
+  },"175": {
     "doc": "웹 소켓 프로그래밍",
     "title": "웹 소켓 프로그래밍",
     "content": " ",
     "url": "/docs/projects/gameServer/230920/",
     
     "relUrl": "/docs/projects/gameServer/230920/"
-  },"174": {
+  },"176": {
     "doc": "웹 소켓 프로그래밍",
     "title": "2023.09.20 (WED)",
     "content": ". ",
     "url": "/docs/projects/gameServer/230920/#20230920-wed",
     
     "relUrl": "/docs/projects/gameServer/230920/#20230920-wed"
-  },"175": {
+  },"177": {
     "doc": "웹 소켓 프로그래밍",
     "title": "웹 소켓 프로그래밍",
     "content": "P . ",
     "url": "/docs/projects/gameServer/230920/",
     
     "relUrl": "/docs/projects/gameServer/230920/"
-  },"176": {
+  },"178": {
     "doc": "TIL (23-09-21)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230921/#til",
     
     "relUrl": "/docs/tils/230921/#til"
-  },"177": {
+  },"179": {
     "doc": "TIL (23-09-21)",
     "title": "2023.09.21 (THU)",
     "content": ". EC2 접속 시, 타임아웃 . 거의 99확률로, 보안그룹 때문이다. 인바운드 및 아웃바운드 규칙을 확인하자. EC2 콘솔에서 IAM 유저를 확인할 때, . $ aws iam list-users Unable to locate credentials. You can configure credentials by running \"aws configure\". 유저를 확인하려면, ‘aws configure’을 실행시키라고 나온다. 그래서 실행 시켜보면, . $ aws configure AWS Access Key ID [None]: AWS Secret Access Key [None]: Default region name [None]: Default output format [None]: . 라고 나오면서, 비밀 Access 키를 입력하라고 나온다… . ",
     "url": "/docs/tils/230921/#20230921-thu",
     
     "relUrl": "/docs/tils/230921/#20230921-thu"
-  },"178": {
+  },"180": {
     "doc": "TIL (23-09-21)",
     "title": "절대 IAM API 키를 직접 입력하지 않는다.",
     "content": ". | 자격 증명 정보를 누군가 EC2에 접속하여 회수할 수 있다. | . ",
     "url": "/docs/tils/230921/#%EC%A0%88%EB%8C%80-iam-api-%ED%82%A4%EB%A5%BC-%EC%A7%81%EC%A0%91-%EC%9E%85%EB%A0%A5%ED%95%98%EC%A7%80-%EC%95%8A%EB%8A%94%EB%8B%A4",
     
     "relUrl": "/docs/tils/230921/#절대-iam-api-키를-직접-입력하지-않는다"
-  },"179": {
+  },"181": {
     "doc": "TIL (23-09-21)",
     "title": "TIL (23-09-21)",
     "content": " ",
     "url": "/docs/tils/230921/",
     
     "relUrl": "/docs/tils/230921/"
-  },"180": {
+  },"182": {
     "doc": "보디빌딩",
     "title": "ATM",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230922/#atm",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230922/#atm"
-  },"181": {
+  },"183": {
     "doc": "보디빌딩",
     "title": "2023.09.22 (FRI)",
     "content": ". 문제 : 백준 - 27952. 보디빌딩 . ",
     "url": "/docs/studies/codingtest/1day1coding/230922/#20230922-fri",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230922/#20230922-fri"
-  },"182": {
+  },"184": {
     "doc": "보디빌딩",
     "title": "조건 및 설명",
     "content": ". | 루틴을 진행할 떄마다, 몸무게가 Xkg 만큼 빠진다. | 이 루틴을 하루에 여러번 가능 | . | 보디빌딩이 남은 N일 동안, 식단으로 i번째 날에 Bikg만큼 찐다. | 최소 몸무게가 Aikg 이상이어야 한다. | . ",
     "url": "/docs/studies/codingtest/1day1coding/230922/#%EC%A1%B0%EA%B1%B4-%EB%B0%8F-%EC%84%A4%EB%AA%85",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230922/#조건-및-설명"
-  },"183": {
+  },"185": {
     "doc": "보디빌딩",
     "title": "접근법",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230922/#%EC%A0%91%EA%B7%BC%EB%B2%95",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230922/#접근법"
-  },"184": {
+  },"186": {
     "doc": "보디빌딩",
     "title": "결과 코드",
     "content": "/* * Title : 보디빌딩 * Link : https://www.acmicpc.net/problem/27952 */ import java.io.*; import java.util.*; public class Main { private static int N; // 보디빌딩 대회까지 남은 일수 private static int X; // 루틴을 진행할 떄마다 빠지는 몸무게 private static int[] A; // i번째 날 최종 몸무게의 하한 private static int[] B; // i번째 날에 늘어나는 몸무게 public static void main(String[] args) throws Exception { int answer = 0; BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); StringTokenizer st; int current_weight = 0; // input st = new StringTokenizer(br.readLine()); N = Integer.parseInt(st.nextToken()); X = Integer.parseInt(st.nextToken()); A = new int[N]; B = new int[N]; st = new StringTokenizer(br.readLine()); for (int i = 0; i &lt; N; i ++) A[i] = Integer.parseInt(st.nextToken()); st = new StringTokenizer(br.readLine()); for (int i = 0; i &lt; N; i ++) B[i] = Integer.parseInt(st.nextToken()); // calculation for (int i = 0; i &lt; N; i++) { current_weight += B[i]; int routine = (current_weight - A[i]) / X; // if, he falls down if (current_weight &lt; A[i]) { answer = -1; break; } // if, he can do routine if (routine &gt; 0) { current_weight -= X * routine; answer += routine; } } System.out.println(answer); } } . ",
     "url": "/docs/studies/codingtest/1day1coding/230922/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230922/#결과-코드"
-  },"185": {
+  },"187": {
     "doc": "보디빌딩",
     "title": "보디빌딩",
     "content": " ",
     "url": "/docs/studies/codingtest/1day1coding/230922/",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230922/"
-  },"186": {
+  },"188": {
     "doc": "TIL (23-09-26)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230926/#til",
     
     "relUrl": "/docs/tils/230926/#til"
-  },"187": {
+  },"189": {
     "doc": "TIL (23-09-26)",
     "title": "2023.09.26 (TUE)",
     "content": ". 자바스크립트의 using . 기존 const와 같은 JS 키워드는 수동으로 변수를 해제/종료시켜줘야 했다. 하지만 using을 사용하면 DB 변수와 같이, 반드시 종료를 시켜줘야 하는 변수들을 종료시켜줄 수 있다. 발동 조건은 using 변수가 범위를 벗어나 더 이상 사용되지 않으면 폐기된다. ",
     "url": "/docs/tils/230926/#20230926-tue",
     
     "relUrl": "/docs/tils/230926/#20230926-tue"
-  },"188": {
+  },"190": {
     "doc": "TIL (23-09-26)",
     "title": "TIL (23-09-26)",
     "content": " ",
     "url": "/docs/tils/230926/",
     
     "relUrl": "/docs/tils/230926/"
-  },"189": {
+  },"191": {
     "doc": "제작 일지 <9>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;9&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/231003/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-9",
     
     "relUrl": "/docs/projects/pongdang/231003/#퐁당-웹-매거진-프로젝트-제작-일지-9"
-  },"190": {
+  },"192": {
     "doc": "제작 일지 <9>",
     "title": "2023.10.03 (TUE)",
     "content": ". ",
     "url": "/docs/projects/pongdang/231003/#20231003-tue",
     
     "relUrl": "/docs/projects/pongdang/231003/#20231003-tue"
-  },"191": {
+  },"193": {
     "doc": "제작 일지 <9>",
     "title": "1. 오프라인 회의",
     "content": "오프라인 회의 진행하면서, 개발 진행 . ",
     "url": "/docs/projects/pongdang/231003/#1-%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B8-%ED%9A%8C%EC%9D%98",
     
     "relUrl": "/docs/projects/pongdang/231003/#1-오프라인-회의"
-  },"192": {
+  },"194": {
     "doc": "제작 일지 <9>",
     "title": "2. 11월 14일 전까지 해야 할 업무",
     "content": ". | 검색 DB | 검색 알고리즘 | 인터뷰 페이지 | 수시로 피드백 받은거 바로바로 수정 | . ",
     "url": "/docs/projects/pongdang/231003/#2-11%EC%9B%94-14%EC%9D%BC-%EC%A0%84%EA%B9%8C%EC%A7%80-%ED%95%B4%EC%95%BC-%ED%95%A0-%EC%97%85%EB%AC%B4",
     
     "relUrl": "/docs/projects/pongdang/231003/#2-11월-14일-전까지-해야-할-업무"
-  },"193": {
+  },"195": {
     "doc": "제작 일지 <9>",
     "title": "제작 일지 <9>",
     "content": " ",
     "url": "/docs/projects/pongdang/231003/",
     
     "relUrl": "/docs/projects/pongdang/231003/"
-  },"194": {
+  },"196": {
     "doc": "제작 일지 <10>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;10&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/231009/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-10",
     
     "relUrl": "/docs/projects/pongdang/231009/#퐁당-웹-매거진-프로젝트-제작-일지-10"
-  },"195": {
+  },"197": {
     "doc": "제작 일지 <10>",
     "title": "2023.10.09 (MON)",
     "content": ". ",
     "url": "/docs/projects/pongdang/231009/#20231009-mon",
     
     "relUrl": "/docs/projects/pongdang/231009/#20231009-mon"
-  },"196": {
+  },"198": {
     "doc": "제작 일지 <10>",
     "title": "1. 검색용 DB 생성",
     "content": " ",
     "url": "/docs/projects/pongdang/231009/#1-%EA%B2%80%EC%83%89%EC%9A%A9-db-%EC%83%9D%EC%84%B1",
     
     "relUrl": "/docs/projects/pongdang/231009/#1-검색용-db-생성"
-  },"197": {
+  },"199": {
     "doc": "제작 일지 <10>",
     "title": "제작 일지 <10>",
     "content": " ",
     "url": "/docs/projects/pongdang/231009/",
     
     "relUrl": "/docs/projects/pongdang/231009/"
-  },"198": {
+  },"200": {
     "doc": "TIL (23-10-10)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/231010/#til",
     
     "relUrl": "/docs/tils/231010/#til"
-  },"199": {
+  },"201": {
     "doc": "TIL (23-10-10)",
     "title": "2023.10.10 (TUE)",
     "content": ". ",
     "url": "/docs/tils/231010/#20231010-tue",
     
     "relUrl": "/docs/tils/231010/#20231010-tue"
-  },"200": {
+  },"202": {
     "doc": "TIL (23-10-10)",
     "title": "Entity, Repository",
     "content": "Entity . 데이터베이스에 쓰일 필드와 여러 엔티티간 연관관계를 정의한다. Repository . Entity에 의해 생성된 DB에 접근하는 메서드들을 사용하기 위한 인터페이스이다. ",
     "url": "/docs/tils/231010/#entity-repository",
     
     "relUrl": "/docs/tils/231010/#entity-repository"
-  },"201": {
+  },"203": {
     "doc": "TIL (23-10-10)",
     "title": "TIL (23-10-10)",
     "content": " ",
     "url": "/docs/tils/231010/",
     
     "relUrl": "/docs/tils/231010/"
-  },"202": {
+  },"204": {
+    "doc": "TIL (23-10-16)",
+    "title": "TIL",
+    "content": " ",
+    "url": "/docs/tils/231016/#til",
+    
+    "relUrl": "/docs/tils/231016/#til"
+  },"205": {
+    "doc": "TIL (23-10-16)",
+    "title": "2023.10.16 (MON)",
+    "content": ". ",
+    "url": "/docs/tils/231016/#20231016-mon",
+    
+    "relUrl": "/docs/tils/231016/#20231016-mon"
+  },"206": {
+    "doc": "TIL (23-10-16)",
+    "title": "코테 연습 팁",
+    "content": ". | 노가다는 제일 최후의 수단이다. | 수식을 세울 수 있을 것 같으면, 한번 도전해라!! | . ",
+    "url": "/docs/tils/231016/#%EC%BD%94%ED%85%8C-%EC%97%B0%EC%8A%B5-%ED%8C%81",
+    
+    "relUrl": "/docs/tils/231016/#코테-연습-팁"
+  },"207": {
+    "doc": "TIL (23-10-16)",
+    "title": "TIL (23-10-16)",
+    "content": " ",
+    "url": "/docs/tils/231016/",
+    
+    "relUrl": "/docs/tils/231016/"
+  },"208": {
     "doc": "AWS (DVA)",
     "title": "AWS 자격증 - AWS Certified Developer Associate (DVA)",
     "content": " ",
     "url": "/docs/studies/aws_DVA/#aws-%EC%9E%90%EA%B2%A9%EC%A6%9D---aws-certified-developer-associate-dva",
     
     "relUrl": "/docs/studies/aws_DVA/#aws-자격증---aws-certified-developer-associate-dva"
-  },"203": {
+  },"209": {
     "doc": "AWS (DVA)",
     "title": "This Page has been written since August 19, 2023.",
     "content": "다음 사이트의 자료를 참고하였습니다. AWS Certified Developer Associate 시험 합격을 위한 모든 것! 덤프 . ",
     "url": "/docs/studies/aws_DVA/#this-page-has-been-written-since-august-19-2023",
     
     "relUrl": "/docs/studies/aws_DVA/#this-page-has-been-written-since-august-19-2023"
-  },"204": {
+  },"210": {
     "doc": "AWS (DVA)",
     "title": "AWS (DVA)",
     "content": " ",
     "url": "/docs/studies/aws_DVA/",
     
     "relUrl": "/docs/studies/aws_DVA/"
-  },"205": {
+  },"211": {
     "doc": "AWS (DVA) - Section 4",
     "title": "AWS Certified Developer Associate - Section 4 (IAM)",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section4/#aws-certified-developer-associate---section-4-iam",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section4/#aws-certified-developer-associate---section-4-iam"
-  },"206": {
+  },"212": {
     "doc": "AWS (DVA) - Section 4",
     "title": "2023.09.14 (THU)",
     "content": ". ",
     "url": "/docs/studies/aws_DA/aws_dva_section4/#20230914-thu",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section4/#20230914-thu"
-  },"207": {
+  },"213": {
     "doc": "AWS (DVA) - Section 4",
     "title": "AWS Identity &amp; Access Management (AWS IAM)",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section4/#aws-identity--access-management-aws-iam",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section4/#aws-identity--access-management-aws-iam"
-  },"208": {
+  },"214": {
     "doc": "AWS (DVA) - Section 4",
     "title": "IAM: Users &amp; Groups",
     "content": ". | IAM에서는 사용자를 생성하고 그룹에 배치하기 때문에, 글로벌 서비스이다. | 루트 어카운트는 기본으로 만들어진다. 이후, 루트는 사용되거나 공유되면 안된다. | 사용자와 그룹을 만들어 사용한다. | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section4/#iam-users--groups",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section4/#iam-users--groups"
-  },"209": {
+  },"215": {
     "doc": "AWS (DVA) - Section 4",
     "title": "IAM: 권한",
     "content": ". | 사용자 또는 그룹에게 정책, 또는 IAM 정책이라고 불리는 JSON문서를 지정할 수 있다. | AWS는 필요 이상의 권한을 사용자에게 주지 않는다. | 그룹에게 권한을 부여하는 정책이 있으며, 개인에게는 개인에게만 적용되는 인라인 정책이라는 것을 생성할 수 있다. | IAM 정책 구조 . | 그룹과 사용자들의 정보 보호 . | 비밀번호 정책 . | ex) 길이 제한, 특수문자 등 | . | (중요) 다요소 인증 - MFA . | AWS에서 필수적으로 사용하도록 권장 | 적어도 root를, 최대한 IAM 사용자를 지켜야 함 | 따라서 비밀번호 외, MFA를 이용하는 것이다. | ex) Alice has Password + MFA Token =&gt; 로그인 성공! . | AWS에서 MFA 장치 옵션 (중요) . | 가상 MFA 장치 : 모바일이나 기타 장비로 가능 (Like 모바일 OTP) | U2F 보안 키 (물리) | 하드웨어 키 팝 MFA (물리) | . | . | . | 유저가 AWS에 접근하는 방법 . | AWS Management Console (protected by password + MFA) | AWS Command Line Interface (CLI): protected by access keys | AWS Software Developer Kit (SDK) - for code: protected by access keys . | 다들 각자의 키를 생성하기 때문에, 개인 키는 공유하면 안된다 | . | Access Key ID ~= username | Secret Access Key ~= password | . | . | AWS CLI . | AWS 서비스와 상호 작용할 수 있는 오픈소스 도구 | AWS CLI를 사용하면 Pwershell이나 터미널에서도 AWS에서 제공하는 명령어 기능을 실행할 수 있다. -&gt; 실습 해봄 | CLI 권한은 IAM 권한과 같다. | AWS CloudShell에서도 접속할 수 있다. | . | AWS SDK . | 소프트웨어 개발 키트 | 코딩을 통해 애플리케이션 내에 심어두는 것 | . | . | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section4/#iam-%EA%B6%8C%ED%95%9C",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section4/#iam-권한"
-  },"210": {
+  },"216": {
     "doc": "AWS (DVA) - Section 4",
     "title": "IAM Roles",
     "content": "이는 사용자와 유사하지만, 실제 사용자가 사용하는 것이 아니라 AWS 서비스가 사용하는 것을 말한다. ex) EC2 인스턴스가 AWS에서 작업을 수행할 수 있도록, EC2에게 권한을 부여하는 것이다. ",
     "url": "/docs/studies/aws_DA/aws_dva_section4/#iam-roles",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section4/#iam-roles"
-  },"211": {
+  },"217": {
     "doc": "AWS (DVA) - Section 4",
     "title": "IAM Security Tools",
     "content": ". | IAM 자격 증명 보고서 (계정 레벨) . | 계정에 있는 사용자와 다양한 자격 증명의 상태를 포함 | . | IAM 액세스 관리자 (유저 레벨) . | 사용자의 권한을 관리 | . | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section4/#iam-security-tools",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section4/#iam-security-tools"
-  },"212": {
+  },"218": {
     "doc": "AWS (DVA) - Section 4",
     "title": "IAM 요약",
     "content": ". | Users: mapped to a physical user, has a password for AWS Console | Groups: contains users only | Policies: JSON document that outlines permissions for users or groups | Roles: for EC2 instances or AWS services | Security: MFA + Password Policy | AWS CLI: manage your AWS services using the command-line | AWS SDK: manage your AWS services using a programming language | Access Keys: access AWS using the CLI or SDK | Audit: IAM Credential Reports &amp; IAM Access Advisor | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section4/#iam-%EC%9A%94%EC%95%BD",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section4/#iam-요약"
-  },"213": {
+  },"219": {
     "doc": "AWS (DVA) - Section 4",
     "title": "AWS (DVA) - Section 4",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section4/",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section4/"
-  },"214": {
+  },"220": {
     "doc": "AWS (DVA) - Section 5",
     "title": "AWS Certified Developer Associate - Section 5 (EC2 기초)",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#aws-certified-developer-associate---section-5-ec2-%EA%B8%B0%EC%B4%88",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#aws-certified-developer-associate---section-5-ec2-기초"
-  },"215": {
+  },"221": {
     "doc": "AWS (DVA) - Section 5",
     "title": "2023.09.19 (TUE) ~",
     "content": ". ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#20230919-tue-",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#20230919-tue-"
-  },"216": {
+  },"222": {
     "doc": "AWS (DVA) - Section 5",
     "title": "EC2 인스턴스",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#ec2-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#ec2-인스턴스"
-  },"217": {
+  },"223": {
     "doc": "AWS (DVA) - Section 5",
     "title": "EC2란?",
     "content": "Elastic Compute Cloud = Infrasturcture as a Service . EC2의 작동방식을 알아야, 클라우드 작동 방식을 이해할 수 있다. ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#ec2%EB%9E%80",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#ec2란"
-  },"218": {
+  },"224": {
     "doc": "AWS (DVA) - Section 5",
     "title": "EC2 인스턴스 가상 서버에 사용 가능한 옵션",
     "content": ". | Operating System (OS): Linux, Windows or Mac OS | CPU, RAM 선택 가능 | 스토리지 공간 선택 가능 . | 네트워크를 통해 연결되는 스토리지 (EBS, EFS) | 하드워드를 통해 연결되는 스토리지 (EC2 Instance Store) | . | EC2 인스턴스에 연결할 네트워크 유형도 선택 가능 . | 네트워크 카드 속도 | 사용할 공개 IP | . | 방화벽 규칙: 보안 그룹 | Bootstrap script: EC2 User Data | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#ec2-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EA%B0%80%EC%83%81-%EC%84%9C%EB%B2%84%EC%97%90-%EC%82%AC%EC%9A%A9-%EA%B0%80%EB%8A%A5%ED%95%9C-%EC%98%B5%EC%85%98",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#ec2-인스턴스-가상-서버에-사용-가능한-옵션"
-  },"219": {
+  },"225": {
     "doc": "AWS (DVA) - Section 5",
     "title": "EC2 User Data",
     "content": "이를 사용해 인스턴스를 Bootstrap 할 수 있다. Bootstrapping: 머신이 시작할 때, 명령을 실행하는 것 . | 이 스크립트는 오직 인스턴스 시작 시 한번만 실행된다. | 작업 . | 업데이트 설치 | 소프트웨어 설치 | 인터넷 파일 다운로드 | 등등 | . | 루트 사용자로 실행된다. (psuedo) . | 예시 . | 해당 빈 칸에, 전달하고 싶은 명령어를 넣으면 된다. | . | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#ec2-user-data",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#ec2-user-data"
-  },"220": {
+  },"226": {
     "doc": "AWS (DVA) - Section 5",
     "title": "EC2 생성 실습",
     "content": "기존 사용하던 계정 말고, 다른 새 계정을 만들어 프리티어로 실습을 진행한다. ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#ec2-%EC%83%9D%EC%84%B1-%EC%8B%A4%EC%8A%B5",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#ec2-생성-실습"
-  },"221": {
+  },"227": {
     "doc": "AWS (DVA) - Section 5",
     "title": "EC2 인스턴스 유형",
     "content": "예시로 'm5.2xlarge' 라는 유형의 인스턴스를 예로 들어본다. | m: 인스턴스 클래스 | 5: 인스턴스 세대 . | AWS가 하드웨어를 계속 개선해서 새로운 세대의 하드웨어를 출시하면 m5 -&gt; m6가 되는 것. | . | 2xlarge: 인스턴스 크기 (클수록 인스턴스에 더 많은 메모리와 CPU를 가지게 됨) | . | 범용 목적 . | 범용의 인스턴스는 웹 서버나 코드 저장소와 같은 다양한 작업에 적합 | 컴퓨팅, 메모리, 네트워킹 간의 균형도 잘맞는다. | . | 컴퓨팅 최적화 인스턴스 . | 컴퓨터 집약적인 작업에 최적화된 인스턴스 | 머신러닝, 전용 게임 서버, 고성능 웹서버 | 컴퓨터 최적화의 모든 인스턴스는 C로 시작하는 이름을 가짐 (C5, C5 등) | . | 메모리 최적화 인스턴스 . | 메모리에서 대규모 데이터셋을 처리하는 유형의 작업에 적합 | R로 시작함 (RAM) | . | 스토리지 최적화 인스턴스 . | 로컬 스토리지에서 대규모의 데이터셋에 액세스할 때 적합 | I, G, H1 등 | . | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#ec2-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%9C%A0%ED%98%95",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#ec2-인스턴스-유형"
-  },"222": {
+  },"228": {
     "doc": "AWS (DVA) - Section 5",
     "title": "보안 그룹",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#%EB%B3%B4%EC%95%88-%EA%B7%B8%EB%A3%B9",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#보안-그룹"
-  },"223": {
+  },"229": {
     "doc": "AWS (DVA) - Section 5",
     "title": "보안 그룹이란?",
     "content": "AWS 클라우드에서 네트워크 보안을 실현하는 데 기본적인 기능 (보안 그룹 = 방화벽) . 보안 그룹을 이용해 EC2 인스턴스의 인바운드 및 아웃바운드 트래픽을 제어 기본적으로 허용 규칙만 사용 . | 인바운드 트래픽: 외부에서 EC2 인스턴스로 들어오는 트래픽을 허용되는지 지정 | 아웃바운드 트래픽: 내부에서 인터넷으로 통신할 수 있는지 지정 . | 보안 그룹은 여러 인스턴스에 연결할 수 있다. (다대다 관계) | SSH 전용의 별도의 보안 그룹을 관리하는 것이 좋다. | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#%EB%B3%B4%EC%95%88-%EA%B7%B8%EB%A3%B9%EC%9D%B4%EB%9E%80",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#보안-그룹이란"
-  },"224": {
+  },"230": {
     "doc": "AWS (DVA) - Section 5",
     "title": "특정 보안 그룹을 다른 보안 그룹에서 참조",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#%ED%8A%B9%EC%A0%95-%EB%B3%B4%EC%95%88-%EA%B7%B8%EB%A3%B9%EC%9D%84-%EB%8B%A4%EB%A5%B8-%EB%B3%B4%EC%95%88-%EA%B7%B8%EB%A3%B9%EC%97%90%EC%84%9C-%EC%B0%B8%EC%A1%B0",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#특정-보안-그룹을-다른-보안-그룹에서-참조"
-  },"225": {
+  },"231": {
     "doc": "AWS (DVA) - Section 5",
     "title": "포트에 대해 알아야 할 것들",
     "content": ". | 22 = SSH - EC2 인스턴스에 로그인할 때 사용 | 21 = FTP - 파일 전송 프로토콜 용 | 80 = HTTP - 보안이 적용되지 않은 웹사이트에 액세스 | 443 = HTTPS - 보안이 적용된 웹사이트 | 3389 = RDP - 원격 데스크톱 프로토콜 (윈도우 인스턴스 로그인 용) | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#%ED%8F%AC%ED%8A%B8%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EC%95%84%EC%95%BC-%ED%95%A0-%EA%B2%83%EB%93%A4",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#포트에-대해-알아야-할-것들"
-  },"226": {
+  },"232": {
     "doc": "AWS (DVA) - Section 5",
     "title": "SSH 접속 실습",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#ssh-%EC%A0%91%EC%86%8D-%EC%8B%A4%EC%8A%B5",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#ssh-접속-실습"
-  },"227": {
+  },"233": {
     "doc": "AWS (DVA) - Section 5",
     "title": "AWS (DVA) - Section 5",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/"
-  },"228": {
+  },"234": {
     "doc": "AWS (DVA) - Section 6",
     "title": "AWS Certified Developer Associate - Section 6 (EC2 인스턴스 스토리지 / EBS)",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/#aws-certified-developer-associate---section-6-ec2-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80--ebs",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/#aws-certified-developer-associate---section-6-ec2-인스턴스-스토리지--ebs"
-  },"229": {
+  },"235": {
     "doc": "AWS (DVA) - Section 6",
     "title": "2023.09.25 (MON) ~",
     "content": ". ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/#20230925-mon-",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/#20230925-mon-"
-  },"230": {
+  },"236": {
     "doc": "AWS (DVA) - Section 6",
     "title": "EC2 인스턴스 스토리지",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/#ec2-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/#ec2-인스턴스-스토리지"
-  },"231": {
+  },"237": {
     "doc": "AWS (DVA) - Section 6",
     "title": "EBS 볼륨",
     "content": "Elastic Block Store Volume . | 인스턴스가 실행 중인 동안 연결 가능한 네트워크 드라이브 | 인스턴스 종류된 후에도 데이터를 지속할 수 있다. | EBS 볼륨을 생성할 때는 특정 가용 영역에서만 가능하다. | 스냅샷을 이용하면 다른 가용 영역으로 볼륨 옮기기 가능 | . | . EBS 볼륨 = 네트워크 USB 스틱 . | 네트워크 드라이브로 EC2 인스턴스에서 분리될 수 있다. | 볼륨이기에 용량을 미리 결정해야 한다. | 인스턴스에 연결할 수 있어, 필요한 경우에만 연결한다. | . EC2 인스턴스를 통해 EBS 볼륨을 생성하는 경우, 종료 시 삭제 속성 - 기본 설정은 체크가 해제되어 있음 (인스턴스 root는 체크가 되어있음) . ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/#ebs-%EB%B3%BC%EB%A5%A8",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/#ebs-볼륨"
-  },"232": {
+  },"238": {
     "doc": "AWS (DVA) - Section 6",
     "title": "EBS 볼륨 실습",
     "content": ". | EBS 볼륨은 특정 가용 영역의 인스턴스에만 부착할 수 있다. | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/#ebs-%EB%B3%BC%EB%A5%A8-%EC%8B%A4%EC%8A%B5",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/#ebs-볼륨-실습"
-  },"233": {
+  },"239": {
     "doc": "AWS (DVA) - Section 6",
     "title": "EBS 스냅샷",
     "content": ". | EBS 볼륨의 특정 시점에서의 백업 | 스탭샷을 다른 가용 영역 및 다른 리전에 복사할 수 있다. | . 스냅샷의 기능 . | 스냅샷 아카이브 . | 스냅샷을 최대 75% 더 저렴한 아카이브 디어로 옮기는 기능 | . | EBS 스냅샷을 위한 휴지통을 만들기 . | 스냅샷을 영구적으로 삭제하는 대신, 휴지통에 보관 | 실수로 삭제한 경우 복구 가능 (보관 기간 : 하루에서 1년 설정 가능) | . | 스냅샷 완전 초기화 | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/#ebs-%EC%8A%A4%EB%83%85%EC%83%B7",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/#ebs-스냅샷"
-  },"234": {
+  },"240": {
     "doc": "AWS (DVA) - Section 6",
     "title": "AMI",
     "content": "Amazon Machine Image = 사용자 지정 EC2 인스턴스 . AMI를 생성하면 부팅과 구성에 시간이 단축된다. EC2 인스턴스의 AMI 처리 . | 인스턴스를 시작하고, 이를 사용자 지정으로 바꾼다. | 인스턴스를 중지시켜, 데이터 무결성을 확보한다. | 다른 AMI에서 인스턴스를 실행할 수 있게 된다. | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/#ami",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/#ami"
-  },"235": {
+  },"241": {
     "doc": "AWS (DVA) - Section 6",
     "title": "AWS (DVA) - Section 6",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/"
-  },"236": {
+  },"242": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_lecture1/",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/"
-  },"237": {
+  },"243": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "2023.09.11 (MON)",
     "content": ". ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#20230911-mon",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#20230911-mon"
-  },"238": {
+  },"244": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "서버리스란?",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#%EC%84%9C%EB%B2%84%EB%A6%AC%EC%8A%A4%EB%9E%80",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#서버리스란"
-  },"239": {
+  },"245": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "패러다임의 전환",
     "content": ". | 물리적 머신 | Virtual machines (VM) . | ex) ec2 | 컴퓨터 및 장비 별로 버전 차이 등으로 종속성 문제가 발생하는 단점이 존재 | . | Containerization . | VM의 단점을 해소 | 필요에 따라 서버 증설 등의 여러가지 밑단의 내용들을 신경써야함 | . | Serverless . | AWS 차원에서 모든 리소스들을 추상화함. | 지속적인 스케일링 | 사용한 만큼만 과금 | 유지보수 ZERO | 때문에, 비즈니스 가치에 집중할 수 있다. | . | . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84%EC%9D%98-%EC%A0%84%ED%99%98",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#패러다임의-전환"
-  },"240": {
+  },"246": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "서버리스란?",
     "content": ". | 서버 관리 필요없음 | 사용한 만큼만 지불 | 요청에 맞게 스케일링 | 높은 보안 수준 | . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#%EC%84%9C%EB%B2%84%EB%A6%AC%EC%8A%A4%EB%9E%80-1",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#서버리스란-1"
-  },"241": {
+  },"247": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "다양한 범주의 서버리스 서비스",
     "content": ". 출처 : AWS . | 대표적으로 AWS Lambda | 네모 표시는 실습 때, 살펴볼 내용 | . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#%EB%8B%A4%EC%96%91%ED%95%9C-%EB%B2%94%EC%A3%BC%EC%9D%98-%EC%84%9C%EB%B2%84%EB%A6%AC%EC%8A%A4-%EC%84%9C%EB%B9%84%EC%8A%A4",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#다양한-범주의-서버리스-서비스"
-  },"242": {
+  },"248": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "AWS Lambda",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#aws-lambda",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#aws-lambda"
-  },"243": {
+  },"249": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "AWS Lambda",
     "content": ". | 불필요한 서버 관리 | 자동 확장 | 고가용성 및 보안 | 사용한 만큼만 지불 | . 출처 : AWS . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#aws-lambda-1",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#aws-lambda-1"
-  },"244": {
+  },"250": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "AWS Lambda 사용 사례",
     "content": ". | Web Apps . | 정적 웹사이트 | 복합적 웹앱 | . | Backends . | 앱 &amp; 서비스 | 모바일 | IoT | . | Data Processing . | Real time | MaoReduce | Batch | . | Chatbots . | Powering chatbot loginc | . | etc | . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#aws-lambda-%EC%82%AC%EC%9A%A9-%EC%82%AC%EB%A1%80",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#aws-lambda-사용-사례"
-  },"245": {
+  },"251": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "Amazon API Gateway",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#amazon-api-gateway",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#amazon-api-gateway"
-  },"246": {
+  },"252": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "API Gateway는 API 기반 아키텍처의 관문",
     "content": "API : 응용프로그램과 운영체제 간의 통신을 연결해주는 인터페이스 . API Gateway : 서비스가 많아지면, 버전 관리 및 관리가 매우 힘들어진다. 이를 해소시켜주는 것. (like 정문 역할) . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#api-gateway%EB%8A%94-api-%EA%B8%B0%EB%B0%98-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%EC%9D%98-%EA%B4%80%EB%AC%B8",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#api-gateway는-api-기반-아키텍처의-관문"
-  },"247": {
+  },"253": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "Amazon DynamoDB",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#amazon-dynamodb",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#amazon-dynamodb"
-  },"248": {
+  },"254": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "Amazon DynamoDB",
     "content": "대규모 성능에 최적화된 완전 관리형 NoSQL 데이터베이스 서비스 . | 서버리스 . | 유지관리 불필요 | 오토 스케일링 | 고가용성 및 내결함성 | . | 높은 성능 . | 초당 수백만의 요청 처리 및 짧은 지연시간 | 다른 AWS 서비스와 통합 | . | 보안 및 엑세스 . | 전송 중 및 저장 시 암호화 | . | . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#amazon-dynamodb-1",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#amazon-dynamodb-1"
-  },"249": {
+  },"255": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "Core Concepts - Tables, Items, Attributes, Indexes",
     "content": ". 출처 : AWS . | Primary Key를 잘 설계하는 것이 중요. | Unique하게 | . | . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#core-concepts---tables-items-attributes-indexes",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#core-concepts---tables-items-attributes-indexes"
-  },"250": {
+  },"256": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "데이터 베이스 확장",
     "content": ". | SQL . | 수직정 확장 | . | NoSQL . | 수평적 확장 : 다수의 샤드로 수평확장 | . | . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%99%95%EC%9E%A5",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#데이터-베이스-확장"
-  },"251": {
+  },"257": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "실습",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#%EC%8B%A4%EC%8A%B5",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#실습"
-  },"252": {
+  },"258": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "실습 과정",
     "content": ". | Lambda 생성 | DynamoDB, API Gateway 생성 | . https://catalog.us-east-1.prod.workshops.aws/workshops/600420b7-5c4c-498f-9b80-bc7798963ba3/ko-KR/serverless . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#%EC%8B%A4%EC%8A%B5-%EA%B3%BC%EC%A0%95",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#실습-과정"
-  },"253": {
+  },"259": {
     "doc": "게임 서버 토이 프로젝트",
     "title": "Project - 게임 서버 토이 프로젝트",
     "content": " ",
     "url": "/docs/projects/gameServer/#project---%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84-%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8",
     
     "relUrl": "/docs/projects/gameServer/#project---게임-서버-토이-프로젝트"
-  },"254": {
+  },"260": {
     "doc": "게임 서버 토이 프로젝트",
     "title": "Project has been written since Aug 19, 2023.",
     "content": ". 게임 서버 토이 프로젝트 입니다. ",
     "url": "/docs/projects/gameServer/#project-has-been-written-since-aug-19-2023",
     
     "relUrl": "/docs/projects/gameServer/#project-has-been-written-since-aug-19-2023"
-  },"255": {
+  },"261": {
     "doc": "게임 서버 토이 프로젝트",
     "title": "게임 서버 토이 프로젝트",
     "content": " ",
     "url": "/docs/projects/gameServer/",
     
     "relUrl": "/docs/projects/gameServer/"
-  },"256": {
+  },"262": {
     "doc": "Hoooon22's Log",
     "title": "Hoooon22’s Log",
     "content": "Web &amp; Server Delveloper . ",
     "url": "/#hoooon22s-log",
     
     "relUrl": "/#hoooon22s-log"
-  },"257": {
+  },"263": {
     "doc": "Hoooon22's Log",
     "title": "Hoooon22's Log",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"258": {
+  },"264": {
     "doc": "오브젝트",
     "title": "Obejct &amp; OOP",
     "content": " ",
     "url": "/docs/studies/object/#obejct--oop",
     
     "relUrl": "/docs/studies/object/#obejct--oop"
-  },"259": {
+  },"265": {
     "doc": "오브젝트",
     "title": "This Page has been written since August 08, 2023.",
     "content": "참고 서적 : “오브젝트”, 조영호 . ",
     "url": "/docs/studies/object/#this-page-has-been-written-since-august-08-2023",
     
     "relUrl": "/docs/studies/object/#this-page-has-been-written-since-august-08-2023"
-  },"260": {
+  },"266": {
     "doc": "오브젝트",
     "title": "오브젝트",
     "content": " ",
     "url": "/docs/studies/object/",
     
     "relUrl": "/docs/studies/object/"
-  },"261": {
+  },"267": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "Project - 퐁당 웹 매거진 프로젝트 Ver.02",
     "content": " ",
     "url": "/docs/projects/pongdang/#project---%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-ver02",
     
     "relUrl": "/docs/projects/pongdang/#project---퐁당-웹-매거진-프로젝트-ver02"
-  },"262": {
+  },"268": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "Project has been written since July 1, 2023.",
     "content": ". | Links | . 퐁당 웹 매거진 프로젝트 Ver.01 제작 일지 . 퐁당 웹 매거진 프로젝트 Ver.01 Github(private) . 퐁당 웹 매거진 프로젝트 Ver.02 제작 일지 . 퐁당 웹 매거진 프로젝트 Ver.02 Github(public) . ",
     "url": "/docs/projects/pongdang/#project-has-been-written-since-july-1-2023",
     
     "relUrl": "/docs/projects/pongdang/#project-has-been-written-since-july-1-2023"
-  },"263": {
+  },"269": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "퐁당 웹 매거진 프로젝트",
     "content": " ",
     "url": "/docs/projects/pongdang/",
     
     "relUrl": "/docs/projects/pongdang/"
-  },"264": {
+  },"270": {
     "doc": "Portfolio",
     "title": "Portfolio",
     "content": "Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages. ",
     "url": "/docs/portfolio/",
     
     "relUrl": "/docs/portfolio/"
-  },"265": {
+  },"271": {
     "doc": "Portfolio",
     "title": "🙋🏻 Profile",
     "content": ". 학력 . | 동국대학교 컴퓨터공학과 (2018.03 ~ 2023.02) | . 기타 . | 동국대학교 인간-로봇 상호작용 연구실 학부연구생 (2019.07 ~ 2021.04) | . 웹 제작 &amp; 서버 &amp; 데이터베이스 프로그래밍 개발자를 희망하는 ‘거북이🐢’ 김지훈입니다. 앞으로 나아가는 속도는 느릴지라도, 쓰러지지 않는 단단함을 지녔습니다. 저의 프로그램과 서비스로 모두에게 행복함을 선물할 수 있는 개발자가 될 것입니다. ",
     "url": "/docs/portfolio/#profile",
     
     "relUrl": "/docs/portfolio/#profile"
-  },"266": {
+  },"272": {
     "doc": "Portfolio",
     "title": "⚒️ Skills",
     "content": "역량의 전문성에 따라 상 · 중 · 하 수준으로 분류하였습니다. 각 항목을 누르면 상세 내용을 확인할 수 있습니다. Hard Skills . Soft Skills . Tools . | Backend | Database . MySQL . ORACLE . | Frontend . HTML . CSS . Javascript . React . | DevOps . Docker . | 커뮤니케이션 스킬 | 책임감 | 협업 능력 | 리더십 | 유연성 | 체계성 . | C/C++ | Java/Spring | HTML/CSS/JS | Python | Node.js | MySQL | ORACLE | Linux | Docker | Unity | AWS | . ",
     "url": "/docs/portfolio/#%EF%B8%8F-skills",
     
     "relUrl": "/docs/portfolio/#️-skills"
-  },"267": {
+  },"273": {
     "doc": "Portfolio",
     "title": "💻 Projects",
     "content": "지금까지 진행했던 프로젝트를 최신순으로 구성했습니다. 각 이미지를 클릭하면, 해당 프로젝트에 대한 상세 내용을 확인할 수 있습니다. ",
     "url": "/docs/portfolio/#-projects",
     
     "relUrl": "/docs/portfolio/#-projects"
-  },"268": {
+  },"274": {
     "doc": "Portfolio",
     "title": "🕶️ Github &amp; Study",
     "content": " ",
     "url": "/docs/portfolio/#%EF%B8%8Fgithub--study",
     
     "relUrl": "/docs/portfolio/#️github--study"
-  },"269": {
+  },"275": {
     "doc": "Portfolio",
     "title": "Github &amp; Site",
     "content": "Github . 거북이처럼 코딩해도 괜찮으려나 → 2022/05/18 부터 Notion으로 이전 . Hoooon22’s Log → 2023/06/29 부터 github.io으로 이전 . ",
     "url": "/docs/portfolio/#github--site",
     
     "relUrl": "/docs/portfolio/#github--site"
-  },"270": {
+  },"276": {
     "doc": "Portfolio",
     "title": "Previous Study",
     "content": "TIL(Today I Learned) . 개인 개발 &amp; 공부 . 매거진 퐁당 웹사이트 제작 . ",
     "url": "/docs/portfolio/#previous-study",
     
     "relUrl": "/docs/portfolio/#previous-study"
-  },"271": {
+  },"277": {
     "doc": "Portfolio",
     "title": "💬 Contact",
     "content": "📧 momo990305@gmail.com . 📞 +82 10-3820-7501 . 🏠 경기도 화성시 . ",
     "url": "/docs/portfolio/#contact",
     
     "relUrl": "/docs/portfolio/#contact"
-  },"272": {
+  },"278": {
     "doc": "Projects",
     "title": "Project",
     "content": "Project has been written since July 1, 2023. ",
     "url": "/docs/projects#project",
     
     "relUrl": "/docs/projects#project"
-  },"273": {
+  },"279": {
     "doc": "Projects",
     "title": "Projects",
     "content": " ",
     "url": "/docs/projects",
     
     "relUrl": "/docs/projects"
-  },"274": {
+  },"280": {
     "doc": "STUDY",
     "title": "공부",
     "content": "This Page has been written since July 17, 2023. ",
     "url": "/docs/studies#%EA%B3%B5%EB%B6%80",
     
     "relUrl": "/docs/studies#공부"
-  },"275": {
+  },"281": {
     "doc": "STUDY",
     "title": "STUDY",
     "content": " ",
     "url": "/docs/studies",
     
     "relUrl": "/docs/studies"
-  },"276": {
+  },"282": {
     "doc": "AWS 기초 - 1",
     "title": "AWS 기초 - 1",
     "content": " ",
     "url": "/docs/studies/aws_DA/summary_1/",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/"
-  },"277": {
+  },"283": {
     "doc": "AWS 기초 - 1",
     "title": "2023.08.19 (SAT)",
     "content": ". ",
     "url": "/docs/studies/aws_DA/summary_1/#20230819-sat",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/#20230819-sat"
-  },"278": {
+  },"284": {
     "doc": "AWS 기초 - 1",
     "title": "1. 온프라미스와 AWS 용어 비교",
     "content": "AWS는 아마존에서 온프레미스를 클라우드 서비스로 만든 것이다. 온프라미스(On-premise)란, 기업의 서버를 클라우드 같은 원격 환경에서 운영하는 방식이 아닌, 자체적으로 보유한 전산실 서버에 직접 설치해 운영하는 방식이다. – . 온프라미스 용어 = 클라우드 용어 . | 방화벽 = 보안그룹 | ACL = NACL . | ACL(Access Control List) : 허가되지 않은 이용자가 라우터나 네트워크의 특정 자원을 접근하려고 하는 것을 차단한다. | . | 관리자 권한 = IAM | L4, 로드 밸런서 = ELB(일라스틱 로드 밸런서), 탄력적인 로드 밸련서, ALB, … . | 로드 밸런서 : 서버에 가해지는 부사(=로드)를 분산(=밸런싱)해주는 장치 또는 기술 | . | 네트워크 = VPC . | VPC는 Virtual Private Cloud로, 정의한 논리적으로 격리된 가상 네트워크에서 AWS 리소스를 시작할 수 있다. | . | 서버 = EC2(일라스틱 컴퓨트 클라우드), C2 | NAS = EFS(탄력적인 파일 시스템) . | NAS란, 네트워크 연결 스토리지로, 네트워크를 통해 효과적으로 협업할 수 있도록 데이터를 지속적으로 사용할 수 있게 하는 파일 전용 스토리지 디바이스이다. | 많은 곳에서 NAS를 사용하는 이유 : 확장 가능하며, 저렴한 스토리지를 제공하기 때문. | . | . | 디스크 = EBS (탄력적인 블록 스토어 저장장치) | DB = RDS (관계형 데이터 베이스) | . ",
     "url": "/docs/studies/aws_DA/summary_1/#1-%EC%98%A8%ED%94%84%EB%9D%BC%EB%AF%B8%EC%8A%A4%EC%99%80-aws-%EC%9A%A9%EC%96%B4-%EB%B9%84%EA%B5%90",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/#1-온프라미스와-aws-용어-비교"
-  },"279": {
+  },"285": {
     "doc": "AWS 기초 - 1",
     "title": "2. AWS의 기본 구성",
     "content": ". | 사용자가 서비스를 사용하는 과정 . | 특정 서비스에 연결하려면 도메인 질의를 한다. | DNS 서비스가 응답을 한다. | 해당 도메인을 IP로 변환하여 서버에 연결한다. | 서버의 디스크의 데이터를 읽는다.(?) | 따로 요청한 데이터를 디비에서 읽어온다. | 스토리지에 저장된 이미지나 파일들을 다운받아 사용한다. | . | AWS 용어로 치환 가능하다. | Route53이 도메인에 대한 응답을 한다. (참고로 DNS포트가 53이라, Route53이다.) | 서버 EC2로 접속한다. | 로컬 디스크인 EBS에서 데이터를 읽는다. | 비지니스적으로 요청한 데이터가 있으면, Amazon DB에서 읽어온다. | S3 등등 | . | . ",
     "url": "/docs/studies/aws_DA/summary_1/#2-aws%EC%9D%98-%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%84%B1",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/#2-aws의-기본-구성"
-  },"280": {
+  },"286": {
     "doc": "AWS 기초 - 1",
     "title": "3. 온프레미스, 클라우드, 하이브리드…",
     "content": ". | 온 프레미스 : 일반 데이터 센터, 물리 서버로 운영하는 데이터 센터 | 하이브리드 : 클라우드 + 온프레미스 | 클라우드 : AWS, AZURE, GCP 등 유료서비스 | 멀티클라우드 : 여러 개의 퍼블릭 클라우드를 사용하는 경우 | . ",
     "url": "/docs/studies/aws_DA/summary_1/#3-%EC%98%A8%ED%94%84%EB%A0%88%EB%AF%B8%EC%8A%A4-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%ED%95%98%EC%9D%B4%EB%B8%8C%EB%A6%AC%EB%93%9C",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/#3-온프레미스-클라우드-하이브리드"
-  },"281": {
+  },"287": {
     "doc": "AWS 기초 - 1",
     "title": "4. AZ",
     "content": "AZ란, 가용영역으로 한 리전에 여러 AZ가 존재한다. ex) 서울 리전, 도쿄 리전. 아마존 서버가 존재하는 곳이다. AZ끼리는 전용선으로 연결되어 있기 때문에, 빠르게 데이터를 주고 받을 수 있다. ",
     "url": "/docs/studies/aws_DA/summary_1/#4-az",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/#4-az"
-  },"282": {
+  },"288": {
     "doc": "AWS 기초 - 1",
     "title": "5. AWS 엣지 인프라 서비스",
     "content": "(1). AWS Outposts . 클라우드를 온프라미스에서도 쓸 수 있도록 확장한 것. (2). AWS Local Zones . 대형 메트로 센터를 사용한 엣지 서비스 . 엣지 컴퓨팅 : 정보 저장 및 컴퓨팅 능력을 사용자에게 더 가까이 제공하는 프로세스 . (3). AWS Wavelength . 5G 네트워크 엣지 서비스 통신사에서 클라우드 서비스 하는 것이다. ",
     "url": "/docs/studies/aws_DA/summary_1/#5-aws-%EC%97%A3%EC%A7%80-%EC%9D%B8%ED%94%84%EB%9D%BC-%EC%84%9C%EB%B9%84%EC%8A%A4",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/#5-aws-엣지-인프라-서비스"
-  },"283": {
+  },"289": {
     "doc": "AWS 기초 - 2",
     "title": "AWS 기초 - 2",
     "content": " ",
     "url": "/docs/studies/aws_DA/summary_2/",
     
     "relUrl": "/docs/studies/aws_DA/summary_2/"
-  },"284": {
+  },"290": {
     "doc": "AWS 기초 - 2",
     "title": "2023.09.04 (MON)",
     "content": ". ",
     "url": "/docs/studies/aws_DA/summary_2/#20230904-mon",
     
     "relUrl": "/docs/studies/aws_DA/summary_2/#20230904-mon"
-  },"285": {
+  },"291": {
     "doc": "AWS 기초 - 2",
     "title": "1. 서버",
     "content": "(1). EC2 . | Elastic Compute Cloud의 줄임말이다. | C가 2개여서 EC2이다. | . (2). 인스턴스 패밀리 . | AWS 인스턴스 : 가상 컴퓨팅 환경으로 애플리케이션을 배포, 관리 및 확장하는데 도움이 되는 수많은 추가 기능 제공 | 인스턴스 표기법 . | | 인스턴스 패밀리 : M, T, C, X, R, IO, … (각 기능이 다르다.) | 인스턴스 세대 : 인스턴스 패밀리에 따라, 1~5세대 | 인스턴스 크기 : 인스턴스 패밀리 및 세대에 따라 다양한 크기 제공 | . | . ",
     "url": "/docs/studies/aws_DA/summary_2/#1-%EC%84%9C%EB%B2%84",
     
     "relUrl": "/docs/studies/aws_DA/summary_2/#1-서버"
-  },"286": {
+  },"292": {
     "doc": "AWS 기초 - 2",
     "title": "2. EC2 요금",
     "content": ". | 온디맨드 인스턴스 | 예약 인스턴스 | Savings Plan | 스팟 인스턴스 | . ",
     "url": "/docs/studies/aws_DA/summary_2/#2-ec2-%EC%9A%94%EA%B8%88",
     
     "relUrl": "/docs/studies/aws_DA/summary_2/#2-ec2-요금"
-  },"287": {
+  },"293": {
     "doc": "AWS 기초 - 2",
     "title": "3. 대표적인 컨테이너 관리형 서비스",
     "content": ". | . | ECS . | 간편 관리형 서비스 | AWS 전용이다. | 컨테이너가 소수일 때 커맨드로 관리 가능하지만, 많아지면 관리가 힘들어져 관리형 서비스를 사용한다. | ECS는 AWS에서 인프라를 관리해주며, 확장 등이 쉽게 가능하다. | . | . | . | EKS . | 쿠버네티스 사용의 관리 리소스가 포함됨 | 관리시간이 줄어듬 | 마스터노드의 관리를 AWS가 해줌 | 사용자는 워커노드만 관리하면 된다. | . | 워커노드 : 배포하고자 하는 어플리케이션의 실제 실행을 수행 - 마스터 서버로는 API 서버로 명령만 내릴 수 있다. - 별도의 AWS VPC에 마스터 서버가 구성된다. (사용자는 접근 불가) | . | . | . ",
     "url": "/docs/studies/aws_DA/summary_2/#3-%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EA%B4%80%EB%A6%AC%ED%98%95-%EC%84%9C%EB%B9%84%EC%8A%A4",
     
     "relUrl": "/docs/studies/aws_DA/summary_2/#3-대표적인-컨테이너-관리형-서비스"
-  },"288": {
+  },"294": {
     "doc": "AWS 기초 - 2",
     "title": "4, 람다",
     "content": ". | 대표적인 서버리스 컴퓨팅 (이 또한 관리형 서비스) | 서버 처리가 이벤트 방식이다. (람다는 이벤트 발생 시 트래픽 처리됨) | 사용자가 확장 등을 고려할 필요가 없다. | 거의 모든 것이 자동으로 처리된다. | . ",
     "url": "/docs/studies/aws_DA/summary_2/#4-%EB%9E%8C%EB%8B%A4",
     
     "relUrl": "/docs/studies/aws_DA/summary_2/#4-람다"
-  },"289": {
+  },"295": {
     "doc": "AWS 기초 - 3",
     "title": "AWS 기초 - 3",
     "content": " ",
     "url": "/docs/studies/aws_DA/summary_3/",
     
     "relUrl": "/docs/studies/aws_DA/summary_3/"
-  },"290": {
+  },"296": {
     "doc": "AWS 기초 - 3",
     "title": "2023.09.04 (MON)",
     "content": ". ",
     "url": "/docs/studies/aws_DA/summary_3/#20230904-mon",
     
     "relUrl": "/docs/studies/aws_DA/summary_3/#20230904-mon"
-  },"291": {
+  },"297": {
     "doc": "AWS 기초 - 3",
     "title": "스토리지, 데이터 베이스",
     "content": " ",
     "url": "/docs/studies/aws_DA/summary_3/#%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B2%A0%EC%9D%B4%EC%8A%A4",
     
     "relUrl": "/docs/studies/aws_DA/summary_3/#스토리지-데이터-베이스"
-  },"292": {
+  },"298": {
     "doc": "AWS 기초 - 3",
     "title": "1. AWS 스토리지 옵션",
     "content": "(1). Options . | S3 : 오브젝트 스토리지, 일반 스토리지 | S3 Glacier : S3 중 장기 보관용으로 저렴하다. | EFS : 공유 파일 스토리지, NAS와 같다. | NAS란, 네트워크를 통해 효과적으로 협업할 수 있도록 데이터를 지속적으로 사용할 수 있게 하는 파일 전용 스토리지 디바이스 | . | Storage Gateway | EBS - EC2에서 사용하는 디스크 저장소 | . ",
     "url": "/docs/studies/aws_DA/summary_3/#1-aws-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%98%B5%EC%85%98",
     
     "relUrl": "/docs/studies/aws_DA/summary_3/#1-aws-스토리지-옵션"
-  },"293": {
+  },"299": {
     "doc": "TIL",
     "title": "Today I Learned",
     "content": "TIL has been written since July 1, 2023. ",
     "url": "/docs/tils#today-i-learned",
     
     "relUrl": "/docs/tils#today-i-learned"
-  },"294": {
+  },"300": {
     "doc": "TIL",
     "title": "TIL",
     "content": " ",
