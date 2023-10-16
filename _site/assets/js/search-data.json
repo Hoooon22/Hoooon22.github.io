@@ -71,21 +71,21 @@
   },"10": {
     "doc": "기지국 설치",
     "title": "조건 및 설명",
-    "content": " ",
+    "content": ". | N개의 아파트가 일렬로 서있음 | 일부 아파트는 원래 4g 기지국이 설치되어 있었음 | w는 전파의 도달거리 (양 옆) | 설치해야하는 기지국 개수의 최솟값을 구하라. | . ",
     "url": "/docs/studies/codingtest/1day1coding/20231016/#%EC%A1%B0%EA%B1%B4-%EB%B0%8F-%EC%84%A4%EB%AA%85",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/20231016/#조건-및-설명"
   },"11": {
     "doc": "기지국 설치",
     "title": "접근법",
-    "content": " ",
+    "content": ". | 아파트의 갯수만큼 visited[] 배열을 만든다. | 이미 기지국의 전파 범위안에 있는 아파트를 true로 바꾼다. | . ",
     "url": "/docs/studies/codingtest/1day1coding/20231016/#%EC%A0%91%EA%B7%BC%EB%B2%95",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/20231016/#접근법"
   },"12": {
     "doc": "기지국 설치",
     "title": "결과 코드",
-    "content": ". ",
+    "content": "/* * Title : 기지국 설치 * Link : https://school.programmers.co.kr/learn/courses/30/lessons/12979?language=java */ import java.util.*; class Solution { public int solution(int n, int[] stations, int w) { int answer = 0; // 1 . boolean[] visited = new boolean[n]; for (boolean v : visited) { v = false; } // 2. for (int st : stations) { for (int i = st-1-w ; i &lt;= st-1+w; i++) visited[i] = true; } } } . ",
     "url": "/docs/studies/codingtest/1day1coding/20231016/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
     
     "relUrl": "/docs/studies/codingtest/1day1coding/20231016/#결과-코드"
