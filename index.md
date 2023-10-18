@@ -6,7 +6,7 @@ description: "Just the Docs is a responsive Jekyll theme with built-in search th
 permalink: /
 ---
 
-<h1 style="color:black; margin-top: 0; font-weight:bold;">개발자 김지훈</h1>
+<h1 style="color:black; margin-top: 0; font-weight:bold;">Hoooon22</h1>
 {: .fs-9 }
 
 Web & Server Delveloper
@@ -20,7 +20,7 @@ Web & Server Delveloper
         <img src="../../../../assets/images/IMG_0675.JPG" alt="It's me!" style="width: 90%; border-radius: 7px;">
     </div>
     <div style="width: 55%;">
-        <h2 style="margin-top: 0%"><strong>Hoooon22</strong></h2>
+        <h2 style="margin-top: 0%"><strong>김지훈</strong></h2>
         <p>웹 & 서버 개발자</p>
 
         <h3>학력</h3>
