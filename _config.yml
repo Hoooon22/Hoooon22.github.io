@@ -184,5 +184,11 @@ compress_html:
   # ignore:
   #   envs: all
 
-google_analytics:
-  id: 'G-WTK357S14E'
+
+# Analytics
+analytics:
+  provider               : "google-gtag" 
+                          # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          : "G-WTK357S14E"
+    anonymize_ip         : # true, false (default)
