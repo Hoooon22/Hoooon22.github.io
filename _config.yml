@@ -184,4 +184,5 @@ compress_html:
   # ignore:
   #   envs: all
 
-google_analytics: G-WTK357S14E
+google_analytics:
+  id: 'G-WTK357S14E'
