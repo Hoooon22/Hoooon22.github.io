@@ -183,3 +183,5 @@ compress_html:
   profile: false
   # ignore:
   #   envs: all
+
+google_analytics: G-WTK357S14E
