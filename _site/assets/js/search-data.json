@@ -433,159 +433,159 @@
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230719/"
   },"62": {
-    "doc": "(!) 경험치 - 정규식",
-    "title": "(!)경험치 - 정규식",
-    "content": " ",
-    "url": "/docs/studies/codingtest/1day1coding/230720/#%EA%B2%BD%ED%97%98%EC%B9%98---%EC%A0%95%EA%B7%9C%EC%8B%9D",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230720/#경험치---정규식"
-  },"63": {
-    "doc": "(!) 경험치 - 정규식",
-    "title": "2023.07.20 (THU)",
-    "content": ". ",
-    "url": "/docs/studies/codingtest/1day1coding/230720/#20230720-thu",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230720/#20230720-thu"
-  },"64": {
-    "doc": "(!) 경험치 - 정규식",
-    "title": "코딩 테스트를 보았다.",
-    "content": "쉬운 문제에서 나를 붙잡는 이슈가 생겨버렸다. ",
-    "url": "/docs/studies/codingtest/1day1coding/230720/#%EC%BD%94%EB%94%A9-%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EB%B3%B4%EC%95%98%EB%8B%A4",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230720/#코딩-테스트를-보았다"
-  },"65": {
-    "doc": "(!) 경험치 - 정규식",
-    "title": "정규식…",
-    "content": "나는 지금까지 정규식에 대해 그렇게 깊이 알고 있지 않았다. 그 문제 또한, 사실 정규식이 없어도 풀 수 있는 문제라고 생각하고 풀었지만, 나의 엄청난 무지로 인해 계속 집착하게 되었다.. 문제의 코드다. str.split(\".\"); . 내 생각 : 외 않되..? (ㅋㅋ) . 자세히 알아보기 위해서는 split 함수에 대해서 알아보자. public String[] split(String regex) // 옳게된 함수 public String[] split(String string) // 멍청한 나의 머리에서 나온.. 나는 매개변수로 단지 string을 기준으로 나누는 함수 정도로 알고 있었다. 하지만 매개변수는 정규식이었다. 정규식에서의 ”.”은 개행 문자(\\n)을 제외한 모든 문자를 나타내는 메타 문자이다. 그래서 코드가 작동하지 않은건 당연한 것이였다.. 때문에 이스케이프 문자를 사용하여 다음과 같이 수정해야 한다. str.split(\"\\\\.\"); . 이런 사소한 지식들은 경험치처럼 쌓이고 쌓여, 나의 레벨업을 돕는다.. ",
-    "url": "/docs/studies/codingtest/1day1coding/230720/#%EC%A0%95%EA%B7%9C%EC%8B%9D",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230720/#정규식"
-  },"66": {
-    "doc": "(!) 경험치 - 정규식",
-    "title": "(!) 경험치 - 정규식",
-    "content": " ",
-    "url": "/docs/studies/codingtest/1day1coding/230720/",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230720/"
-  },"67": {
     "doc": "TIL (23-07-20)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230720/#til",
     
     "relUrl": "/docs/tils/230720/#til"
-  },"68": {
+  },"63": {
     "doc": "TIL (23-07-20)",
     "title": "2023.07.20 (THU)",
     "content": ". 📌  오늘의 TIL . | 😵‍💫 코테 피드백 . | (!) 경험치 - 정규식 | . | . ✏️  오늘의 체크 사항 . | 운동 - 등 | . ",
     "url": "/docs/tils/230720/#20230720-thu",
     
     "relUrl": "/docs/tils/230720/#20230720-thu"
-  },"69": {
+  },"64": {
     "doc": "TIL (23-07-20)",
     "title": "TIL (23-07-20)",
     "content": " ",
     "url": "/docs/tils/230720/",
     
     "relUrl": "/docs/tils/230720/"
-  },"70": {
-    "doc": "제작 일지 <5>",
-    "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;5&gt;",
+  },"65": {
+    "doc": "(!) 경험치 - 정규식",
+    "title": "(!)경험치 - 정규식",
     "content": " ",
-    "url": "/docs/projects/pongdang/230725/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-5",
+    "url": "/docs/studies/codingtest/1day1coding/230720/#%EA%B2%BD%ED%97%98%EC%B9%98---%EC%A0%95%EA%B7%9C%EC%8B%9D",
     
-    "relUrl": "/docs/projects/pongdang/230725/#퐁당-웹-매거진-프로젝트-제작-일지-5"
-  },"71": {
-    "doc": "제작 일지 <5>",
-    "title": "2023.07.25 (TUE)",
+    "relUrl": "/docs/studies/codingtest/1day1coding/230720/#경험치---정규식"
+  },"66": {
+    "doc": "(!) 경험치 - 정규식",
+    "title": "2023.07.20 (THU)",
     "content": ". ",
-    "url": "/docs/projects/pongdang/230725/#20230725-tue",
+    "url": "/docs/studies/codingtest/1day1coding/230720/#20230720-thu",
     
-    "relUrl": "/docs/projects/pongdang/230725/#20230725-tue"
-  },"72": {
-    "doc": "제작 일지 <5>",
-    "title": "1. 슬라이드",
-    "content": ". 구현 코드 . import React, { useState } from 'react'; import \"./Slider.css\"; import Carousel from 'react-bootstrap/Carousel'; export default function Slider() { const [index, setIndex] = useState(0); const handleSelect = (selectedIndex) =&gt; { setIndex(selectedIndex); }; return ( &lt;Carousel activeIndex={index} onSelect={handleSelect}&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;/Carousel&gt; ); } . ",
-    "url": "/docs/projects/pongdang/230725/#1-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C",
+    "relUrl": "/docs/studies/codingtest/1day1coding/230720/#20230720-thu"
+  },"67": {
+    "doc": "(!) 경험치 - 정규식",
+    "title": "코딩 테스트를 보았다.",
+    "content": "쉬운 문제에서 나를 붙잡는 이슈가 생겨버렸다. ",
+    "url": "/docs/studies/codingtest/1day1coding/230720/#%EC%BD%94%EB%94%A9-%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EB%B3%B4%EC%95%98%EB%8B%A4",
     
-    "relUrl": "/docs/projects/pongdang/230725/#1-슬라이드"
-  },"73": {
-    "doc": "제작 일지 <5>",
-    "title": "제작 일지 <5>",
+    "relUrl": "/docs/studies/codingtest/1day1coding/230720/#코딩-테스트를-보았다"
+  },"68": {
+    "doc": "(!) 경험치 - 정규식",
+    "title": "정규식…",
+    "content": "나는 지금까지 정규식에 대해 그렇게 깊이 알고 있지 않았다. 그 문제 또한, 사실 정규식이 없어도 풀 수 있는 문제라고 생각하고 풀었지만, 나의 엄청난 무지로 인해 계속 집착하게 되었다.. 문제의 코드다. str.split(\".\"); . 내 생각 : 외 않되..? (ㅋㅋ) . 자세히 알아보기 위해서는 split 함수에 대해서 알아보자. public String[] split(String regex) // 옳게된 함수 public String[] split(String string) // 멍청한 나의 머리에서 나온.. 나는 매개변수로 단지 string을 기준으로 나누는 함수 정도로 알고 있었다. 하지만 매개변수는 정규식이었다. 정규식에서의 ”.”은 개행 문자(\\n)을 제외한 모든 문자를 나타내는 메타 문자이다. 그래서 코드가 작동하지 않은건 당연한 것이였다.. 때문에 이스케이프 문자를 사용하여 다음과 같이 수정해야 한다. str.split(\"\\\\.\"); . 이런 사소한 지식들은 경험치처럼 쌓이고 쌓여, 나의 레벨업을 돕는다.. ",
+    "url": "/docs/studies/codingtest/1day1coding/230720/#%EC%A0%95%EA%B7%9C%EC%8B%9D",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230720/#정규식"
+  },"69": {
+    "doc": "(!) 경험치 - 정규식",
+    "title": "(!) 경험치 - 정규식",
     "content": " ",
-    "url": "/docs/projects/pongdang/230725/",
+    "url": "/docs/studies/codingtest/1day1coding/230720/",
     
-    "relUrl": "/docs/projects/pongdang/230725/"
-  },"74": {
+    "relUrl": "/docs/studies/codingtest/1day1coding/230720/"
+  },"70": {
     "doc": "TIL (23-07-25)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230725/#til",
     
     "relUrl": "/docs/tils/230725/#til"
-  },"75": {
+  },"71": {
     "doc": "TIL (23-07-25)",
     "title": "2023.07.25 (TUE)",
     "content": ". 📌  오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 어꺠 | . ",
     "url": "/docs/tils/230725/#20230725-tue",
     
     "relUrl": "/docs/tils/230725/#20230725-tue"
-  },"76": {
+  },"72": {
     "doc": "TIL (23-07-25)",
     "title": "TIL (23-07-25)",
     "content": " ",
     "url": "/docs/tils/230725/",
     
     "relUrl": "/docs/tils/230725/"
+  },"73": {
+    "doc": "제작 일지 <5>",
+    "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;5&gt;",
+    "content": " ",
+    "url": "/docs/projects/pongdang/230725/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-5",
+    
+    "relUrl": "/docs/projects/pongdang/230725/#퐁당-웹-매거진-프로젝트-제작-일지-5"
+  },"74": {
+    "doc": "제작 일지 <5>",
+    "title": "2023.07.25 (TUE)",
+    "content": ". ",
+    "url": "/docs/projects/pongdang/230725/#20230725-tue",
+    
+    "relUrl": "/docs/projects/pongdang/230725/#20230725-tue"
+  },"75": {
+    "doc": "제작 일지 <5>",
+    "title": "1. 슬라이드",
+    "content": ". 구현 코드 . import React, { useState } from 'react'; import \"./Slider.css\"; import Carousel from 'react-bootstrap/Carousel'; export default function Slider() { const [index, setIndex] = useState(0); const handleSelect = (selectedIndex) =&gt; { setIndex(selectedIndex); }; return ( &lt;Carousel activeIndex={index} onSelect={handleSelect}&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;/Carousel&gt; ); } . ",
+    "url": "/docs/projects/pongdang/230725/#1-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C",
+    
+    "relUrl": "/docs/projects/pongdang/230725/#1-슬라이드"
+  },"76": {
+    "doc": "제작 일지 <5>",
+    "title": "제작 일지 <5>",
+    "content": " ",
+    "url": "/docs/projects/pongdang/230725/",
+    
+    "relUrl": "/docs/projects/pongdang/230725/"
   },"77": {
-    "doc": "TIL (23-07-31)",
-    "title": "TIL",
-    "content": " ",
-    "url": "/docs/tils/230731/#til",
-    
-    "relUrl": "/docs/tils/230731/#til"
-  },"78": {
-    "doc": "TIL (23-07-31)",
-    "title": "2023.07.25 (MON)",
-    "content": ". 📌  오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 어꺠 | . ",
-    "url": "/docs/tils/230731/#20230725-mon",
-    
-    "relUrl": "/docs/tils/230731/#20230725-mon"
-  },"79": {
-    "doc": "TIL (23-07-31)",
-    "title": "TIL (23-07-31)",
-    "content": " ",
-    "url": "/docs/tils/230731/",
-    
-    "relUrl": "/docs/tils/230731/"
-  },"80": {
     "doc": "제작 일지 <6>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;6&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230731/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-6",
     
     "relUrl": "/docs/projects/pongdang/230731/#퐁당-웹-매거진-프로젝트-제작-일지-6"
-  },"81": {
+  },"78": {
     "doc": "제작 일지 <6>",
     "title": "2023.07.31 (MON)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230731/#20230731-mon",
     
     "relUrl": "/docs/projects/pongdang/230731/#20230731-mon"
-  },"82": {
+  },"79": {
     "doc": "제작 일지 <6>",
     "title": "1. 슬라이드 재조정",
     "content": "사이드 버튼들을 투명화 시켜, 조금 더 자연스럽게 만들어 준다. ",
     "url": "/docs/projects/pongdang/230731/#1-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C-%EC%9E%AC%EC%A1%B0%EC%A0%95",
     
     "relUrl": "/docs/projects/pongdang/230731/#1-슬라이드-재조정"
-  },"83": {
+  },"80": {
     "doc": "제작 일지 <6>",
     "title": "제작 일지 <6>",
     "content": " ",
     "url": "/docs/projects/pongdang/230731/",
     
     "relUrl": "/docs/projects/pongdang/230731/"
+  },"81": {
+    "doc": "TIL (23-07-31)",
+    "title": "TIL",
+    "content": " ",
+    "url": "/docs/tils/230731/#til",
+    
+    "relUrl": "/docs/tils/230731/#til"
+  },"82": {
+    "doc": "TIL (23-07-31)",
+    "title": "2023.07.25 (MON)",
+    "content": ". 📌  오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 어꺠 | . ",
+    "url": "/docs/tils/230731/#20230725-mon",
+    
+    "relUrl": "/docs/tils/230731/#20230725-mon"
+  },"83": {
+    "doc": "TIL (23-07-31)",
+    "title": "TIL (23-07-31)",
+    "content": " ",
+    "url": "/docs/tils/230731/",
+    
+    "relUrl": "/docs/tils/230731/"
   },"84": {
     "doc": "TIL (23-08-08)",
     "title": "TIL",
@@ -608,145 +608,145 @@
     
     "relUrl": "/docs/tils/230808/"
   },"87": {
-    "doc": "TIL (23-08-16)",
-    "title": "TIL",
-    "content": " ",
-    "url": "/docs/tils/230816/#til",
-    
-    "relUrl": "/docs/tils/230816/#til"
-  },"88": {
-    "doc": "TIL (23-08-16)",
-    "title": "2023.08.08 (WED)",
-    "content": ". 📔 To Do . | 1일 1코테연습 | 퐁당 매거진 프로젝트 | AWS 자격증 시험 | 책 “오브젝트” | . 📌  오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 가슴 | . ",
-    "url": "/docs/tils/230816/#20230808-wed",
-    
-    "relUrl": "/docs/tils/230816/#20230808-wed"
-  },"89": {
-    "doc": "TIL (23-08-16)",
-    "title": "TIL (23-08-16)",
-    "content": " ",
-    "url": "/docs/tils/230816/",
-    
-    "relUrl": "/docs/tils/230816/"
-  },"90": {
     "doc": "제작 일지 <7>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;7&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230816/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-7",
     
     "relUrl": "/docs/projects/pongdang/230816/#퐁당-웹-매거진-프로젝트-제작-일지-7"
-  },"91": {
+  },"88": {
     "doc": "제작 일지 <7>",
     "title": "2023.08.16 (WED)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230816/#20230816-wed",
     
     "relUrl": "/docs/projects/pongdang/230816/#20230816-wed"
-  },"92": {
+  },"89": {
     "doc": "제작 일지 <7>",
     "title": "1. 메인페이지 1차 완성",
     "content": ". | 퐁당 매거진 홈페이지 | . 전체적으로 사이즈를 키웠고, 요구사항에 맞는 디자인을 하였다. 새롭게 깨달은 점은, 리액트에서 컴포넌트를 모을 때, ClassName을 다른 모듈이더라도 같은 이름을 쓰면 안된다는 것이였다. 이것 때문에 충돌나서 헤맸던 적이.. ",
     "url": "/docs/projects/pongdang/230816/#1-%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80-1%EC%B0%A8-%EC%99%84%EC%84%B1",
     
     "relUrl": "/docs/projects/pongdang/230816/#1-메인페이지-1차-완성"
-  },"93": {
+  },"90": {
     "doc": "제작 일지 <7>",
     "title": "제작 일지 <7>",
     "content": " ",
     "url": "/docs/projects/pongdang/230816/",
     
     "relUrl": "/docs/projects/pongdang/230816/"
+  },"91": {
+    "doc": "TIL (23-08-16)",
+    "title": "TIL",
+    "content": " ",
+    "url": "/docs/tils/230816/#til",
+    
+    "relUrl": "/docs/tils/230816/#til"
+  },"92": {
+    "doc": "TIL (23-08-16)",
+    "title": "2023.08.08 (WED)",
+    "content": ". 📔 To Do . | 1일 1코테연습 | 퐁당 매거진 프로젝트 | AWS 자격증 시험 | 책 “오브젝트” | . 📌  오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 가슴 | . ",
+    "url": "/docs/tils/230816/#20230808-wed",
+    
+    "relUrl": "/docs/tils/230816/#20230808-wed"
+  },"93": {
+    "doc": "TIL (23-08-16)",
+    "title": "TIL (23-08-16)",
+    "content": " ",
+    "url": "/docs/tils/230816/",
+    
+    "relUrl": "/docs/tils/230816/"
   },"94": {
-    "doc": "숫자 게임",
-    "title": "숫자 게임",
-    "content": " ",
-    "url": "/docs/studies/codingtest/1day1coding/230819/",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230819/"
-  },"95": {
-    "doc": "숫자 게임",
-    "title": "2023.08.19 (SAT)",
-    "content": ". 문제 : 프로그래머스 - LV3. 숫자 게임 . ",
-    "url": "/docs/studies/codingtest/1day1coding/230819/#20230819-sat",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230819/#20230819-sat"
-  },"96": {
-    "doc": "숫자 게임",
-    "title": "조건 및 설명",
-    "content": ". | N명의 팀원 | . ",
-    "url": "/docs/studies/codingtest/1day1coding/230819/#%EC%A1%B0%EA%B1%B4-%EB%B0%8F-%EC%84%A4%EB%AA%85",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230819/#조건-및-설명"
-  },"97": {
-    "doc": "숫자 게임",
-    "title": "접근법",
-    "content": ". | 남은 팀원들 중, 최소한의 숫자로 이길 수 있는 사람으로 대려감 | 두 배열을 Sort 후, 앞에서부터 서로 비교하여 count | . ",
-    "url": "/docs/studies/codingtest/1day1coding/230819/#%EC%A0%91%EA%B7%BC%EB%B2%95",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230819/#접근법"
-  },"98": {
-    "doc": "숫자 게임",
-    "title": "결과 코드",
-    "content": "import java.util.*; class Solution { public int solution(int[] A, int[] B) { int answer = 0; int count = 0; Arrays.sort(A); Arrays.sort(B); // Game Start for (int i = 0; i &lt; A.length; i++) { for (int j = count; j &lt; A.length; j++) { if (A[i] &lt; B[j]) { // 이기면 answer++; count++; break; } else { // 비기거나 지면 count++; } } } return answer; } } . ",
-    "url": "/docs/studies/codingtest/1day1coding/230819/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230819/#결과-코드"
-  },"99": {
-    "doc": "이론 일지 <1>",
-    "title": "게임 서버 토이 프로젝트 - 이론 일지 &lt;1&gt;",
-    "content": " ",
-    "url": "/docs/projects/gameServer/230819/#%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84-%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%EC%9D%B4%EB%A1%A0-%EC%9D%BC%EC%A7%80-1",
-    
-    "relUrl": "/docs/projects/gameServer/230819/#게임-서버-토이-프로젝트---이론-일지-1"
-  },"100": {
-    "doc": "이론 일지 <1>",
-    "title": "2023.08.19 (SAT)",
-    "content": ". ",
-    "url": "/docs/projects/gameServer/230819/#20230819-sat",
-    
-    "relUrl": "/docs/projects/gameServer/230819/#20230819-sat"
-  },"101": {
-    "doc": "이론 일지 <1>",
-    "title": "1. 프로세스",
-    "content": "프로그램에 있는 코드와 데이터를 프로세스 메모리로 불러들이는데, 이를 로딩된다고 할 수 있다. 프로세스는 RAM에 있다. 프로세스가 여러 개 실행되고 있는 것을 멀티프로세싱이라고 한다. ",
-    "url": "/docs/projects/gameServer/230819/#1-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4",
-    
-    "relUrl": "/docs/projects/gameServer/230819/#1-프로세스"
-  },"102": {
-    "doc": "이론 일지 <1>",
-    "title": "2. 스레드",
-    "content": "기본 적으로 서로 다른 프로세스는 상대방의 메모리 공간을 읽고 쓸 수 없다. 하미잔, 한 프로세스 안에 있는 스레드들은, 프로세스 안에 있는 메모리 공간을 같이 사용할 수 있다. 스레드 = 프로그램이 실행되는 기본 단위 . ",
-    "url": "/docs/projects/gameServer/230819/#2-%EC%8A%A4%EB%A0%88%EB%93%9C",
-    
-    "relUrl": "/docs/projects/gameServer/230819/#2-스레드"
-  },"103": {
-    "doc": "이론 일지 <1>",
-    "title": "이론 일지 <1>",
-    "content": " ",
-    "url": "/docs/projects/gameServer/230819/",
-    
-    "relUrl": "/docs/projects/gameServer/230819/"
-  },"104": {
     "doc": "TIL (23-08-19)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230819/#til",
     
     "relUrl": "/docs/tils/230819/#til"
-  },"105": {
+  },"95": {
     "doc": "TIL (23-08-19)",
     "title": "2023.08.19 (SAT)",
     "content": ". 📔 To Do (반드시!!) . | 1일 1코테연습 . | 숫자 게임 | . | AWS 자격증 시험 | 책 “오브젝트” | 퐁당 매거진 프로젝트 (업로드 사항 있을 경우) | . 😄 Want To Do (하고 싶은 것) . | 게임 서버 개발 . | 프로젝트 계획 | . | 마인크래프트 코드 개조 해보기 | 깃헙 블로그 포트폴리오 | 지원서 넣기 | . ",
     "url": "/docs/tils/230819/#20230819-sat",
     
     "relUrl": "/docs/tils/230819/#20230819-sat"
-  },"106": {
+  },"96": {
     "doc": "TIL (23-08-19)",
     "title": "TIL (23-08-19)",
     "content": " ",
     "url": "/docs/tils/230819/",
     
     "relUrl": "/docs/tils/230819/"
+  },"97": {
+    "doc": "이론 일지 <1>",
+    "title": "게임 서버 토이 프로젝트 - 이론 일지 &lt;1&gt;",
+    "content": " ",
+    "url": "/docs/projects/gameServer/230819/#%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84-%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%EC%9D%B4%EB%A1%A0-%EC%9D%BC%EC%A7%80-1",
+    
+    "relUrl": "/docs/projects/gameServer/230819/#게임-서버-토이-프로젝트---이론-일지-1"
+  },"98": {
+    "doc": "이론 일지 <1>",
+    "title": "2023.08.19 (SAT)",
+    "content": ". ",
+    "url": "/docs/projects/gameServer/230819/#20230819-sat",
+    
+    "relUrl": "/docs/projects/gameServer/230819/#20230819-sat"
+  },"99": {
+    "doc": "이론 일지 <1>",
+    "title": "1. 프로세스",
+    "content": "프로그램에 있는 코드와 데이터를 프로세스 메모리로 불러들이는데, 이를 로딩된다고 할 수 있다. 프로세스는 RAM에 있다. 프로세스가 여러 개 실행되고 있는 것을 멀티프로세싱이라고 한다. ",
+    "url": "/docs/projects/gameServer/230819/#1-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4",
+    
+    "relUrl": "/docs/projects/gameServer/230819/#1-프로세스"
+  },"100": {
+    "doc": "이론 일지 <1>",
+    "title": "2. 스레드",
+    "content": "기본 적으로 서로 다른 프로세스는 상대방의 메모리 공간을 읽고 쓸 수 없다. 하미잔, 한 프로세스 안에 있는 스레드들은, 프로세스 안에 있는 메모리 공간을 같이 사용할 수 있다. 스레드 = 프로그램이 실행되는 기본 단위 . ",
+    "url": "/docs/projects/gameServer/230819/#2-%EC%8A%A4%EB%A0%88%EB%93%9C",
+    
+    "relUrl": "/docs/projects/gameServer/230819/#2-스레드"
+  },"101": {
+    "doc": "이론 일지 <1>",
+    "title": "이론 일지 <1>",
+    "content": " ",
+    "url": "/docs/projects/gameServer/230819/",
+    
+    "relUrl": "/docs/projects/gameServer/230819/"
+  },"102": {
+    "doc": "숫자 게임",
+    "title": "숫자 게임",
+    "content": " ",
+    "url": "/docs/studies/codingtest/1day1coding/230819/",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230819/"
+  },"103": {
+    "doc": "숫자 게임",
+    "title": "2023.08.19 (SAT)",
+    "content": ". 문제 : 프로그래머스 - LV3. 숫자 게임 . ",
+    "url": "/docs/studies/codingtest/1day1coding/230819/#20230819-sat",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230819/#20230819-sat"
+  },"104": {
+    "doc": "숫자 게임",
+    "title": "조건 및 설명",
+    "content": ". | N명의 팀원 | . ",
+    "url": "/docs/studies/codingtest/1day1coding/230819/#%EC%A1%B0%EA%B1%B4-%EB%B0%8F-%EC%84%A4%EB%AA%85",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230819/#조건-및-설명"
+  },"105": {
+    "doc": "숫자 게임",
+    "title": "접근법",
+    "content": ". | 남은 팀원들 중, 최소한의 숫자로 이길 수 있는 사람으로 대려감 | 두 배열을 Sort 후, 앞에서부터 서로 비교하여 count | . ",
+    "url": "/docs/studies/codingtest/1day1coding/230819/#%EC%A0%91%EA%B7%BC%EB%B2%95",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230819/#접근법"
+  },"106": {
+    "doc": "숫자 게임",
+    "title": "결과 코드",
+    "content": "import java.util.*; class Solution { public int solution(int[] A, int[] B) { int answer = 0; int count = 0; Arrays.sort(A); Arrays.sort(B); // Game Start for (int i = 0; i &lt; A.length; i++) { for (int j = count; j &lt; A.length; j++) { if (A[i] &lt; B[j]) { // 이기면 answer++; count++; break; } else { // 비기거나 지면 count++; } } } return answer; } } . ",
+    "url": "/docs/studies/codingtest/1day1coding/230819/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230819/#결과-코드"
   },"107": {
     "doc": "프로젝트 계획",
     "title": "게임 서버 토이 프로젝트 - 프로젝트 계획",
@@ -1483,61 +1483,61 @@
     
     "relUrl": "/docs/projects/pongdang/231018/"
   },"212": {
-    "doc": "제작 일지 <_12>",
-    "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;12&gt;",
-    "content": " ",
-    "url": "/docs/projects/pongdang/231020/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-12",
-    
-    "relUrl": "/docs/projects/pongdang/231020/#퐁당-웹-매거진-프로젝트-제작-일지-12"
-  },"213": {
-    "doc": "제작 일지 <_12>",
-    "title": "2023.10.20 (FRI)",
-    "content": ". ",
-    "url": "/docs/projects/pongdang/231020/#20231020-fri",
-    
-    "relUrl": "/docs/projects/pongdang/231020/#20231020-fri"
-  },"214": {
-    "doc": "제작 일지 <_12>",
-    "title": "1. 검색 알고리즘 생성",
-    "content": "일단, title에서 검색어에 단어가 포함되면 리스트를 출력하도록 먼저 세팅해놓았다. ",
-    "url": "/docs/projects/pongdang/231020/#1-%EA%B2%80%EC%83%89-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%83%9D%EC%84%B1",
-    
-    "relUrl": "/docs/projects/pongdang/231020/#1-검색-알고리즘-생성"
-  },"215": {
-    "doc": "제작 일지 <_12>",
-    "title": "제작 일지 <_12>",
-    "content": " ",
-    "url": "/docs/projects/pongdang/231020/",
-    
-    "relUrl": "/docs/projects/pongdang/231020/"
-  },"216": {
     "doc": "TIL (23-10-20)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/231020/#til",
     
     "relUrl": "/docs/tils/231020/#til"
-  },"217": {
+  },"213": {
     "doc": "TIL (23-10-20)",
     "title": "2023.10.20 (FRI)",
     "content": ". ",
     "url": "/docs/tils/231020/#20231020-fri",
     
     "relUrl": "/docs/tils/231020/#20231020-fri"
-  },"218": {
+  },"214": {
     "doc": "TIL (23-10-20)",
     "title": "JPA와 MySQL에서의 컬럼명",
     "content": "분명 동일하게 네이밍을 했음에도 불구하고, 자꾸 컬럼명을 못찾는다고 나온다. 원인을 찾아보았다. Java는 카멜케이스(camelCase), SQL은 스테이크 케이스(snake_case)를 주로 사용한다. 그래서 MySQL에서 컬럼명을 대문자로 표기했을 때, 오류가 있었을 수도,,,? . 그래서 아래처럼 변경하였다. Spring -&gt; interviewTitle MySQL -&gt; interview_title . 정상 동작 한다!!! . ",
     "url": "/docs/tils/231020/#jpa%EC%99%80-mysql%EC%97%90%EC%84%9C%EC%9D%98-%EC%BB%AC%EB%9F%BC%EB%AA%85",
     
     "relUrl": "/docs/tils/231020/#jpa와-mysql에서의-컬럼명"
-  },"219": {
+  },"215": {
     "doc": "TIL (23-10-20)",
     "title": "TIL (23-10-20)",
     "content": " ",
     "url": "/docs/tils/231020/",
     
     "relUrl": "/docs/tils/231020/"
+  },"216": {
+    "doc": "제작 일지 <_12>",
+    "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;12&gt;",
+    "content": " ",
+    "url": "/docs/projects/pongdang/231020/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-12",
+    
+    "relUrl": "/docs/projects/pongdang/231020/#퐁당-웹-매거진-프로젝트-제작-일지-12"
+  },"217": {
+    "doc": "제작 일지 <_12>",
+    "title": "2023.10.20 (FRI)",
+    "content": ". ",
+    "url": "/docs/projects/pongdang/231020/#20231020-fri",
+    
+    "relUrl": "/docs/projects/pongdang/231020/#20231020-fri"
+  },"218": {
+    "doc": "제작 일지 <_12>",
+    "title": "1. 검색 알고리즘 생성",
+    "content": "일단, title에서 검색어에 단어가 포함되면 리스트를 출력하도록 먼저 세팅해놓았다. ",
+    "url": "/docs/projects/pongdang/231020/#1-%EA%B2%80%EC%83%89-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%83%9D%EC%84%B1",
+    
+    "relUrl": "/docs/projects/pongdang/231020/#1-검색-알고리즘-생성"
+  },"219": {
+    "doc": "제작 일지 <_12>",
+    "title": "제작 일지 <_12>",
+    "content": " ",
+    "url": "/docs/projects/pongdang/231020/",
+    
+    "relUrl": "/docs/projects/pongdang/231020/"
   },"220": {
     "doc": "AWS (DVA)",
     "title": "AWS 자격증 - AWS Certified Developer Associate (DVA)",
