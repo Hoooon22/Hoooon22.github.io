@@ -5,3 +5,14 @@ layout: vendor/compress
 {% assign content_ = content | replace: '<table', '<div class="table-wrapper"><table' %}
 {% assign content_ = content_ | replace: '</table>', '</table></div>' %}
 {{ content_ }}
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WTK357S14E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WTK357S14E');
+</script>
+<!-- End Google Analytics -->
