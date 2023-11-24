@@ -499,15 +499,6 @@ jtd.onReady(function(){
 
 });
 
-var idx = lunr(function () {
-  // use the language (ko)
-  this.use(lunr.ko);
-  // then, the normal lunr index initialization
-  this.field('title', { boost: 10 });
-  this.field('body');
-  // now you can call this.add(...) to add documents written in German
-});
-
 })(window.jtd = window.jtd || {});
 
 
