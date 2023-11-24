@@ -34,7 +34,7 @@
            language. This could mean that sometimes words that have the same
            stemming root will not be stemmed as such.
            */
-        lunr.multiLanguage = function(/* lang1, lang2, ... */) {
+        lunr.multiLanguage = function(en, ko) {
             var languages = Array.prototype.slice.call(arguments);
             var nameSuffix = languages.join('-');
             var wordCharacters = "";
