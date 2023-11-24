@@ -34,18 +34,23 @@
            language. This could mean that sometimes words that have the same
            stemming root will not be stemmed as such.
            */
-        lunr.multiLanguage = function(/* lang1, lang2, ... */) {
+           lunr.multiLanguage = function(/* lang1, lang2, ... */) {
             var languages = Array.prototype.slice.call(arguments);
             var nameSuffix = languages.join('-');
             var wordCharacters = "";
             var pipeline = [];
             var searchPipeline = [];
             for (var i = 0; i < languages.length; ++i) {
-                if (languages[i] == 'en'|| languages[i] == 'ko') {
+                if (languages[i] == 'en') {
                     wordCharacters += '\\w';
                     pipeline.unshift(lunr.stopWordFilter);
                     pipeline.push(lunr.stemmer);
                     searchPipeline.push(lunr.stemmer);
+                } else if (languages[i] == 'ko') {
+                    // 한글 처리를 위한 코드 추가
+                    wordCharacters += '[ㄱ-ㅎㅏ-ㅣ가-힣]';
+                    pipeline.push(lunr.ko.stemmer);
+                    searchPipeline.push(lunr.ko.stemmer);
                 } else {
                     wordCharacters += lunr[languages[i]].wordCharacters;
                     if (lunr[languages[i]].stopWordFilter) {
