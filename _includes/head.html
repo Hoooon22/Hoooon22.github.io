@@ -38,16 +38,6 @@
     <link rel="icon" href="{{ site.favicon_ico | default: '/favicon.ico' | relative_url }}" type="image/x-icon">
   {% endif %}
 
-  {% if site.search_enabled != false %}
-  <script>
-    var idx = lunr(function () {
-      this.use(lunr.multiLanguage('en', 'ko'));
-      this.field('title', { boost: 10 });
-      this.field('body');
-    });
-  </script>
-{% endif %}
-
   {% seo %}
 
   {% include head_custom.html %}

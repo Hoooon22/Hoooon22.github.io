@@ -43,5 +43,8 @@
     "singleQuote": false,
     "tabWidth": 2,
     "trailingComma": "es5"
+  },
+  "dependencies": {
+    "lunr": "^2.3.9"
   }
 }
