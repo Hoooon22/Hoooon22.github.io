@@ -46,11 +46,6 @@
                     pipeline.unshift(lunr.stopWordFilter);
                     pipeline.push(lunr.stemmer);
                     searchPipeline.push(lunr.stemmer);
-                } else if (languages[i] == 'ko') {
-                    // 한글 처리를 위한 코드 추가
-                    wordCharacters += '[ㄱ-ㅎㅏ-ㅣ가-힣]';
-                    pipeline.push(lunr.ko.stemmer);
-                    searchPipeline.push(lunr.ko.stemmer);
                 } else {
                     wordCharacters += lunr[languages[i]].wordCharacters;
                     if (lunr[languages[i]].stopWordFilter) {

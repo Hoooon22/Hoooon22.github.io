@@ -64,6 +64,7 @@ function initSearch() {
       lunr.tokenizer.separator = /[\s/]+/
 
       var index = lunr(function(){
+        this.use(lunr.multiLanguage('en', 'ko'));
         this.ref('id');
         this.field('title', { boost: 200 });
         this.field('content', { boost: 2 });
