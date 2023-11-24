@@ -87,7 +87,7 @@ function initSearch() {
         this.field('relUrl');
         {%- endif %}
         this.metadataWhitelist = ['position']
-
+      
         for (var i in docs) {
           {% include lunr/custom-index.js %}
           this.add({

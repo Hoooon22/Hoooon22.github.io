@@ -69,7 +69,7 @@ function initSearch() {
         this.field('content', { boost: 2 });
         this.field('relUrl');
         this.metadataWhitelist = ['position']
-
+      
         for (var i in docs) {
           
           this.add({
