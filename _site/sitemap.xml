@@ -286,7 +286,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/tils/230911/</loc>
+        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/230911/</loc>
     </url>
     
     
@@ -294,7 +294,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/230911/</loc>
+        <loc>http://localhost:4000/docs/tils/230911/</loc>
     </url>
     
     
@@ -334,7 +334,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/tils/230917/</loc>
+        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/230917/</loc>
     </url>
     
     
@@ -342,7 +342,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/230917/</loc>
+        <loc>http://localhost:4000/docs/tils/230917/</loc>
     </url>
     
     
@@ -414,7 +414,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/tils/231016/</loc>
+        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/231016/</loc>
     </url>
     
     
@@ -422,7 +422,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/231016/</loc>
+        <loc>http://localhost:4000/docs/tils/231016/</loc>
     </url>
     
     
@@ -487,6 +487,14 @@
     
     <url>
         <loc>http://localhost:4000/docs/tils/231204/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/docs/tils/231211/</loc>
     </url>
     
     
