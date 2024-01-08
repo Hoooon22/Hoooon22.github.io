@@ -13,12 +13,13 @@
   {%- assign child_pages = site[page.collection]
         | default: site.html_pages
         | where: "parent", page.title
-        | where: "grand_parent", page.parent -%}
-
-  {%- include sorted_pages.html pages = child_pages -%}
+        | where: "grand_parent", page.parent
+        | sort: "date" -%}
 
   {%- if page.child_nav_order == 'desc' or page.child_nav_order == 'reversed' -%}
-    {%- assign sorted_pages = sorted_pages | reverse -%}
+    {%- assign sorted_pages = child_pages | reverse -%}
+  {%- else -%}
+    {%- assign sorted_pages = child_pages -%}
   {%- endif -%}
 {%- endif -%}
 

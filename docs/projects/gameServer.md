@@ -13,5 +13,3 @@ parent: Projects
 {: .fs-4 .fw-300 }
 
 <br>
-
-게임 서버 토이 프로젝트 입니다.
