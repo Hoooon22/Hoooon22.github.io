@@ -60,7 +60,7 @@ Web & Server Delveloper
     <ul style="list-style-type: none; padding-left: 0;">
         <li><strong>Programming Languages:</strong> C/C++, Java</li>
         <li><strong>Frameworks:</strong> SpringBoot, Node.js, React</li>
-        <li><strong>Web Technologies:</strong> HTML5, CSS, Javascript</li>
+        <li><strong>Web Technologies:</strong> HTML5, CSS, Javascript, ASP</li>
         <li><strong>Databases:</strong> MySQL</li>
         <li><strong>Version Control:</strong> Git</li>
         <li><strong>PaaS/IaaS:</strong> AWS </li>
