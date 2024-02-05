@@ -62,7 +62,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/230711/</loc>
+        <loc>http://localhost:4000/docs/tils/230711/</loc>
     </url>
     
     
@@ -70,7 +70,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/tils/230711/</loc>
+        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/230711/</loc>
     </url>
     
     
@@ -190,7 +190,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/tils/230819/</loc>
+        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/230819/</loc>
     </url>
     
     
@@ -198,7 +198,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/230819/</loc>
+        <loc>http://localhost:4000/docs/tils/230819/</loc>
     </url>
     
     
@@ -286,7 +286,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/tils/230911/</loc>
+        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/230911/</loc>
     </url>
     
     
@@ -294,7 +294,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/230911/</loc>
+        <loc>http://localhost:4000/docs/tils/230911/</loc>
     </url>
     
     
@@ -414,7 +414,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/tils/231016/</loc>
+        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/231016/</loc>
     </url>
     
     
@@ -422,7 +422,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/231016/</loc>
+        <loc>http://localhost:4000/docs/tils/231016/</loc>
     </url>
     
     
@@ -438,7 +438,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/tils/231020/</loc>
+        <loc>http://localhost:4000/docs/projects/pongdang/231020/</loc>
     </url>
     
     
@@ -446,7 +446,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/projects/pongdang/231020/</loc>
+        <loc>http://localhost:4000/docs/tils/231020/</loc>
     </url>
     
     
@@ -478,7 +478,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/projects/pongdang/231204/</loc>
+        <loc>http://localhost:4000/docs/tils/231204/</loc>
     </url>
     
     
@@ -486,7 +486,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/tils/231204/</loc>
+        <loc>http://localhost:4000/docs/projects/pongdang/231204/</loc>
     </url>
     
     
@@ -502,7 +502,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/tils/240108/</loc>
+        <loc>http://localhost:4000/docs/projects/pongdang/240108/</loc>
     </url>
     
     
@@ -518,7 +518,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/projects/pongdang/240108/</loc>
+        <loc>http://localhost:4000/docs/tils/240108/</loc>
     </url>
     
     
@@ -559,6 +559,14 @@
     
     <url>
         <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/240122/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/240205/</loc>
     </url>
     
     
