@@ -46,7 +46,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/tils/230706/</loc>
+        <loc>http://localhost:4000/docs/projects/pongdang/230706/</loc>
     </url>
     
     
@@ -54,7 +54,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/projects/pongdang/230706/</loc>
+        <loc>http://localhost:4000/docs/tils/230706/</loc>
     </url>
     
     
@@ -94,7 +94,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/tils/230717/</loc>
+        <loc>http://localhost:4000/docs/projects/pongdang/230717/</loc>
     </url>
     
     
@@ -102,7 +102,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/projects/pongdang/230717/</loc>
+        <loc>http://localhost:4000/docs/tils/230717/</loc>
     </url>
     
     
@@ -118,7 +118,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/tils/230720/</loc>
+        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/230720/</loc>
     </url>
     
     
@@ -126,7 +126,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/230720/</loc>
+        <loc>http://localhost:4000/docs/tils/230720/</loc>
     </url>
     
     
@@ -150,7 +150,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/projects/pongdang/230731/</loc>
+        <loc>http://localhost:4000/docs/tils/230731/</loc>
     </url>
     
     
@@ -158,7 +158,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/tils/230731/</loc>
+        <loc>http://localhost:4000/docs/projects/pongdang/230731/</loc>
     </url>
     
     
@@ -190,14 +190,6 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/230819/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
         <loc>http://localhost:4000/docs/tils/230819/</loc>
     </url>
     
@@ -207,6 +199,14 @@
     
     <url>
         <loc>http://localhost:4000/docs/projects/gameServer/230819/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/230819/</loc>
     </url>
     
     
@@ -286,7 +286,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/230911/</loc>
+        <loc>http://localhost:4000/docs/tils/230911/</loc>
     </url>
     
     
@@ -294,7 +294,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/tils/230911/</loc>
+        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/230911/</loc>
     </url>
     
     
@@ -334,7 +334,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/tils/230917/</loc>
+        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/230917/</loc>
     </url>
     
     
@@ -342,7 +342,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/docs/studies/codingtest/1day1coding/230917/</loc>
+        <loc>http://localhost:4000/docs/tils/230917/</loc>
     </url>
     
     
@@ -502,6 +502,14 @@
     
     
     <url>
+        <loc>http://localhost:4000/docs/tils/240108/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
         <loc>http://localhost:4000/docs/projects/pongdang/240108/</loc>
     </url>
     
@@ -511,14 +519,6 @@
     
     <url>
         <loc>http://localhost:4000/docs/projects/gameServer/240108/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://localhost:4000/docs/tils/240108/</loc>
     </url>
     
     
@@ -624,6 +624,8 @@
     <url>
         <loc>http://localhost:4000/docs/studies/aws_DA/aws_lecture1/</loc>
     </url>
+    
+    
     
     
     
