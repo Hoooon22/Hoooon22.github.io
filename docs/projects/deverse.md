@@ -1,6 +1,6 @@
 ---
 layout: default
-title: [사이드 프로젝트] Deverse
+title: 사이드 프로젝트 - Deverse
 nav_order: 2
 has_children: true
 parent: Projects
