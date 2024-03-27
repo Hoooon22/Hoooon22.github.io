@@ -76,61 +76,61 @@
     
     "relUrl": "/docs/tils/230629/"
   },"11": {
-    "doc": "TIL (23-07-02)",
-    "title": "TIL",
-    "content": " ",
-    "url": "/docs/tils/230702/#til",
-    
-    "relUrl": "/docs/tils/230702/#til"
-  },"12": {
-    "doc": "TIL (23-07-02)",
-    "title": "2023.07.02 (SUN)",
-    "content": ". 📌 오늘의 TIL . | 💻 깃허브 블로그 제작 . | 프로젝트 메뉴 생성 및 퐁당 웹매거진 프로젝트 업로드 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 동기화 매뉴얼 | . | . ✏️ 오늘의 체크 사항 . | 운동 - 등 | . ",
-    "url": "/docs/tils/230702/#20230702-sun",
-    
-    "relUrl": "/docs/tils/230702/#20230702-sun"
-  },"13": {
-    "doc": "TIL (23-07-02)",
-    "title": "TIL (23-07-02)",
-    "content": " ",
-    "url": "/docs/tils/230702/",
-    
-    "relUrl": "/docs/tils/230702/"
-  },"14": {
     "doc": "제작 일지 <1>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;1&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230702/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-1",
     
     "relUrl": "/docs/projects/pongdang/230702/#퐁당-웹-매거진-프로젝트-제작-일지-1"
-  },"15": {
+  },"12": {
     "doc": "제작 일지 <1>",
     "title": "2023.07.02 (WED)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230702/#20230702-wed",
     
     "relUrl": "/docs/projects/pongdang/230702/#20230702-wed"
-  },"16": {
+  },"13": {
     "doc": "제작 일지 <1>",
     "title": "1. 프로젝트 빌드 후, Servlet.service() for sevlet 오류 발생 시",
     "content": "해결법 1. 프로젝트 클린(clean)과 재빌드(rebuild)는 빌드 도구(Maven, Gradle 등)를 사용하여 프로젝트를 초기화하고 의존성을 새롭게 다운로드하여 프로젝트를 다시 빌드하는 작업입니다. 이를 통해 이전에 캐시된 클래스 파일이나 의존성 문제로 인해 발생하는 오류를 해결할 수 있습니다. 아래는 Maven과 Gradle에서 프로젝트 클린과 재빌드를 수행하는 방법입니다: . Maven을 사용하는 경우: . 프로젝트 디렉토리로 이동합니다. 명령줄 또는 터미널에서 다음 명령어를 실행합니다: mvn clean install clean: 이전 빌드에 의해 생성된 클래스 파일과 빌드 아티팩트를 제거합니다. install: 프로젝트를 빌드하고 로컬 Maven 저장소에 라이브러리를 설치합니다. Gradle을 사용하는 경우: . 프로젝트 디렉토리로 이동합니다. 명령줄 또는 터미널에서 다음 명령어를 실행합니다: gradlew clean build clean: 이전 빌드에 의해 생성된 클래스 파일과 빌드 아티팩트를 제거합니다. build: 프로젝트를 빌드하고 필요한 의존성을 다운로드합니다. 프로젝트 클린(clean)과 재빌드(rebuild)를 실행하면 이전에 발생한 빌드 오류와 관련된 문제를 해결할 수 있습니다. 이는 캐시된 클래스 파일이나 의존성이 변경되어 다시 다운로드되고 빌드되기 때문입니다. clean으로 재빌드 하니, 정상 작동한다. ",
     "url": "/docs/projects/pongdang/230702/#1-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B9%8C%EB%93%9C-%ED%9B%84-servletservice-for-sevlet-%EC%98%A4%EB%A5%98-%EB%B0%9C%EC%83%9D-%EC%8B%9C",
     
     "relUrl": "/docs/projects/pongdang/230702/#1-프로젝트-빌드-후-servletservice-for-sevlet-오류-발생-시"
-  },"17": {
+  },"14": {
     "doc": "제작 일지 <1>",
     "title": "2. 스프링부트 스냅샷 실행 시",
     "content": "nohup이 작동하지 않는다. java -jar build/libs/Pongdang_Server2-0.0.1-SNAPSHOT.jar &gt; test.log . 없이는 정상 작동한다. 3. 동기화 순서 . | ./gradlew clean build | pkill -f Pongdang_Server2-0.0.1-SNAPSHOT.jar | java -jar build/libs/Pongdang_Server2-0.0.1-SNAPSHOT.jar &gt; test.log &amp; | . ",
     "url": "/docs/projects/pongdang/230702/#2-%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-%EC%8A%A4%EB%83%85%EC%83%B7-%EC%8B%A4%ED%96%89-%EC%8B%9C",
     
     "relUrl": "/docs/projects/pongdang/230702/#2-스프링부트-스냅샷-실행-시"
-  },"18": {
+  },"15": {
     "doc": "제작 일지 <1>",
     "title": "제작 일지 <1>",
     "content": " ",
     "url": "/docs/projects/pongdang/230702/",
     
     "relUrl": "/docs/projects/pongdang/230702/"
+  },"16": {
+    "doc": "TIL (23-07-02)",
+    "title": "TIL",
+    "content": " ",
+    "url": "/docs/tils/230702/#til",
+    
+    "relUrl": "/docs/tils/230702/#til"
+  },"17": {
+    "doc": "TIL (23-07-02)",
+    "title": "2023.07.02 (SUN)",
+    "content": ". 📌 오늘의 TIL . | 💻 깃허브 블로그 제작 . | 프로젝트 메뉴 생성 및 퐁당 웹매거진 프로젝트 업로드 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 동기화 매뉴얼 | . | . ✏️ 오늘의 체크 사항 . | 운동 - 등 | . ",
+    "url": "/docs/tils/230702/#20230702-sun",
+    
+    "relUrl": "/docs/tils/230702/#20230702-sun"
+  },"18": {
+    "doc": "TIL (23-07-02)",
+    "title": "TIL (23-07-02)",
+    "content": " ",
+    "url": "/docs/tils/230702/",
+    
+    "relUrl": "/docs/tils/230702/"
   },"19": {
     "doc": "제작 일지 <2>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;2&gt;",
@@ -244,110 +244,110 @@
     
     "relUrl": "/docs/tils/230711/"
   },"35": {
-    "doc": "TIL (23-07-13)",
-    "title": "TIL",
-    "content": " ",
-    "url": "/docs/tils/230713/#til",
-    
-    "relUrl": "/docs/tils/230713/#til"
-  },"36": {
-    "doc": "TIL (23-07-13)",
-    "title": "2023.07.13 (THU)",
-    "content": ". 📌  오늘의 TIL . | 😵‍💫 코테 연습 . | 과제 진행하기 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 어깨 | . ",
-    "url": "/docs/tils/230713/#20230713-thu",
-    
-    "relUrl": "/docs/tils/230713/#20230713-thu"
-  },"37": {
-    "doc": "TIL (23-07-13)",
-    "title": "TIL (23-07-13)",
-    "content": " ",
-    "url": "/docs/tils/230713/",
-    
-    "relUrl": "/docs/tils/230713/"
-  },"38": {
     "doc": "제작 일지 <3>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;3&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230713/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-3",
     
     "relUrl": "/docs/projects/pongdang/230713/#퐁당-웹-매거진-프로젝트-제작-일지-3"
-  },"39": {
+  },"36": {
     "doc": "제작 일지 <3>",
     "title": "2023.07.13 (THU)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230713/#20230713-thu",
     
     "relUrl": "/docs/projects/pongdang/230713/#20230713-thu"
-  },"40": {
+  },"37": {
     "doc": "제작 일지 <3>",
     "title": "1. Font CSS 적용",
     "content": " ",
     "url": "/docs/projects/pongdang/230713/#1-font-css-%EC%A0%81%EC%9A%A9",
     
     "relUrl": "/docs/projects/pongdang/230713/#1-font-css-적용"
-  },"41": {
+  },"38": {
     "doc": "제작 일지 <3>",
     "title": "2. 부트스트랩 라이브러리 적용",
     "content": " ",
     "url": "/docs/projects/pongdang/230713/#2-%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%A0%81%EC%9A%A9",
     
     "relUrl": "/docs/projects/pongdang/230713/#2-부트스트랩-라이브러리-적용"
-  },"42": {
+  },"39": {
     "doc": "제작 일지 <3>",
     "title": "제작 일지 <3>",
     "content": " ",
     "url": "/docs/projects/pongdang/230713/",
     
     "relUrl": "/docs/projects/pongdang/230713/"
+  },"40": {
+    "doc": "TIL (23-07-13)",
+    "title": "TIL",
+    "content": " ",
+    "url": "/docs/tils/230713/#til",
+    
+    "relUrl": "/docs/tils/230713/#til"
+  },"41": {
+    "doc": "TIL (23-07-13)",
+    "title": "2023.07.13 (THU)",
+    "content": ". 📌  오늘의 TIL . | 😵‍💫 코테 연습 . | 과제 진행하기 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 어깨 | . ",
+    "url": "/docs/tils/230713/#20230713-thu",
+    
+    "relUrl": "/docs/tils/230713/#20230713-thu"
+  },"42": {
+    "doc": "TIL (23-07-13)",
+    "title": "TIL (23-07-13)",
+    "content": " ",
+    "url": "/docs/tils/230713/",
+    
+    "relUrl": "/docs/tils/230713/"
   },"43": {
-    "doc": "제작 일지 <4>",
-    "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;4&gt;",
-    "content": " ",
-    "url": "/docs/projects/pongdang/230717/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-4",
-    
-    "relUrl": "/docs/projects/pongdang/230717/#퐁당-웹-매거진-프로젝트-제작-일지-4"
-  },"44": {
-    "doc": "제작 일지 <4>",
-    "title": "2023.07.17 (MON)",
-    "content": ". ",
-    "url": "/docs/projects/pongdang/230717/#20230717-mon",
-    
-    "relUrl": "/docs/projects/pongdang/230717/#20230717-mon"
-  },"45": {
-    "doc": "제작 일지 <4>",
-    "title": "1. 슬라이드",
-    "content": ". 구현 코드 . import React, { useState } from 'react'; import \"./Slider.css\"; import Carousel from 'react-bootstrap/Carousel'; export default function Slider() { const [index, setIndex] = useState(0); const handleSelect = (selectedIndex) =&gt; { setIndex(selectedIndex); }; return ( &lt;Carousel activeIndex={index} onSelect={handleSelect}&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;/Carousel&gt; ); } . ",
-    "url": "/docs/projects/pongdang/230717/#1-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C",
-    
-    "relUrl": "/docs/projects/pongdang/230717/#1-슬라이드"
-  },"46": {
-    "doc": "제작 일지 <4>",
-    "title": "제작 일지 <4>",
-    "content": " ",
-    "url": "/docs/projects/pongdang/230717/",
-    
-    "relUrl": "/docs/projects/pongdang/230717/"
-  },"47": {
     "doc": "TIL (23-07-17)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230717/#til",
     
     "relUrl": "/docs/tils/230717/#til"
-  },"48": {
+  },"44": {
     "doc": "TIL (23-07-17)",
     "title": "2023.07.17 (MON)",
     "content": ". 📌  오늘의 TIL . | 😵‍💫 코테 연습 . | 과제 진행하기 | . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 등 | . ",
     "url": "/docs/tils/230717/#20230717-mon",
     
     "relUrl": "/docs/tils/230717/#20230717-mon"
-  },"49": {
+  },"45": {
     "doc": "TIL (23-07-17)",
     "title": "TIL (23-07-17)",
     "content": " ",
     "url": "/docs/tils/230717/",
     
     "relUrl": "/docs/tils/230717/"
+  },"46": {
+    "doc": "제작 일지 <4>",
+    "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;4&gt;",
+    "content": " ",
+    "url": "/docs/projects/pongdang/230717/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-4",
+    
+    "relUrl": "/docs/projects/pongdang/230717/#퐁당-웹-매거진-프로젝트-제작-일지-4"
+  },"47": {
+    "doc": "제작 일지 <4>",
+    "title": "2023.07.17 (MON)",
+    "content": ". ",
+    "url": "/docs/projects/pongdang/230717/#20230717-mon",
+    
+    "relUrl": "/docs/projects/pongdang/230717/#20230717-mon"
+  },"48": {
+    "doc": "제작 일지 <4>",
+    "title": "1. 슬라이드",
+    "content": ". 구현 코드 . import React, { useState } from 'react'; import \"./Slider.css\"; import Carousel from 'react-bootstrap/Carousel'; export default function Slider() { const [index, setIndex] = useState(0); const handleSelect = (selectedIndex) =&gt; { setIndex(selectedIndex); }; return ( &lt;Carousel activeIndex={index} onSelect={handleSelect}&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;Carousel.Item&gt; &lt;img className=\"slideImage\" alt=\"slide_01\" src=\"/imgs/Main/Slider/Slider1.png\"/&gt; &lt;/Carousel.Item&gt; &lt;/Carousel&gt; ); } . ",
+    "url": "/docs/projects/pongdang/230717/#1-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C",
+    
+    "relUrl": "/docs/projects/pongdang/230717/#1-슬라이드"
+  },"49": {
+    "doc": "제작 일지 <4>",
+    "title": "제작 일지 <4>",
+    "content": " ",
+    "url": "/docs/projects/pongdang/230717/",
+    
+    "relUrl": "/docs/projects/pongdang/230717/"
   },"50": {
     "doc": "전력망을 둘로 나누기",
     "title": "과제 진행하기",
@@ -559,54 +559,54 @@
     
     "relUrl": "/docs/tils/230808/"
   },"80": {
-    "doc": "TIL (23-08-16)",
-    "title": "TIL",
-    "content": " ",
-    "url": "/docs/tils/230816/#til",
-    
-    "relUrl": "/docs/tils/230816/#til"
-  },"81": {
-    "doc": "TIL (23-08-16)",
-    "title": "2023.08.08 (WED)",
-    "content": ". 📔 To Do . | 1일 1코테연습 | 퐁당 매거진 프로젝트 | AWS 자격증 시험 | 책 “오브젝트” | . 📌  오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 가슴 | . ",
-    "url": "/docs/tils/230816/#20230808-wed",
-    
-    "relUrl": "/docs/tils/230816/#20230808-wed"
-  },"82": {
-    "doc": "TIL (23-08-16)",
-    "title": "TIL (23-08-16)",
-    "content": " ",
-    "url": "/docs/tils/230816/",
-    
-    "relUrl": "/docs/tils/230816/"
-  },"83": {
     "doc": "제작 일지 <7>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;7&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/230816/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-7",
     
     "relUrl": "/docs/projects/pongdang/230816/#퐁당-웹-매거진-프로젝트-제작-일지-7"
-  },"84": {
+  },"81": {
     "doc": "제작 일지 <7>",
     "title": "2023.08.16 (WED)",
     "content": ". ",
     "url": "/docs/projects/pongdang/230816/#20230816-wed",
     
     "relUrl": "/docs/projects/pongdang/230816/#20230816-wed"
-  },"85": {
+  },"82": {
     "doc": "제작 일지 <7>",
     "title": "1. 메인페이지 1차 완성",
     "content": ". | 퐁당 매거진 홈페이지 | . 전체적으로 사이즈를 키웠고, 요구사항에 맞는 디자인을 하였다. 새롭게 깨달은 점은, 리액트에서 컴포넌트를 모을 때, ClassName을 다른 모듈이더라도 같은 이름을 쓰면 안된다는 것이였다. 이것 때문에 충돌나서 헤맸던 적이.. ",
     "url": "/docs/projects/pongdang/230816/#1-%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80-1%EC%B0%A8-%EC%99%84%EC%84%B1",
     
     "relUrl": "/docs/projects/pongdang/230816/#1-메인페이지-1차-완성"
-  },"86": {
+  },"83": {
     "doc": "제작 일지 <7>",
     "title": "제작 일지 <7>",
     "content": " ",
     "url": "/docs/projects/pongdang/230816/",
     
     "relUrl": "/docs/projects/pongdang/230816/"
+  },"84": {
+    "doc": "TIL (23-08-16)",
+    "title": "TIL",
+    "content": " ",
+    "url": "/docs/tils/230816/#til",
+    
+    "relUrl": "/docs/tils/230816/#til"
+  },"85": {
+    "doc": "TIL (23-08-16)",
+    "title": "2023.08.08 (WED)",
+    "content": ". 📔 To Do . | 1일 1코테연습 | 퐁당 매거진 프로젝트 | AWS 자격증 시험 | 책 “오브젝트” | . 📌  오늘의 TIL . | 🧑‍💻 퐁당 웹페이지 Ver.02 . | 오늘의 제작 일지 | . | . ✏️  오늘의 체크 사항 . | 운동 - 가슴 | . ",
+    "url": "/docs/tils/230816/#20230808-wed",
+    
+    "relUrl": "/docs/tils/230816/#20230808-wed"
+  },"86": {
+    "doc": "TIL (23-08-16)",
+    "title": "TIL (23-08-16)",
+    "content": " ",
+    "url": "/docs/tils/230816/",
+    
+    "relUrl": "/docs/tils/230816/"
   },"87": {
     "doc": "숫자 게임",
     "title": "숫자 게임",
@@ -643,61 +643,61 @@
     
     "relUrl": "/docs/studies/codingtest/1day1coding/230819/#결과-코드"
   },"92": {
-    "doc": "이론 일지 <1>",
-    "title": "토이 프로젝트 - 게임 서버 - 이론 일지 &lt;1&gt;",
-    "content": " ",
-    "url": "/docs/projects/gameServer/230819/#%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84---%EC%9D%B4%EB%A1%A0-%EC%9D%BC%EC%A7%80-1",
-    
-    "relUrl": "/docs/projects/gameServer/230819/#토이-프로젝트---게임-서버---이론-일지-1"
-  },"93": {
-    "doc": "이론 일지 <1>",
-    "title": "2023.08.19 (SAT)",
-    "content": ". ",
-    "url": "/docs/projects/gameServer/230819/#20230819-sat",
-    
-    "relUrl": "/docs/projects/gameServer/230819/#20230819-sat"
-  },"94": {
-    "doc": "이론 일지 <1>",
-    "title": "1. 프로세스",
-    "content": "프로그램에 있는 코드와 데이터를 프로세스 메모리로 불러들이는데, 이를 로딩된다고 할 수 있다. 프로세스는 RAM에 있다. 프로세스가 여러 개 실행되고 있는 것을 멀티프로세싱이라고 한다. ",
-    "url": "/docs/projects/gameServer/230819/#1-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4",
-    
-    "relUrl": "/docs/projects/gameServer/230819/#1-프로세스"
-  },"95": {
-    "doc": "이론 일지 <1>",
-    "title": "2. 스레드",
-    "content": "기본 적으로 서로 다른 프로세스는 상대방의 메모리 공간을 읽고 쓸 수 없다. 하미잔, 한 프로세스 안에 있는 스레드들은, 프로세스 안에 있는 메모리 공간을 같이 사용할 수 있다. 스레드 = 프로그램이 실행되는 기본 단위 . ",
-    "url": "/docs/projects/gameServer/230819/#2-%EC%8A%A4%EB%A0%88%EB%93%9C",
-    
-    "relUrl": "/docs/projects/gameServer/230819/#2-스레드"
-  },"96": {
-    "doc": "이론 일지 <1>",
-    "title": "이론 일지 <1>",
-    "content": " ",
-    "url": "/docs/projects/gameServer/230819/",
-    
-    "relUrl": "/docs/projects/gameServer/230819/"
-  },"97": {
     "doc": "TIL (23-08-19)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230819/#til",
     
     "relUrl": "/docs/tils/230819/#til"
-  },"98": {
+  },"93": {
     "doc": "TIL (23-08-19)",
     "title": "2023.08.19 (SAT)",
     "content": ". 📔 To Do (반드시!!) . | 1일 1코테연습 . | 숫자 게임 | . | AWS 자격증 시험 | 책 “오브젝트” | 퐁당 매거진 프로젝트 (업로드 사항 있을 경우) | . 😄 Want To Do (하고 싶은 것) . | 게임 서버 개발 . | 프로젝트 계획 | . | 마인크래프트 코드 개조 해보기 | 깃헙 블로그 포트폴리오 | 지원서 넣기 | . ",
     "url": "/docs/tils/230819/#20230819-sat",
     
     "relUrl": "/docs/tils/230819/#20230819-sat"
-  },"99": {
+  },"94": {
     "doc": "TIL (23-08-19)",
     "title": "TIL (23-08-19)",
     "content": " ",
     "url": "/docs/tils/230819/",
     
     "relUrl": "/docs/tils/230819/"
+  },"95": {
+    "doc": "이론 일지 <1>",
+    "title": "토이 프로젝트 - 게임 서버 - 이론 일지 &lt;1&gt;",
+    "content": " ",
+    "url": "/docs/projects/gameServer/230819/#%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84---%EC%9D%B4%EB%A1%A0-%EC%9D%BC%EC%A7%80-1",
+    
+    "relUrl": "/docs/projects/gameServer/230819/#토이-프로젝트---게임-서버---이론-일지-1"
+  },"96": {
+    "doc": "이론 일지 <1>",
+    "title": "2023.08.19 (SAT)",
+    "content": ". ",
+    "url": "/docs/projects/gameServer/230819/#20230819-sat",
+    
+    "relUrl": "/docs/projects/gameServer/230819/#20230819-sat"
+  },"97": {
+    "doc": "이론 일지 <1>",
+    "title": "1. 프로세스",
+    "content": "프로그램에 있는 코드와 데이터를 프로세스 메모리로 불러들이는데, 이를 로딩된다고 할 수 있다. 프로세스는 RAM에 있다. 프로세스가 여러 개 실행되고 있는 것을 멀티프로세싱이라고 한다. ",
+    "url": "/docs/projects/gameServer/230819/#1-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4",
+    
+    "relUrl": "/docs/projects/gameServer/230819/#1-프로세스"
+  },"98": {
+    "doc": "이론 일지 <1>",
+    "title": "2. 스레드",
+    "content": "기본 적으로 서로 다른 프로세스는 상대방의 메모리 공간을 읽고 쓸 수 없다. 하미잔, 한 프로세스 안에 있는 스레드들은, 프로세스 안에 있는 메모리 공간을 같이 사용할 수 있다. 스레드 = 프로그램이 실행되는 기본 단위 . ",
+    "url": "/docs/projects/gameServer/230819/#2-%EC%8A%A4%EB%A0%88%EB%93%9C",
+    
+    "relUrl": "/docs/projects/gameServer/230819/#2-스레드"
+  },"99": {
+    "doc": "이론 일지 <1>",
+    "title": "이론 일지 <1>",
+    "content": " ",
+    "url": "/docs/projects/gameServer/230819/",
+    
+    "relUrl": "/docs/projects/gameServer/230819/"
   },"100": {
     "doc": "프로젝트 계획",
     "title": "토이 프로젝트 - 게임 서버 - 프로젝트 계획",
@@ -790,61 +790,61 @@
     
     "relUrl": "/docs/tils/230824/"
   },"113": {
-    "doc": "One Walk",
-    "title": "One Walk",
-    "content": " ",
-    "url": "/docs/studies/codingtest/1day1coding/230830/",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230830/"
-  },"114": {
-    "doc": "One Walk",
-    "title": "2023.08.19 (SAT)",
-    "content": ". 문제 : 백준 - 29333. One Walk . ",
-    "url": "/docs/studies/codingtest/1day1coding/230830/#20230819-sat",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230830/#20230819-sat"
-  },"115": {
-    "doc": "One Walk",
-    "title": "조건 및 설명",
-    "content": ". | 무방향 단순 그래프 G | 주어지는 변수 : 정점의 개수 N, 간선의 개수 M, 시작점 번호 S, 도착점 번호 E | 그 다음은 M개의 줄에서 간선으로 연결된 두 정점의 번호(u,v)가 주어진다. | 단 하나가 되도록 만들 수 없다면 -1을 출력, 그렇지 않으면 모든 간선의 방향을 입력된 순서대로 한 줄에 출력 (u -&gt; v : 0, v -&gt; u : 1) | . ",
-    "url": "/docs/studies/codingtest/1day1coding/230830/#%EC%A1%B0%EA%B1%B4-%EB%B0%8F-%EC%84%A4%EB%AA%85",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230830/#조건-및-설명"
-  },"116": {
-    "doc": "One Walk",
-    "title": "접근법",
-    "content": ". | 시작점부터 시작하여, 도착점까지 한 가지만 나오는 경우를 탐색한다. | 이럴 때는, | . ",
-    "url": "/docs/studies/codingtest/1day1coding/230830/#%EC%A0%91%EA%B7%BC%EB%B2%95",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230830/#접근법"
-  },"117": {
-    "doc": "One Walk",
-    "title": "결과 코드",
-    "content": "import java.util.*; import java.io.*; public class Main { public static void main(String[] args) throws Exception { int N, M, S, E; BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); StringTokenizer st = new StringTokenizer(br.readLine()); N = Integer.parseInt(st.nextToken()); M = Integer.parseInt(st.nextToken()); S = Integer.parseInt(st.nextToken()) - 1; E = Integer.parseInt(st.nextToken()) - 1; int[] answer = new int[M]; int[][] edge = new int[M][2]; for (int i = 0; i &lt; M; i++) { st = new StringTokenizer(br.readLine()); edge[i][0] = Integer.parseInt(st.nextToken()) - 1; edge[i][1] = Integer.parseInt(st.nextToken()) - 1; } } } . ",
-    "url": "/docs/studies/codingtest/1day1coding/230830/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
-    
-    "relUrl": "/docs/studies/codingtest/1day1coding/230830/#결과-코드"
-  },"118": {
     "doc": "TIL (23-08-30)",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils/230830/#til",
     
     "relUrl": "/docs/tils/230830/#til"
-  },"119": {
+  },"114": {
     "doc": "TIL (23-08-30)",
     "title": "2023.08.30 (WED)",
     "content": ". 📔 To Do (반드시!!) . | 1일 1코테연습 . | One Walk | 입력 할 때는, Scanner보다 BufferedReader가 훨씬 빠르다! . | BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); . | . | . | AWS 자격증 시험 . | 기본 요약 | . | . 😄 Want To Do (하고 싶은 것) . ",
     "url": "/docs/tils/230830/#20230830-wed",
     
     "relUrl": "/docs/tils/230830/#20230830-wed"
-  },"120": {
+  },"115": {
     "doc": "TIL (23-08-30)",
     "title": "TIL (23-08-30)",
     "content": " ",
     "url": "/docs/tils/230830/",
     
     "relUrl": "/docs/tils/230830/"
+  },"116": {
+    "doc": "One Walk",
+    "title": "One Walk",
+    "content": " ",
+    "url": "/docs/studies/codingtest/1day1coding/230830/",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230830/"
+  },"117": {
+    "doc": "One Walk",
+    "title": "2023.08.19 (SAT)",
+    "content": ". 문제 : 백준 - 29333. One Walk . ",
+    "url": "/docs/studies/codingtest/1day1coding/230830/#20230819-sat",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230830/#20230819-sat"
+  },"118": {
+    "doc": "One Walk",
+    "title": "조건 및 설명",
+    "content": ". | 무방향 단순 그래프 G | 주어지는 변수 : 정점의 개수 N, 간선의 개수 M, 시작점 번호 S, 도착점 번호 E | 그 다음은 M개의 줄에서 간선으로 연결된 두 정점의 번호(u,v)가 주어진다. | 단 하나가 되도록 만들 수 없다면 -1을 출력, 그렇지 않으면 모든 간선의 방향을 입력된 순서대로 한 줄에 출력 (u -&gt; v : 0, v -&gt; u : 1) | . ",
+    "url": "/docs/studies/codingtest/1day1coding/230830/#%EC%A1%B0%EA%B1%B4-%EB%B0%8F-%EC%84%A4%EB%AA%85",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230830/#조건-및-설명"
+  },"119": {
+    "doc": "One Walk",
+    "title": "접근법",
+    "content": ". | 시작점부터 시작하여, 도착점까지 한 가지만 나오는 경우를 탐색한다. | 이럴 때는, | . ",
+    "url": "/docs/studies/codingtest/1day1coding/230830/#%EC%A0%91%EA%B7%BC%EB%B2%95",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230830/#접근법"
+  },"120": {
+    "doc": "One Walk",
+    "title": "결과 코드",
+    "content": "import java.util.*; import java.io.*; public class Main { public static void main(String[] args) throws Exception { int N, M, S, E; BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); StringTokenizer st = new StringTokenizer(br.readLine()); N = Integer.parseInt(st.nextToken()); M = Integer.parseInt(st.nextToken()); S = Integer.parseInt(st.nextToken()) - 1; E = Integer.parseInt(st.nextToken()) - 1; int[] answer = new int[M]; int[][] edge = new int[M][2]; for (int i = 0; i &lt; M; i++) { st = new StringTokenizer(br.readLine()); edge[i][0] = Integer.parseInt(st.nextToken()) - 1; edge[i][1] = Integer.parseInt(st.nextToken()) - 1; } } } . ",
+    "url": "/docs/studies/codingtest/1day1coding/230830/#%EA%B2%B0%EA%B3%BC-%EC%BD%94%EB%93%9C",
+    
+    "relUrl": "/docs/studies/codingtest/1day1coding/230830/#결과-코드"
   },"121": {
     "doc": "TIL (23-09-01)",
     "title": "TIL",
@@ -1763,96 +1763,96 @@
     
     "relUrl": "/docs/tils/240108/"
   },"252": {
-    "doc": "제작 일지 <_14>",
-    "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;14&gt;",
-    "content": " ",
-    "url": "/docs/projects/pongdang/240108/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-14",
-    
-    "relUrl": "/docs/projects/pongdang/240108/#퐁당-웹-매거진-프로젝트-제작-일지-14"
-  },"253": {
-    "doc": "제작 일지 <_14>",
-    "title": "2024.01.08 (MON)",
-    "content": ". ",
-    "url": "/docs/projects/pongdang/240108/#20240108-mon",
-    
-    "relUrl": "/docs/projects/pongdang/240108/#20240108-mon"
-  },"254": {
-    "doc": "제작 일지 <_14>",
-    "title": "1️⃣ SpringBoot 서버 백그라운드 실행",
-    "content": "서버를 24시간 돌려야하기 때문에, nohup 명령어를 통해 백그라운드에 돌아가게 한다. nohup java -jar build/libs/Pongdang_Server2-0.0.1-SNAPSHOT.jar &gt; test.log 2&gt;&amp;1 &amp; . ",
-    "url": "/docs/projects/pongdang/240108/#1%EF%B8%8F%E2%83%A3-springboot-%EC%84%9C%EB%B2%84-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EC%8B%A4%ED%96%89",
-    
-    "relUrl": "/docs/projects/pongdang/240108/#1️⃣-springboot-서버-백그라운드-실행"
-  },"255": {
-    "doc": "제작 일지 <_14>",
-    "title": "2️⃣ 서버가 켜지지 않음",
-    "content": "인스턴스 재시작시에는, 서비스들이 종료되어 있다. 때문에, nginx를 재시작해준다. sudo systemctl restart nginx . ",
-    "url": "/docs/projects/pongdang/240108/#2%EF%B8%8F%E2%83%A3-%EC%84%9C%EB%B2%84%EA%B0%80-%EC%BC%9C%EC%A7%80%EC%A7%80-%EC%95%8A%EC%9D%8C",
-    
-    "relUrl": "/docs/projects/pongdang/240108/#2️⃣-서버가-켜지지-않음"
-  },"256": {
-    "doc": "제작 일지 <_14>",
-    "title": "3️⃣ Date 자동 출력",
-    "content": "Command + Shift + i . ",
-    "url": "/docs/projects/pongdang/240108/#3%EF%B8%8F%E2%83%A3-date-%EC%9E%90%EB%8F%99-%EC%B6%9C%EB%A0%A5",
-    
-    "relUrl": "/docs/projects/pongdang/240108/#3️⃣-date-자동-출력"
-  },"257": {
-    "doc": "제작 일지 <_14>",
-    "title": "4️⃣ AWS 인스턴스 시작 시, 자동 명령어 실행",
-    "content": "위의 1, 2번을 자동 실행 되게 하였다. ",
-    "url": "/docs/projects/pongdang/240108/#4%EF%B8%8F%E2%83%A3-aws-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%8B%9C%EC%9E%91-%EC%8B%9C-%EC%9E%90%EB%8F%99-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%8B%A4%ED%96%89",
-    
-    "relUrl": "/docs/projects/pongdang/240108/#4️⃣-aws-인스턴스-시작-시-자동-명령어-실행"
-  },"258": {
-    "doc": "제작 일지 <_14>",
-    "title": "5️⃣ 구글 애널리틱스 연동 및 시작",
-    "content": " ",
-    "url": "/docs/projects/pongdang/240108/#5%EF%B8%8F%E2%83%A3-%EA%B5%AC%EA%B8%80-%EC%95%A0%EB%84%90%EB%A6%AC%ED%8B%B1%EC%8A%A4-%EC%97%B0%EB%8F%99-%EB%B0%8F-%EC%8B%9C%EC%9E%91",
-    
-    "relUrl": "/docs/projects/pongdang/240108/#5️⃣-구글-애널리틱스-연동-및-시작"
-  },"259": {
-    "doc": "제작 일지 <_14>",
-    "title": "제작 일지 <_14>",
-    "content": " ",
-    "url": "/docs/projects/pongdang/240108/",
-    
-    "relUrl": "/docs/projects/pongdang/240108/"
-  },"260": {
     "doc": "GameChat 계획",
     "title": "토이 프로젝트 - 게임 서버 - GameChat 계획",
     "content": " ",
     "url": "/docs/projects/gameServer/240108/#%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84---gamechat-%EA%B3%84%ED%9A%8D",
     
     "relUrl": "/docs/projects/gameServer/240108/#토이-프로젝트---게임-서버---gamechat-계획"
-  },"261": {
+  },"253": {
     "doc": "GameChat 계획",
     "title": "2024.01.08 (MON)",
     "content": ". ",
     "url": "/docs/projects/gameServer/240108/#20240108-mon",
     
     "relUrl": "/docs/projects/gameServer/240108/#20240108-mon"
-  },"262": {
+  },"254": {
     "doc": "GameChat 계획",
     "title": "프레임워크",
     "content": "React + SpringBoot . React 내부 페이지에 게임 구동 . ",
     "url": "/docs/projects/gameServer/240108/#%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC",
     
     "relUrl": "/docs/projects/gameServer/240108/#프레임워크"
-  },"263": {
+  },"255": {
     "doc": "GameChat 계획",
     "title": "게임 구상",
     "content": "채팅과 게임의 결합이다. 현재는 온라인 채팅과 게임 모두 스마트폰안에서 해결할 수 있는 시대이다. 또는 Web으로도 게임 및 채팅이 가능하다. 그래서 이 둘을 함께 즐기는 웹페이지라면, 지속적인 채팅과 게임을 동시에 즐길 수 있지 않을까? 생각하였다. ",
     "url": "/docs/projects/gameServer/240108/#%EA%B2%8C%EC%9E%84-%EA%B5%AC%EC%83%81",
     
     "relUrl": "/docs/projects/gameServer/240108/#게임-구상"
-  },"264": {
+  },"256": {
     "doc": "GameChat 계획",
     "title": "GameChat 계획",
     "content": " ",
     "url": "/docs/projects/gameServer/240108/",
     
     "relUrl": "/docs/projects/gameServer/240108/"
+  },"257": {
+    "doc": "제작 일지 <_14>",
+    "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;14&gt;",
+    "content": " ",
+    "url": "/docs/projects/pongdang/240108/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-14",
+    
+    "relUrl": "/docs/projects/pongdang/240108/#퐁당-웹-매거진-프로젝트-제작-일지-14"
+  },"258": {
+    "doc": "제작 일지 <_14>",
+    "title": "2024.01.08 (MON)",
+    "content": ". ",
+    "url": "/docs/projects/pongdang/240108/#20240108-mon",
+    
+    "relUrl": "/docs/projects/pongdang/240108/#20240108-mon"
+  },"259": {
+    "doc": "제작 일지 <_14>",
+    "title": "1️⃣ SpringBoot 서버 백그라운드 실행",
+    "content": "서버를 24시간 돌려야하기 때문에, nohup 명령어를 통해 백그라운드에 돌아가게 한다. nohup java -jar build/libs/Pongdang_Server2-0.0.1-SNAPSHOT.jar &gt; test.log 2&gt;&amp;1 &amp; . ",
+    "url": "/docs/projects/pongdang/240108/#1%EF%B8%8F%E2%83%A3-springboot-%EC%84%9C%EB%B2%84-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EC%8B%A4%ED%96%89",
+    
+    "relUrl": "/docs/projects/pongdang/240108/#1️⃣-springboot-서버-백그라운드-실행"
+  },"260": {
+    "doc": "제작 일지 <_14>",
+    "title": "2️⃣ 서버가 켜지지 않음",
+    "content": "인스턴스 재시작시에는, 서비스들이 종료되어 있다. 때문에, nginx를 재시작해준다. sudo systemctl restart nginx . ",
+    "url": "/docs/projects/pongdang/240108/#2%EF%B8%8F%E2%83%A3-%EC%84%9C%EB%B2%84%EA%B0%80-%EC%BC%9C%EC%A7%80%EC%A7%80-%EC%95%8A%EC%9D%8C",
+    
+    "relUrl": "/docs/projects/pongdang/240108/#2️⃣-서버가-켜지지-않음"
+  },"261": {
+    "doc": "제작 일지 <_14>",
+    "title": "3️⃣ Date 자동 출력",
+    "content": "Command + Shift + i . ",
+    "url": "/docs/projects/pongdang/240108/#3%EF%B8%8F%E2%83%A3-date-%EC%9E%90%EB%8F%99-%EC%B6%9C%EB%A0%A5",
+    
+    "relUrl": "/docs/projects/pongdang/240108/#3️⃣-date-자동-출력"
+  },"262": {
+    "doc": "제작 일지 <_14>",
+    "title": "4️⃣ AWS 인스턴스 시작 시, 자동 명령어 실행",
+    "content": "위의 1, 2번을 자동 실행 되게 하였다. ",
+    "url": "/docs/projects/pongdang/240108/#4%EF%B8%8F%E2%83%A3-aws-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%8B%9C%EC%9E%91-%EC%8B%9C-%EC%9E%90%EB%8F%99-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%8B%A4%ED%96%89",
+    
+    "relUrl": "/docs/projects/pongdang/240108/#4️⃣-aws-인스턴스-시작-시-자동-명령어-실행"
+  },"263": {
+    "doc": "제작 일지 <_14>",
+    "title": "5️⃣ 구글 애널리틱스 연동 및 시작",
+    "content": " ",
+    "url": "/docs/projects/pongdang/240108/#5%EF%B8%8F%E2%83%A3-%EA%B5%AC%EA%B8%80-%EC%95%A0%EB%84%90%EB%A6%AC%ED%8B%B1%EC%8A%A4-%EC%97%B0%EB%8F%99-%EB%B0%8F-%EC%8B%9C%EC%9E%91",
+    
+    "relUrl": "/docs/projects/pongdang/240108/#5️⃣-구글-애널리틱스-연동-및-시작"
+  },"264": {
+    "doc": "제작 일지 <_14>",
+    "title": "제작 일지 <_14>",
+    "content": " ",
+    "url": "/docs/projects/pongdang/240108/",
+    
+    "relUrl": "/docs/projects/pongdang/240108/"
   },"265": {
     "doc": "GameChat 개발일지 <1>",
     "title": "GameChat 개발일지 &lt;1&gt;",
