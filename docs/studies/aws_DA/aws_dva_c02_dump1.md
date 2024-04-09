@@ -117,5 +117,51 @@ B. 온프레미스 서버에 X-Ray 데몬을 설치하고 실행하여 데이터
 
 
 ## Question #9
+### 정답 (X, 오답: (D))
+A. **AWS Secrets Manager**에 API 자격 증명을 저장합니다. AWS SDK를 사용하여 런타임 시 API 자격 증명을 검색합니다. 자격 증명을 사용하여 API 호출을 수행합니다.
+
+
+## Question #10
 ### 내용 체크
-- 
+- Amazon Elastic Container Service(Amazon ECS): 확장성이 뛰어나고 빠른 컨테이너 관리 서비스
+  - 컨테이너를 쉽게 실행, 중지하는 등의 관리가 가능하다.
+  - 
+### 정답 (O)
+A. AWS Systems Manager Parameter Store에서 변수를 검색하도록 애플리케이션을 업데이트하십시오. 각 환경의 각 변수에 대해 Parameter Store의 고유한 경로를 사용하십시오. 각 환경의 AWS Secrets Manager에 자격 증명을 저장합니다.
+
+
+## Question #11
+### 내용 체크
+- Amazon Elastic File System(Amazon EFS): 완전관리형 파일 스토리지 서비스
+  - 여러 EC2 인스턴스 간에 파일을 공유하고, 파일 시스템의 용량을 자동으로 확장하는 등의 기능을 제공
+
+### 정답 (O)
+B. Amazon S3에 저장된 사진의 객체 키와 함께 각 직원의 연락처 정보를 Amazon DynamoDB 테이블에 저장합니다.
+
+
+## Question #12
+### 정답 (O)
+B. Amazon Cognito 사용자 풀을 사용하여 사용자 계정을 관리합니다. API에 대한 액세스를 제어하려면 API Gateway에서 Amazon Cognito 사용자 풀 권한 부여자를 생성합니다. Lambda 함수를 사용하여 Amazon S3에 사진을 저장합니다. DynamoDB 테이블에 사진 세부 정보의 일부로 객체의 S3 키를 저장합니다. DynamoDB에 S3 키를 쿼리하여 이전에 업로드한 사진을 검색합니다.
+
+
+## Question #13
+### 내용 체크
+- Amazon SNS: 구독 중인 서비스나 사용자에게 메시지 전달 및 전송을 해주는 서비스
+
+### 정답 (O)
+C. Amazon Simple 알림 서비스(Amazon SNS) 주제를 생성합니다. 특정 속성이 포함된 메시지를 SNS 주제에 게시하도록 Lambda 함수를 구성합니다. 각 파트너의 SNS 주제를 구독하세요. 주제 구독에 적절한 필터 정책을 적용합니다.
+
+
+## Question #14
+### 정답 (X, 오답: (D))
+C. S3 콘솔에서 S3 객체 Lambda 액세스 포인트를 생성합니다. RemovePii 기능을 선택합니다. PII 없이 객체에 액세스하려면 S3 액세스 포인트를 사용하십시오.
+
+
+## Question #15
+### 내용 체크
+- AWS OpsWorks: Chef를 사용하여 모든 형태 및 규모의 애플리케이션을 구성하고 운영하도록 도와주는 구성 관리 서비스
+- AWS CodePipeline: 완전관리형 지속적 전달 서비스
+  - 소프트웨어를 릴리스하는데 필요한 단계를 모델링, 시각화 및 자동화할 수 있게 도와준다.
+
+### 정답 (X, 오답: (D))
+B. 다른 버전의 함수 별칭을 사용하십시오.
