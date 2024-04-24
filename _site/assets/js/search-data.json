@@ -2324,775 +2324,782 @@
     "relUrl": "/docs/studies/aws_DA/aws_dva_c02_dump2/#qustion-29"
   },"332": {
     "doc": "AWS (DVA) - Dump 2",
+    "title": "Question #30",
+    "content": "정답 (O) . B. Amazon Simple Email Service(Amazon SES)를 사용하여 이메일 알림을 보내는 AWS Lambda 함수를 생성합니다. 함수에 대한 Amazon Cognito 사후 인증 Lambda 트리거를 추가합니다. ",
+    "url": "/docs/studies/aws_DA/aws_dva_c02_dump2/#question-30",
+    
+    "relUrl": "/docs/studies/aws_DA/aws_dva_c02_dump2/#question-30"
+  },"333": {
+    "doc": "AWS (DVA) - Dump 2",
     "title": "AWS (DVA) - Dump 2",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_c02_dump2/",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_c02_dump2/"
-  },"333": {
+  },"334": {
     "doc": "AWS (DVA) - Section 4",
     "title": "AWS Certified Developer Associate - Section 4 (IAM)",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section4/#aws-certified-developer-associate---section-4-iam",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section4/#aws-certified-developer-associate---section-4-iam"
-  },"334": {
+  },"335": {
     "doc": "AWS (DVA) - Section 4",
     "title": "2023.09.14 (THU)",
     "content": ". ",
     "url": "/docs/studies/aws_DA/aws_dva_section4/#20230914-thu",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section4/#20230914-thu"
-  },"335": {
+  },"336": {
     "doc": "AWS (DVA) - Section 4",
     "title": "AWS Identity &amp; Access Management (AWS IAM)",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section4/#aws-identity--access-management-aws-iam",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section4/#aws-identity--access-management-aws-iam"
-  },"336": {
+  },"337": {
     "doc": "AWS (DVA) - Section 4",
     "title": "IAM: Users &amp; Groups",
     "content": ". | IAM에서는 사용자를 생성하고 그룹에 배치하기 때문에, 글로벌 서비스이다. | 루트 어카운트는 기본으로 만들어진다. 이후, 루트는 사용되거나 공유되면 안된다. | 사용자와 그룹을 만들어 사용한다. | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section4/#iam-users--groups",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section4/#iam-users--groups"
-  },"337": {
+  },"338": {
     "doc": "AWS (DVA) - Section 4",
     "title": "IAM: 권한",
     "content": ". | 사용자 또는 그룹에게 정책, 또는 IAM 정책이라고 불리는 JSON문서를 지정할 수 있다. | AWS는 필요 이상의 권한을 사용자에게 주지 않는다. | 그룹에게 권한을 부여하는 정책이 있으며, 개인에게는 개인에게만 적용되는 인라인 정책이라는 것을 생성할 수 있다. | IAM 정책 구조 . | 그룹과 사용자들의 정보 보호 . | 비밀번호 정책 . | ex) 길이 제한, 특수문자 등 | . | (중요) 다요소 인증 - MFA . | AWS에서 필수적으로 사용하도록 권장 | 적어도 root를, 최대한 IAM 사용자를 지켜야 함 | 따라서 비밀번호 외, MFA를 이용하는 것이다. | ex) Alice has Password + MFA Token =&gt; 로그인 성공! . | AWS에서 MFA 장치 옵션 (중요) . | 가상 MFA 장치 : 모바일이나 기타 장비로 가능 (Like 모바일 OTP) | U2F 보안 키 (물리) | 하드웨어 키 팝 MFA (물리) | . | . | . | 유저가 AWS에 접근하는 방법 . | AWS Management Console (protected by password + MFA) | AWS Command Line Interface (CLI): protected by access keys | AWS Software Developer Kit (SDK) - for code: protected by access keys . | 다들 각자의 키를 생성하기 때문에, 개인 키는 공유하면 안된다 | . | Access Key ID ~= username | Secret Access Key ~= password | . | . | AWS CLI . | AWS 서비스와 상호 작용할 수 있는 오픈소스 도구 | AWS CLI를 사용하면 Pwershell이나 터미널에서도 AWS에서 제공하는 명령어 기능을 실행할 수 있다. -&gt; 실습 해봄 | CLI 권한은 IAM 권한과 같다. | AWS CloudShell에서도 접속할 수 있다. | . | AWS SDK . | 소프트웨어 개발 키트 | 코딩을 통해 애플리케이션 내에 심어두는 것 | . | . | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section4/#iam-%EA%B6%8C%ED%95%9C",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section4/#iam-권한"
-  },"338": {
+  },"339": {
     "doc": "AWS (DVA) - Section 4",
     "title": "IAM Roles",
     "content": "이는 사용자와 유사하지만, 실제 사용자가 사용하는 것이 아니라 AWS 서비스가 사용하는 것을 말한다. ex) EC2 인스턴스가 AWS에서 작업을 수행할 수 있도록, EC2에게 권한을 부여하는 것이다. ",
     "url": "/docs/studies/aws_DA/aws_dva_section4/#iam-roles",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section4/#iam-roles"
-  },"339": {
+  },"340": {
     "doc": "AWS (DVA) - Section 4",
     "title": "IAM Security Tools",
     "content": ". | IAM 자격 증명 보고서 (계정 레벨) . | 계정에 있는 사용자와 다양한 자격 증명의 상태를 포함 | . | IAM 액세스 관리자 (유저 레벨) . | 사용자의 권한을 관리 | . | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section4/#iam-security-tools",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section4/#iam-security-tools"
-  },"340": {
+  },"341": {
     "doc": "AWS (DVA) - Section 4",
     "title": "IAM 요약",
     "content": ". | Users: mapped to a physical user, has a password for AWS Console | Groups: contains users only | Policies: JSON document that outlines permissions for users or groups | Roles: for EC2 instances or AWS services | Security: MFA + Password Policy | AWS CLI: manage your AWS services using the command-line | AWS SDK: manage your AWS services using a programming language | Access Keys: access AWS using the CLI or SDK | Audit: IAM Credential Reports &amp; IAM Access Advisor | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section4/#iam-%EC%9A%94%EC%95%BD",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section4/#iam-요약"
-  },"341": {
+  },"342": {
     "doc": "AWS (DVA) - Section 4",
     "title": "AWS (DVA) - Section 4",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section4/",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section4/"
-  },"342": {
+  },"343": {
     "doc": "AWS (DVA) - Section 5",
     "title": "AWS Certified Developer Associate - Section 5 (EC2 기초)",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#aws-certified-developer-associate---section-5-ec2-%EA%B8%B0%EC%B4%88",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#aws-certified-developer-associate---section-5-ec2-기초"
-  },"343": {
+  },"344": {
     "doc": "AWS (DVA) - Section 5",
     "title": "2023.09.19 (TUE) ~",
     "content": ". ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#20230919-tue-",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#20230919-tue-"
-  },"344": {
+  },"345": {
     "doc": "AWS (DVA) - Section 5",
     "title": "EC2 인스턴스",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#ec2-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#ec2-인스턴스"
-  },"345": {
+  },"346": {
     "doc": "AWS (DVA) - Section 5",
     "title": "EC2란?",
     "content": "Elastic Compute Cloud = Infrasturcture as a Service . EC2의 작동방식을 알아야, 클라우드 작동 방식을 이해할 수 있다. ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#ec2%EB%9E%80",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#ec2란"
-  },"346": {
+  },"347": {
     "doc": "AWS (DVA) - Section 5",
     "title": "EC2 인스턴스 가상 서버에 사용 가능한 옵션",
     "content": ". | Operating System (OS): Linux, Windows or Mac OS | CPU, RAM 선택 가능 | 스토리지 공간 선택 가능 . | 네트워크를 통해 연결되는 스토리지 (EBS, EFS) | 하드워드를 통해 연결되는 스토리지 (EC2 Instance Store) | . | EC2 인스턴스에 연결할 네트워크 유형도 선택 가능 . | 네트워크 카드 속도 | 사용할 공개 IP | . | 방화벽 규칙: 보안 그룹 | Bootstrap script: EC2 User Data | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#ec2-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EA%B0%80%EC%83%81-%EC%84%9C%EB%B2%84%EC%97%90-%EC%82%AC%EC%9A%A9-%EA%B0%80%EB%8A%A5%ED%95%9C-%EC%98%B5%EC%85%98",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#ec2-인스턴스-가상-서버에-사용-가능한-옵션"
-  },"347": {
+  },"348": {
     "doc": "AWS (DVA) - Section 5",
     "title": "EC2 User Data",
     "content": "이를 사용해 인스턴스를 Bootstrap 할 수 있다. Bootstrapping: 머신이 시작할 때, 명령을 실행하는 것 . | 이 스크립트는 오직 인스턴스 시작 시 한번만 실행된다. | 작업 . | 업데이트 설치 | 소프트웨어 설치 | 인터넷 파일 다운로드 | 등등 | . | 루트 사용자로 실행된다. (psuedo) . | 예시 . | 해당 빈 칸에, 전달하고 싶은 명령어를 넣으면 된다. | . | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#ec2-user-data",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#ec2-user-data"
-  },"348": {
+  },"349": {
     "doc": "AWS (DVA) - Section 5",
     "title": "EC2 생성 실습",
     "content": "기존 사용하던 계정 말고, 다른 새 계정을 만들어 프리티어로 실습을 진행한다. ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#ec2-%EC%83%9D%EC%84%B1-%EC%8B%A4%EC%8A%B5",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#ec2-생성-실습"
-  },"349": {
+  },"350": {
     "doc": "AWS (DVA) - Section 5",
     "title": "EC2 인스턴스 유형",
     "content": "예시로 'm5.2xlarge' 라는 유형의 인스턴스를 예로 들어본다. | m: 인스턴스 클래스 | 5: 인스턴스 세대 . | AWS가 하드웨어를 계속 개선해서 새로운 세대의 하드웨어를 출시하면 m5 -&gt; m6가 되는 것. | . | 2xlarge: 인스턴스 크기 (클수록 인스턴스에 더 많은 메모리와 CPU를 가지게 됨) | . | 범용 목적 . | 범용의 인스턴스는 웹 서버나 코드 저장소와 같은 다양한 작업에 적합 | 컴퓨팅, 메모리, 네트워킹 간의 균형도 잘맞는다. | . | 컴퓨팅 최적화 인스턴스 . | 컴퓨터 집약적인 작업에 최적화된 인스턴스 | 머신러닝, 전용 게임 서버, 고성능 웹서버 | 컴퓨터 최적화의 모든 인스턴스는 C로 시작하는 이름을 가짐 (C5, C5 등) | . | 메모리 최적화 인스턴스 . | 메모리에서 대규모 데이터셋을 처리하는 유형의 작업에 적합 | R로 시작함 (RAM) | . | 스토리지 최적화 인스턴스 . | 로컬 스토리지에서 대규모의 데이터셋에 액세스할 때 적합 | I, G, H1 등 | . | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#ec2-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%9C%A0%ED%98%95",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#ec2-인스턴스-유형"
-  },"350": {
+  },"351": {
     "doc": "AWS (DVA) - Section 5",
     "title": "보안 그룹",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#%EB%B3%B4%EC%95%88-%EA%B7%B8%EB%A3%B9",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#보안-그룹"
-  },"351": {
+  },"352": {
     "doc": "AWS (DVA) - Section 5",
     "title": "보안 그룹이란?",
     "content": "AWS 클라우드에서 네트워크 보안을 실현하는 데 기본적인 기능 (보안 그룹 = 방화벽) . 보안 그룹을 이용해 EC2 인스턴스의 인바운드 및 아웃바운드 트래픽을 제어 기본적으로 허용 규칙만 사용 . | 인바운드 트래픽: 외부에서 EC2 인스턴스로 들어오는 트래픽을 허용되는지 지정 | 아웃바운드 트래픽: 내부에서 인터넷으로 통신할 수 있는지 지정 . | 보안 그룹은 여러 인스턴스에 연결할 수 있다. (다대다 관계) | SSH 전용의 별도의 보안 그룹을 관리하는 것이 좋다. | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#%EB%B3%B4%EC%95%88-%EA%B7%B8%EB%A3%B9%EC%9D%B4%EB%9E%80",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#보안-그룹이란"
-  },"352": {
+  },"353": {
     "doc": "AWS (DVA) - Section 5",
     "title": "특정 보안 그룹을 다른 보안 그룹에서 참조",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#%ED%8A%B9%EC%A0%95-%EB%B3%B4%EC%95%88-%EA%B7%B8%EB%A3%B9%EC%9D%84-%EB%8B%A4%EB%A5%B8-%EB%B3%B4%EC%95%88-%EA%B7%B8%EB%A3%B9%EC%97%90%EC%84%9C-%EC%B0%B8%EC%A1%B0",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#특정-보안-그룹을-다른-보안-그룹에서-참조"
-  },"353": {
+  },"354": {
     "doc": "AWS (DVA) - Section 5",
     "title": "포트에 대해 알아야 할 것들",
     "content": ". | 22 = SSH - EC2 인스턴스에 로그인할 때 사용 | 21 = FTP - 파일 전송 프로토콜 용 | 80 = HTTP - 보안이 적용되지 않은 웹사이트에 액세스 | 443 = HTTPS - 보안이 적용된 웹사이트 | 3389 = RDP - 원격 데스크톱 프로토콜 (윈도우 인스턴스 로그인 용) | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#%ED%8F%AC%ED%8A%B8%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EC%95%84%EC%95%BC-%ED%95%A0-%EA%B2%83%EB%93%A4",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#포트에-대해-알아야-할-것들"
-  },"354": {
+  },"355": {
     "doc": "AWS (DVA) - Section 5",
     "title": "SSH 접속 실습",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/#ssh-%EC%A0%91%EC%86%8D-%EC%8B%A4%EC%8A%B5",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/#ssh-접속-실습"
-  },"355": {
+  },"356": {
     "doc": "AWS (DVA) - Section 5",
     "title": "AWS (DVA) - Section 5",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section5/",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section5/"
-  },"356": {
+  },"357": {
     "doc": "AWS (DVA) - Section 6",
     "title": "AWS Certified Developer Associate - Section 6 (EC2 인스턴스 스토리지 / EBS)",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/#aws-certified-developer-associate---section-6-ec2-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80--ebs",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/#aws-certified-developer-associate---section-6-ec2-인스턴스-스토리지--ebs"
-  },"357": {
+  },"358": {
     "doc": "AWS (DVA) - Section 6",
     "title": "2023.09.25 (MON) ~",
     "content": ". ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/#20230925-mon-",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/#20230925-mon-"
-  },"358": {
+  },"359": {
     "doc": "AWS (DVA) - Section 6",
     "title": "EC2 인스턴스 스토리지",
     "content": ". ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/#ec2-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/#ec2-인스턴스-스토리지"
-  },"359": {
+  },"360": {
     "doc": "AWS (DVA) - Section 6",
     "title": "EBS 볼륨",
     "content": "Elastic Block Store Volume . | 인스턴스가 실행 중인 동안 연결 가능한 네트워크 드라이브 | 인스턴스 종류된 후에도 데이터를 지속할 수 있다. | EBS 볼륨을 생성할 때는 특정 가용 영역에서만 가능하다. | 스냅샷을 이용하면 다른 가용 영역으로 볼륨 옮기기 가능 | . | . EBS 볼륨 = 네트워크 USB 스틱 . | 네트워크 드라이브로 EC2 인스턴스에서 분리될 수 있다. | 볼륨이기에 용량을 미리 결정해야 한다. | 인스턴스에 연결할 수 있어, 필요한 경우에만 연결한다. | . EC2 인스턴스를 통해 EBS 볼륨을 생성하는 경우, 종료 시 삭제 속성 - 기본 설정은 체크가 해제되어 있음 (인스턴스 root는 체크가 되어있음) . ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/#ebs-%EB%B3%BC%EB%A5%A8",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/#ebs-볼륨"
-  },"360": {
+  },"361": {
     "doc": "AWS (DVA) - Section 6",
     "title": "EBS 볼륨 실습",
     "content": ". | EBS 볼륨은 특정 가용 영역의 인스턴스에만 부착할 수 있다. | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/#ebs-%EB%B3%BC%EB%A5%A8-%EC%8B%A4%EC%8A%B5",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/#ebs-볼륨-실습"
-  },"361": {
+  },"362": {
     "doc": "AWS (DVA) - Section 6",
     "title": "EBS 스냅샷",
     "content": ". | EBS 볼륨의 특정 시점에서의 백업 | 스탭샷을 다른 가용 영역 및 다른 리전에 복사할 수 있다. | . 스냅샷의 기능 . | 스냅샷 아카이브 . | 스냅샷을 최대 75% 더 저렴한 아카이브 디어로 옮기는 기능 | . | EBS 스냅샷을 위한 휴지통을 만들기 . | 스냅샷을 영구적으로 삭제하는 대신, 휴지통에 보관 | 실수로 삭제한 경우 복구 가능 (보관 기간 : 하루에서 1년 설정 가능) | . | 스냅샷 완전 초기화 | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/#ebs-%EC%8A%A4%EB%83%85%EC%83%B7",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/#ebs-스냅샷"
-  },"362": {
+  },"363": {
     "doc": "AWS (DVA) - Section 6",
     "title": "AMI",
     "content": "Amazon Machine Image = 사용자 지정 EC2 인스턴스 . AMI를 생성하면 부팅과 구성에 시간이 단축된다. EC2 인스턴스의 AMI 처리 . | 인스턴스를 시작하고, 이를 사용자 지정으로 바꾼다. | 인스턴스를 중지시켜, 데이터 무결성을 확보한다. | 다른 AMI에서 인스턴스를 실행할 수 있게 된다. | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/#ami",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/#ami"
-  },"363": {
+  },"364": {
     "doc": "AWS (DVA) - Section 6",
     "title": "EC2 Instance Store",
     "content": "EC2 인스턴스는 가상 머신이지만, 실제로는 하드웨어 서버에 연결되어 있고 물리적으로 연결된 디스크 공간을 갖는다. 따라서, 특정 유형의 EC2 인스턴스는 EC2 인스턴스 스토어라고 블린다. 이 EC2 인스턴스 스토어는 I/O 성능 향상을 위해 활용할 수 있다. EC2 인스턴스 스토어 = 임시 스토리지 장기 스토리지 경우, EBS가 적합 . ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/#ec2-instance-store",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/#ec2-instance-store"
-  },"364": {
+  },"365": {
     "doc": "AWS (DVA) - Section 6",
     "title": "EBS 볼륨 유형",
     "content": "EBS 볼륨에는 6가지 타입이 있다. | gp2 / gp3 (SSD) : 범용 SSD 볼륨 | io1 / io2 (SSD) : 최고 성능 SSD 볼륨, 미션 크리티컬, 지연 시간 낮음, 대용량의 워크로드에 쓰인다. | st1 (HDD) : 저비용의 HDD 볼륨 | sc1 (HDD) : 가장 비용이 적게 드는 HDD 볼륨 | . 이 중, gp2/gp3, io1/io2만 부팅 볼륨으로 사용될 수 있다. EBS 볼륨 정의 방법 . 크기, 처리량, IOPS(초당 I/O 작업 수) . ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/#ebs-%EB%B3%BC%EB%A5%A8-%EC%9C%A0%ED%98%95",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/#ebs-볼륨-유형"
-  },"365": {
+  },"366": {
     "doc": "AWS (DVA) - Section 6",
     "title": "시험에선 범용 gp2와 IOPS 프로비저닝이 가장 중요한 내용",
     "content": "gp2/gp3 . 짧은 지연 시간을 자랑하며, 효율적인 비용의 스토리지 . | gp3에선 IOPS와 처리량을 독자적으로 설정할 수 있다. | gp2에선 그 둘이 연결되어 있다. | . IOPS 프로비저닝 . IOPS 성능을 유지할 필요가 있는 주요 비즈니스 애플리케이션이나, 16,000 IOPS 이상을 요구하는 애플리케이션에 적합 . | 일반적으로 데이터베이스 워크로드에 알맞다. | gp2/gp3에 -&gt; io1 또는 io2 볼륨으로 바꾸면 된다. | . io2는 io1과 동일한 비용에 내구성과 기가 당 IOPS의 수가 더 높다. -&gt; io2가 합리적 . st1, sc1 . | 부팅 볼륨 X | 빅데이터, 데이터 웨어하우징 로그 처리에 적합 | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/#%EC%8B%9C%ED%97%98%EC%97%90%EC%84%A0-%EB%B2%94%EC%9A%A9-gp2%EC%99%80-iops-%ED%94%84%EB%A1%9C%EB%B9%84%EC%A0%80%EB%8B%9D%EC%9D%B4-%EA%B0%80%EC%9E%A5-%EC%A4%91%EC%9A%94%ED%95%9C-%EB%82%B4%EC%9A%A9",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/#시험에선-범용-gp2와-iops-프로비저닝이-가장-중요한-내용"
-  },"366": {
+  },"367": {
     "doc": "AWS (DVA) - Section 6",
     "title": "EBS 다중 연결",
     "content": "다중 연결 기능을 사용하면 동일한 EBS 볼륨을 동일한 가용영역에 있는 여러 개의 EC2 인스턴스에 첨부할 수 있다. 시험에 나오는 내용 : 하나의 볼륨은 한번에 최대 16개의 EC2 인스턴스에 부착할 수 있다. ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/#ebs-%EB%8B%A4%EC%A4%91-%EC%97%B0%EA%B2%B0",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/#ebs-다중-연결"
-  },"367": {
+  },"368": {
     "doc": "AWS (DVA) - Section 6",
     "title": "Amazon EFS (탄력적 파일 시스템)",
     "content": "EFS: 관리형 NFS(네트워크 파일 시스템) 네트워크 파일 시스템이기 때문에, 많은 EC2 인스턴스에 마운트 가능 (서로 다른 가용 영역도 가능) . 특징 . | 가용성이 높다. | 확장성이 높다. | 비용은 gp2 볼륨의 3배이다. | 사용량에 따라 비용을 지불!!!! | . | . 사용처 . | 콘텐츠 관리 | 웹 서비스 | 데이터 공유 | 워드 프레스 | . 호환 . 이 기능은 Window가 아닌 Linux 기반 AMI와만 호환된다. 성능 및 스토리지 클래스 . EFS 스케일에서는 수천 개의 동시 NFS 클라이언트와 10기가바이트 이상의 처리량이 가능하다. ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/#amazon-efs-%ED%83%84%EB%A0%A5%EC%A0%81-%ED%8C%8C%EC%9D%BC-%EC%8B%9C%EC%8A%A4%ED%85%9C",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/#amazon-efs-탄력적-파일-시스템"
-  },"368": {
+  },"369": {
     "doc": "AWS (DVA) - Section 6",
     "title": "AWS (DVA) - Section 6",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section6/",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section6/"
-  },"369": {
+  },"370": {
     "doc": "AWS (DVA) - Section 7",
     "title": "AWS Certified Developer Associate - Section 7 (AWS 기초: ELB + ASG)",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section7/#aws-certified-developer-associate---section-7-aws-%EA%B8%B0%EC%B4%88-elb--asg",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section7/#aws-certified-developer-associate---section-7-aws-기초-elb--asg"
-  },"370": {
+  },"371": {
     "doc": "AWS (DVA) - Section 7",
     "title": "2023.11.21 (TUE) ~",
     "content": ". ",
     "url": "/docs/studies/aws_DA/aws_dva_section7/#20231121-tue-",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section7/#20231121-tue-"
-  },"371": {
+  },"372": {
     "doc": "AWS (DVA) - Section 7",
     "title": "고가용성 및 확장성",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section7/#%EA%B3%A0%EA%B0%80%EC%9A%A9%EC%84%B1-%EB%B0%8F-%ED%99%95%EC%9E%A5%EC%84%B1",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section7/#고가용성-및-확장성"
-  },"372": {
+  },"373": {
     "doc": "AWS (DVA) - Section 7",
     "title": "확장성",
     "content": "애플리케이션 시스템이 조정을 통해 더 많은 양을 처리할 수 있다는 의미 . | 수직 확장성 . | 인스턴스 크기 확장 | 하드웨어 제한이 있기 때문에, 한계가 있다. | . | 수평 확장성(탄력성) . | 인스턴스나 시스템의 수를 늘리는 방법 | . | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section7/#%ED%99%95%EC%9E%A5%EC%84%B1",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section7/#확장성"
-  },"373": {
+  },"374": {
     "doc": "AWS (DVA) - Section 7",
     "title": "고가용성",
     "content": "애플리케이션 또는 시스템을 적어도 둘 이상의 AWS의 AZ나 데이터 센터에서 가동중인 것을 의미 . | 고가용성의 목표: 데이터 센터에서의 손실을 막기 위해 (센터 하나가 멈춰도 계속 작동이 가능하게끔) | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section7/#%EA%B3%A0%EA%B0%80%EC%9A%A9%EC%84%B1",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section7/#고가용성"
-  },"374": {
+  },"375": {
     "doc": "AWS (DVA) - Section 7",
     "title": "일래스틱 로드 밸런싱(ELB)",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section7/#%EC%9D%BC%EB%9E%98%EC%8A%A4%ED%8B%B1-%EB%A1%9C%EB%93%9C-%EB%B0%B8%EB%9F%B0%EC%8B%B1elb",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section7/#일래스틱-로드-밸런싱elb"
-  },"375": {
+  },"376": {
     "doc": "AWS (DVA) - Section 7",
     "title": "로드 밸런서",
     "content": "서버 혹은 서버셋으로 트래픽을 백엔드나 다운스트림 EC2 인스턴스 또는 서버들로 전달하는 역할 = 관리형 로드 밸런서 . | 쉽게 말해, 중재하는 관리자? | 왜 필요한가? . | 부하를 다수의 다운스트림 인스턴스로 분산하기 위해 | 어떤 인스턴스로 트래픽을 보낼 수 없는지도 확인해준다. | 클라우드 내에서 개인 트래픽과 공공 트래픽을 분리할 수 있다. | . | AWS가 관리하며, 어떤 경우에도 작동할 것을 보장함. (고가용성을 책임) | 무조건 쓰는 편이 좋음. | 자체 관리보다 저렴함 | 로드밸런서는 다수의 AWS와 연동됨 | . | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section7/#%EB%A1%9C%EB%93%9C-%EB%B0%B8%EB%9F%B0%EC%84%9C",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section7/#로드-밸런서"
-  },"376": {
+  },"377": {
     "doc": "AWS (DVA) - Section 7",
     "title": "Health Checks",
     "content": "ELB가 EC2 인스턴스의 작동이 올바르게 되고 있는지의 여부를 확인하기 위해 사용된다. | 제대로 작동하지 않으면, 해당 인스턴스로 트래픽을 보낼 수 없기 때문에 Health Checks는 굉장히 중요하다. | Health Checks는 포트와 라우트에서 이뤄진다. | EC2에서 http 200 응답을 주지 않으면, unhealthy하다 판단하고 ELB는 그쪽으로 트래픽을 보내지 않는다. | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section7/#health-checks",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section7/#health-checks"
-  },"377": {
+  },"378": {
     "doc": "AWS (DVA) - Section 7",
     "title": "로드 밸런서의 Types",
     "content": ". | Classic Load Balancer (v1) - call CLB . | 지금은 권장하지 않음 | . | Application Load Balancer (v2) - call ALB | Network Load Balancer (v2) - call NLB | Gateway Load Balancer - call GWLB | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section7/#%EB%A1%9C%EB%93%9C-%EB%B0%B8%EB%9F%B0%EC%84%9C%EC%9D%98-types",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section7/#로드-밸런서의-types"
-  },"378": {
+  },"379": {
     "doc": "AWS (DVA) - Section 7",
     "title": "로드 밸런서의 보안그룹",
     "content": ". | EC2 인스턴스의 보안 그룹을 로드 밸런서의 보안 그룹으로 연결한다. | 그렇게 되면 EC2 인스턴스는 로드 밸런서에서 온 트래픽만을 허용하게 된다. | . | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section7/#%EB%A1%9C%EB%93%9C-%EB%B0%B8%EB%9F%B0%EC%84%9C%EC%9D%98-%EB%B3%B4%EC%95%88%EA%B7%B8%EB%A3%B9",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section7/#로드-밸런서의-보안그룹"
-  },"379": {
+  },"380": {
     "doc": "AWS (DVA) - Section 7",
     "title": "1. CLB",
     "content": "-&gt; 이제 사용하지 않아, 다루지 않는다. ",
     "url": "/docs/studies/aws_DA/aws_dva_section7/#1-clb",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section7/#1-clb"
-  },"380": {
+  },"381": {
     "doc": "AWS (DVA) - Section 7",
     "title": "2. ALB",
     "content": "7계층 - HTTP 전용 로드밸런서 . | 동일 EC2 인스턴스 상의 여러 애플리케이션에 부하를 분산한다. | 컨테이너와 ECS를 사용함 | . | HTTP에서 HTTPS로 트래픽을 자동 리다이렉트를 하려는 경우, 로드 밸런서 레벨에서 가능하다. | 경로 라우팅도 지원 | 뭐리 문자열과 헤더에 기반한 라우팅도 가능 | ALB 하나만으로도 다수의 애플리케이션을 처리할 수 있다. | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section7/#2-alb",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section7/#2-alb"
-  },"381": {
+  },"382": {
     "doc": "AWS (DVA) - Section 7",
     "title": "3. NLB",
     "content": "4계층 - TCP/UDP 트래픽 처리 . | 고성능 (초당 수백만건 요청 처리) | 가용 영역 당 하나의 고정 IP만 있다. | 각 가용 영역에 탄력적 IP를 배정할 수 있다. | 이건 여러 고정 IP가 있는 애플리케이션을 노출해야 할 때 유용 | . | NLB의 대상 그룹이 하는 상태 확인은 TCP, HTTP, HTTPS 프로토콜을 지원한다. | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section7/#3-nlb",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section7/#3-nlb"
-  },"382": {
+  },"383": {
     "doc": "AWS (DVA) - Section 7",
     "title": "4. GWLB",
     "content": "배포 및 확장과 AWS의 타사 네트워크 가상 어플라이언스의 플릿 관리에 사용됨 . | 방화벽을 통과하게 하거나, 침입 탐지 및 방지 시스템에 사용된다. | 1). 라우팅 테이블이 수정되면, 모든 사용자 트래픽은 GWLB를 통과 | 2). GWLB는 가상 어플라이언스의 대상 그룹 전반으로 트래픽을 확한 | 3). 모든 트래픽은 어플라이언스에 도달하고 어플라이언스는 트래픽을 분석하고 처리 | 4). 이상이 없다면 다시 GWLB로 보내고, 이상이 있으면 트래픽을 드롭 | 5). 허용된 트래픽은 GWLB에서 애필리케이션으로 보내짐 | 기능 . | 1). 투명 네트워크 게이트웨이 | 2). 로드밸런서 | . | . ",
     "url": "/docs/studies/aws_DA/aws_dva_section7/#4-gwlb",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section7/#4-gwlb"
-  },"383": {
+  },"384": {
     "doc": "AWS (DVA) - Section 7",
     "title": "ELB의 고정 세션 or 세션 밀접성",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section7/#elb%EC%9D%98-%EA%B3%A0%EC%A0%95-%EC%84%B8%EC%85%98-or-%EC%84%B8%EC%85%98-%EB%B0%80%EC%A0%91%EC%84%B1",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section7/#elb의-고정-세션-or-세션-밀접성"
-  },"384": {
+  },"385": {
     "doc": "AWS (DVA) - Section 7",
     "title": "AWS (DVA) - Section 7",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_dva_section7/",
     
     "relUrl": "/docs/studies/aws_DA/aws_dva_section7/"
-  },"385": {
+  },"386": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_lecture1/",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/"
-  },"386": {
+  },"387": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "2023.09.11 (MON)",
     "content": ". ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#20230911-mon",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#20230911-mon"
-  },"387": {
+  },"388": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "서버리스란?",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#%EC%84%9C%EB%B2%84%EB%A6%AC%EC%8A%A4%EB%9E%80",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#서버리스란"
-  },"388": {
+  },"389": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "패러다임의 전환",
     "content": ". | 물리적 머신 | Virtual machines (VM) . | ex) ec2 | 컴퓨터 및 장비 별로 버전 차이 등으로 종속성 문제가 발생하는 단점이 존재 | . | Containerization . | VM의 단점을 해소 | 필요에 따라 서버 증설 등의 여러가지 밑단의 내용들을 신경써야함 | . | Serverless . | AWS 차원에서 모든 리소스들을 추상화함. | 지속적인 스케일링 | 사용한 만큼만 과금 | 유지보수 ZERO | 때문에, 비즈니스 가치에 집중할 수 있다. | . | . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84%EC%9D%98-%EC%A0%84%ED%99%98",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#패러다임의-전환"
-  },"389": {
+  },"390": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "서버리스란?",
     "content": ". | 서버 관리 필요없음 | 사용한 만큼만 지불 | 요청에 맞게 스케일링 | 높은 보안 수준 | . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#%EC%84%9C%EB%B2%84%EB%A6%AC%EC%8A%A4%EB%9E%80-1",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#서버리스란-1"
-  },"390": {
+  },"391": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "다양한 범주의 서버리스 서비스",
     "content": ". 출처 : AWS . | 대표적으로 AWS Lambda | 네모 표시는 실습 때, 살펴볼 내용 | . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#%EB%8B%A4%EC%96%91%ED%95%9C-%EB%B2%94%EC%A3%BC%EC%9D%98-%EC%84%9C%EB%B2%84%EB%A6%AC%EC%8A%A4-%EC%84%9C%EB%B9%84%EC%8A%A4",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#다양한-범주의-서버리스-서비스"
-  },"391": {
+  },"392": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "AWS Lambda",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#aws-lambda",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#aws-lambda"
-  },"392": {
+  },"393": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "AWS Lambda",
     "content": ". | 불필요한 서버 관리 | 자동 확장 | 고가용성 및 보안 | 사용한 만큼만 지불 | . 출처 : AWS . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#aws-lambda-1",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#aws-lambda-1"
-  },"393": {
+  },"394": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "AWS Lambda 사용 사례",
     "content": ". | Web Apps . | 정적 웹사이트 | 복합적 웹앱 | . | Backends . | 앱 &amp; 서비스 | 모바일 | IoT | . | Data Processing . | Real time | MaoReduce | Batch | . | Chatbots . | Powering chatbot loginc | . | etc | . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#aws-lambda-%EC%82%AC%EC%9A%A9-%EC%82%AC%EB%A1%80",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#aws-lambda-사용-사례"
-  },"394": {
+  },"395": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "Amazon API Gateway",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#amazon-api-gateway",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#amazon-api-gateway"
-  },"395": {
+  },"396": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "API Gateway는 API 기반 아키텍처의 관문",
     "content": "API : 응용프로그램과 운영체제 간의 통신을 연결해주는 인터페이스 . API Gateway : 서비스가 많아지면, 버전 관리 및 관리가 매우 힘들어진다. 이를 해소시켜주는 것. (like 정문 역할) . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#api-gateway%EB%8A%94-api-%EA%B8%B0%EB%B0%98-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%EC%9D%98-%EA%B4%80%EB%AC%B8",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#api-gateway는-api-기반-아키텍처의-관문"
-  },"396": {
+  },"397": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "Amazon DynamoDB",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#amazon-dynamodb",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#amazon-dynamodb"
-  },"397": {
+  },"398": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "Amazon DynamoDB",
     "content": "대규모 성능에 최적화된 완전 관리형 NoSQL 데이터베이스 서비스 . | 서버리스 . | 유지관리 불필요 | 오토 스케일링 | 고가용성 및 내결함성 | . | 높은 성능 . | 초당 수백만의 요청 처리 및 짧은 지연시간 | 다른 AWS 서비스와 통합 | . | 보안 및 엑세스 . | 전송 중 및 저장 시 암호화 | . | . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#amazon-dynamodb-1",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#amazon-dynamodb-1"
-  },"398": {
+  },"399": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "Core Concepts - Tables, Items, Attributes, Indexes",
     "content": ". 출처 : AWS . | Primary Key를 잘 설계하는 것이 중요. | Unique하게 | . | . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#core-concepts---tables-items-attributes-indexes",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#core-concepts---tables-items-attributes-indexes"
-  },"399": {
+  },"400": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "데이터 베이스 확장",
     "content": ". | SQL . | 수직정 확장 | . | NoSQL . | 수평적 확장 : 다수의 샤드로 수평확장 | . | . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%99%95%EC%9E%A5",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#데이터-베이스-확장"
-  },"400": {
+  },"401": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "실습",
     "content": " ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#%EC%8B%A4%EC%8A%B5",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#실습"
-  },"401": {
+  },"402": {
     "doc": "AWS 강의 - AWS 서버리스로 서버 없이 간단한 웹 애플리케이션 만들기",
     "title": "실습 과정",
     "content": ". | Lambda 생성 | DynamoDB, API Gateway 생성 | . https://catalog.us-east-1.prod.workshops.aws/workshops/600420b7-5c4c-498f-9b80-bc7798963ba3/ko-KR/serverless . ",
     "url": "/docs/studies/aws_DA/aws_lecture1/#%EC%8B%A4%EC%8A%B5-%EA%B3%BC%EC%A0%95",
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#실습-과정"
-  },"402": {
+  },"403": {
     "doc": "사이드 프로젝트 - Deverse",
     "title": "Project - Deverse",
     "content": " ",
     "url": "/docs/projects/deverse/#project---deverse",
     
     "relUrl": "/docs/projects/deverse/#project---deverse"
-  },"403": {
+  },"404": {
     "doc": "사이드 프로젝트 - Deverse",
     "title": "Project has been written since March 12, 2024.",
     "content": ". | Links | . ",
     "url": "/docs/projects/deverse/#project-has-been-written-since-march-12-2024",
     
     "relUrl": "/docs/projects/deverse/#project-has-been-written-since-march-12-2024"
-  },"404": {
+  },"405": {
     "doc": "사이드 프로젝트 - Deverse",
     "title": "사이드 프로젝트 - Deverse",
     "content": " ",
     "url": "/docs/projects/deverse/",
     
     "relUrl": "/docs/projects/deverse/"
-  },"405": {
+  },"406": {
     "doc": "토이 프로젝트 - 게임 서버",
     "title": "Project - 토이 프로젝트 - 게임 서버",
     "content": " ",
     "url": "/docs/projects/gameServer/#project---%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84",
     
     "relUrl": "/docs/projects/gameServer/#project---토이-프로젝트---게임-서버"
-  },"406": {
+  },"407": {
     "doc": "토이 프로젝트 - 게임 서버",
     "title": "Project has been written since Aug 19, 2023.",
     "content": ". ",
     "url": "/docs/projects/gameServer/#project-has-been-written-since-aug-19-2023",
     
     "relUrl": "/docs/projects/gameServer/#project-has-been-written-since-aug-19-2023"
-  },"407": {
+  },"408": {
     "doc": "토이 프로젝트 - 게임 서버",
     "title": "토이 프로젝트 - 게임 서버",
     "content": " ",
     "url": "/docs/projects/gameServer/",
     
     "relUrl": "/docs/projects/gameServer/"
-  },"408": {
+  },"409": {
     "doc": "Hoooon22's Log",
     "title": "Hoooon22",
     "content": "Web &amp; Server Delveloper . ",
     "url": "/",
     
     "relUrl": "/"
-  },"409": {
+  },"410": {
     "doc": "Hoooon22's Log",
     "title": "Profile",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"410": {
+  },"411": {
     "doc": "Hoooon22's Log",
     "title": "김지훈",
     "content": "웹 &amp; 서버 개발자 . 학력 . | 동국대학교 컴퓨터공학과 (2018.03 ~ 2023.02) | . 기타 . | 동국대학교 인간-로봇 상호작용 연구실 학부연구생 (2019.07 ~ 2021.04) | . 경력 . | 마준소프트 인턴 (2024.01 ~ 2024.02) | . ",
     "url": "/",
     
     "relUrl": "/"
-  },"411": {
+  },"412": {
     "doc": "Hoooon22's Log",
     "title": "Tech Stack",
     "content": ". | Programming Languages: C/C++, Java | Frameworks: SpringBoot, Node.js, React | Web Technologies: HTML5, CSS, Javascript, ASP | Databases: MySQL | Version Control: Git | PaaS/IaaS: AWS | Operating Systems:: Linux | Miscellaneous Tools/Platforms:: Unity | . ",
     "url": "/",
     
     "relUrl": "/"
-  },"412": {
+  },"413": {
     "doc": "Hoooon22's Log",
     "title": "Projects",
     "content": "ㅤ1. '퐁당 매거진' 웹사이트 제작 프로젝트 . 이미지를 클릭하시면, 웹페이지로 이동합니다. | Period: 2022.07 ~ (진행중) | Description: 청소년들에게 세상에 있는 다양한 직업들을 소개해주는 웹매거진 ‘매거진 퐁당’의 풀스택 개발을 맡았습니다. | 첫 번째 사이트: VanilaJS, Node.js | 두 번째 사이트(개발 진행중): React, SpringBoot | . | Tech Stack: AWS, HTML/CSS/Javascript, Node.js, React, SpringBoot, NGINX | . 퐁당 매거진 웹사이트 제작 과정 '퐁당 매거진 두번째 돌' 웹사이트의 제작 과정을 기록한 페이지 입니다. Pongdang_Server2 Github '퐁당 매거진 두번째 돌' 웹사이트의 깃허브 입니다. ㅤ2. Automated CCTV Video Processing System to Prevent Child Abuse in Daycare Centers . | Period: 2022.03.02 ~ 2022.12.16 (약 10개월 간) | Description: 아동학대 방지를 위해 어린이집 내 CCTV 영상을 효율적으로 반출하는 시스템을 개발하였습니다. 학대 의심 구간을 C3D모델로 탐지하고, YOLOv5와 StrongSORT 모델을 사용하여 프레임별로 얼굴 영역을 검출하며, 이에 해당하는 영역을 모자이크 처리하여 사용자에게 영상을 최종적으로 제공하는 시스템입니다. 이 중 학대 의심 구간을 탐지하는 Violence Detection module을 개발하는 역할을 맡았습니다. 또한 이에 매칭되는 부분의 논문 작성을 맡았고, 구현 후 테스트 총괄을 맡았습니다. 이후, 2022 한국정보기술학회 추계학술대회 대학생논문경진대회에서 은상을 수상하였습니다. | Tech Stack: 영상처리, Front-end, Back-end | Result: 학회 논문 게시, 웹사이트 기반 시스템 제작 | . Automated CCTV Video Processing System Github 프로젝트의 깃허브 입니다. ㅤ3. 동국대학교 전자불전문화콘텐츠연구소 아카이브 홈페이지 제작 프로젝트 . | Period: 2020.03 ~ 2020.08 (약 6개월) | Description: 동국대학교 전자불전문화콘텐츠연구소의 불교문화가 담긴 사진 등의 빅데이터들을 저장하고 열람할 수 있는 홈페이지를 제작하였습니다. | 웹 전체 페이지 개발, 빅데이터 관리, 정보 분류를 위한 검색 SQL문 작성, 서버 보조 관리 | . | Tech Stack: HTML/CSS/JS, Node.js, MySQL | Result: 빅데이터 관리, 웹 디자인 경험, Server &amp; Client 동시 구현 | . ㅤ4. 안전사고 예방과 과학 교육을 위한 VR실험실 개별연구 프로젝트 . | Period: 2022.03 ~ 2022.06 (약 4개월) | Description: CS VR 기기를 활용한 스마트 시스템 설계 – VR 실험실 개발 및 논문 작성 . | 실제 화학 실험에서의 위험사고와 경제적 손실을 최소화하는 방법으로, VR 상의 가상 실험 을 구현하여 해당 VR 실험실에서의 실험과 실제 실험의 실험을 서로 비교하고 관찰하여 각 방법의 효율성 과 유효성(학습효과 등)을 분석하였습니다. Unity와 C#, Blender를 사용하여 제작하였습니다. | . | Tech Stack: Unity, C#, Blender (그래픽 프로그램) | Result: Unity 활용능력, Blender 사용 경험, 논문 작성 | . ChemicalLab Github ChemicalLab 프로젝트의 깃허브 입니다. ㅤ5. 동국대학교 이공계를 위한 문제중심 C언어 프로그래밍 교안 제작 프로젝트 . | Period: 2019.10 ~ 2020.07 (약 10개월) | Description: 동국대학교의 이공계 학생들을 위한 문제풀이 중심의 C언어 프로그래밍 교안을 제작하였습니다. | 문제 Project 4개 중 1개 제작, Project1-주기율표 계산 프로그램 | . | Tech Stack: C언어 기초지식과 기초 프로그래밍 Skill | Result: 동국대학교 수업 사용 교안 제작, C언어 활용 Skill | . ㅤ6. 시각장애인을 위한 스마트 점자 패널 기초연구 . | Period: 2019.09.01 ~ 2019.11.02 (약 3개월 간) | Description: 시각장애인 의 스마트폰을 통한 정보접근성 향상을 위해‘스마트 점자 패널’을 설계하고 논문으로 발표하였습니다. 스마트폰으로 인한 시각장애인과 비장애인의 정보격차를 줄이기 위한 기술로, 스마트폰의 음성이 아닌 본 기술의 점자를 이용하여 스마트폰의 정보를 전달할 수 있게 설계하였습니다. | Tech Stack: 논문 주 저자, 아이디어 제시 및 논문 발표 | Result: 2019 한국지능시스템학회 추계학술대회 논문 게시 . 논문 원본입니다. | . ㅤ7. 스마트미러를 활용한 청각장애인 구화훈련 애플리케이션 제작 . | Period: 2020.09.01 ~ 2021.02.28 (약 6개월 간) | Description: 스마트미러를 활용한 청각장애인 구화훈련 애플리케이션을 제작하였습니다. | 아이디어 제시, 스마트미러 전용 애플리케이션 개발, 테스트 실험 | . | Tech Stack: Android Studio, STT(Speech to Text) 알고리즘 | Result: 동국대학교 2021 겨울캡스톤 디자인대회 밸류업 프로그램 장려상 수상, 애플리케이션 개발 능력 . 논문 원본입니다. | . if (code.isWorks()) { return Best_Moment; // :) } . ",
     "url": "/",
     
     "relUrl": "/"
-  },"413": {
+  },"414": {
     "doc": "Hoooon22's Log",
     "title": "Hoooon22's Log",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"414": {
+  },"415": {
     "doc": "오브젝트",
     "title": "Obejct &amp; OOP",
     "content": " ",
     "url": "/docs/studies/object/#obejct--oop",
     
     "relUrl": "/docs/studies/object/#obejct--oop"
-  },"415": {
+  },"416": {
     "doc": "오브젝트",
     "title": "This Page has been written since August 08, 2023.",
     "content": "참고 서적 : “오브젝트”, 조영호 . ",
     "url": "/docs/studies/object/#this-page-has-been-written-since-august-08-2023",
     
     "relUrl": "/docs/studies/object/#this-page-has-been-written-since-august-08-2023"
-  },"416": {
+  },"417": {
     "doc": "오브젝트",
     "title": "오브젝트",
     "content": " ",
     "url": "/docs/studies/object/",
     
     "relUrl": "/docs/studies/object/"
-  },"417": {
+  },"418": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "Project - 퐁당 웹 매거진 프로젝트 Ver.02",
     "content": " ",
     "url": "/docs/projects/pongdang/#project---%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-ver02",
     
     "relUrl": "/docs/projects/pongdang/#project---퐁당-웹-매거진-프로젝트-ver02"
-  },"418": {
+  },"419": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "Project has been written since July 1, 2023.",
     "content": ". | Links | . 퐁당 웹 매거진 프로젝트 Ver.01 제작 일지 . 퐁당 웹 매거진 프로젝트 Ver.01 Github(private) . 퐁당 웹 매거진 프로젝트 Ver.02 제작 일지 . 퐁당 웹 매거진 프로젝트 Ver.02 Github(public) . ",
     "url": "/docs/projects/pongdang/#project-has-been-written-since-july-1-2023",
     
     "relUrl": "/docs/projects/pongdang/#project-has-been-written-since-july-1-2023"
-  },"419": {
+  },"420": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "퐁당 웹 매거진 프로젝트",
     "content": " ",
     "url": "/docs/projects/pongdang/",
     
     "relUrl": "/docs/projects/pongdang/"
-  },"420": {
+  },"421": {
     "doc": "Projects",
     "title": "Project",
     "content": "Project has been written since July 1, 2023. ",
     "url": "/docs/projects#project",
     
     "relUrl": "/docs/projects#project"
-  },"421": {
+  },"422": {
     "doc": "Projects",
     "title": "Projects",
     "content": " ",
     "url": "/docs/projects",
     
     "relUrl": "/docs/projects"
-  },"422": {
+  },"423": {
     "doc": "STUDY",
     "title": "공부",
     "content": "This Page has been written since July 17, 2023. ",
     "url": "/docs/studies#%EA%B3%B5%EB%B6%80",
     
     "relUrl": "/docs/studies#공부"
-  },"423": {
+  },"424": {
     "doc": "STUDY",
     "title": "STUDY",
     "content": " ",
     "url": "/docs/studies",
     
     "relUrl": "/docs/studies"
-  },"424": {
+  },"425": {
     "doc": "AWS 기초 - 1",
     "title": "AWS 기초 - 1",
     "content": " ",
     "url": "/docs/studies/aws_DA/summary_1/",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/"
-  },"425": {
+  },"426": {
     "doc": "AWS 기초 - 1",
     "title": "2023.08.19 (SAT)",
     "content": ". ",
     "url": "/docs/studies/aws_DA/summary_1/#20230819-sat",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/#20230819-sat"
-  },"426": {
+  },"427": {
     "doc": "AWS 기초 - 1",
     "title": "1. 온프라미스와 AWS 용어 비교",
     "content": "AWS는 아마존에서 온프레미스를 클라우드 서비스로 만든 것이다. 온프라미스(On-premise)란, 기업의 서버를 클라우드 같은 원격 환경에서 운영하는 방식이 아닌, 자체적으로 보유한 전산실 서버에 직접 설치해 운영하는 방식이다. – . 온프라미스 용어 = 클라우드 용어 . | 방화벽 = 보안그룹 | ACL = NACL . | ACL(Access Control List) : 허가되지 않은 이용자가 라우터나 네트워크의 특정 자원을 접근하려고 하는 것을 차단한다. | . | 관리자 권한 = IAM | L4, 로드 밸런서 = ELB(일라스틱 로드 밸런서), 탄력적인 로드 밸련서, ALB, … . | 로드 밸런서 : 서버에 가해지는 부사(=로드)를 분산(=밸런싱)해주는 장치 또는 기술 | . | 네트워크 = VPC . | VPC는 Virtual Private Cloud로, 정의한 논리적으로 격리된 가상 네트워크에서 AWS 리소스를 시작할 수 있다. | . | 서버 = EC2(일라스틱 컴퓨트 클라우드), C2 | NAS = EFS(탄력적인 파일 시스템) . | NAS란, 네트워크 연결 스토리지로, 네트워크를 통해 효과적으로 협업할 수 있도록 데이터를 지속적으로 사용할 수 있게 하는 파일 전용 스토리지 디바이스이다. | 많은 곳에서 NAS를 사용하는 이유 : 확장 가능하며, 저렴한 스토리지를 제공하기 때문. | . | . | 디스크 = EBS (탄력적인 블록 스토어 저장장치) | DB = RDS (관계형 데이터 베이스) | . ",
     "url": "/docs/studies/aws_DA/summary_1/#1-%EC%98%A8%ED%94%84%EB%9D%BC%EB%AF%B8%EC%8A%A4%EC%99%80-aws-%EC%9A%A9%EC%96%B4-%EB%B9%84%EA%B5%90",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/#1-온프라미스와-aws-용어-비교"
-  },"427": {
+  },"428": {
     "doc": "AWS 기초 - 1",
     "title": "2. AWS의 기본 구성",
     "content": ". | 사용자가 서비스를 사용하는 과정 . | 특정 서비스에 연결하려면 도메인 질의를 한다. | DNS 서비스가 응답을 한다. | 해당 도메인을 IP로 변환하여 서버에 연결한다. | 서버의 디스크의 데이터를 읽는다.(?) | 따로 요청한 데이터를 디비에서 읽어온다. | 스토리지에 저장된 이미지나 파일들을 다운받아 사용한다. | . | AWS 용어로 치환 가능하다. | Route53이 도메인에 대한 응답을 한다. (참고로 DNS포트가 53이라, Route53이다.) | 서버 EC2로 접속한다. | 로컬 디스크인 EBS에서 데이터를 읽는다. | 비지니스적으로 요청한 데이터가 있으면, Amazon DB에서 읽어온다. | S3 등등 | . | . ",
     "url": "/docs/studies/aws_DA/summary_1/#2-aws%EC%9D%98-%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%84%B1",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/#2-aws의-기본-구성"
-  },"428": {
+  },"429": {
     "doc": "AWS 기초 - 1",
     "title": "3. 온프레미스, 클라우드, 하이브리드…",
     "content": ". | 온 프레미스 : 일반 데이터 센터, 물리 서버로 운영하는 데이터 센터 | 하이브리드 : 클라우드 + 온프레미스 | 클라우드 : AWS, AZURE, GCP 등 유료서비스 | 멀티클라우드 : 여러 개의 퍼블릭 클라우드를 사용하는 경우 | . ",
     "url": "/docs/studies/aws_DA/summary_1/#3-%EC%98%A8%ED%94%84%EB%A0%88%EB%AF%B8%EC%8A%A4-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%ED%95%98%EC%9D%B4%EB%B8%8C%EB%A6%AC%EB%93%9C",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/#3-온프레미스-클라우드-하이브리드"
-  },"429": {
+  },"430": {
     "doc": "AWS 기초 - 1",
     "title": "4. AZ",
     "content": "AZ란, 가용영역으로 한 리전에 여러 AZ가 존재한다. ex) 서울 리전, 도쿄 리전. 아마존 서버가 존재하는 곳이다. AZ끼리는 전용선으로 연결되어 있기 때문에, 빠르게 데이터를 주고 받을 수 있다. ",
     "url": "/docs/studies/aws_DA/summary_1/#4-az",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/#4-az"
-  },"430": {
+  },"431": {
     "doc": "AWS 기초 - 1",
     "title": "5. AWS 엣지 인프라 서비스",
     "content": "(1). AWS Outposts . 클라우드를 온프라미스에서도 쓸 수 있도록 확장한 것. (2). AWS Local Zones . 대형 메트로 센터를 사용한 엣지 서비스 . 엣지 컴퓨팅 : 정보 저장 및 컴퓨팅 능력을 사용자에게 더 가까이 제공하는 프로세스 . (3). AWS Wavelength . 5G 네트워크 엣지 서비스 통신사에서 클라우드 서비스 하는 것이다. ",
     "url": "/docs/studies/aws_DA/summary_1/#5-aws-%EC%97%A3%EC%A7%80-%EC%9D%B8%ED%94%84%EB%9D%BC-%EC%84%9C%EB%B9%84%EC%8A%A4",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/#5-aws-엣지-인프라-서비스"
-  },"431": {
+  },"432": {
     "doc": "AWS 기초 - 2",
     "title": "AWS 기초 - 2",
     "content": " ",
     "url": "/docs/studies/aws_DA/summary_2/",
     
     "relUrl": "/docs/studies/aws_DA/summary_2/"
-  },"432": {
+  },"433": {
     "doc": "AWS 기초 - 2",
     "title": "2023.09.04 (MON)",
     "content": ". ",
     "url": "/docs/studies/aws_DA/summary_2/#20230904-mon",
     
     "relUrl": "/docs/studies/aws_DA/summary_2/#20230904-mon"
-  },"433": {
+  },"434": {
     "doc": "AWS 기초 - 2",
     "title": "1. 서버",
     "content": "(1). EC2 . | Elastic Compute Cloud의 줄임말이다. | C가 2개여서 EC2이다. | . (2). 인스턴스 패밀리 . | AWS 인스턴스 : 가상 컴퓨팅 환경으로 애플리케이션을 배포, 관리 및 확장하는데 도움이 되는 수많은 추가 기능 제공 | 인스턴스 표기법 . | | 인스턴스 패밀리 : M, T, C, X, R, IO, … (각 기능이 다르다.) | 인스턴스 세대 : 인스턴스 패밀리에 따라, 1~5세대 | 인스턴스 크기 : 인스턴스 패밀리 및 세대에 따라 다양한 크기 제공 | . | . ",
     "url": "/docs/studies/aws_DA/summary_2/#1-%EC%84%9C%EB%B2%84",
     
     "relUrl": "/docs/studies/aws_DA/summary_2/#1-서버"
-  },"434": {
+  },"435": {
     "doc": "AWS 기초 - 2",
     "title": "2. EC2 요금",
     "content": ". | 온디맨드 인스턴스 | 예약 인스턴스 | Savings Plan | 스팟 인스턴스 | . ",
     "url": "/docs/studies/aws_DA/summary_2/#2-ec2-%EC%9A%94%EA%B8%88",
     
     "relUrl": "/docs/studies/aws_DA/summary_2/#2-ec2-요금"
-  },"435": {
+  },"436": {
     "doc": "AWS 기초 - 2",
     "title": "3. 대표적인 컨테이너 관리형 서비스",
     "content": ". | . | ECS . | 간편 관리형 서비스 | AWS 전용이다. | 컨테이너가 소수일 때 커맨드로 관리 가능하지만, 많아지면 관리가 힘들어져 관리형 서비스를 사용한다. | ECS는 AWS에서 인프라를 관리해주며, 확장 등이 쉽게 가능하다. | . | . | . | EKS . | 쿠버네티스 사용의 관리 리소스가 포함됨 | 관리시간이 줄어듬 | 마스터노드의 관리를 AWS가 해줌 | 사용자는 워커노드만 관리하면 된다. | . | 워커노드 : 배포하고자 하는 어플리케이션의 실제 실행을 수행 - 마스터 서버로는 API 서버로 명령만 내릴 수 있다. - 별도의 AWS VPC에 마스터 서버가 구성된다. (사용자는 접근 불가) | . | . | . ",
     "url": "/docs/studies/aws_DA/summary_2/#3-%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EA%B4%80%EB%A6%AC%ED%98%95-%EC%84%9C%EB%B9%84%EC%8A%A4",
     
     "relUrl": "/docs/studies/aws_DA/summary_2/#3-대표적인-컨테이너-관리형-서비스"
-  },"436": {
+  },"437": {
     "doc": "AWS 기초 - 2",
     "title": "4, 람다",
     "content": ". | 대표적인 서버리스 컴퓨팅 (이 또한 관리형 서비스) | 서버 처리가 이벤트 방식이다. (람다는 이벤트 발생 시 트래픽 처리됨) | 사용자가 확장 등을 고려할 필요가 없다. | 거의 모든 것이 자동으로 처리된다. | . ",
     "url": "/docs/studies/aws_DA/summary_2/#4-%EB%9E%8C%EB%8B%A4",
     
     "relUrl": "/docs/studies/aws_DA/summary_2/#4-람다"
-  },"437": {
+  },"438": {
     "doc": "AWS 기초 - 3",
     "title": "AWS 기초 - 3",
     "content": " ",
     "url": "/docs/studies/aws_DA/summary_3/",
     
     "relUrl": "/docs/studies/aws_DA/summary_3/"
-  },"438": {
+  },"439": {
     "doc": "AWS 기초 - 3",
     "title": "2023.09.04 (MON)",
     "content": ". ",
     "url": "/docs/studies/aws_DA/summary_3/#20230904-mon",
     
     "relUrl": "/docs/studies/aws_DA/summary_3/#20230904-mon"
-  },"439": {
+  },"440": {
     "doc": "AWS 기초 - 3",
     "title": "스토리지, 데이터 베이스",
     "content": " ",
     "url": "/docs/studies/aws_DA/summary_3/#%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B2%A0%EC%9D%B4%EC%8A%A4",
     
     "relUrl": "/docs/studies/aws_DA/summary_3/#스토리지-데이터-베이스"
-  },"440": {
+  },"441": {
     "doc": "AWS 기초 - 3",
     "title": "1. AWS 스토리지 옵션",
     "content": "(1). Options . | S3 : 오브젝트 스토리지, 일반 스토리지 | S3 Glacier : S3 중 장기 보관용으로 저렴하다. | EFS : 공유 파일 스토리지, NAS와 같다. | NAS란, 네트워크를 통해 효과적으로 협업할 수 있도록 데이터를 지속적으로 사용할 수 있게 하는 파일 전용 스토리지 디바이스 | . | Storage Gateway | EBS - EC2에서 사용하는 디스크 저장소 | . ",
     "url": "/docs/studies/aws_DA/summary_3/#1-aws-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%98%B5%EC%85%98",
     
     "relUrl": "/docs/studies/aws_DA/summary_3/#1-aws-스토리지-옵션"
-  },"441": {
+  },"442": {
     "doc": "TIL",
     "title": "Today I Learned",
     "content": "TIL has been written since July 1, 2023. ",
     "url": "/docs/tils#today-i-learned",
     
     "relUrl": "/docs/tils#today-i-learned"
-  },"442": {
+  },"443": {
     "doc": "TIL",
     "title": "TIL",
     "content": " ",
