@@ -94,3 +94,8 @@ C. 요청 빈도 및/또는 크기를 줄입니다.
 ### 정답 (O)
 B. Amazon Simple Email Service(Amazon SES)를 사용하여 이메일 알림을 보내는 AWS Lambda 함수를 생성합니다. 함수에 대한 Amazon Cognito 사후 인증 Lambda 트리거를 추가합니다.
 
+
+## Question #31
+### 정답 (X, 오답: (A))
+B. PutObject API 작업을 호출할 때 x-amz-server-side-encryption 헤더를 설정합니다.
+    
