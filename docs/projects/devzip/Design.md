@@ -1,9 +1,17 @@
 ---
 layout: default
-title: DevZip
+title: DevZip 디자인
 parent: 사이드 프로젝트 - DevZip
 grand_parent: Projects
 date: 2024-07-03 18:45:37
+---
+
+# DevZip 디자인
+{: .no_toc }
+
+## 2024.07.03 (TUE)
+{: .no_toc .text-delta }
+
 ---
 
 > [!info]
