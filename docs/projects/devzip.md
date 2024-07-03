@@ -14,5 +14,7 @@ parent: Projects
 
 <br>
 
+DevZip은 제가 개발한 프로젝트들의 모음Zip입니다!
+
 * __Links__
 {: .fs-4 .fw-300 }
