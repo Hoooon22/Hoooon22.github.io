@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 사이드 프로젝트 - DeverZip
+title: 사이드 프로젝트 - DevZip
 nav_order: 2
 has_children: true
 parent: Projects
