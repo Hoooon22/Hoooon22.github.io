@@ -31,3 +31,37 @@ AWS를 활용한 서버를 구축하여, 해당 서버에 프로젝트를 이식
 1. 프로젝트가 눈에 잘 보이며
 2. 어떤 기능 등이 핵심인지 잘 보여야 하며
 3. 버튼 등을 누르면 사이트 또는 기능에 접근할 수 있어야한다. (프로젝트를 시도하기 위한 tmp 프로젝트를 간단히 만들어 테스트 해본다.)
+
+
+## 2024.07.03
+### SpringBoot + React 개발환경 세팅
+1. Springboot 프로젝트 생성 및 실행테스트 - Done
+2. 리액트 설치
+```null
+cd src/main
+npx create-react-app frontend	# npx create-reeact {프로젝트명}
+```
+3. 아래 링크 따라 진행 (Springboot, React 연동)
+```embed
+title: "Spring Boot + React.js 개발환경 연동하기"
+image: "https://velog.velcdn.com/images/u-nij/post/c249f0e8-677b-4734-933f-289247034a2d/spring%20boot%20react.png"
+description: "Spring Boot와 React.js를 연동해 개발환경을 만들고, 빌드해서 jar 파일로까지 만들어보는 과정입니다."
+url: "https://velog.io/@u-nij/Spring-Boot-React.js-%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85"
+```
+
+## 2024.07.06 (토)
+### 메인 페이지 연결
+- React-router 서드파티 라이브러리를 이용
+
+## 2024.07.08 (월)
+### 목표..
+- 메인페이지 틀만 완성
+- 데이터베이스에 웹페이지 제목, 사이트 링크, 이미지(?) 넣으면 자동으로 불러와 리스트 만들게
+
+1. 풀페이지를 활용하여 메인 페이지 만들기
+	- 현재까지 완성한 부분
+![](https://i.imgur.com/OZ9p3y8.png)
+
+- 이제 할 것
+	- 박스 사이 간격
+	- 화면 축소 시, 박스 및 전체 콘텐츠 크기 줄이기?
