@@ -42,9 +42,8 @@ cd src/main
 npx create-react-app frontend	# npx create-reeact {프로젝트명}
 ```
 3. 아래 링크 따라 진행 (Springboot, React 연동)
----
-title: "Spring Boot + React.js 개발환경 연동하기"
----
+
+#### title: "Spring Boot + React.js 개발환경 연동하기"
 
 ![Spring Boot + React.js](https://velog.velcdn.com/images/u-nij/post/c249f0e8-677b-4734-933f-289247034a2d/spring%20boot%20react.png)
 
