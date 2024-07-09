@@ -44,10 +44,14 @@ npx create-react-app frontend	# npx create-reeact {프로젝트명}
 3. 아래 링크 따라 진행 (Springboot, React 연동)
 ---
 title: "Spring Boot + React.js 개발환경 연동하기"
-image: "https://velog.velcdn.com/images/u-nij/post/c249f0e8-677b-4734-933f-289247034a2d/spring%20boot%20react.png"
-description: "Spring Boot와 React.js를 연동해 개발환경을 만들고, 빌드해서 jar 파일로까지 만들어보는 과정입니다."
-link: "https://velog.io/@u-nij/Spring-Boot-React.js-%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85"
 ---
+
+![Spring Boot + React.js](https://velog.velcdn.com/images/u-nij/post/c249f0e8-677b-4734-933f-289247034a2d/spring%20boot%20react.png)
+
+Spring Boot와 React.js를 연동해 개발환경을 만들고, 빌드해서 jar 파일로까지 만들어보는 과정입니다. 자세한 내용은 아래 링크를 클릭하세요:
+
+[Spring Boot + React.js 개발환경 연동하기](https://velog.io/@u-nij/Spring-Boot-React.js-%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85)
+
 
 ## 2024.07.06 (토)
 ### 메인 페이지 연결
