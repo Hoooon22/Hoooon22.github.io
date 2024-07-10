@@ -1,6 +1,6 @@
 ---
 layout: default
-title: DevZip 디자인
+title: DevZip 디자인 및 메인 설계
 parent: 사이드 프로젝트 - DevZip
 grand_parent: Projects
 date: 2024-07-03 18:45:37
