@@ -2,8 +2,8 @@
 layout: default
 title: SpringBoot
 nav_order: 1
-has_children: true
 parent: Java
+has_children: true
 ---
 
 # Springboot
