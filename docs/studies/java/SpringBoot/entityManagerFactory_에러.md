@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Parameter 0 of constructor in Service required a bean named 'entityManagerFactory' that could not be found.
+title: entityManagerFactory 에러
 parent: SpringBoot
 grand_parent: Java
 date: 2024-07-22 21:12:11

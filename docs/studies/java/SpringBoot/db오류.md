@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 'mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead'
+title: db오류
 parent: SpringBoot
 grand_parent: Java
 date: 2024-07-22 21:12:11
