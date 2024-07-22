@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 코딩테스트
+title: CodingTest
 nav_order: 4
 has_children: true
 ---
