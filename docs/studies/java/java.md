@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Java
+layout: default
 nav_order: 1
 parent: STUDY
 has_children: true
@@ -10,7 +10,4 @@ has_children: true
 {: .no_toc }
 
 ## This Page has been written since July 22, 2024.  
-{: .fs-4 .fw-300 }
-
-* __Links__
 {: .fs-4 .fw-300 }
