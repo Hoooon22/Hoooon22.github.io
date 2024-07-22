@@ -3,7 +3,7 @@ layout: default
 title: STUDY
 nav_order: 3
 has_children: true
-# permalink: docs/studiesx
+permalink: docs/studies
 ---
 
 # 공부

@@ -2,7 +2,6 @@
 title: Java
 layout: default
 nav_order: 1
-parent: STUDY
 has_children: true
 ---
 

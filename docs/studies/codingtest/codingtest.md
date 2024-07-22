@@ -3,7 +3,6 @@ layout: default
 title: 코딩테스트
 nav_order: 4
 has_children: true
-parent: STUDY
 ---
 
 # 코딩테스트
