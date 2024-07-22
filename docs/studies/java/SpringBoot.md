@@ -13,6 +13,3 @@ parent: Java
 {: .fs-4 .fw-300 }
 
 <br>
-
-* __Links__
-{: .fs-4 .fw-300 }
