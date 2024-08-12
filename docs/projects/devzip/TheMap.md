@@ -19,4 +19,5 @@ date: 2024-08-12 21:25:08
 
 # 현 개발 상황
 
+![이미지](../../../../assets/images/pongdang/screenshot1.png)
 ![](../../../../assets/images/devzip/shot1.png)
