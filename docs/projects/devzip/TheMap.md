@@ -19,4 +19,4 @@ date: 2024-08-12 21:25:08
 
 # 현 개발 상황
 
-![Devzip]('../../../../assets/images/Devzip/스크린샷 2024-08-12 오후 9.24.17.png')
+![Devzip](../../../../assets/images/Devzip/shot1.png)
