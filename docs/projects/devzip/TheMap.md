@@ -19,4 +19,4 @@ date: 2024-08-12 21:25:08
 
 # 현 개발 상황
 
-![Devzip](../../../../assets/images/Devzip/shot1.png)
+![Devzip](../../../../assets/images/devzip/shot1.png)
