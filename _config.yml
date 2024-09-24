@@ -16,7 +16,7 @@
 title: Hoooon22's Log
 description: Hoooon22's Logging Page
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://hoooon22.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://hoooon22.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: just-the-docs/just-the-docs # for github-metadata
 
 permalink: pretty
