@@ -1,8 +1,8 @@
 ---
 layout: default
 title: 토비의 스프링 1권 1장 - 오브젝트와 의존관계
-parent: 스프링
-grand_parent: STUDY
+parent: SpringBoot
+grand_parent: ★ Java
 data: 2024-09-24 20:41:36
 ---
 
