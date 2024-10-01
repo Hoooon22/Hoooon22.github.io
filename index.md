@@ -59,7 +59,7 @@ Web & Server Delveloper
 
 <div style="width: 100%; padding-left: 20px; box-sizing: border-box;">
     <ul style="list-style-type: none; padding-left: 0;">
-        <li><strong>Programming Languages:</strong> C/C++, Java</li>
+        <li><strong>Programming Languages:</strong> Java, C/C++</li>
         <li><strong>Frameworks:</strong> SpringBoot, Node.js, React</li>
         <li><strong>Web Technologies:</strong> HTML5, CSS, Javascript, ASP</li>
         <li><strong>Databases:</strong> MySQL</li>
