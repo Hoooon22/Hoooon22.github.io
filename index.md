@@ -99,7 +99,7 @@ Web & Server Delveloper
 <div style="width: 100%; border: 1px solid #ddd; border-radius: 5px; overflow: hidden; display: flex; margin-top: 4%;">
     <img src="../../../../assets/images/profile/10_하단퐁당로고.png" alt="퐁당" style="width: 15%; height: 15%; border-radius: 7px; padding: 5px">
     <div style="padding: 10px;">
-        <a href="https://hoooon22.github.io/docs/projects/pongdang/" target="_blank" style="font-weight:bold;">퐁당 매거진 웹사이트 제작 과정</a>
+        <a href="https://hoooon22.github.io/docs/projects/pongdang/pongdang/" target="_blank" style="font-weight:bold;">퐁당 매거진 웹사이트 제작 과정</a>
         <p>'퐁당 매거진 두번째 돌' 웹사이트의 제작 과정을 기록한 페이지 입니다.</p>
     </div>
 </div>
