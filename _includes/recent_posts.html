@@ -1,11 +1,11 @@
 <div class="sidebar-section">
-  <h3>Latest Posts</h3>
+  <h3>Latest Docs</h3>
   <ul>
-    {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
-    {% for post in sorted_posts limit:5 %}
+    {% assign sorted_docs = site.docs | sort: 'date' | reverse %}
+    {% for doc in sorted_docs limit:5 %}
       <li>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <span class="post-date">{{ post.date | date: "%Y-%m-%d %H:%M:%S" }}</span>
+        <a href="{{ doc.url | relative_url }}">{{ doc.title }}</a>
+        <span class="post-date">{{ doc.date | date: "%Y-%m-%d %H:%M:%S" }}</span>
       </li>
     {% endfor %}
   </ul>
