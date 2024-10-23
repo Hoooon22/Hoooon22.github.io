@@ -1,9 +1,9 @@
-<div class="sidebar-section">
+<div class="recent-posts">
   <h3>Latest Posts</h3>
   <ul>
-    {% for post in site.nav_external_links limit:5 %}
+    {% for post in site.posts limit:5 %}
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>
