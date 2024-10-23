@@ -1,7 +1,7 @@
 <div class="sidebar-section">
   <h3>Latest Docs</h3>
   <ul>
-    {% assign sorted_docs = site.nav_external_links | sort: 'date' | reverse %}
+    {% assign sorted_docs = site.html_pages | sort: 'date' | reverse %}
     {% for doc in sorted_docs limit:5 %}
       <li>
         <a href="{{ doc.url | absolute_url }}">{{ doc.title }}</a>
