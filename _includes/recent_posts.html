@@ -1,8 +1,10 @@
-<h2>최근 글</h2>
-<ul>
-  {% for post in site.posts limit:3 %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="sidebar-section">
+  <h3>Latest Posts</h3>
+  <ul>
+    {% for post in site.posts limit:5 %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
