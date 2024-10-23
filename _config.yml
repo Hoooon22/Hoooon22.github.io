@@ -194,3 +194,8 @@ analytics:
   google:
     tracking_id          : "G-WTK357S14E"
     anonymize_ip         : # true, false (default)
+
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
