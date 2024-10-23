@@ -1,5 +1,6 @@
 {% assign recent_posts = site.posts | sort: 'date' | reverse | slice: 0, 5 %}
 <ul>
+  <h2>최신 글</h2>
   {% for post in recent_posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
