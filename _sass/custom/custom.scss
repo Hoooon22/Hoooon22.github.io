@@ -2,16 +2,16 @@
 /* Sidebar Section Styles */
 .sidebar-section {
     background-color: #f8f9fa;
-    padding: 15px;
-    margin-bottom: 20px;
+    padding: 10px; /* padding을 줄여서 높이 감소 */
+    margin-bottom: 15px; /* 섹션 간격 줄이기 */
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   .sidebar-section h3 {
-    font-size: 1.2em;
+    font-size: 1.1em; /* 폰트 크기 살짝 줄이기 */
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* 제목과 리스트 사이의 간격 줄이기 */
     color: #333;
     text-align: center;
   }
@@ -22,8 +22,8 @@
   }
   
   .sidebar-section ul li {
-    margin-bottom: 8px;
-    padding-bottom: 8px;
+    margin-bottom: 6px; /* 리스트 항목 사이 간격 줄이기 */
+    padding-bottom: 6px; /* 각 항목 아래 여백 줄이기 */
     border-bottom: 1px solid #ddd;
   }
   
@@ -36,6 +36,7 @@
     color: #007bff;
     text-decoration: none;
     font-weight: 600;
+    font-size: 0.95em; /* 링크 텍스트 크기 줄이기 */
   }
   
   .sidebar-section ul li a:hover {
@@ -44,8 +45,8 @@
   
   .sidebar-section .post-date {
     display: block;
-    font-size: 0.85em;
+    font-size: 0.8em; /* 날짜 텍스트 크기 줄이기 */
     color: #666;
-    margin-top: 5px;
+    margin-top: 3px; /* 날짜와 링크 사이 간격 줄이기 */
   }
   
