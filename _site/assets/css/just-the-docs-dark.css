@@ -7866,4 +7866,131 @@ blockquote.warning-title > p:last-child {
   margin-bottom: 0;
 }
 
+/* 공통 스타일 - 사이드바 및 내비게이션 */
+.side-bar, .site-nav {
+  width: 250px; /* 너비 설정 */
+  background-color: #f8f9fa; /* 배경색 설정 */
+  padding: 15px; /* 내부 패딩 */
+  border-radius: 10px; /* 모서리 둥글게 처리 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 효과 */
+  position: fixed; /* 화면에 고정 */
+  height: 100vh; /* 전체 화면 높이 적용 */
+  overflow-y: auto; /* 세로 스크롤 가능 */
+}
+
+/* 헤더 스타일 */
+.site-header {
+  text-align: center; /* 중앙 정렬 */
+  margin-bottom: 15px;
+}
+
+.site-title {
+  font-size: 1.6em; /* 제목 크기 */
+  font-weight: bold;
+  color: #343a40; /* 텍스트 색상 */
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+.site-title:hover {
+  color: gray; /* 호버 시 색상 변경 */
+}
+
+/* 메뉴 버튼 */
+#menu-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#menu-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* 내비게이션 스타일 */
+.site-nav {
+  margin-top: 20px;
+}
+
+.nav-list {
+  list-style: none; /* 기본 리스트 스타일 제거 */
+  padding-left: 0;
+  margin-bottom: 20px; /* 항목 간 간격 */
+}
+
+.nav-list-item {
+  margin-bottom: 10px; /* 항목 사이 간격 */
+}
+
+.nav-list-link {
+  display: block;
+  padding: 10px;
+  color: #495057; /* 기본 링크 색상 */
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px; /* 모서리 둥글게 */
+  transition: background-color 0.2s ease; /* 배경색 전환 효과 */
+}
+
+.nav-list-link:hover {
+  background-color: gray; /* 호버 시 배경색 변경 */
+  color: white; /* 호버 시 텍스트 색상 변경 */
+}
+
+/* 카테고리 제목 */
+.nav-category {
+  font-size: 1.2em;
+  color: #212529; /* 카테고리 텍스트 색상 */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 확장 버튼 스타일 */
+.nav-list-expander {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list-expander svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px; /* 버튼과 텍스트 간격 */
+}
+
+/* 최근 포스트 스타일 */
+.recent-posts {
+  margin-top: 30px;
+}
+
+.recent-posts ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.recent-posts li {
+  margin-bottom: 10px;
+}
+
+.recent-posts a {
+  text-decoration: none;
+  color: #495057;
+}
+
+.recent-posts a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+/* 푸터 스타일 */
+.site-footer {
+  text-align: center;
+  font-size: 0.85em;
+  color: #868e96; /* 푸터 텍스트 색상 */
+  margin-top: 20px;
+}
+
 /*# sourceMappingURL=just-the-docs-dark.css.map */

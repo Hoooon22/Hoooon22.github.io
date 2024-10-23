@@ -1,84 +1,35 @@
 // custom SCSS (or CSS) goes here
-/* Sidebar Section Styles */
-.sidebar-section {
-    background-color: #f8f9fa;
-    padding: 10px; /* padding을 줄여서 높이 감소 */
-    margin-bottom: 15px; /* 섹션 간격 줄이기 */
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* 공통 스타일 - 사이드바 및 내비게이션 */
+.side-bar, .site-nav {
+    width: 250px; /* 너비 설정 */
+    background-color: #f8f9fa; /* 배경색 설정 */
+    padding: 15px; /* 내부 패딩 */
+    border-radius: 10px; /* 모서리 둥글게 처리 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 효과 */
+    // font-family: 'Arial', sans-serif; /* 폰트 설정 */
+    position: fixed; /* 화면에 고정 */
+    height: 100vh; /* 전체 화면 높이 적용 */
+    overflow-y: auto; /* 세로 스크롤 가능 */
   }
   
-  .sidebar-section h3 {
-    font-size: 1.1em; /* 폰트 크기 살짝 줄이기 */
-    font-weight: bold;
-    margin-bottom: 8px; /* 제목과 리스트 사이의 간격 줄이기 */
-    color: #333;
-    text-align: center;
-  }
-  
-  .sidebar-section ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .sidebar-section ul li {
-    margin-bottom: 6px; /* 리스트 항목 사이 간격 줄이기 */
-    padding-bottom: 6px; /* 각 항목 아래 여백 줄이기 */
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .sidebar-section ul li:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-  }
-  
-  .sidebar-section ul li a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95em; /* 링크 텍스트 크기 줄이기 */
-  }
-  
-  .sidebar-section ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  .sidebar-section .post-date {
-    display: block;
-    font-size: 0.8em; /* 날짜 텍스트 크기 줄이기 */
-    color: #666;
-    margin-top: 3px; /* 날짜와 링크 사이 간격 줄이기 */
-  }
-
-/* 전체 사이드바 스타일 */
-.side-bar {
-    width: 250px; /* 사이드바 너비 설정 */
-    background-color: #f5f5f5; /* 사이드바 배경색 */
-    padding: 20px; /* 내부 패딩 */
-    border-radius: 8px; /* 모서리 둥글게 */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 가벼운 그림자 효과 */
-    position: fixed; /* 사이드바 고정 */
-    height: 100vh; /* 화면 높이에 맞춤 */
-    overflow-y: auto; /* 스크롤 가능하게 */
-  }
-  
-  /* 사이트 헤더 스타일 */
+  /* 헤더 스타일 */
   .site-header {
     text-align: center; /* 중앙 정렬 */
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   
   .site-title {
-    font-size: 1.5em; /* 제목 크기 */
-    color: #333; /* 텍스트 색상 */
+    font-size: 1.6em; /* 제목 크기 */
+    font-weight: bold;
+    color: #343a40; /* 텍스트 색상 */
     text-decoration: none; /* 밑줄 제거 */
   }
   
   .site-title:hover {
-    color: #007bff; /* 호버 시 색상 변경 */
+    color: gray; /* 호버 시 색상 변경 */
   }
   
-  /* 메뉴 버튼 스타일 */
+  /* 메뉴 버튼 */
   #menu-button {
     background-color: transparent;
     border: none;
@@ -96,28 +47,34 @@
   }
   
   .nav-list {
-    list-style: none;
+    list-style: none; /* 기본 리스트 스타일 제거 */
     padding-left: 0;
+    margin-bottom: 20px; /* 항목 간 간격 */
   }
   
   .nav-list-item {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* 항목 사이 간격 */
   }
   
   .nav-list-link {
-    text-decoration: none;
-    color: #007bff; /* 링크 색상 */
+    display: block;
+    padding: 10px;
+    color: #495057; /* 기본 링크 색상 */
     font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px; /* 모서리 둥글게 */
+    transition: background-color 0.2s ease; /* 배경색 전환 효과 */
   }
   
   .nav-list-link:hover {
-    text-decoration: underline;
+    background-color: gray; /* 호버 시 배경색 변경 */
+    color: white; /* 호버 시 텍스트 색상 변경 */
   }
   
-  /* 카테고리 스타일 */
+  /* 카테고리 제목 */
   .nav-category {
     font-size: 1.2em;
-    color: #333;
+    color: #212529; /* 카테고리 텍스트 색상 */
     font-weight: bold;
     margin-bottom: 10px;
   }
@@ -128,11 +85,14 @@
     border: none;
     cursor: pointer;
     padding: 0;
+    display: flex;
+    align-items: center;
   }
   
   .nav-list-expander svg {
     width: 18px;
     height: 18px;
+    margin-right: 5px; /* 버튼과 텍스트 간격 */
   }
   
   /* 최근 포스트 스타일 */
@@ -147,23 +107,23 @@
   
   .recent-posts li {
     margin-bottom: 10px;
-    font-size: 0.9em;
   }
   
   .recent-posts a {
     text-decoration: none;
-    color: #333;
+    color: #495057;
   }
   
   .recent-posts a:hover {
-    color: #007bff;
+    color: gray;
+    text-decoration: underline;
   }
   
   /* 푸터 스타일 */
   .site-footer {
     text-align: center;
     font-size: 0.85em;
-    color: #666;
+    color: #868e96; /* 푸터 텍스트 색상 */
     margin-top: 20px;
   }
   
