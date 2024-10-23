@@ -1,32 +1,12 @@
-<div id="latest-posts">
-  <h2>최신 글</h2>
+<div class="sidebar-section">
+  <h3>Latest Docs</h3>
   <ul>
-    {% assign recent_docs = site.docs | sort: 'date' | reverse | slice: 0, 3 %}
-    {% for doc in recent_docs %}
+    {% assign sorted_docs = site | sort: 'date' | reverse %}
+    {% for doc in sorted_docs limit:5 %}
       <li>
-        <a href="{{ doc.url }}">{{ doc.title }}</a>
-        <span>{{ doc.date | date: "%B %d, %Y" }}</span>
+        <a href="{{ doc.url | relative_url }}">{{ doc.title }}</a>
+        <span class="post-date">{{ doc.date | date: "%Y-%m-%d %H:%M:%S" }}</span>
       </li>
     {% endfor %}
   </ul>
 </div>
-
-<script>
-  // JavaScript 코드 시작
-  document.addEventListener('DOMContentLoaded', function() {
-    // 최신 글 제목을 클릭했을 때 글 목록을 숨기거나 보여주는 기능
-    const latestPostsDiv = document.getElementById('latest-posts');
-    const latestPostsHeader = latestPostsDiv.querySelector('h2');
-
-    latestPostsHeader.addEventListener('click', function() {
-      const postList = latestPostsDiv.querySelector('ul');
-      // 글 목록의 표시 상태를 토글
-      if (postList.style.display === 'none') {
-        postList.style.display = 'block';
-      } else {
-        postList.style.display = 'none';
-      }
-    });
-  });
-  // JavaScript 코드 끝
-</script>
