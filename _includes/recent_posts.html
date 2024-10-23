@@ -1,7 +1,6 @@
-
 <h2>최신 글</h2>
-{% assign recent_docs = site.docs | sort: 'date' | reverse | slice: 0, 5 %}
 <ul>
+  {% assign recent_docs = site.docs | sort: 'date' | reverse | slice: 0, 5 %}
   {% for doc in recent_docs %}
     <li>
       <a href="{{ doc.url }}">{{ doc.title }}</a>
