@@ -198,3 +198,4 @@ analytics:
 collections:
   docs:
     output: true
+    permalink: /:collection/:path/
