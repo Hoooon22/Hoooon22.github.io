@@ -1,1 +1,51 @@
 // custom SCSS (or CSS) goes here
+/* Sidebar Section Styles */
+.sidebar-section {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar-section h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .sidebar-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .sidebar-section ul li {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .sidebar-section ul li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  
+  .sidebar-section ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .sidebar-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .sidebar-section .post-date {
+    display: block;
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 5px;
+  }
+  
