@@ -1,10 +1,10 @@
 <div class="sidebar-section">
   <h3>Latest Docs</h3>
   <ul>
-    {% assign sorted_docs = site | sort: 'date' | reverse %}
+    {% assign sorted_docs = site.nav_external_links | sort: 'date' | reverse %}
     {% for doc in sorted_docs limit:5 %}
       <li>
-        <a href="{{ doc.url | relative_url }}">{{ doc.title }}</a>
+        <a href="{{ doc.url | absolute_url }}">{{ doc.title }}</a>
         <span class="post-date">{{ doc.date | date: "%Y-%m-%d %H:%M:%S" }}</span>
       </li>
     {% endfor %}
