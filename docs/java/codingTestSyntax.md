@@ -8,6 +8,7 @@ date: 2024-10-25 22:15:38
 
 ## 자료형
 1. 우선순위 큐
+
 ```java
 PriorityQueue<Integer> pQ = new PriorityQueue<>();
 
@@ -19,6 +20,7 @@ pQ.remove();
 ```
 
 2. 해시맵
+
 ```java
 HashMap<String, Integer> map = new HashMap<>();
 
@@ -40,16 +42,19 @@ map.remove("banana");
 ```
 
 3. 스택
+
 ```java
-Stack<Integer> stack = new Stack<>();
+Stack<Integer> stack = new Stack<>();
 ```
 
 4. 큐
+
 ```java
 Queue<Integer> queue = new LinkedList<>();
 ```
 
 5. 연결리스트
+
 ```java
 LinkedList<Integer> list = new LinkedList<>();
 
@@ -74,6 +79,7 @@ list.indexOf(1); // index 1에 있는 값 불러오기, 없으면 -1
 ```
 
 6. 해시셋
+
 ```java
 HashSet<Integer> set1 = new HashSet<>();
 
@@ -91,8 +97,10 @@ if (set.contains(1)) {
 	System.out.println("It has 1.");
 }
 ```
+
 ## 문자열
 1. 정렬
+
 ```java
 // 기본 정렬 (오름차순)
 Arrays.sort(arr);
@@ -103,6 +111,7 @@ Arrays.sort(arr, Collections.reverseOrder());
 
 2. StringBuffer
 
+
 ```java
 String str = "abc";
 StringBuffer sb = new StringBuffer(str); // "abc"로 초기화
@@ -112,12 +121,13 @@ String reversedStr = sb.reverse().toString;
 ```
 
 3. String to Int
+
 ```java
 String str = "123";
 int a = Integer.parseInt(str);
 ```
 
-4. int to String
+1. int to String
 ```java
 int a = 123;
 String str1 = Integer.toString(a);
