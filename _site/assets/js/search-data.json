@@ -1504,61 +1504,61 @@
     
     "relUrl": "/docs/projects/pongdang/231018/"
   },"215": {
-    "doc": "TIL (23-10-20)",
-    "title": "TIL",
-    "content": " ",
-    "url": "/docs/tils/231020/#til",
-    
-    "relUrl": "/docs/tils/231020/#til"
-  },"216": {
-    "doc": "TIL (23-10-20)",
-    "title": "2023.10.20 (FRI)",
-    "content": ". ",
-    "url": "/docs/tils/231020/#20231020-fri",
-    
-    "relUrl": "/docs/tils/231020/#20231020-fri"
-  },"217": {
-    "doc": "TIL (23-10-20)",
-    "title": "JPA와 MySQL에서의 컬럼명",
-    "content": "분명 동일하게 네이밍을 했음에도 불구하고, 자꾸 컬럼명을 못찾는다고 나온다. 원인을 찾아보았다. Java는 카멜케이스(camelCase), SQL은 스테이크 케이스(snake_case)를 주로 사용한다. 그래서 MySQL에서 컬럼명을 대문자로 표기했을 때, 오류가 있었을 수도,,,? . 그래서 아래처럼 변경하였다. Spring -&gt; interviewTitle MySQL -&gt; interview_title . 정상 동작 한다!!! . ",
-    "url": "/docs/tils/231020/#jpa%EC%99%80-mysql%EC%97%90%EC%84%9C%EC%9D%98-%EC%BB%AC%EB%9F%BC%EB%AA%85",
-    
-    "relUrl": "/docs/tils/231020/#jpa와-mysql에서의-컬럼명"
-  },"218": {
-    "doc": "TIL (23-10-20)",
-    "title": "TIL (23-10-20)",
-    "content": " ",
-    "url": "/docs/tils/231020/",
-    
-    "relUrl": "/docs/tils/231020/"
-  },"219": {
     "doc": "제작 일지 <_12>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;12&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/231020/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-12",
     
     "relUrl": "/docs/projects/pongdang/231020/#퐁당-웹-매거진-프로젝트-제작-일지-12"
-  },"220": {
+  },"216": {
     "doc": "제작 일지 <_12>",
     "title": "2023.10.20 (FRI)",
     "content": ". ",
     "url": "/docs/projects/pongdang/231020/#20231020-fri",
     
     "relUrl": "/docs/projects/pongdang/231020/#20231020-fri"
-  },"221": {
+  },"217": {
     "doc": "제작 일지 <_12>",
     "title": "1. 검색 알고리즘 생성",
     "content": "일단, title에서 검색어에 단어가 포함되면 리스트를 출력하도록 먼저 세팅해놓았다. ",
     "url": "/docs/projects/pongdang/231020/#1-%EA%B2%80%EC%83%89-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%83%9D%EC%84%B1",
     
     "relUrl": "/docs/projects/pongdang/231020/#1-검색-알고리즘-생성"
-  },"222": {
+  },"218": {
     "doc": "제작 일지 <_12>",
     "title": "제작 일지 <_12>",
     "content": " ",
     "url": "/docs/projects/pongdang/231020/",
     
     "relUrl": "/docs/projects/pongdang/231020/"
+  },"219": {
+    "doc": "TIL (23-10-20)",
+    "title": "TIL",
+    "content": " ",
+    "url": "/docs/tils/231020/#til",
+    
+    "relUrl": "/docs/tils/231020/#til"
+  },"220": {
+    "doc": "TIL (23-10-20)",
+    "title": "2023.10.20 (FRI)",
+    "content": ". ",
+    "url": "/docs/tils/231020/#20231020-fri",
+    
+    "relUrl": "/docs/tils/231020/#20231020-fri"
+  },"221": {
+    "doc": "TIL (23-10-20)",
+    "title": "JPA와 MySQL에서의 컬럼명",
+    "content": "분명 동일하게 네이밍을 했음에도 불구하고, 자꾸 컬럼명을 못찾는다고 나온다. 원인을 찾아보았다. Java는 카멜케이스(camelCase), SQL은 스테이크 케이스(snake_case)를 주로 사용한다. 그래서 MySQL에서 컬럼명을 대문자로 표기했을 때, 오류가 있었을 수도,,,? . 그래서 아래처럼 변경하였다. Spring -&gt; interviewTitle MySQL -&gt; interview_title . 정상 동작 한다!!! . ",
+    "url": "/docs/tils/231020/#jpa%EC%99%80-mysql%EC%97%90%EC%84%9C%EC%9D%98-%EC%BB%AC%EB%9F%BC%EB%AA%85",
+    
+    "relUrl": "/docs/tils/231020/#jpa와-mysql에서의-컬럼명"
+  },"222": {
+    "doc": "TIL (23-10-20)",
+    "title": "TIL (23-10-20)",
+    "content": " ",
+    "url": "/docs/tils/231020/",
+    
+    "relUrl": "/docs/tils/231020/"
   },"223": {
     "doc": "영어 끝말잇기",
     "title": "영어 끝말잇기",
@@ -1637,54 +1637,54 @@
     
     "relUrl": "/docs/tils/231125/"
   },"234": {
-    "doc": "TIL (23-12-04)",
-    "title": "TIL - CSS 버튼이나 링크 위에 이미지를 올릴 때, 이미지의 클릭 비활성화",
-    "content": " ",
-    "url": "/docs/tils/231204/#til---css-%EB%B2%84%ED%8A%BC%EC%9D%B4%EB%82%98-%EB%A7%81%ED%81%AC-%EC%9C%84%EC%97%90-%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC-%EC%98%AC%EB%A6%B4-%EB%95%8C-%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%9D%98-%ED%81%B4%EB%A6%AD-%EB%B9%84%ED%99%9C%EC%84%B1%ED%99%94",
-    
-    "relUrl": "/docs/tils/231204/#til---css-버튼이나-링크-위에-이미지를-올릴-때-이미지의-클릭-비활성화"
-  },"235": {
-    "doc": "TIL (23-12-04)",
-    "title": "2023.12.04 (MON)",
-    "content": ". 앞에 그라데이션 효과를 주면서 뒤에 요소를 클릭하게 만들고 싶었다.gradation_container &gt; img { width: 100%; position: absolute; bottom: 0; left: 0; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -o-user-select: none; user-select: none; -webkit-user-drag: none; -khtml-user-drag: none; -moz-user-drag: none; -o-user-drag: none; user-drag: none; pointer-events: none; /* 이미지 위에서의 이벤트 처리 막기 */ } . pointer-events를 none으로 설정하면, 이미지 위에서의 이벤트 처리를 차단할 수 있다. ",
-    "url": "/docs/tils/231204/#20231204-mon",
-    
-    "relUrl": "/docs/tils/231204/#20231204-mon"
-  },"236": {
-    "doc": "TIL (23-12-04)",
-    "title": "TIL (23-12-04)",
-    "content": " ",
-    "url": "/docs/tils/231204/",
-    
-    "relUrl": "/docs/tils/231204/"
-  },"237": {
     "doc": "제작 일지 <_13>",
     "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;13&gt;",
     "content": " ",
     "url": "/docs/projects/pongdang/231204/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-13",
     
     "relUrl": "/docs/projects/pongdang/231204/#퐁당-웹-매거진-프로젝트-제작-일지-13"
-  },"238": {
+  },"235": {
     "doc": "제작 일지 <_13>",
     "title": "2023.12.04 (MON)",
     "content": ". ",
     "url": "/docs/projects/pongdang/231204/#20231204-mon",
     
     "relUrl": "/docs/projects/pongdang/231204/#20231204-mon"
-  },"239": {
+  },"236": {
     "doc": "제작 일지 <_13>",
     "title": "1. 검색 페이지 완성 및 라우팅",
     "content": ". MySQL 데이터베이스와 연결하여, 검색 기능을 구현하였다. 그 중에서도 조금 오래걸렸던 부분은, 이 부분인데, 앞에 그라데이션 효과를 주면서 뒤에 요소를 클릭하게 만들고 싶었다.gradation_container &gt; img { width: 100%; position: absolute; bottom: 0; left: 0; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -o-user-select: none; user-select: none; -webkit-user-drag: none; -khtml-user-drag: none; -moz-user-drag: none; -o-user-drag: none; user-drag: none; pointer-events: none; /* 이미지 위에서의 이벤트 처리 막기 */ } . pointer-events를 none으로 설정하면, 이미지 위에서의 이벤트 처리를 차단할 수 있다. ",
     "url": "/docs/projects/pongdang/231204/#1-%EA%B2%80%EC%83%89-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%99%84%EC%84%B1-%EB%B0%8F-%EB%9D%BC%EC%9A%B0%ED%8C%85",
     
     "relUrl": "/docs/projects/pongdang/231204/#1-검색-페이지-완성-및-라우팅"
-  },"240": {
+  },"237": {
     "doc": "제작 일지 <_13>",
     "title": "제작 일지 <_13>",
     "content": " ",
     "url": "/docs/projects/pongdang/231204/",
     
     "relUrl": "/docs/projects/pongdang/231204/"
+  },"238": {
+    "doc": "TIL (23-12-04)",
+    "title": "TIL - CSS 버튼이나 링크 위에 이미지를 올릴 때, 이미지의 클릭 비활성화",
+    "content": " ",
+    "url": "/docs/tils/231204/#til---css-%EB%B2%84%ED%8A%BC%EC%9D%B4%EB%82%98-%EB%A7%81%ED%81%AC-%EC%9C%84%EC%97%90-%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC-%EC%98%AC%EB%A6%B4-%EB%95%8C-%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%9D%98-%ED%81%B4%EB%A6%AD-%EB%B9%84%ED%99%9C%EC%84%B1%ED%99%94",
+    
+    "relUrl": "/docs/tils/231204/#til---css-버튼이나-링크-위에-이미지를-올릴-때-이미지의-클릭-비활성화"
+  },"239": {
+    "doc": "TIL (23-12-04)",
+    "title": "2023.12.04 (MON)",
+    "content": ". 앞에 그라데이션 효과를 주면서 뒤에 요소를 클릭하게 만들고 싶었다.gradation_container &gt; img { width: 100%; position: absolute; bottom: 0; left: 0; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -o-user-select: none; user-select: none; -webkit-user-drag: none; -khtml-user-drag: none; -moz-user-drag: none; -o-user-drag: none; user-drag: none; pointer-events: none; /* 이미지 위에서의 이벤트 처리 막기 */ } . pointer-events를 none으로 설정하면, 이미지 위에서의 이벤트 처리를 차단할 수 있다. ",
+    "url": "/docs/tils/231204/#20231204-mon",
+    
+    "relUrl": "/docs/tils/231204/#20231204-mon"
+  },"240": {
+    "doc": "TIL (23-12-04)",
+    "title": "TIL (23-12-04)",
+    "content": " ",
+    "url": "/docs/tils/231204/",
+    
+    "relUrl": "/docs/tils/231204/"
   },"241": {
     "doc": "TIL (23-12-12)",
     "title": "TIL - CS 지식 복기",
@@ -1784,96 +1784,96 @@
     
     "relUrl": "/docs/tils/240108/"
   },"255": {
-    "doc": "제작 일지 <_14>",
-    "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;14&gt;",
-    "content": " ",
-    "url": "/docs/projects/pongdang/240108/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-14",
-    
-    "relUrl": "/docs/projects/pongdang/240108/#퐁당-웹-매거진-프로젝트-제작-일지-14"
-  },"256": {
-    "doc": "제작 일지 <_14>",
-    "title": "2024.01.08 (MON)",
-    "content": ". ",
-    "url": "/docs/projects/pongdang/240108/#20240108-mon",
-    
-    "relUrl": "/docs/projects/pongdang/240108/#20240108-mon"
-  },"257": {
-    "doc": "제작 일지 <_14>",
-    "title": "1️⃣ SpringBoot 서버 백그라운드 실행",
-    "content": "서버를 24시간 돌려야하기 때문에, nohup 명령어를 통해 백그라운드에 돌아가게 한다. nohup java -jar build/libs/Pongdang_Server2-0.0.1-SNAPSHOT.jar &gt; test.log 2&gt;&amp;1 &amp; . ",
-    "url": "/docs/projects/pongdang/240108/#1%EF%B8%8F%E2%83%A3-springboot-%EC%84%9C%EB%B2%84-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EC%8B%A4%ED%96%89",
-    
-    "relUrl": "/docs/projects/pongdang/240108/#1️⃣-springboot-서버-백그라운드-실행"
-  },"258": {
-    "doc": "제작 일지 <_14>",
-    "title": "2️⃣ 서버가 켜지지 않음",
-    "content": "인스턴스 재시작시에는, 서비스들이 종료되어 있다. 때문에, nginx를 재시작해준다. sudo systemctl restart nginx . ",
-    "url": "/docs/projects/pongdang/240108/#2%EF%B8%8F%E2%83%A3-%EC%84%9C%EB%B2%84%EA%B0%80-%EC%BC%9C%EC%A7%80%EC%A7%80-%EC%95%8A%EC%9D%8C",
-    
-    "relUrl": "/docs/projects/pongdang/240108/#2️⃣-서버가-켜지지-않음"
-  },"259": {
-    "doc": "제작 일지 <_14>",
-    "title": "3️⃣ Date 자동 출력",
-    "content": "Command + Shift + i . ",
-    "url": "/docs/projects/pongdang/240108/#3%EF%B8%8F%E2%83%A3-date-%EC%9E%90%EB%8F%99-%EC%B6%9C%EB%A0%A5",
-    
-    "relUrl": "/docs/projects/pongdang/240108/#3️⃣-date-자동-출력"
-  },"260": {
-    "doc": "제작 일지 <_14>",
-    "title": "4️⃣ AWS 인스턴스 시작 시, 자동 명령어 실행",
-    "content": "위의 1, 2번을 자동 실행 되게 하였다. ",
-    "url": "/docs/projects/pongdang/240108/#4%EF%B8%8F%E2%83%A3-aws-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%8B%9C%EC%9E%91-%EC%8B%9C-%EC%9E%90%EB%8F%99-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%8B%A4%ED%96%89",
-    
-    "relUrl": "/docs/projects/pongdang/240108/#4️⃣-aws-인스턴스-시작-시-자동-명령어-실행"
-  },"261": {
-    "doc": "제작 일지 <_14>",
-    "title": "5️⃣ 구글 애널리틱스 연동 및 시작",
-    "content": " ",
-    "url": "/docs/projects/pongdang/240108/#5%EF%B8%8F%E2%83%A3-%EA%B5%AC%EA%B8%80-%EC%95%A0%EB%84%90%EB%A6%AC%ED%8B%B1%EC%8A%A4-%EC%97%B0%EB%8F%99-%EB%B0%8F-%EC%8B%9C%EC%9E%91",
-    
-    "relUrl": "/docs/projects/pongdang/240108/#5️⃣-구글-애널리틱스-연동-및-시작"
-  },"262": {
-    "doc": "제작 일지 <_14>",
-    "title": "제작 일지 <_14>",
-    "content": " ",
-    "url": "/docs/projects/pongdang/240108/",
-    
-    "relUrl": "/docs/projects/pongdang/240108/"
-  },"263": {
     "doc": "GameChat 계획",
     "title": "토이 프로젝트 - 게임 서버 - GameChat 계획",
     "content": " ",
     "url": "/docs/projects/gameServer/240108/#%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84---gamechat-%EA%B3%84%ED%9A%8D",
     
     "relUrl": "/docs/projects/gameServer/240108/#토이-프로젝트---게임-서버---gamechat-계획"
-  },"264": {
+  },"256": {
     "doc": "GameChat 계획",
     "title": "2024.01.08 (MON)",
     "content": ". ",
     "url": "/docs/projects/gameServer/240108/#20240108-mon",
     
     "relUrl": "/docs/projects/gameServer/240108/#20240108-mon"
-  },"265": {
+  },"257": {
     "doc": "GameChat 계획",
     "title": "프레임워크",
     "content": "React + SpringBoot . React 내부 페이지에 게임 구동 . ",
     "url": "/docs/projects/gameServer/240108/#%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC",
     
     "relUrl": "/docs/projects/gameServer/240108/#프레임워크"
-  },"266": {
+  },"258": {
     "doc": "GameChat 계획",
     "title": "게임 구상",
     "content": "채팅과 게임의 결합이다. 현재는 온라인 채팅과 게임 모두 스마트폰안에서 해결할 수 있는 시대이다. 또는 Web으로도 게임 및 채팅이 가능하다. 그래서 이 둘을 함께 즐기는 웹페이지라면, 지속적인 채팅과 게임을 동시에 즐길 수 있지 않을까? 생각하였다. ",
     "url": "/docs/projects/gameServer/240108/#%EA%B2%8C%EC%9E%84-%EA%B5%AC%EC%83%81",
     
     "relUrl": "/docs/projects/gameServer/240108/#게임-구상"
-  },"267": {
+  },"259": {
     "doc": "GameChat 계획",
     "title": "GameChat 계획",
     "content": " ",
     "url": "/docs/projects/gameServer/240108/",
     
     "relUrl": "/docs/projects/gameServer/240108/"
+  },"260": {
+    "doc": "제작 일지 <_14>",
+    "title": "퐁당 웹 매거진 프로젝트 제작 일지 &lt;14&gt;",
+    "content": " ",
+    "url": "/docs/projects/pongdang/240108/#%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A0%9C%EC%9E%91-%EC%9D%BC%EC%A7%80-14",
+    
+    "relUrl": "/docs/projects/pongdang/240108/#퐁당-웹-매거진-프로젝트-제작-일지-14"
+  },"261": {
+    "doc": "제작 일지 <_14>",
+    "title": "2024.01.08 (MON)",
+    "content": ". ",
+    "url": "/docs/projects/pongdang/240108/#20240108-mon",
+    
+    "relUrl": "/docs/projects/pongdang/240108/#20240108-mon"
+  },"262": {
+    "doc": "제작 일지 <_14>",
+    "title": "1️⃣ SpringBoot 서버 백그라운드 실행",
+    "content": "서버를 24시간 돌려야하기 때문에, nohup 명령어를 통해 백그라운드에 돌아가게 한다. nohup java -jar build/libs/Pongdang_Server2-0.0.1-SNAPSHOT.jar &gt; test.log 2&gt;&amp;1 &amp; . ",
+    "url": "/docs/projects/pongdang/240108/#1%EF%B8%8F%E2%83%A3-springboot-%EC%84%9C%EB%B2%84-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EC%8B%A4%ED%96%89",
+    
+    "relUrl": "/docs/projects/pongdang/240108/#1️⃣-springboot-서버-백그라운드-실행"
+  },"263": {
+    "doc": "제작 일지 <_14>",
+    "title": "2️⃣ 서버가 켜지지 않음",
+    "content": "인스턴스 재시작시에는, 서비스들이 종료되어 있다. 때문에, nginx를 재시작해준다. sudo systemctl restart nginx . ",
+    "url": "/docs/projects/pongdang/240108/#2%EF%B8%8F%E2%83%A3-%EC%84%9C%EB%B2%84%EA%B0%80-%EC%BC%9C%EC%A7%80%EC%A7%80-%EC%95%8A%EC%9D%8C",
+    
+    "relUrl": "/docs/projects/pongdang/240108/#2️⃣-서버가-켜지지-않음"
+  },"264": {
+    "doc": "제작 일지 <_14>",
+    "title": "3️⃣ Date 자동 출력",
+    "content": "Command + Shift + i . ",
+    "url": "/docs/projects/pongdang/240108/#3%EF%B8%8F%E2%83%A3-date-%EC%9E%90%EB%8F%99-%EC%B6%9C%EB%A0%A5",
+    
+    "relUrl": "/docs/projects/pongdang/240108/#3️⃣-date-자동-출력"
+  },"265": {
+    "doc": "제작 일지 <_14>",
+    "title": "4️⃣ AWS 인스턴스 시작 시, 자동 명령어 실행",
+    "content": "위의 1, 2번을 자동 실행 되게 하였다. ",
+    "url": "/docs/projects/pongdang/240108/#4%EF%B8%8F%E2%83%A3-aws-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EC%8B%9C%EC%9E%91-%EC%8B%9C-%EC%9E%90%EB%8F%99-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%8B%A4%ED%96%89",
+    
+    "relUrl": "/docs/projects/pongdang/240108/#4️⃣-aws-인스턴스-시작-시-자동-명령어-실행"
+  },"266": {
+    "doc": "제작 일지 <_14>",
+    "title": "5️⃣ 구글 애널리틱스 연동 및 시작",
+    "content": " ",
+    "url": "/docs/projects/pongdang/240108/#5%EF%B8%8F%E2%83%A3-%EA%B5%AC%EA%B8%80-%EC%95%A0%EB%84%90%EB%A6%AC%ED%8B%B1%EC%8A%A4-%EC%97%B0%EB%8F%99-%EB%B0%8F-%EC%8B%9C%EC%9E%91",
+    
+    "relUrl": "/docs/projects/pongdang/240108/#5️⃣-구글-애널리틱스-연동-및-시작"
+  },"267": {
+    "doc": "제작 일지 <_14>",
+    "title": "제작 일지 <_14>",
+    "content": " ",
+    "url": "/docs/projects/pongdang/240108/",
+    
+    "relUrl": "/docs/projects/pongdang/240108/"
   },"268": {
     "doc": "GameChat 개발일지 <1>",
     "title": "GameChat 개발일지 &lt;1&gt;",
@@ -3359,475 +3359,482 @@
     
     "relUrl": "/docs/studies/aws_DA/aws_lecture1/#실습-과정"
   },"480": {
+    "doc": "Facade 패턴",
+    "title": "Facade 패턴",
+    "content": "[!NOTE] Facade 패턴 == 드라이브 스루 창구 . | Facade 패턴은 드라이브 스루 창구 처럼 이용자가 제품 제작과 포장 등 여러 기능들을 볼 수 없듯이, 여러 기능을 하나의 창구를 통해 간단하게 사용할 수 있도록 하는 패턴 | . ",
+    "url": "/docs/java/codingTestSyntax/",
+    
+    "relUrl": "/docs/java/codingTestSyntax/"
+  },"481": {
     "doc": "CodingTest",
     "title": "코딩테스트",
     "content": " ",
     "url": "/docs/codingtest/codingtest/#%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8",
     
     "relUrl": "/docs/codingtest/codingtest/#코딩테스트"
-  },"481": {
+  },"482": {
     "doc": "CodingTest",
     "title": "This Page has been written since August 08, 2023.",
     "content": " ",
     "url": "/docs/codingtest/codingtest/#this-page-has-been-written-since-august-08-2023",
     
     "relUrl": "/docs/codingtest/codingtest/#this-page-has-been-written-since-august-08-2023"
-  },"482": {
+  },"483": {
     "doc": "CodingTest",
     "title": "CodingTest",
     "content": " ",
     "url": "/docs/codingtest/codingtest/",
     
     "relUrl": "/docs/codingtest/codingtest/"
-  },"483": {
+  },"484": {
     "doc": "db오류",
     "title": "오류",
     "content": "- [Server] Plugin mysql_native_password reported: ''mysql_native_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead'` . ",
     "url": "/docs/java/SpringBoot/db%EC%98%A4%EB%A5%98/#%EC%98%A4%EB%A5%98",
     
     "relUrl": "/docs/java/SpringBoot/db%EC%98%A4%EB%A5%98/#오류"
-  },"484": {
+  },"485": {
     "doc": "db오류",
     "title": "원인 #1",
     "content": "원인은 MySQL 8.0이상 부터의 보안 정책과 관련되었다. SSL/TLS . SSL/TLS은 클라이언트와 서버 프로그램이 네트워크로 통신하는 과정에서 도청 및 간섭, 위변조 방지를 위해서 서로 신뢰할 수 있는 전자 서명이 포함된 인증서를 사용하는 암호화 통신 프로토콜 . [!info] Content . | 이 내용은 클라이언트(애플리케이션이나 PC 등)에서 MySQL을 SSL/TLS 방식으로 접속시에 TLS1.0 또는 1.1 버전으로 접속한다면 다음과 같은 에러가 발생되면서 접속이 불가능함을 의미 | . ",
     "url": "/docs/java/SpringBoot/db%EC%98%A4%EB%A5%98/#%EC%9B%90%EC%9D%B8-1",
     
     "relUrl": "/docs/java/SpringBoot/db%EC%98%A4%EB%A5%98/#원인-1"
-  },"485": {
+  },"486": {
     "doc": "db오류",
     "title": "해결",
     "content": ". | 이와 다른 부분이였다. 다음날 다시 접속하니 해결,,? 되었다.. | . ",
     "url": "/docs/java/SpringBoot/db%EC%98%A4%EB%A5%98/#%ED%95%B4%EA%B2%B0",
     
     "relUrl": "/docs/java/SpringBoot/db%EC%98%A4%EB%A5%98/#해결"
-  },"486": {
+  },"487": {
     "doc": "db오류",
     "title": "db오류",
     "content": "[!question] 갑자기 잘되던 AWS RDS로의 접속이 안된다. ",
     "url": "/docs/java/SpringBoot/db%EC%98%A4%EB%A5%98/",
     
     "relUrl": "/docs/java/SpringBoot/db%EC%98%A4%EB%A5%98/"
-  },"487": {
+  },"488": {
     "doc": "사이드 프로젝트 - Deverse",
     "title": "Project - Deverse",
     "content": " ",
     "url": "/docs/projects/deverse/deverse/#project---deverse",
     
     "relUrl": "/docs/projects/deverse/deverse/#project---deverse"
-  },"488": {
+  },"489": {
     "doc": "사이드 프로젝트 - Deverse",
     "title": "Project has been written since March 12, 2024.",
     "content": ". | Links | . ",
     "url": "/docs/projects/deverse/deverse/#project-has-been-written-since-march-12-2024",
     
     "relUrl": "/docs/projects/deverse/deverse/#project-has-been-written-since-march-12-2024"
-  },"489": {
+  },"490": {
     "doc": "사이드 프로젝트 - Deverse",
     "title": "사이드 프로젝트 - Deverse",
     "content": " ",
     "url": "/docs/projects/deverse/deverse/",
     
     "relUrl": "/docs/projects/deverse/deverse/"
-  },"490": {
+  },"491": {
     "doc": "사이드 프로젝트 - DevZip",
     "title": "Project - DeverZip",
     "content": " ",
     "url": "/docs/projects/devzip/devzip/#project---deverzip",
     
     "relUrl": "/docs/projects/devzip/devzip/#project---deverzip"
-  },"491": {
+  },"492": {
     "doc": "사이드 프로젝트 - DevZip",
     "title": "Project has been written since July 3, 2024.",
     "content": ". DevZip은 제가 개발한 프로젝트들의 모음Zip입니다! . | Links | . ",
     "url": "/docs/projects/devzip/devzip/#project-has-been-written-since-july-3-2024",
     
     "relUrl": "/docs/projects/devzip/devzip/#project-has-been-written-since-july-3-2024"
-  },"492": {
+  },"493": {
     "doc": "사이드 프로젝트 - DevZip",
     "title": "사이드 프로젝트 - DevZip",
     "content": " ",
     "url": "/docs/projects/devzip/devzip/",
     
     "relUrl": "/docs/projects/devzip/devzip/"
-  },"493": {
+  },"494": {
     "doc": "entityManagerFactory 에러",
     "title": "entityManagerFactory 에러",
     "content": "[!question] 스프링부트 프로젝트에서 게시판을 만들고 있던 중, 게시판 작성 내용을 DB에 저장하는 컨트롤러를 만들던 중 오류가 발생하였다. 오류 . ```bash ********* APPLICATION FAILED TO START ************* . Description: . Parameter 0 of constructor in Service required a bean named ‘entityManagerFactory’ that could not be found. Action: . Consider defining a bean named ‘entityManagerFactory’ in your configuration.&gt;) . ### 초기 해결 방법 `EntityManagerFactory`를 수동으로 설정하는 방법을 채택 ```java @Configuration @EnableTransactionManagement public class JpaConfig { @Autowired private DataSource dataSource; @Bean public LocalContainerEntityManagerFactoryBean entityManagerFactory() { LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean(); factory.setDataSource(dataSource); factory.setPackagesToScan(\"entity\"); factory.setJpaVendorAdapter(new HibernateJpaVendorAdapter()); return factory; } @Bean public PlatformTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) { JpaTransactionManager transactionManager = new JpaTransactionManager(); transactionManager.setEntityManagerFactory(entityManagerFactory); return transactionManager; } } . | 는 다른 곳이였다… (아래는 해결) | . # JPA 비활성화를 주석처리 ... # spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration . ",
     "url": "/docs/java/SpringBoot/entityManagerFactory_%EC%97%90%EB%9F%AC/",
     
     "relUrl": "/docs/java/SpringBoot/entityManagerFactory_%EC%97%90%EB%9F%AC/"
-  },"494": {
+  },"495": {
     "doc": "Facade 패턴",
     "title": "Facade 패턴",
     "content": "[!NOTE] Facade 패턴 == 드라이브 스루 창구 . | Facade 패턴은 드라이브 스루 창구 처럼 이용자가 제품 제작과 포장 등 여러 기능들을 볼 수 없듯이, 여러 기능을 하나의 창구를 통해 간단하게 사용할 수 있도록 하는 패턴 | . ",
     "url": "/docs/java/facadePattern/",
     
     "relUrl": "/docs/java/facadePattern/"
-  },"495": {
+  },"496": {
     "doc": "토이 프로젝트 - 게임 서버",
     "title": "Project - 토이 프로젝트 - 게임 서버",
     "content": " ",
     "url": "/docs/projects/gameServer/gameServer/#project---%ED%86%A0%EC%9D%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%EA%B2%8C%EC%9E%84-%EC%84%9C%EB%B2%84",
     
     "relUrl": "/docs/projects/gameServer/gameServer/#project---토이-프로젝트---게임-서버"
-  },"496": {
+  },"497": {
     "doc": "토이 프로젝트 - 게임 서버",
     "title": "Project has been written since Aug 19, 2023.",
     "content": ". ",
     "url": "/docs/projects/gameServer/gameServer/#project-has-been-written-since-aug-19-2023",
     
     "relUrl": "/docs/projects/gameServer/gameServer/#project-has-been-written-since-aug-19-2023"
-  },"497": {
+  },"498": {
     "doc": "토이 프로젝트 - 게임 서버",
     "title": "토이 프로젝트 - 게임 서버",
     "content": " ",
     "url": "/docs/projects/gameServer/gameServer/",
     
     "relUrl": "/docs/projects/gameServer/gameServer/"
-  },"498": {
+  },"499": {
     "doc": "Hoooon22's Log",
     "title": "Hoooon22",
     "content": "Web &amp; Server Delveloper . ",
     "url": "/",
     
     "relUrl": "/"
-  },"499": {
+  },"500": {
     "doc": "Hoooon22's Log",
     "title": "Profile",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"500": {
+  },"501": {
     "doc": "Hoooon22's Log",
     "title": "김지훈",
     "content": "웹 &amp; 서버 개발자 . 학력 . | 동국대학교 컴퓨터공학과 (2018.03 ~ 2023.02) | . 기타 . | 동국대학교 인간-로봇 상호작용 연구실 학부연구생 (2019.07 ~ 2021.04) | . 경력 . | 마준소프트 인턴 (2024.01 ~ 2024.02) | . ",
     "url": "/",
     
     "relUrl": "/"
-  },"501": {
+  },"502": {
     "doc": "Hoooon22's Log",
     "title": "Tech Stack",
     "content": ". | Programming Languages: Java, C/C++ | Frameworks: SpringBoot, Node.js, React | Web Technologies: HTML5, CSS, Javascript, ASP | Databases: MySQL | Version Control: Git | PaaS/IaaS: AWS | Operating Systems:: Linux | Miscellaneous Tools/Platforms:: Unity | . ",
     "url": "/",
     
     "relUrl": "/"
-  },"502": {
+  },"503": {
     "doc": "Hoooon22's Log",
     "title": "Projects",
     "content": "ㅤ1. '퐁당 매거진' 웹사이트 제작 프로젝트 . 이미지를 클릭하시면, 웹페이지로 이동합니다. | Period: 2022.07 ~ (진행중) | Description: 청소년들에게 세상에 있는 다양한 직업들을 소개해주는 웹매거진 ‘매거진 퐁당’의 풀스택 개발을 맡았습니다. | 첫 번째 사이트: VanilaJS, Node.js | 두 번째 사이트(개발 진행중): React, SpringBoot | . | Tech Stack: AWS, HTML/CSS/Javascript, Node.js, React, SpringBoot, NGINX | . 퐁당 매거진 웹사이트 제작 과정 '퐁당 매거진 두번째 돌' 웹사이트의 제작 과정을 기록한 페이지 입니다. Pongdang_Server2 Github '퐁당 매거진 두번째 돌' 웹사이트의 깃허브 입니다. ㅤ2. Automated CCTV Video Processing System to Prevent Child Abuse in Daycare Centers . | Period: 2022.03.02 ~ 2022.12.16 (약 10개월 간) | Description: 아동학대 방지를 위해 어린이집 내 CCTV 영상을 효율적으로 반출하는 시스템을 개발하였습니다. 학대 의심 구간을 C3D모델로 탐지하고, YOLOv5와 StrongSORT 모델을 사용하여 프레임별로 얼굴 영역을 검출하며, 이에 해당하는 영역을 모자이크 처리하여 사용자에게 영상을 최종적으로 제공하는 시스템입니다. 이 중 학대 의심 구간을 탐지하는 Violence Detection module을 개발하는 역할을 맡았습니다. 또한 이에 매칭되는 부분의 논문 작성을 맡았고, 구현 후 테스트 총괄을 맡았습니다. 이후, 2022 한국정보기술학회 추계학술대회 대학생논문경진대회에서 은상을 수상하였습니다. | Tech Stack: 영상처리, Front-end, Back-end | Result: 학회 논문 게시, 웹사이트 기반 시스템 제작 | . Automated CCTV Video Processing System Github 프로젝트의 깃허브 입니다. ㅤ3. 동국대학교 전자불전문화콘텐츠연구소 아카이브 홈페이지 제작 프로젝트 . | Period: 2020.03 ~ 2020.08 (약 6개월) | Description: 동국대학교 전자불전문화콘텐츠연구소의 불교문화가 담긴 사진 등의 빅데이터들을 저장하고 열람할 수 있는 홈페이지를 제작하였습니다. | 웹 전체 페이지 개발, 빅데이터 관리, 정보 분류를 위한 검색 SQL문 작성, 서버 보조 관리 | . | Tech Stack: HTML/CSS/JS, Node.js, MySQL | Result: 빅데이터 관리, 웹 디자인 경험, Server &amp; Client 동시 구현 | . ㅤ4. 안전사고 예방과 과학 교육을 위한 VR실험실 개별연구 프로젝트 . | Period: 2022.03 ~ 2022.06 (약 4개월) | Description: CS VR 기기를 활용한 스마트 시스템 설계 – VR 실험실 개발 및 논문 작성 . | 실제 화학 실험에서의 위험사고와 경제적 손실을 최소화하는 방법으로, VR 상의 가상 실험 을 구현하여 해당 VR 실험실에서의 실험과 실제 실험의 실험을 서로 비교하고 관찰하여 각 방법의 효율성 과 유효성(학습효과 등)을 분석하였습니다. Unity와 C#, Blender를 사용하여 제작하였습니다. | . | Tech Stack: Unity, C#, Blender (그래픽 프로그램) | Result: Unity 활용능력, Blender 사용 경험, 논문 작성 | . ChemicalLab Github ChemicalLab 프로젝트의 깃허브 입니다. ㅤ5. 동국대학교 이공계를 위한 문제중심 C언어 프로그래밍 교안 제작 프로젝트 . | Period: 2019.10 ~ 2020.07 (약 10개월) | Description: 동국대학교의 이공계 학생들을 위한 문제풀이 중심의 C언어 프로그래밍 교안을 제작하였습니다. | 문제 Project 4개 중 1개 제작, Project1-주기율표 계산 프로그램 | . | Tech Stack: C언어 기초지식과 기초 프로그래밍 Skill | Result: 동국대학교 수업 사용 교안 제작, C언어 활용 Skill | . ㅤ6. 시각장애인을 위한 스마트 점자 패널 기초연구 . | Period: 2019.09.01 ~ 2019.11.02 (약 3개월 간) | Description: 시각장애인 의 스마트폰을 통한 정보접근성 향상을 위해‘스마트 점자 패널’을 설계하고 논문으로 발표하였습니다. 스마트폰으로 인한 시각장애인과 비장애인의 정보격차를 줄이기 위한 기술로, 스마트폰의 음성이 아닌 본 기술의 점자를 이용하여 스마트폰의 정보를 전달할 수 있게 설계하였습니다. | Tech Stack: 논문 주 저자, 아이디어 제시 및 논문 발표 | Result: 2019 한국지능시스템학회 추계학술대회 논문 게시 . 논문 원본입니다. | . ㅤ7. 스마트미러를 활용한 청각장애인 구화훈련 애플리케이션 제작 . | Period: 2020.09.01 ~ 2021.02.28 (약 6개월 간) | Description: 스마트미러를 활용한 청각장애인 구화훈련 애플리케이션을 제작하였습니다. | 아이디어 제시, 스마트미러 전용 애플리케이션 개발, 테스트 실험 | . | Tech Stack: Android Studio, STT(Speech to Text) 알고리즘 | Result: 동국대학교 2021 겨울캡스톤 디자인대회 밸류업 프로그램 장려상 수상, 애플리케이션 개발 능력 . 논문 원본입니다. | . if (code.isWorks()) { return Best_Moment; // :) } . ",
     "url": "/",
     
     "relUrl": "/"
-  },"503": {
+  },"504": {
     "doc": "Hoooon22's Log",
     "title": "Hoooon22's Log",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"504": {
+  },"505": {
     "doc": "★ Java",
     "title": "Java",
     "content": " ",
     "url": "/docs/java/java/#java",
     
     "relUrl": "/docs/java/java/#java"
-  },"505": {
+  },"506": {
     "doc": "★ Java",
     "title": "This Page has been written since July 22, 2024.",
     "content": " ",
     "url": "/docs/java/java/#this-page-has-been-written-since-july-22-2024",
     
     "relUrl": "/docs/java/java/#this-page-has-been-written-since-july-22-2024"
-  },"506": {
+  },"507": {
     "doc": "★ Java",
     "title": "★ Java",
     "content": " ",
     "url": "/docs/java/java/",
     
     "relUrl": "/docs/java/java/"
-  },"507": {
+  },"508": {
     "doc": "오브젝트",
     "title": "Obejct &amp; OOP",
     "content": " ",
     "url": "/docs/studies/object/object/#obejct--oop",
     
     "relUrl": "/docs/studies/object/object/#obejct--oop"
-  },"508": {
+  },"509": {
     "doc": "오브젝트",
     "title": "This Page has been written since August 08, 2023.",
     "content": "참고 서적 : “오브젝트”, 조영호 . ",
     "url": "/docs/studies/object/object/#this-page-has-been-written-since-august-08-2023",
     
     "relUrl": "/docs/studies/object/object/#this-page-has-been-written-since-august-08-2023"
-  },"509": {
+  },"510": {
     "doc": "오브젝트",
     "title": "오브젝트",
     "content": " ",
     "url": "/docs/studies/object/object/",
     
     "relUrl": "/docs/studies/object/object/"
-  },"510": {
+  },"511": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "Project - 퐁당 웹 매거진 프로젝트 Ver.02",
     "content": " ",
     "url": "/docs/projects/pongdang/pongdang/#project---%ED%90%81%EB%8B%B9-%EC%9B%B9-%EB%A7%A4%EA%B1%B0%EC%A7%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-ver02",
     
     "relUrl": "/docs/projects/pongdang/pongdang/#project---퐁당-웹-매거진-프로젝트-ver02"
-  },"511": {
+  },"512": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "Project has been written since July 1, 2023.",
     "content": ". | Links | . 퐁당 웹 매거진 프로젝트 Ver.01 제작 일지 . 퐁당 웹 매거진 프로젝트 Ver.01 Github(private) . 퐁당 웹 매거진 프로젝트 Ver.02 제작 일지 . 퐁당 웹 매거진 프로젝트 Ver.02 Github(public) . ",
     "url": "/docs/projects/pongdang/pongdang/#project-has-been-written-since-july-1-2023",
     
     "relUrl": "/docs/projects/pongdang/pongdang/#project-has-been-written-since-july-1-2023"
-  },"512": {
+  },"513": {
     "doc": "퐁당 웹 매거진 프로젝트",
     "title": "퐁당 웹 매거진 프로젝트",
     "content": " ",
     "url": "/docs/projects/pongdang/pongdang/",
     
     "relUrl": "/docs/projects/pongdang/pongdang/"
-  },"513": {
+  },"514": {
     "doc": "Projects",
     "title": "Project",
     "content": "Project has been written since July 1, 2023. ",
     "url": "/docs/projects#project",
     
     "relUrl": "/docs/projects#project"
-  },"514": {
+  },"515": {
     "doc": "Projects",
     "title": "Projects",
     "content": " ",
     "url": "/docs/projects",
     
     "relUrl": "/docs/projects"
-  },"515": {
+  },"516": {
     "doc": "STUDY",
     "title": "공부",
     "content": "This Page has been written since July 17, 2023. ",
     "url": "/docs/studies#%EA%B3%B5%EB%B6%80",
     
     "relUrl": "/docs/studies#공부"
-  },"516": {
+  },"517": {
     "doc": "STUDY",
     "title": "STUDY",
     "content": " ",
     "url": "/docs/studies",
     
     "relUrl": "/docs/studies"
-  },"517": {
+  },"518": {
     "doc": "AWS 기초 - 1",
     "title": "AWS 기초 - 1",
     "content": " ",
     "url": "/docs/studies/aws_DA/summary_1/",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/"
-  },"518": {
+  },"519": {
     "doc": "AWS 기초 - 1",
     "title": "2023.08.19 (SAT)",
     "content": ". ",
     "url": "/docs/studies/aws_DA/summary_1/#20230819-sat",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/#20230819-sat"
-  },"519": {
+  },"520": {
     "doc": "AWS 기초 - 1",
     "title": "1. 온프라미스와 AWS 용어 비교",
     "content": "AWS는 아마존에서 온프레미스를 클라우드 서비스로 만든 것이다. 온프라미스(On-premise)란, 기업의 서버를 클라우드 같은 원격 환경에서 운영하는 방식이 아닌, 자체적으로 보유한 전산실 서버에 직접 설치해 운영하는 방식이다. – . 온프라미스 용어 = 클라우드 용어 . | 방화벽 = 보안그룹 | ACL = NACL . | ACL(Access Control List) : 허가되지 않은 이용자가 라우터나 네트워크의 특정 자원을 접근하려고 하는 것을 차단한다. | . | 관리자 권한 = IAM | L4, 로드 밸런서 = ELB(일라스틱 로드 밸런서), 탄력적인 로드 밸련서, ALB, … . | 로드 밸런서 : 서버에 가해지는 부사(=로드)를 분산(=밸런싱)해주는 장치 또는 기술 | . | 네트워크 = VPC . | VPC는 Virtual Private Cloud로, 정의한 논리적으로 격리된 가상 네트워크에서 AWS 리소스를 시작할 수 있다. | . | 서버 = EC2(일라스틱 컴퓨트 클라우드), C2 | NAS = EFS(탄력적인 파일 시스템) . | NAS란, 네트워크 연결 스토리지로, 네트워크를 통해 효과적으로 협업할 수 있도록 데이터를 지속적으로 사용할 수 있게 하는 파일 전용 스토리지 디바이스이다. | 많은 곳에서 NAS를 사용하는 이유 : 확장 가능하며, 저렴한 스토리지를 제공하기 때문. | . | . | 디스크 = EBS (탄력적인 블록 스토어 저장장치) | DB = RDS (관계형 데이터 베이스) | . ",
     "url": "/docs/studies/aws_DA/summary_1/#1-%EC%98%A8%ED%94%84%EB%9D%BC%EB%AF%B8%EC%8A%A4%EC%99%80-aws-%EC%9A%A9%EC%96%B4-%EB%B9%84%EA%B5%90",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/#1-온프라미스와-aws-용어-비교"
-  },"520": {
+  },"521": {
     "doc": "AWS 기초 - 1",
     "title": "2. AWS의 기본 구성",
     "content": ". | 사용자가 서비스를 사용하는 과정 . | 특정 서비스에 연결하려면 도메인 질의를 한다. | DNS 서비스가 응답을 한다. | 해당 도메인을 IP로 변환하여 서버에 연결한다. | 서버의 디스크의 데이터를 읽는다.(?) | 따로 요청한 데이터를 디비에서 읽어온다. | 스토리지에 저장된 이미지나 파일들을 다운받아 사용한다. | . | AWS 용어로 치환 가능하다. | Route53이 도메인에 대한 응답을 한다. (참고로 DNS포트가 53이라, Route53이다.) | 서버 EC2로 접속한다. | 로컬 디스크인 EBS에서 데이터를 읽는다. | 비지니스적으로 요청한 데이터가 있으면, Amazon DB에서 읽어온다. | S3 등등 | . | . ",
     "url": "/docs/studies/aws_DA/summary_1/#2-aws%EC%9D%98-%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%84%B1",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/#2-aws의-기본-구성"
-  },"521": {
+  },"522": {
     "doc": "AWS 기초 - 1",
     "title": "3. 온프레미스, 클라우드, 하이브리드…",
     "content": ". | 온 프레미스 : 일반 데이터 센터, 물리 서버로 운영하는 데이터 센터 | 하이브리드 : 클라우드 + 온프레미스 | 클라우드 : AWS, AZURE, GCP 등 유료서비스 | 멀티클라우드 : 여러 개의 퍼블릭 클라우드를 사용하는 경우 | . ",
     "url": "/docs/studies/aws_DA/summary_1/#3-%EC%98%A8%ED%94%84%EB%A0%88%EB%AF%B8%EC%8A%A4-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%ED%95%98%EC%9D%B4%EB%B8%8C%EB%A6%AC%EB%93%9C",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/#3-온프레미스-클라우드-하이브리드"
-  },"522": {
+  },"523": {
     "doc": "AWS 기초 - 1",
     "title": "4. AZ",
     "content": "AZ란, 가용영역으로 한 리전에 여러 AZ가 존재한다. ex) 서울 리전, 도쿄 리전. 아마존 서버가 존재하는 곳이다. AZ끼리는 전용선으로 연결되어 있기 때문에, 빠르게 데이터를 주고 받을 수 있다. ",
     "url": "/docs/studies/aws_DA/summary_1/#4-az",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/#4-az"
-  },"523": {
+  },"524": {
     "doc": "AWS 기초 - 1",
     "title": "5. AWS 엣지 인프라 서비스",
     "content": "(1). AWS Outposts . 클라우드를 온프라미스에서도 쓸 수 있도록 확장한 것. (2). AWS Local Zones . 대형 메트로 센터를 사용한 엣지 서비스 . 엣지 컴퓨팅 : 정보 저장 및 컴퓨팅 능력을 사용자에게 더 가까이 제공하는 프로세스 . (3). AWS Wavelength . 5G 네트워크 엣지 서비스 통신사에서 클라우드 서비스 하는 것이다. ",
     "url": "/docs/studies/aws_DA/summary_1/#5-aws-%EC%97%A3%EC%A7%80-%EC%9D%B8%ED%94%84%EB%9D%BC-%EC%84%9C%EB%B9%84%EC%8A%A4",
     
     "relUrl": "/docs/studies/aws_DA/summary_1/#5-aws-엣지-인프라-서비스"
-  },"524": {
+  },"525": {
     "doc": "AWS 기초 - 2",
     "title": "AWS 기초 - 2",
     "content": " ",
     "url": "/docs/studies/aws_DA/summary_2/",
     
     "relUrl": "/docs/studies/aws_DA/summary_2/"
-  },"525": {
+  },"526": {
     "doc": "AWS 기초 - 2",
     "title": "2023.09.04 (MON)",
     "content": ". ",
     "url": "/docs/studies/aws_DA/summary_2/#20230904-mon",
     
     "relUrl": "/docs/studies/aws_DA/summary_2/#20230904-mon"
-  },"526": {
+  },"527": {
     "doc": "AWS 기초 - 2",
     "title": "1. 서버",
     "content": "(1). EC2 . | Elastic Compute Cloud의 줄임말이다. | C가 2개여서 EC2이다. | . (2). 인스턴스 패밀리 . | AWS 인스턴스 : 가상 컴퓨팅 환경으로 애플리케이션을 배포, 관리 및 확장하는데 도움이 되는 수많은 추가 기능 제공 | 인스턴스 표기법 . | | 인스턴스 패밀리 : M, T, C, X, R, IO, … (각 기능이 다르다.) | 인스턴스 세대 : 인스턴스 패밀리에 따라, 1~5세대 | 인스턴스 크기 : 인스턴스 패밀리 및 세대에 따라 다양한 크기 제공 | . | . ",
     "url": "/docs/studies/aws_DA/summary_2/#1-%EC%84%9C%EB%B2%84",
     
     "relUrl": "/docs/studies/aws_DA/summary_2/#1-서버"
-  },"527": {
+  },"528": {
     "doc": "AWS 기초 - 2",
     "title": "2. EC2 요금",
     "content": ". | 온디맨드 인스턴스 | 예약 인스턴스 | Savings Plan | 스팟 인스턴스 | . ",
     "url": "/docs/studies/aws_DA/summary_2/#2-ec2-%EC%9A%94%EA%B8%88",
     
     "relUrl": "/docs/studies/aws_DA/summary_2/#2-ec2-요금"
-  },"528": {
+  },"529": {
     "doc": "AWS 기초 - 2",
     "title": "3. 대표적인 컨테이너 관리형 서비스",
     "content": ". | . | ECS . | 간편 관리형 서비스 | AWS 전용이다. | 컨테이너가 소수일 때 커맨드로 관리 가능하지만, 많아지면 관리가 힘들어져 관리형 서비스를 사용한다. | ECS는 AWS에서 인프라를 관리해주며, 확장 등이 쉽게 가능하다. | . | . | . | EKS . | 쿠버네티스 사용의 관리 리소스가 포함됨 | 관리시간이 줄어듬 | 마스터노드의 관리를 AWS가 해줌 | 사용자는 워커노드만 관리하면 된다. | . | 워커노드 : 배포하고자 하는 어플리케이션의 실제 실행을 수행 - 마스터 서버로는 API 서버로 명령만 내릴 수 있다. - 별도의 AWS VPC에 마스터 서버가 구성된다. (사용자는 접근 불가) | . | . | . ",
     "url": "/docs/studies/aws_DA/summary_2/#3-%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EA%B4%80%EB%A6%AC%ED%98%95-%EC%84%9C%EB%B9%84%EC%8A%A4",
     
     "relUrl": "/docs/studies/aws_DA/summary_2/#3-대표적인-컨테이너-관리형-서비스"
-  },"529": {
+  },"530": {
     "doc": "AWS 기초 - 2",
     "title": "4, 람다",
     "content": ". | 대표적인 서버리스 컴퓨팅 (이 또한 관리형 서비스) | 서버 처리가 이벤트 방식이다. (람다는 이벤트 발생 시 트래픽 처리됨) | 사용자가 확장 등을 고려할 필요가 없다. | 거의 모든 것이 자동으로 처리된다. | . ",
     "url": "/docs/studies/aws_DA/summary_2/#4-%EB%9E%8C%EB%8B%A4",
     
     "relUrl": "/docs/studies/aws_DA/summary_2/#4-람다"
-  },"530": {
+  },"531": {
     "doc": "AWS 기초 - 3",
     "title": "AWS 기초 - 3",
     "content": " ",
     "url": "/docs/studies/aws_DA/summary_3/",
     
     "relUrl": "/docs/studies/aws_DA/summary_3/"
-  },"531": {
+  },"532": {
     "doc": "AWS 기초 - 3",
     "title": "2023.09.04 (MON)",
     "content": ". ",
     "url": "/docs/studies/aws_DA/summary_3/#20230904-mon",
     
     "relUrl": "/docs/studies/aws_DA/summary_3/#20230904-mon"
-  },"532": {
+  },"533": {
     "doc": "AWS 기초 - 3",
     "title": "스토리지, 데이터 베이스",
     "content": " ",
     "url": "/docs/studies/aws_DA/summary_3/#%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B2%A0%EC%9D%B4%EC%8A%A4",
     
     "relUrl": "/docs/studies/aws_DA/summary_3/#스토리지-데이터-베이스"
-  },"533": {
+  },"534": {
     "doc": "AWS 기초 - 3",
     "title": "1. AWS 스토리지 옵션",
     "content": "(1). Options . | S3 : 오브젝트 스토리지, 일반 스토리지 | S3 Glacier : S3 중 장기 보관용으로 저렴하다. | EFS : 공유 파일 스토리지, NAS와 같다. | NAS란, 네트워크를 통해 효과적으로 협업할 수 있도록 데이터를 지속적으로 사용할 수 있게 하는 파일 전용 스토리지 디바이스 | . | Storage Gateway | EBS - EC2에서 사용하는 디스크 저장소 | . ",
     "url": "/docs/studies/aws_DA/summary_3/#1-aws-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%98%B5%EC%85%98",
     
     "relUrl": "/docs/studies/aws_DA/summary_3/#1-aws-스토리지-옵션"
-  },"534": {
+  },"535": {
     "doc": "TIL",
     "title": "Today I Learned",
     "content": "TIL has been written since July 1, 2023. ",
     "url": "/docs/tils#today-i-learned",
     
     "relUrl": "/docs/tils#today-i-learned"
-  },"535": {
+  },"536": {
     "doc": "TIL",
     "title": "TIL",
     "content": " ",
     "url": "/docs/tils",
     
     "relUrl": "/docs/tils"
-  },"536": {
+  },"537": {
     "doc": "토비의 스프링 1권 1장 - 오브젝트와 의존관계",
     "title": "토비의 스프링 1권 1장 - 오브젝트와 의존관계",
     "content": " ",
     "url": "/docs/java/SpringBoot/toby_1-1/",
     
     "relUrl": "/docs/java/SpringBoot/toby_1-1/"
-  },"537": {
+  },"538": {
     "doc": "토비의 스프링 1권 1장 - 오브젝트와 의존관계",
     "title": "2024.09.24 (TUE)",
     "content": ". ",
     "url": "/docs/java/SpringBoot/toby_1-1/#20240924-tue",
     
     "relUrl": "/docs/java/SpringBoot/toby_1-1/#20240924-tue"
-  },"538": {
+  },"539": {
     "doc": "토비의 스프링 1권 1장 - 오브젝트와 의존관계",
     "title": "스프링의 핵심 철학",
     "content": "객체지향 프로그래밍이 제공하는 오브젝트에 집중한다. 스프링은 객체지향 설계와 구현에 관해 특정한 모델과 기법을 억지로 강요하지는 않는다. -&gt; 하지만 오브젝트를 어떻게 효과적으로 설계, 구현, 사용, 개선할지에 대한 기준을 알려준다. ",
     "url": "/docs/java/SpringBoot/toby_1-1/#%EC%8A%A4%ED%94%84%EB%A7%81%EC%9D%98-%ED%95%B5%EC%8B%AC-%EC%B2%A0%ED%95%99",
     
     "relUrl": "/docs/java/SpringBoot/toby_1-1/#스프링의-핵심-철학"
-  },"539": {
+  },"540": {
     "doc": "토비의 스프링 1권 1장 - 오브젝트와 의존관계",
     "title": "오브젝트의 동일성과 동등성",
     "content": ". | 직접 생성한 팩토리 오브젝트는 오브젝트를 만들 때, 매번 다른 오브젝트가 생성된다. | . DaoFactory factory = new DaoFactory(); UserDao dao1 = factory.userDao(); UserDao dao2 = factroy.userDao(); System.out.println(dao1); System.out.println(dao2); . 출력: example.dao.UserDao@118f375 example.dao.UserDao@117a8bd . | 하지만, 스프링 컨텍스트로부터 가져온 오브젝트는 동일하다. | . ApplicationContext context = new AnnotationConfigApplicationContext(DaoFactory.class); UserDao dao3 = context.getBean(\"userDao\", UserDao.class); UserDao dao4 = context.getBean(\"userDao\", UserDao.class); System.out.println(dao3); System.out.println(dao4); . 출력: example.dao.UserDao@ee22f7 example.dao.UserDao@ee22f7 . 오브젝트 팩토리와 스프링의 애플리케이션 컨텍스트의 동작방식에 차이가 있기 때문이다. | 스프링은 여러 번에 걸쳐 빈을 요청하더라도 매번 동일한 오브젝트를 돌려준다. | 애플리케이션 컨텍스트는 오브젝트 팩토리와 비슷한 방식으로 동작하는 IoC 컨테이너이다. | 그러면서 싱글톤을 저장하고 관리하는 싱글톤 레지스트리이다. 싱글톤 레지스트리란? . | . | 왜 싱글톤으로 빈을 만들까? . | 스프링은 주로 “자바 엔터프라이즈 기술”을 사용하는 서버환경이기 때문이다. | 서버 하나당 최대로 초당 수십에서 수백 번씩 브라우저나 시스템으로부터의 요청을 받아 처리할 수 있는 높은 성능이 요구된다. | 아무리 자바의 성능이 좋아도 요청 한 번에 여러 오브젝트를 만들면,,, 서버 XoX,,, | . | 싱글톤 레지스트리는 private와 스태틱 메소드 만을 사용해야하는 비정상적인 클래스가 아닌 평범한 클래스도 싱글톤으로 사용이 가능하다. | 그럴 수 있는 이유는, 오브젝트의 생성에 관한 모든 권한은 IoC 기능을 제공하는 애플리케이션 컨텍스트에게 있기 때문이다. XML을 이용한 의존관계 설정정보\\ . | . | &lt;beans&gt;를 루트 엘리먼트로 사용한다. | 해당 beans안에는 여러개의 bean이 들어갈 수 있다. | . | . ",
     "url": "/docs/java/SpringBoot/toby_1-1/#%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8%EC%9D%98-%EB%8F%99%EC%9D%BC%EC%84%B1%EA%B3%BC-%EB%8F%99%EB%93%B1%EC%84%B1",
     
     "relUrl": "/docs/java/SpringBoot/toby_1-1/#오브젝트의-동일성과-동등성"
-  },"540": {
+  },"541": {
     "doc": "토비의 스프링 1권 1장 - 오브젝트와 의존관계",
     "title": "1장 요약",
     "content": ". | 스프링이 왜 IoC 컨테이너인지, DI 프레임워크인지 설명해주는 파트였다. | 각종 의존관계를 코드로 설명해주어, IoC와 DI에 대한 설명이 좋았다. | 스프링이란, 어떻게 오브젝트가 설계되고, 만들어지고, 어떻게 관계를 맺고 사용되는지에 관심을 갖는 프레임워크 | . ",
     "url": "/docs/java/SpringBoot/toby_1-1/#1%EC%9E%A5-%EC%9A%94%EC%95%BD",
     
     "relUrl": "/docs/java/SpringBoot/toby_1-1/#1장-요약"
-  },"541": {
+  },"542": {
     "doc": "토비의 스프링 1권 2장 - 테스트",
     "title": "토비의 스프링 1권 2장 - 테스트",
     "content": " ",
     "url": "/docs/java/SpringBoot/toby_1-2/",
     
     "relUrl": "/docs/java/SpringBoot/toby_1-2/"
-  },"542": {
+  },"543": {
     "doc": "토비의 스프링 1권 2장 - 테스트",
     "title": "2024.09.29 (SUN)",
     "content": ". ",
     "url": "/docs/java/SpringBoot/toby_1-2/#20240929-sun",
     
     "relUrl": "/docs/java/SpringBoot/toby_1-2/#20240929-sun"
-  },"543": {
+  },"544": {
     "doc": "토비의 스프링 1권 2장 - 테스트",
     "title": "스프링이 개발자에게 제공하는 가장 중요한 가치",
     "content": ". | 객체지향 | 테스트 | . 스프링은 IoC/DI를 이용해 객체지향 프로그래밍 언어의 근본과 가치를 개발자가 손쉽게 적용하고 사용할 수 있게 도와주는 기술이다. 애플리케이션은 점점 복잡해져 가는데, 그렇게 만들어진 코드를 확신할 수 있게 해주고, 변화에 유연하게 대처할 수 있는 자신감을 주는 것이 테스트 기술이다. +) 또한 테스트는 스프링을 학습하는 데 있어 가장 효과적인 방법 중 하나! . ",
     "url": "/docs/java/SpringBoot/toby_1-2/#%EC%8A%A4%ED%94%84%EB%A7%81%EC%9D%B4-%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%97%90%EA%B2%8C-%EC%A0%9C%EA%B3%B5%ED%95%98%EB%8A%94-%EA%B0%80%EC%9E%A5-%EC%A4%91%EC%9A%94%ED%95%9C-%EA%B0%80%EC%B9%98",
     
     "relUrl": "/docs/java/SpringBoot/toby_1-2/#스프링이-개발자에게-제공하는-가장-중요한-가치"
-  },"544": {
+  },"545": {
     "doc": "토비의 스프링 1권 2장 - 테스트",
     "title": "테스트는 가능한 작게",
     "content": ". | 작은 단위의 테스트 (단위 테스트 / unit test) . | 테스트를 한꺼번에 너무 몰아서 많은 것을 하면, 테스트 수행 과정도 복잡해진다. | . | . ",
     "url": "/docs/java/SpringBoot/toby_1-2/#%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%8A%94-%EA%B0%80%EB%8A%A5%ED%95%9C-%EC%9E%91%EA%B2%8C",
     
     "relUrl": "/docs/java/SpringBoot/toby_1-2/#테스트는-가능한-작게"
-  },"545": {
+  },"546": {
     "doc": "토비의 스프링 1권 2장 - 테스트",
     "title": "테스트의 효율 향상을 위한 방법",
     "content": ". | 테스트 검증의 자동화 | . | 수정 전 System.out.prinln(user2.getName()); System.out.prinln(user2.getPassWord()); System.out.prinln(user2.getId() + \" 조회 성공\"); . | 수정 후 (자동화) if (!user.getName().equals(user2.getName())) { System.out.println(\"테스트 실패 (name)\"); // ... } . | . 개발자의 눈으로 일일히 확인할 필요 없이, 테스트를 실패하였는지 성공하였는지를 확인한다. | 테스트의 효율적인 수행과 결과 관리 . | JUnit을 활용한 단위 테스트 | 테스트의 수가 많아지면, IDE에 내장된 JUnit 테스트 지원 도구를 사용하는 것도 좋다. | ex). 이클립스 (run -&gt; Run As -&gt; JUnit Test) | . | “항상 네거티브 테스트를 먼저 만들라” . | 개발자는 흔히 “내가 할 떄는 잘됐는데”가 내장되어있을 수 있다.. | . | TDD : 테스트 주도 개발 . | 개발자가 테스트를 만들어가며 개발하는 방법이 주는 장점을 극대화한 방법 | “실패한 테스트를 성공시키기 위한 목적이 아닌 코드는 만들지 않는다.” | . | . | . ",
     "url": "/docs/java/SpringBoot/toby_1-2/#%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%9D%98-%ED%9A%A8%EC%9C%A8-%ED%96%A5%EC%83%81%EC%9D%84-%EC%9C%84%ED%95%9C-%EB%B0%A9%EB%B2%95",
     
     "relUrl": "/docs/java/SpringBoot/toby_1-2/#테스트의-효율-향상을-위한-방법"
-  },"546": {
+  },"547": {
     "doc": "토비의 스프링 1권 2장 - 테스트",
     "title": "JUnit 활용",
     "content": "@Before . | 매번 테스트마다 중복된 메소드를 불러온다면, @Before 애노테이션으로 설정해준다면, 각 테스트 메소드에서 코드를 실행하기 전에 @Before을 먼저 실행시킨다. | . public class UserDaoTest { private UserDao dao; @Before public void setUp() { ApplicationContext context = new GenericXmlApplicationContext(\"applicationContext.xml\"); this.dao = context.getBean(\"userDao\", UserDao.class); } @Test public void addAndGet() throws SQLException { // 각 테스트 메소드에 반복적으로 나타났던 코드를 제거하고 이를 @Before 에 옯겨 놓는다. // ... } @Test public void count() throws SQLException { // 각 테스트 메소드에 반복적으로 나타났던 코드를 제거하고 이를 @Before 에 옯겨 놓는다. // ... } // ... } . | JUnit이 제공하는 @Before 애노테이션, @Test 메소드가 실행되기 전에 먼저 실행되어야 하는 메소드를 정의한다. | . 테스트를 위한 애플리케이션 컨텍스트 관리 . | 애플리케이션 컨텍스트를 매 테스트마다 생성하는 것은 불필요하기 때문에, 스태틱 변수에 저장하는 등의 방법이 필요하다. | 그런 방법들 보다는 스프링이 직접 제공하는 애플리케이션 컨텍스트 테스트 지원 기능을 이용하는 것이 더 편리하다. (@RunWith, @ContextConfiguration) | 매 테스트 메소드가 실행되기 전에 한번씩 실행되며, 모두 새로운 테스트 오브젝트를 만들어 사용한다. (애플리케이션 컨텍스트 재사용) | 여러 개의 테스트 클래스에게도 공유 가능 | . | . @Autowired . | 스프링 DI에 사용되는 특별한 애노테이션 | @Autowired가 붙은 인스턴스 변수가 있으면, 테스트 컨텍스트 프레임워크는 변수 타입과 일치하는 컨텍스트 내 빈을 찾는다. | 타입이 일치하는 빈이 있으면 인스턴스 변수에 주입해준다. | 일반적으로 주입을 위해서는 생성자나 수정자 메소드 같은 메소드가 필요하지만, 이 경우에는 메소드가 없어도 주입이 가능 | ‼️‼️ 단, 같은 타입의 빈이 두 개 이상 있는 경우는 타입만으로 결정할 수 없다. | 선택할 수 없는 경우에는, 변수의 이름과 같은 이름의 빈이 있는지 확인 . | 이름으로도 찾을 수 없으면, 예외 발생 | . | . | . | 이를 통해서, 자신이 사용하는 오브젝트의 클래스가 무엇인지 알 필요가 없다는 장점이 있다. | . 학습 테스트 . | JUnit 자신에 대한 테스트를 통해, 테스트를 학습 테스트로 사용해 볼 수 있다. | . ",
     "url": "/docs/java/SpringBoot/toby_1-2/#junit-%ED%99%9C%EC%9A%A9",
     
     "relUrl": "/docs/java/SpringBoot/toby_1-2/#junit-활용"
-  },"547": {
+  },"548": {
     "doc": "토비의 스프링 1권 2장 - 테스트",
     "title": "2장 요약",
     "content": ". | 테스트는 자동화되어야 하며, 빠르게 실행되어야 한다. | main() 테스트 대신 JUnit 프레임워크를 이용한 테스트 작성이 편리하다. | 테스트하기 쉬운 코드가 좋은 코드다. | . ",
