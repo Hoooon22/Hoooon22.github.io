@@ -38,7 +38,7 @@
   }
   
   .site-nav a:hover {
-    background-color: #007bff; /* 호버 시 배경색 변경 */
+    background-color: $purple-100; /* 호버 시 배경색 변경 */
     color: white; /* 호버 시 텍스트 색상 변경 */
   }
   
@@ -88,7 +88,7 @@
     color: #007bff;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.95em; /* 링크 텍스트 크기 줄이기 */
+    font-size: 0.65em; /* 링크 텍스트 크기 줄이기 */
   }
   
   .recent-posts ul li a:hover {
@@ -97,7 +97,7 @@
   
   .recent-posts .post-date {
     display: block;
-    font-size: 0.8em; /* 날짜 텍스트 크기 줄이기 */
+    font-size: 0.3em; /* 날짜 텍스트 크기 줄이기 */
     color: #666;
     margin-top: 3px; /* 날짜와 링크 사이 간격 줄이기 */
   }
