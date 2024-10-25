@@ -99,7 +99,7 @@ if (set.contains(1)) {
 ```
 
 ## 문자열
-1. 정렬
+- 정렬
 
 ```java
 // 기본 정렬 (오름차순)
@@ -127,7 +127,7 @@ String str = "123";
 int a = Integer.parseInt(str);
 ```
 
-1. int to String
+- int to String
 ```java
 int a = 123;
 String str1 = Integer.toString(a);
