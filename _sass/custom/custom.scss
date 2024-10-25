@@ -10,7 +10,6 @@
 /* site-nav 스타일 */
 .site-nav {
     width: 95%;
-    height: 60%;
     margin-top: 20px;
     padding: 15px; /* 내부 패딩 추가 */
     background-color: #f8f9fa; /* 배경색 추가 */
@@ -88,7 +87,7 @@
     color: #007bff;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.65em; /* 링크 텍스트 크기 줄이기 */
+    font-size: 0.75em; /* 링크 텍스트 크기 줄이기 */
   }
   
   .recent-posts ul li a:hover {
@@ -97,7 +96,7 @@
   
   .recent-posts .post-date {
     display: block;
-    font-size: 0.3em; /* 날짜 텍스트 크기 줄이기 */
+    font-size: 0.4em; /* 날짜 텍스트 크기 줄이기 */
     color: #666;
     margin-top: 3px; /* 날짜와 링크 사이 간격 줄이기 */
   }
