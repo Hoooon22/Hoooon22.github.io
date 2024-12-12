@@ -56,7 +56,7 @@ using namespace std;
 
 int main() {
 	string str = "Appl";
-	str += e; // Apple
+	str += "e"; // Apple
 
 	// 문자열 수정
 	str[0] = 'B'; // Bpple
