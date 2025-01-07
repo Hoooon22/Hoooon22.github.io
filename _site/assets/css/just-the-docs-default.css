@@ -7639,7 +7639,7 @@ blockquote.warning-title > p:last-child {
 }
 
 .site-nav a:hover {
-  background-color: #007bff; /* 호버 시 배경색 변경 */
+  background-color: #5e41d0; /* 호버 시 배경색 변경 */
   color: white; /* 호버 시 텍스트 색상 변경 */
 }
 
@@ -7655,13 +7655,14 @@ blockquote.warning-title > p:last-child {
   width: 95%;
   background-color: #f8f9fa;
   padding: 10px; /* padding을 줄여서 높이 감소 */
+  margin-top: 10px;
   margin-bottom: 15px; /* 섹션 간격 줄이기 */
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .recent-posts h3 {
-  font-size: 1.1em; /* 폰트 크기 살짝 줄이기 */
+  font-size: 0.8em;
   font-weight: bold;
   margin-bottom: 8px; /* 제목과 리스트 사이의 간격 줄이기 */
   color: #333;
@@ -7688,7 +7689,7 @@ blockquote.warning-title > p:last-child {
   color: #007bff;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.95em; /* 링크 텍스트 크기 줄이기 */
+  font-size: 0.75em; /* 링크 텍스트 크기 줄이기 */
 }
 
 .recent-posts ul li a:hover {
@@ -7697,7 +7698,7 @@ blockquote.warning-title > p:last-child {
 
 .recent-posts .post-date {
   display: block;
-  font-size: 0.8em; /* 날짜 텍스트 크기 줄이기 */
+  font-size: 0.4em; /* 날짜 텍스트 크기 줄이기 */
   color: #666;
   margin-top: 3px; /* 날짜와 링크 사이 간격 줄이기 */
 }

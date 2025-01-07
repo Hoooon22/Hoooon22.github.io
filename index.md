@@ -90,7 +90,7 @@ Web & Server Delveloper
     <figcaption style="font-style: italic; text-align: center; margin-top: -2%">이미지를 클릭하시면, 웹페이지로 이동합니다.</figcaption>
 </div>
 
-- **Period**: 2022.07 ~ (진행중)
+- **Period**: 2022.07 ~ 2023.12
 - **Description**: 청소년들에게 세상에 있는 다양한 직업들을 소개해주는 웹매거진 '매거진 퐁당'의 풀스택 개발을 맡았습니다.  
     - 첫 번째 사이트: VanilaJS, Node.js
     - 두 번째 사이트(개발 진행중): React, SpringBoot
@@ -247,6 +247,30 @@ Web & Server Delveloper
     <div style="text-align: right;">
         <a href="../../../../assets/files/김지훈_한국지능시스템학회논문.pdf">논문 원본입니다.</a>
     </div>
+
+</div>
+</details>
+
+
+<!-- project 8 -->
+<details style="margin-bottom: 3%; border-radius: 7px; border: 0.1px solid black; padding: 10px;">
+<summary style="color:black; font-size: 18px; font-weight: 400">ㅤ8. Chrome Extension 개발 프로젝트 </summary>
+<div markdown="1">
+
+- **Period**: 2024.12.30 ~ (진행중)
+- **Description**: 생각나는 좋은 아이디어들을 담아 제작한 Chrome Extension을 개발한 프로젝트입니다.
+    <h3>(1). Github_Summary</h3>
+    <h4 style="margin-bottom: 3%;">[ 2024.12.30 ~ (진행중) ]</h4>
+    <p align="center">
+        <img src="../../../../assets/images/profile/스크린샷 2025-01-07 오후 4.07.56.png" alt="" style="width: 60%; border-radius: 7px;">
+        <img src="../../../../assets/images/profile/스크린샷 2025-01-07 오후 4.08.28.png" alt="" style="width: 20%; border-radius: 7px;">
+    </p>
+    - OpenAI API를 활용하여, 접속한 Github Repository 및 Code를 자동으로 요약해주는 Extension입니다.
+
+<br>
+
+- **Tech Stack**: Vanila JS, Javascript, API
+- **Result**: Chrome Extension 웹스토어 등록 대기 중...
 
 </div>
 </details>
