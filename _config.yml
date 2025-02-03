@@ -101,8 +101,10 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "GitHub of Hoooon22":
+  "💾 GitHub of Hoooon22":
     - "https://github.com/Hoooon22"
+  "💻 Dev Space - Devzip":
+    - "https://devzip.site"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
@@ -113,8 +115,10 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # External navigation links
 nav_external_links:
-  - title: GitHub of Hoooon22
+  - title: 💾 GitHub of Hoooon22
     url: https://github.com/Hoooon22
+  - title: 💻 Dev Space - Devzip
+    url: https://devzip.site
 
 # Footer content
 # appears at the bottom of every page's main content
