@@ -99,3 +99,5 @@ B. Amazon Simple Email Service(Amazon SES)를 사용하여 이메일 알림을 �
 ### 정답 (X, 오답: (A))
 B. PutObject API 작업을 호출할 때 x-amz-server-side-encryption 헤더를 설정합니다.
     
+
+- 이 이후는, 자체 풀이로,,,
