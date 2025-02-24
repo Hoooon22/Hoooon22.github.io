@@ -52,7 +52,7 @@ Web & Server Delveloper
 
 [![Tech Blog Badge](http://img.shields.io/badge/-Tech%20blog-black?style=flat-square&logo=github&link=https://congruous-wildebeest-c9e.notion.site/About-ca6a656d65884dc1bbdef99b6b1a652e/)](https://hoooon22.github.io/)
 [![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:momo990305@gmail.com)](mailto:momo990305@gmail.com)
-[![Develop Web](https://img.shields.io/badge/🚀%20𝗗𝗘𝗩𝗘𝗟𝗢𝗣_𝗪𝗘𝗕-brightblue?style=for-the-badge&logo=appveyor&logoColor=white)](https://devzip.site) 👈
+[![Develop Web](https://img.shields.io/badge/🚀%25𝗗𝗘𝗩𝗘𝗟𝗢𝗣_𝗪𝗘𝗕-brightblue?style=for-the-badge&logo=appveyor&logoColor=white)](https://devzip.site) 👈
 
 ---
 <h1 style="color:midnightblue; margin-top: -2%; font-weight:bold;">Tech Stack</h1>
