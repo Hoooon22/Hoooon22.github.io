@@ -249,7 +249,6 @@ permalink: /
   </div>
 </div>
 
-<!-- 나머지 프로젝트는 계속해서 추가합니다 -->
 <!-- project 4 -->
 <div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
   <div style="height: 10px; background: linear-gradient(to right, #9b59b6, #8e44ad); width: 100%;"></div>
@@ -276,6 +275,108 @@ permalink: /
           GitHub
         </span>
       </a>
+    </div>
+  </div>
+</div>
+
+<!-- project 5 -->
+<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
+  <div style="height: 10px; background: linear-gradient(to right, #27ae60, #2ecc71); width: 100%;"></div>
+  <div style="padding: 20px;">
+    <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">동국대학교 C언어 프로그래밍 교안 제작</h3>
+    <div style="display: flex; margin: 15px 0;">
+      <div style="background-color: #eafaf1; color: #27ae60; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; margin-right: 10px;">2019-2020</div>
+      <div style="background-color: #eafaf1; color: #27ae60; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">교육자료</div>
+    </div>
+    <div style="display: flex; justify-content: center; margin: 15px 0;">
+      <img src="../../../../assets/images/profile/스크린샷 2022-10-28 오후 7.28.28.png" alt="" style="max-width: 70%; border-radius: 10px; transition: transform 0.3s ease;">
+    </div>
+    <p style="color: #7f8c8d; font-size: 0.95rem; line-height: 1.5;">동국대학교의 이공계 학생들을 위한 문제풀이 중심의 C언어 프로그래밍 교안 제작. Project1-주기율표 계산 프로그램 구현.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px;">
+      <span style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">C언어</span>
+      <span style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">프로그래밍 기초</span>
+      <span style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">교육</span>
+    </div>
+  </div>
+</div>
+
+<!-- project 6 -->
+<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
+  <div style="height: 10px; background: linear-gradient(to right, #16a085, #1abc9c); width: 100%;"></div>
+  <div style="padding: 20px;">
+    <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">시각장애인을 위한 스마트 점자 패널</h3>
+    <div style="display: flex; margin: 15px 0;">
+      <div style="background-color: #e8f6f3; color: #16a085; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; margin-right: 10px;">2019</div>
+      <div style="background-color: #e8f6f3; color: #16a085; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">연구</div>
+    </div>
+    <div style="display: flex; justify-content: center; gap: 10px; margin: 15px 0;">
+      <img src="../../../../assets/images/profile/스크린샷 2022-10-28 오후 7.22.58.png" alt="" style="max-width: 45%; border-radius: 10px; transition: transform 0.3s ease;">
+      <img src="../../../../assets/images/profile/스크린샷 2022-10-28 오후 7.23.25.png" alt="" style="max-width: 45%; border-radius: 10px; transition: transform 0.3s ease;">
+    </div>
+    <p style="color: #7f8c8d; font-size: 0.95rem; line-height: 1.5;">시각장애인의 스마트폰을 통한 정보접근성 향상을 위한 '스마트 점자 패널' 설계. 스마트폰 음성이 아닌 점자를 이용한 정보 전달 방식.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px;">
+      <span style="background-color: #e8f6f3; color: #16a085; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">접근성</span>
+      <span style="background-color: #e8f6f3; color: #16a085; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">연구 논문</span>
+    </div>
+    <div style="margin-top: 20px; display: flex; gap: 10px;">
+      <a href="../../../../assets/files/김지훈_한국지능시스템학회논문.pdf" style="text-decoration: none; display: inline-block; background-color: #16a085; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">
+        <span style="display: flex; align-items: center; gap: 5px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><line x1="10" y1="9" x2="8" y2="9"></line></svg>
+          논문 보기
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- project 7 -->
+<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
+  <div style="height: 10px; background: linear-gradient(to right, #2980b9, #3498db); width: 100%;"></div>
+  <div style="padding: 20px;">
+    <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">스마트미러 청각장애인 구화훈련 앱</h3>
+    <div style="display: flex; margin: 15px 0;">
+      <div style="background-color: #ebf5fb; color: #2980b9; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; margin-right: 10px;">2020-2021</div>
+      <div style="background-color: #ebf5fb; color: #2980b9; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">앱 개발</div>
+    </div>
+    <div style="display: flex; justify-content: center; gap: 10px; margin: 15px 0;">
+      <img src="../../../../assets/images/profile/스크린샷 2022-10-28 오후 7.26.04.png" alt="" style="max-width: 45%; border-radius: 10px; transition: transform 0.3s ease;">
+      <img src="../../../../assets/images/profile/스크린샷 2022-10-28 오후 7.26.25.png" alt="" style="max-width: 45%; border-radius: 10px; transition: transform 0.3s ease;">
+    </div>
+    <p style="color: #7f8c8d; font-size: 0.95rem; line-height: 1.5;">스마트미러를 활용한 청각장애인 구화훈련 애플리케이션 개발. STT(Speech to Text) 알고리즘 기반 발음 교정 시스템.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px;">
+      <span style="background-color: #ebf5fb; color: #2980b9; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Android Studio</span>
+      <span style="background-color: #ebf5fb; color: #2980b9; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">STT</span>
+      <span style="background-color: #ebf5fb; color: #2980b9; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">접근성</span>
+    </div>
+    <div style="margin-top: 20px; display: flex; gap: 10px;">
+      <a href="../../../../assets/files/김지훈_한국지능시스템학회논문.pdf" style="text-decoration: none; display: inline-block; background-color: #2980b9; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">
+        <span style="display: flex; align-items: center; gap: 5px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><line x1="10" y1="9" x2="8" y2="9"></line></svg>
+          논문 보기
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- project 8 -->
+<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
+  <div style="height: 10px; background: linear-gradient(to right, #8e44ad, #9b59b6); width: 100%;"></div>
+  <div style="padding: 20px;">
+    <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">Chrome Extension 개발 - Github_Summary</h3>
+    <div style="display: flex; margin: 15px 0;">
+      <div style="background-color: #f4ecf7; color: #8e44ad; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; margin-right: 10px;">2024-현재</div>
+      <div style="background-color: #f4ecf7; color: #8e44ad; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">브라우저 확장</div>
+    </div>
+    <div style="display: flex; justify-content: center; gap: 10px; margin: 15px 0;">
+      <img src="../../../../assets/images/profile/스크린샷 2025-01-07 오후 4.07.56.png" alt="" style="max-width: 65%; border-radius: 10px; transition: transform 0.3s ease;">
+      <img src="../../../../assets/images/profile/스크린샷 2025-01-07 오후 4.08.28.png" alt="" style="max-width: 25%; border-radius: 10px; transition: transform 0.3s ease;">
+    </div>
+    <p style="color: #7f8c8d; font-size: 0.95rem; line-height: 1.5;">OpenAI API를 활용하여 접속한 Github Repository 및 Code를 자동으로 요약해주는 Chrome Extension 개발.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px;">
+      <span style="background-color: #f5eef8; color: #8e44ad; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Vanilla JS</span>
+      <span style="background-color: #f5eef8; color: #8e44ad; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Javascript</span>
+      <span style="background-color: #f5eef8; color: #8e44ad; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">OpenAI API</span>
     </div>
   </div>
 </div>
