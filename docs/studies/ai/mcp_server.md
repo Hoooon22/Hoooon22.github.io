@@ -3,6 +3,7 @@ layout: default
 title: AI 시대의 새로운 개발 패러다임 - MCP 서버
 parent: AI
 nav_order: 1
+date: 2025-04-06 19:47:50
 ---
 
 # AI 시대의 새로운 개발 패러다임: MCP(Model Control Protocol) 서버 이해하기
