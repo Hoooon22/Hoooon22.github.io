@@ -6,31 +6,37 @@ description: "Hoooon22 is logging..."
 permalink: /
 ---
 
-<h1 style="color:black; margin-top: 0; font-weight:bold;">Hoooon22</h1>
+<h1 style="color:black; margin-top: 0; font-weight:bold; font-size: 3rem;">Hoooon22</h1>
 {: .fs-9 }
 
-Web & Server Delveloper
+<span style="font-size: 1.5rem; background: linear-gradient(to right, #4776E6, #8E54E9); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Web & Server Developer</span>
 {: .fs-4 .fw-300 }
 
 ---
-<h1 style="color:darkslategray; margin-top: -2%; font-weight:bold;">Profile</h1>
+<h1 style="color:#2c3e50; margin-top: -2%; font-weight:bold; padding-bottom: 10px; border-bottom: 2px solid #3498db;">Profile</h1>
 
-<div style="display: flex; justify-content: space-around;">
-    <div style="width: 45%;">
-        <img src="../../../../assets/images/IMG_0675.JPG" alt="It's me!" style="width: 90%; border-radius: 7px;">
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px;">
+    <div style="width: 45%; min-width: 300px;">
+        <img src="../../../../assets/images/IMG_0675.JPG" alt="It's me!" style="width: 90%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
     </div>
-    <div style="width: 55%;">
-        <h2 style="margin-top: 0%"><strong>김지훈</strong></h2>
-        <p>웹 & 서버 개발자</p>
+    <div style="width: 55%; min-width: 300px;">
+        <h2 style="margin-top: 0%; color: #3498db;"><strong>김지훈</strong></h2>
+        <p style="font-size: 1.2rem; color: #7f8c8d;">웹 & 서버 개발자</p>
 
-        <h3>학력</h3>
-        <ul>
-            <li>동국대학교 컴퓨터공학과 (2018.03 ~ 2023.02)</li>
+        <h3 style="color: #2c3e50; border-left: 4px solid #3498db; padding-left: 10px;">학력</h3>
+        <ul style="list-style-type: none; padding-left: 0;">
+            <li style="margin-bottom: 5px; padding: 5px 0;">
+                <span style="background-color: #f8f9fa; padding: 5px 10px; border-radius: 5px; margin-right: 10px;">🎓</span>
+                동국대학교 컴퓨터공학과 (2018.03 ~ 2023.02)
+            </li>
         </ul>
 
-        <h3>기타</h3>
-        <ul>
-            <li>동국대학교 인간-로봇 상호작용 연구실 학부연구생 (2019.07 ~ 2021.04)</li>
+        <h3 style="color: #2c3e50; border-left: 4px solid #3498db; padding-left: 10px;">기타</h3>
+        <ul style="list-style-type: none; padding-left: 0;">
+            <li style="margin-bottom: 5px; padding: 5px 0;">
+                <span style="background-color: #f8f9fa; padding: 5px 10px; border-radius: 5px; margin-right: 10px;">🔬</span>
+                동국대학교 인간-로봇 상호작용 연구실 학부연구생 (2019.07 ~ 2021.04)
+            </li>
         </ul>
 
         <!-- <h3>경력</h3>
@@ -47,33 +53,114 @@ Web & Server Delveloper
     </div>
 </div>
 
-
-
-[![Tech Blog Badge](http://img.shields.io/badge/-Tech%20blog-black?style=flat-square&logo=github&link=https://congruous-wildebeest-c9e.notion.site/About-ca6a656d65884dc1bbdef99b6b1a652e/)](https://hoooon22.github.io/)
-[![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:momo990305@gmail.com)](mailto:momo990305@gmail.com)
-[![Develop Web](https://img.shields.io/badge/🚀%20𝗗𝗘𝗩𝗘𝗟𝗢𝗣_𝗪𝗘𝗕-brightblue?style=for-the-badge&logo=appveyor&logoColor=white)](https://devzip.site)
-
----
-<h1 style="color:midnightblue; margin-top: -2%; font-weight:bold;">Tech Stack</h1>
-
-<div style="width: 100%; padding-left: 20px; box-sizing: border-box;">
-    <ul style="list-style-type: none; padding-left: 0;">
-        <li><strong>Programming Languages:</strong> Java, C/C++</li>
-        <li><strong>Frameworks:</strong> SpringBoot, Node.js, React</li>
-        <li><strong>Web Technologies:</strong> HTML5, CSS, Javascript, ASP</li>
-        <li><strong>Databases:</strong> MySQL</li>
-        <li><strong>Version Control:</strong> Git</li>
-        <li><strong>PaaS/IaaS:</strong> AWS </li>
-        <li><strong>Operating Systems:</strong>: Linux </li>
-        <li><strong>Miscellaneous Tools/Platforms:</strong>: Unity </li >
-    </ul>
+<div style="display: flex; justify-content: center; margin-top: 30px; gap: 15px; flex-wrap: wrap;">
+    <a href="https://hoooon22.github.io/" style="text-decoration: none;">
+        <div style="background-color: #2c3e50; color: white; padding: 10px 15px; border-radius: 10px; display: flex; align-items: center; gap: 8px; transition: transform 0.3s ease;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            Tech Blog
+        </div>
+    </a>
+    <a href="mailto:momo990305@gmail.com" style="text-decoration: none;">
+        <div style="background-color: #d14836; color: white; padding: 10px 15px; border-radius: 10px; display: flex; align-items: center; gap: 8px; transition: transform 0.3s ease;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Gmail
+        </div>
+    </a>
+    <a href="https://devzip.site" style="text-decoration: none;">
+        <div style="background-color: #0077b5; color: white; padding: 10px 15px; border-radius: 10px; display: flex; align-items: center; gap: 8px; transition: transform 0.3s ease;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path d="M12 4v1.5M18 6l-1.1 1.1M20 12h-1.5M18 18l-1.1-1.1M12 20v-1.5M6 18l1.1-1.1M4 12h1.5M6 6l1.1 1.1"/></svg>
+            DEV ZIP
+        </div>
+    </a>
 </div>
 
+---
+<h1 style="color:#2c3e50; margin-top: -2%; font-weight:bold; padding-bottom: 10px; border-bottom: 2px solid #3498db;">Tech Stack</h1>
 
+<div style="background-color: #f8f9fa; border-radius: 15px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px;">
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <h3 style="color: #3498db; margin-top: 0; border-bottom: 1px solid #ecf0f1; padding-bottom: 8px;">
+                <span style="margin-right: 8px;">💻</span>Programming Languages
+            </h3>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="padding: 5px 0;">Java</li>
+                <li style="padding: 5px 0;">C/C++</li>
+            </ul>
+        </div>
+        
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <h3 style="color: #3498db; margin-top: 0; border-bottom: 1px solid #ecf0f1; padding-bottom: 8px;">
+                <span style="margin-right: 8px;">🛠️</span>Frameworks
+            </h3>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="padding: 5px 0;">SpringBoot</li>
+                <li style="padding: 5px 0;">Node.js</li>
+                <li style="padding: 5px 0;">React</li>
+            </ul>
+        </div>
 
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <h3 style="color: #3498db; margin-top: 0; border-bottom: 1px solid #ecf0f1; padding-bottom: 8px;">
+                <span style="margin-right: 8px;">🌐</span>Web Technologies
+            </h3>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="padding: 5px 0;">HTML5</li>
+                <li style="padding: 5px 0;">CSS</li>
+                <li style="padding: 5px 0;">Javascript</li>
+                <li style="padding: 5px 0;">ASP</li>
+            </ul>
+        </div>
+
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <h3 style="color: #3498db; margin-top: 0; border-bottom: 1px solid #ecf0f1; padding-bottom: 8px;">
+                <span style="margin-right: 8px;">🗃️</span>Databases
+            </h3>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="padding: 5px 0;">MySQL</li>
+            </ul>
+        </div>
+
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <h3 style="color: #3498db; margin-top: 0; border-bottom: 1px solid #ecf0f1; padding-bottom: 8px;">
+                <span style="margin-right: 8px;">🔄</span>Version Control
+            </h3>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="padding: 5px 0;">Git</li>
+            </ul>
+        </div>
+
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <h3 style="color: #3498db; margin-top: 0; border-bottom: 1px solid #ecf0f1; padding-bottom: 8px;">
+                <span style="margin-right: 8px;">☁️</span>Cloud Services
+            </h3>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="padding: 5px 0;">AWS</li>
+            </ul>
+        </div>
+
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <h3 style="color: #3498db; margin-top: 0; border-bottom: 1px solid #ecf0f1; padding-bottom: 8px;">
+                <span style="margin-right: 8px;">💿</span>Operating Systems
+            </h3>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="padding: 5px 0;">Linux</li>
+            </ul>
+        </div>
+
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <h3 style="color: #3498db; margin-top: 0; border-bottom: 1px solid #ecf0f1; padding-bottom: 8px;">
+                <span style="margin-right: 8px;">🎮</span>Miscellaneous
+            </h3>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="padding: 5px 0;">Unity</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 ---
-<h1 style="color:maroon; margin-top: -2%; font-weight:bold;">Projects</h1>
+<h1 style="color:#2c3e50; margin-top: -2%; font-weight:bold; padding-bottom: 10px; border-bottom: 2px solid #3498db;">Projects</h1>
 
 <!-- project 1 -->
 <details style="margin-top: 3%; margin-bottom: 3%; border-radius: 7px; border: 0.1px solid black; padding: 10px;">
@@ -216,7 +303,7 @@ Web & Server Delveloper
 </p>
 
 - **Period**: 2019.09.01 ~ 2019.11.02 (약 3개월 간)
-- **Description**: 시각장애인 의 스마트폰을 통한 정보접근성 향상을 위해‘스마트 점자 패널'을 설계하고 논문으로 발표하였습니다. 스마트폰으로 인한 시각장애인과 비장애인의 정보격차를 줄이기 위한 기술로, 스마트폰의 음성이 아닌 본 기술의 점자를 이용하여 스마트폰의 정보를 전달할 수 있게 설계하였습니다.
+- **Description**: 시각장애인 의 스마트폰을 통한 정보접근성 향상을 위해'스마트 점자 패널'을 설계하고 논문으로 발표하였습니다. 스마트폰으로 인한 시각장애인과 비장애인의 정보격차를 줄이기 위한 기술로, 스마트폰의 음성이 아닌 본 기술의 점자를 이용하여 스마트폰의 정보를 전달할 수 있게 설계하였습니다.
 - **Tech Stack**: 논문 주 저자, 아이디어 제시 및 논문 발표
 - **Result**: 2019 한국지능시스템학회 추계학술대회 논문 게시
 
