@@ -3,13 +3,13 @@ layout: default
 title: TraceBoard 프론트엔드 및 백엔드 연동 구현
 parent: 사이드 프로젝트 - DevZip
 grand_parent: Projects
-date: 2025-04-06 11:04:23
+date: 2025-04-09 20:10:49 
 ---
 
 # TraceBoard 개발 과정 _01
 {: .no_toc }
 
-## 2025.04.06 (SAT)
+## 2025.04.09 (WED)
 {: .no_toc .text-delta }
 
 ---
