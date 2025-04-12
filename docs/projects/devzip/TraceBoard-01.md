@@ -305,7 +305,46 @@ spring.web.resources.chain.strategy.content.enabled=true
 spring.web.resources.chain.strategy.content.paths=/**
 ```
 
-### 3.3 더미 데이터 테스트
+### 3.3 실제 이벤트 데이터 수집 및 분석
+
+백엔드와의 연동 테스트가 성공적으로 이루어지고 있습니다. 현재까지 수집된 실제 이벤트 데이터의 일부는 다음과 같습니다:
+
+```json
+{
+  "osDistribution": {
+    "MacOS": 13
+  },
+  "totalEvents": 13,
+  "pageViewDistribution": {},
+  "hourlyDistribution": {
+    "8시": 13
+  },
+  "eventTypeDistribution": {
+    "click": 1,
+    "pageView": 12
+  },
+  "browserDistribution": {
+    "Chrome": 13
+  },
+  "deviceDistribution": {
+    "desktop": 13
+  }
+}
+```
+
+#### 데이터 분석
+
+현재 수집된 데이터를 분석한 결과:
+
+1. **이벤트 유형 분포**: 총 13개의 이벤트 중 12개는 페이지 뷰(pageView), 1개는 클릭(click) 이벤트입니다.
+2. **운영체제 분포**: 모든 이벤트(13개)가 MacOS에서 발생했습니다.
+3. **브라우저 분포**: 모든 이벤트가 Chrome 브라우저에서 발생했습니다.
+4. **기기 유형**: 모든 이벤트가 데스크톱 환경에서 발생했습니다.
+5. **시간대별 분포**: 모든 이벤트가 8시대에 발생했습니다.
+
+이 데이터는 초기 테스트 단계에서 수집된 것으로, 실제 서비스 환경에서는 더 다양한 사용자와 기기에서 발생하는 이벤트를 분석할 수 있을 것입니다.
+
+### 3.4 더미 데이터 테스트
 
 현재는 백엔드 API가 완전히 구현되지 않아 50개의 샘플 이벤트 로그 데이터로 프론트엔드 기능을 테스트하고 있습니다:
 
