@@ -421,7 +421,147 @@ GitHub Actions에서 발생한 빌드 실패 문제를 디버깅하고 해결했
 3. WebController SPA 라우팅 설정 개선
 4. application.properties 파일에 리소스 체인 전략 설정 추가
 
-## 6. 다음 단계 계획
+## 6. 발견된 추가 문제점 및 해결 방안
+
+### 6.1 데이터 렌더링 문제
+
+**문제**: 백엔드에서 이벤트 로그가 정상적으로 저장되고 데이터를 가져오는 것까지는 성공했으나, 프론트엔드 화면에 데이터가 표시되지 않는 문제가 발생했습니다.
+
+콘솔 로그에서는 다음과 같이 데이터가 정상적으로 불러와지는 것을 확인할 수 있습니다:
+```
+페이지 뷰 이벤트 전송: /traceboard
+App.js:29 트레이스보드 트래커가 초기화되었습니다.
+index.js:150 서버에서 데이터를 성공적으로 가져왔습니다: 
+Object
+index.js:150 서버에서 데이터를 성공적으로 가져왔습니다: 
+{osDistribution: {…}, totalEvents: 13, pageViewDistribution: {…}, hourlyDistribution: {…}, eventTypeDistribution: {…}, …}
+```
+
+**원인 분석**:
+1. 데이터 형식 불일치: 백엔드에서 받아온 데이터 구조와 프론트엔드 컴포넌트가 기대하는 데이터 구조가 일치하지 않는 문제
+2. 상태 관리 문제: 데이터를 성공적으로 가져왔으나 React 컴포넌트의 상태로 올바르게 설정되지 않는 문제
+3. 렌더링 타이밍 이슈: 비동기 데이터 로딩과 컴포넌트 렌더링 타이밍 문제
+
+**해결 방안**:
+
+1. **데이터 매핑 함수 추가**:
+   백엔드에서 받아온 데이터를 프론트엔드 컴포넌트가 이해할 수 있는 형식으로 변환하는 매핑 함수를 구현합니다.
+
+```jsx
+// 백엔드 데이터를 프론트엔드 컴포넌트용 형식으로 변환
+const mapAnalyticsData = (backendData) => {
+  // 방문자 지표 데이터 매핑
+  const visitorMetrics = {
+    totalVisitors: backendData.totalEvents || 0,
+    uniqueVisitors: Object.values(backendData.deviceDistribution || {}).reduce((a, b) => a + b, 0),
+    pageViews: (backendData.eventTypeDistribution || {}).pageView || 0,
+    bounceRate: "0%" // 추후 계산 로직 추가 예정
+  };
+  
+  // 시간대별 데이터 매핑
+  const behaviorData = Object.entries(backendData.hourlyDistribution || {}).map(([time, count]) => ({
+    time,
+    clicks: (backendData.eventTypeDistribution || {}).click || 0,
+    pageviews: (backendData.eventTypeDistribution || {}).pageView || 0
+  }));
+  
+  // 이벤트 로그 매핑 (상세 로그 데이터는 아직 제공되지 않음)
+  const dummyLogs = generateDummyLogs(5); // 임시 더미 데이터 사용
+  
+  return {
+    visitorMetrics,
+    behaviorData,
+    eventLogs: dummyLogs
+  };
+};
+```
+
+2. **조건부 렌더링 개선**:
+   데이터 로딩 상태를 명확하게 처리하고 데이터가 없는 경우에 대한 대체 UI를 제공합니다.
+
+```jsx
+// Dashboard 컴포넌트 내부
+const [loading, setLoading] = useState(true);
+const [error, setError] = useState(null);
+const [dashboardData, setDashboardData] = useState(null);
+
+useEffect(() => {
+  const fetchData = async () => {
+    try {
+      setLoading(true);
+      const response = await fetch('/api/traceboard/analytics');
+      const data = await response.json();
+      console.log('서버에서 데이터를 성공적으로 가져왔습니다:', data);
+      
+      // 데이터 매핑 함수 적용
+      const mappedData = mapAnalyticsData(data);
+      setDashboardData(mappedData);
+      setError(null);
+    } catch (err) {
+      console.error('데이터 로딩 중 오류 발생:', err);
+      setError('데이터를 불러오는 데 실패했습니다. 잠시 후 다시 시도해주세요.');
+    } finally {
+      setLoading(false);
+    }
+  };
+  
+  fetchData();
+}, []);
+
+// 렌더링 부분
+return (
+  <DashboardContainer>
+    <h1>TraceBoard 대시보드</h1>
+    
+    {loading && <LoadingSpinner />}
+    
+    {error && <ErrorMessage>{error}</ErrorMessage>}
+    
+    {!loading && !error && dashboardData && (
+      <>
+        <VisitorMetrics metrics={dashboardData.visitorMetrics} />
+        <UserBehaviorChart behaviorData={dashboardData.behaviorData} />
+        <EventLogTable logs={dashboardData.eventLogs} />
+      </>
+    )}
+  </DashboardContainer>
+);
+```
+
+3. **디버깅 도구 추가**:
+   개발 과정에서 데이터 흐름을 더 쉽게 추적할 수 있도록 디버깅 컴포넌트를 추가합니다.
+
+```jsx
+// 개발 환경에서만 표시되는 디버그 패널
+const DebugPanel = ({ data }) => {
+  if (process.env.NODE_ENV !== 'development') return null;
+  
+  return (
+    <div style={{ 
+      padding: '10px', 
+      background: '#f0f0f0', 
+      border: '1px solid #ddd',
+      borderRadius: '4px',
+      marginTop: '20px'
+    }}>
+      <h4>디버그 정보</h4>
+      <pre>{JSON.stringify(data, null, 2)}</pre>
+    </div>
+  );
+};
+
+// 메인 컴포넌트에 추가
+{!loading && !error && (
+  <DebugPanel data={{ 
+    original: data, 
+    mapped: dashboardData 
+  }} />
+)}
+```
+
+이 해결 방안을 적용하여 데이터 로딩부터 렌더링까지의 모든 과정을 개선할 예정입니다. 다음 개발 세션에서는 이 문제를 우선적으로 해결하여 시각화 컴포넌트가 실시간 데이터를 제대로 표시할 수 있도록 하겠습니다.
+
+## 7. 다음 단계 계획
 
 다음 단계로는 아래 작업들을 진행할 예정입니다:
 
@@ -430,7 +570,7 @@ GitHub Actions에서 발생한 빌드 실패 문제를 디버깅하고 해결했
 - [ ] 이벤트 수집 SDK 개발 및 배포
 - [ ] 테스트 페이지에 SDK 적용하여 실제 데이터 수집 테스트
 
-## 7. 마일스톤
+## 8. 마일스톤
 
 현재까지의 진행 상황은 다음과 같습니다:
 
@@ -441,7 +581,7 @@ GitHub Actions에서 발생한 빌드 실패 문제를 디버깅하고 해결했
 - [ ] 실제 데이터 연동
 - [ ] SDK 배포
 
-## 8. 참고 자료
+## 9. 참고 자료
 
 - [React 공식 문서](https://reactjs.org/docs/getting-started.html)
 - [Spring Boot 정적 리소스 설정](https://docs.spring.io/spring-boot/docs/current/reference/html/web.html#web.servlet.spring-mvc.static-content)
