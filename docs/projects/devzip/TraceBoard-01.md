@@ -434,72 +434,115 @@ App.js:29 트레이스보드 트래커가 초기화되었습니다.
 index.js:150 서버에서 데이터를 성공적으로 가져왔습니다: 
 Object
 index.js:150 서버에서 데이터를 성공적으로 가져왔습니다: 
-{osDistribution: {…}, totalEvents: 13, pageViewDistribution: {…}, hourlyDistribution: {…}, eventTypeDistribution: {…}, …}
+{osDistribution: {…}, totalEvents: 22, pageViewDistribution: {…}, hourlyDistribution: {…}, eventTypeDistribution: {…}, …}
+```
+
+화면에는 "데이터가 없습니다. 선택한 기간 동안 기록된 이벤트가 없습니다. 다른 기간을 선택하거나 나중에 다시 확인해 주세요." 메시지만 표시되고 있습니다.
+
+또한 개발자 도구에서는 다음과 같은 오류가 발견되었습니다:
+```
+Error with Permissions-Policy header: Unrecognized feature: 'browsing-topics'.
+RouteTracker.js:17 페이지 접속: /traceboard
+App.js:29 트레이스보드 트래커가 초기화되었습니다.
 ```
 
 **원인 분석**:
 1. 데이터 형식 불일치: 백엔드에서 받아온 데이터 구조와 프론트엔드 컴포넌트가 기대하는 데이터 구조가 일치하지 않는 문제
 2. 상태 관리 문제: 데이터를 성공적으로 가져왔으나 React 컴포넌트의 상태로 올바르게 설정되지 않는 문제
-3. 렌더링 타이밍 이슈: 비동기 데이터 로딩과 컴포넌트 렌더링 타이밍 문제
+3. 렌더링 조건 문제: 데이터가 있음에도 조건부 렌더링이 잘못 적용되어 "데이터가 없습니다" 메시지가 표시되는 문제
+4. 권한 정책 오류: 'browsing-topics' 기능과 관련된 Permissions-Policy 헤더 오류가 발생하여 데이터 처리에 영향을 미치는 문제
 
 **해결 방안**:
 
-1. **데이터 매핑 함수 추가**:
-   백엔드에서 받아온 데이터를 프론트엔드 컴포넌트가 이해할 수 있는 형식으로 변환하는 매핑 함수를 구현합니다.
+1. **데이터 매핑 함수 수정**:
+   백엔드에서 받아온 데이터를 프론트엔드 컴포넌트가 이해할 수 있는 형식으로 변환하는 매핑 함수를 개선합니다.
 
 ```jsx
 // 백엔드 데이터를 프론트엔드 컴포넌트용 형식으로 변환
 const mapAnalyticsData = (backendData) => {
+  if (!backendData || typeof backendData !== 'object') {
+    console.error('유효하지 않은 데이터 형식:', backendData);
+    return null;
+  }
+  
   // 방문자 지표 데이터 매핑
   const visitorMetrics = {
     totalVisitors: backendData.totalEvents || 0,
     uniqueVisitors: Object.values(backendData.deviceDistribution || {}).reduce((a, b) => a + b, 0),
-    pageViews: (backendData.eventTypeDistribution || {}).pageView || 0,
+    pageViews: ((backendData.eventTypeDistribution || {}).pageView || 0) + ((backendData.eventTypeDistribution || {}).pageview || 0), // 대소문자 고려
     bounceRate: "0%" // 추후 계산 로직 추가 예정
   };
   
-  // 시간대별 데이터 매핑
-  const behaviorData = Object.entries(backendData.hourlyDistribution || {}).map(([time, count]) => ({
-    time,
-    clicks: (backendData.eventTypeDistribution || {}).click || 0,
-    pageviews: (backendData.eventTypeDistribution || {}).pageView || 0
-  }));
+  // 시간대별 데이터 매핑 - 빈 배열이 아닌지 확인
+  const hourlyData = Object.entries(backendData.hourlyDistribution || {});
+  const behaviorData = hourlyData.length > 0 
+    ? hourlyData.map(([time, count]) => ({
+        time,
+        clicks: (backendData.eventTypeDistribution || {}).click || 0,
+        pageviews: ((backendData.eventTypeDistribution || {}).pageView || 0) + ((backendData.eventTypeDistribution || {}).pageview || 0)
+      }))
+    : [{ time: '데이터 없음', clicks: 0, pageviews: 0 }]; // 기본값 제공
   
-  // 이벤트 로그 매핑 (상세 로그 데이터는 아직 제공되지 않음)
-  const dummyLogs = generateDummyLogs(5); // 임시 더미 데이터 사용
+  // 이벤트 로그 매핑 (상세 로그 데이터가 없는 경우 더미 데이터 사용)
+  let eventLogs = [];
+  if (backendData.events && Array.isArray(backendData.events) && backendData.events.length > 0) {
+    eventLogs = backendData.events.map(event => ({
+      timestamp: event.timestamp || new Date().toISOString(),
+      eventType: event.type || 'unknown',
+      userId: event.userId || 'anonymous',
+      url: event.url || '/',
+      details: JSON.stringify(event.details || {})
+    }));
+  } else {
+    // 최소 5개의 더미 데이터 생성
+    eventLogs = generateDummyLogs(5);
+  }
+  
+  console.log('매핑된 데이터:', { visitorMetrics, behaviorData, eventLogs });
   
   return {
     visitorMetrics,
     behaviorData,
-    eventLogs: dummyLogs
+    eventLogs,
+    hasData: visitorMetrics.totalVisitors > 0 || behaviorData.some(d => d.pageviews > 0 || d.clicks > 0)
   };
 };
 ```
 
-2. **조건부 렌더링 개선**:
-   데이터 로딩 상태를 명확하게 처리하고 데이터가 없는 경우에 대한 대체 UI를 제공합니다.
+2. **조건부 렌더링 로직 개선**:
+   데이터 존재 여부를 더 정확하게 확인하고, 빈 데이터에 대한 처리를 개선합니다.
 
 ```jsx
 // Dashboard 컴포넌트 내부
 const [loading, setLoading] = useState(true);
 const [error, setError] = useState(null);
 const [dashboardData, setDashboardData] = useState(null);
+const [dataExists, setDataExists] = useState(false);
 
 useEffect(() => {
   const fetchData = async () => {
     try {
       setLoading(true);
       const response = await fetch('/api/traceboard/analytics');
+      
+      if (!response.ok) {
+        throw new Error(`API 오류: ${response.status} ${response.statusText}`);
+      }
+      
       const data = await response.json();
       console.log('서버에서 데이터를 성공적으로 가져왔습니다:', data);
       
       // 데이터 매핑 함수 적용
       const mappedData = mapAnalyticsData(data);
       setDashboardData(mappedData);
+      
+      // 실제 데이터 존재 여부 확인
+      setDataExists(mappedData && mappedData.hasData);
       setError(null);
     } catch (err) {
       console.error('데이터 로딩 중 오류 발생:', err);
       setError('데이터를 불러오는 데 실패했습니다. 잠시 후 다시 시도해주세요.');
+      setDataExists(false);
     } finally {
       setLoading(false);
     }
@@ -513,53 +556,149 @@ return (
   <DashboardContainer>
     <h1>TraceBoard 대시보드</h1>
     
+    <TimeRangeSelector 
+      onRangeChange={handleTimeRangeChange} 
+      selectedRange={selectedTimeRange}
+    />
+    
     {loading && <LoadingSpinner />}
     
     {error && <ErrorMessage>{error}</ErrorMessage>}
     
-    {!loading && !error && dashboardData && (
+    {!loading && !error && dataExists && dashboardData && (
       <>
         <VisitorMetrics metrics={dashboardData.visitorMetrics} />
         <UserBehaviorChart behaviorData={dashboardData.behaviorData} />
         <EventLogTable logs={dashboardData.eventLogs} />
       </>
     )}
+    
+    {!loading && !error && !dataExists && (
+      <NoDataMessage>
+        <EmptyStateIcon />
+        <h3>데이터가 없습니다</h3>
+        <p>선택한 기간 동안 기록된 이벤트가 없습니다. 다른 기간을 선택하거나 나중에 다시 확인해 주세요.</p>
+      </NoDataMessage>
+    )}
   </DashboardContainer>
 );
 ```
 
-3. **디버깅 도구 추가**:
-   개발 과정에서 데이터 흐름을 더 쉽게 추적할 수 있도록 디버깅 컴포넌트를 추가합니다.
+3. **권한 정책 헤더 문제 해결**:
+   Permissions-Policy 헤더 오류를 해결하기 위해 Spring 서버 설정을 수정합니다.
+
+```java
+// SecurityConfig.java 또는 WebConfig.java에 추가
+@Configuration
+public class WebConfig implements WebMvcConfigurer {
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(new HandlerInterceptor() {
+            @Override
+            public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
+                // browsing-topics 기능을 제외한 Permissions-Policy 설정
+                response.setHeader("Permissions-Policy", 
+                    "accelerometer=(), autoplay=(), camera=(), display-capture=(), " +
+                    "encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), " +
+                    "microphone=(), midi=(), payment=(), usb=()");
+                return true;
+            }
+        }).addPathPatterns("/**");
+    }
+}
+```
+
+4. **데이터 초기화 및 정리 로직 추가**:
+   컴포넌트 마운트/언마운트 시 데이터를 적절히 처리하는 로직을 추가합니다.
 
 ```jsx
-// 개발 환경에서만 표시되는 디버그 패널
-const DebugPanel = ({ data }) => {
+// 컴포넌트 마운트/언마운트 처리
+useEffect(() => {
+  // 컴포넌트 마운트 시 초기 데이터 로드
+  fetchData();
+  
+  // 5분마다 데이터 갱신
+  const intervalId = setInterval(fetchData, 5 * 60 * 1000);
+  
+  // 컴포넌트 언마운트 시 리소스 정리
+  return () => {
+    clearInterval(intervalId);
+    // 필요시 상태 초기화
+    setDashboardData(null);
+    setDataExists(false);
+  };
+}, []);
+```
+
+5. **디버깅 도구 확장**:
+   더 상세한 디버깅을 위해 개발 환경에서 사용할 수 있는 향상된 디버그 패널을 구현합니다.
+
+```jsx
+// 개발 환경에서만 표시되는 강화된 디버그 패널
+const EnhancedDebugPanel = ({ data, api, state }) => {
+  const [expanded, setExpanded] = useState(false);
+  
   if (process.env.NODE_ENV !== 'development') return null;
   
   return (
-    <div style={{ 
-      padding: '10px', 
-      background: '#f0f0f0', 
-      border: '1px solid #ddd',
-      borderRadius: '4px',
-      marginTop: '20px'
-    }}>
-      <h4>디버그 정보</h4>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
-    </div>
+    <DebugContainer>
+      <DebugHeader onClick={() => setExpanded(!expanded)}>
+        디버그 정보 {expanded ? '▼' : '▶'}
+      </DebugHeader>
+      
+      {expanded && (
+        <DebugContent>
+          <DebugSection>
+            <h4>API 응답 데이터</h4>
+            <pre>{JSON.stringify(api, null, 2)}</pre>
+          </DebugSection>
+          
+          <DebugSection>
+            <h4>변환된 데이터</h4>
+            <pre>{JSON.stringify(data, null, 2)}</pre>
+          </DebugSection>
+          
+          <DebugSection>
+            <h4>컴포넌트 상태</h4>
+            <pre>{JSON.stringify(state, null, 2)}</pre>
+          </DebugSection>
+          
+          <DebugActions>
+            <button onClick={() => console.log('원본 API 데이터:', api)}>콘솔에 API 데이터 출력</button>
+            <button onClick={() => console.log('변환된 데이터:', data)}>콘솔에 변환 데이터 출력</button>
+          </DebugActions>
+        </DebugContent>
+      )}
+    </DebugContainer>
   );
 };
 
+// 스타일 컴포넌트 정의
+const DebugContainer = styled.div`
+  margin-top: 30px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #f8f8f8;
+`;
+
 // 메인 컴포넌트에 추가
-{!loading && !error && (
-  <DebugPanel data={{ 
-    original: data, 
-    mapped: dashboardData 
-  }} />
+{process.env.NODE_ENV === 'development' && !loading && (
+  <EnhancedDebugPanel 
+    api={originalApiData} 
+    data={dashboardData} 
+    state={{ loading, error, dataExists }}
+  />
 )}
 ```
 
-이 해결 방안을 적용하여 데이터 로딩부터 렌더링까지의 모든 과정을 개선할 예정입니다. 다음 개발 세션에서는 이 문제를 우선적으로 해결하여 시각화 컴포넌트가 실시간 데이터를 제대로 표시할 수 있도록 하겠습니다.
+이러한 개선사항을 적용하면 다음과 같은 효과를 기대할 수 있습니다:
+
+1. 백엔드에서 제공하는 다양한 데이터 형식에 더 강건하게 대응
+2. 데이터 존재 여부를 정확하게 판단하여 적절한 UI 표시
+3. 권한 정책 관련 오류 제거로 브라우저 호환성 향상
+4. 개발 중 문제 원인 파악이 용이해짐
+
+다음 개발 세션에서는 이 해결 방안들을 구현하고 실제 환경에서 테스트하여 데이터 시각화가 정상적으로 이루어지도록 하겠습니다.
 
 ## 7. 다음 단계 계획
 
