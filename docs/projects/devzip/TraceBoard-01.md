@@ -950,6 +950,82 @@ const EnhancedDebugPanel = ({ api, data, state, onForceRefresh }) => {
 - [ ] 이벤트 수집 SDK 개발 및 배포
 - [ ] 테스트 페이지에 SDK 적용하여 실제 데이터 수집 테스트
 
+### 7.1 데이터 처리 보안 정책 구현
+
+데이터 처리와 관련하여 다음과 같은 보안 정책을 구현할 예정입니다:
+
+#### 사용자 IP 처리 방식
+1. **데이터베이스 저장**: 원본 IP 주소를 그대로 데이터베이스에 저장하여 정확한 분석 및 필요시 사용자 추적 가능하도록 유지
+2. **프론트엔드 전송**: 프론트엔드로 데이터 전송 시 IP 주소를 해시 처리하거나 일부 마스킹 처리하여 개인정보 보호
+3. **접근 제어**: 원본 IP 데이터에 대한 접근 권한을 관리자 계정으로 제한
+
+아래는 IP 주소 처리 관련 백엔드 코드 구현 예시입니다:
+
+```java
+// EventService.java
+@Service
+public class EventService {
+    // IP 주소 저장 시 그대로 저장
+    public void saveEvent(EventDto eventDto) {
+        String originalIp = eventDto.getIpAddress();
+        // IP 주소를 그대로 데이터베이스에 저장
+        EventEntity event = new EventEntity();
+        event.setIpAddress(originalIp);
+        // 기타 필드 설정
+        eventRepository.save(event);
+    }
+    
+    // 프론트엔드로 전송 시 마스킹 처리
+    public List<EventDto> getEventsForFrontend() {
+        List<EventEntity> events = eventRepository.findAll();
+        return events.stream()
+            .map(event -> {
+                EventDto dto = mapToDto(event);
+                // IP 주소 마스킹 처리
+                dto.setIpAddress(maskIpAddress(event.getIpAddress()));
+                return dto;
+            })
+            .collect(Collectors.toList());
+    }
+    
+    // IP 주소 마스킹 처리 (예: 192.168.1.1 -> 192.168.x.x)
+    private String maskIpAddress(String ip) {
+        if (ip == null || ip.isEmpty()) {
+            return "unknown";
+        }
+        
+        String[] parts = ip.split("\\.");
+        if (parts.length == 4) { // IPv4
+            return parts[0] + "." + parts[1] + ".x.x";
+        } else if (ip.contains(":")) { // IPv6
+            // IPv6 마스킹 로직
+            return ip.substring(0, ip.length() / 2) + ":xxxx:xxxx";
+        }
+        
+        return "masked-ip";
+    }
+    
+    // 관리자용 - 원본 IP 포함 데이터 조회
+    @PreAuthorize("hasRole('ADMIN')")
+    public List<EventDto> getEventsForAdmin() {
+        List<EventEntity> events = eventRepository.findAll();
+        return events.stream()
+            .map(this::mapToDto)
+            .collect(Collectors.toList());
+    }
+}
+```
+
+#### IP 기반 분석 기능
+
+IP 주소 원본 데이터를 DB에 저장함으로써 다음과 같은 고급 분석 기능을 구현할 수 있습니다:
+
+1. 지역별 방문자 분포 분석 (GeoIP 데이터베이스 활용)
+2. 비정상적인 접근 패턴 감지 (동일 IP에서의 과도한 요청 등)
+3. 방화벽 정책 수립을 위한 데이터 수집
+
+다만, 이러한 데이터 수집 및 저장은 관련 개인정보보호법과 GDPR 등의 규정을 준수하며 진행할 예정입니다.
+
 ## 8. 마일스톤
 
 현재까지의 진행 상황은 다음과 같습니다:
