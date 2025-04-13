@@ -16,7 +16,8 @@ date: 2025-04-14 00:53:54
 
 > 💡 **TL;DR**: 트레이스보드는 DevZip 플랫폼의 웹 분석 도구로, 구글 애널리틱스보다 가볍고 개발자 친화적인 인터페이스를 제공합니다. 몇 줄의 코드로 설치 가능하며 사용자 행동을 실시간으로 추적하고 개인정보 보호 규정을 준수합니다.
 
-![트레이스보드 대시보드 화면](../../../../assets/images/devzip/screencapture-devzip-site-traceboard-2025-04-14-00_55_02.png)
+<img src="../../../../assets/images/devzip/dashboard.png" alt="트레이스보드 대시보드 화면">
+
 *트레이스보드 대시보드 화면: 직관적인 인터페이스로 주요 지표를 한눈에 확인할 수 있습니다.*
 
 ## 왜 트레이스보드인가?
@@ -37,7 +38,7 @@ date: 2025-04-14 00:53:54
 
 ### 1. 방문자 지표
 
-![방문자 지표 대시보드](../../../../assets/images/devzip/logdashboard.png)  
+<img src="../../../../assets/images/devzip/visitors.png" alt="방문자 지표 대시보드">
 *방문자 수, 페이지뷰, 세션 시간 등의 기본 지표*
 
 - 고유 방문자 수 (일간/주간/월간)
@@ -48,7 +49,7 @@ date: 2025-04-14 00:53:54
 
 ### 2. 사용자 행동 차트
 
-![사용자 행동 차트](../../../../assets/images/devzip/humantrace.png)  
+<img src="../../../../assets/images/devzip/behavior.png" alt="사용자 행동 차트">
 *이벤트 유형과 디바이스별 분포를 시각화한 차트*
 
 트레이스보드는 아래 데이터를 직관적인 차트로 시각화합니다:
@@ -59,7 +60,7 @@ date: 2025-04-14 00:53:54
 
 ### 3. 실시간 이벤트 로그
 
-![실시간 이벤트 로그](../../../../assets/images/devzip/eventlog.png)  
+<img src="../../../../assets/images/devzip/events.png" alt="실시간 이벤트 로그">
 *실시간으로 발생하는 모든 사용자 활동을 시간순으로 기록*
 
 이벤트 로그에서는 다음 정보를 실시간으로 확인할 수 있습니다:
