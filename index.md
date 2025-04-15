@@ -164,6 +164,40 @@ permalink: /
 
 <div class="projects-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 25px; margin-top: 30px;">
 
+<!-- DevZip 프로젝트 (추가) -->
+<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
+  <div style="height: 10px; background: linear-gradient(to right, #2ecc71, #27ae60); width: 100%;"></div>
+  <div style="padding: 20px;">
+    <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">DevZip - 개발자를 위한 통합 웹 솔루션</h3>
+    <div style="display: flex; margin: 15px 0;">
+      <div style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; margin-right: 10px;">2024-2025</div>
+      <div style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">Web Platform</div>
+    </div>
+    <div style="display: flex; justify-content: center; margin: 15px 0;">
+      <a href="https://devzip.site">
+        <img src="../../../../assets/images/devzip/dashboard.png" alt="DevZip 트레이스보드" style="max-width: 90%; border-radius: 10px; transition: transform 0.3s ease;">
+      </a>
+    </div>
+    <p style="color: #7f8c8d; font-size: 0.95rem; line-height: 1.5;">DevZip은 개발자를 위한 다양한 웹 도구와 서비스를 제공하는 통합 플랫폼입니다. 트레이스보드(웹 분석), 검색 엔진, 디자인 도구 등 개발자의 생산성 향상을 위한 다양한 기능을 제공합니다.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px;">
+      <span style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">React</span>
+      <span style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">SpringBoot</span>
+      <span style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">AWS</span>
+      <span style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">GitHub Actions</span>
+      <span style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Web Analytics</span>
+    </div>
+    <div style="margin-top: 20px; display: flex; gap: 10px;">
+      <a href="https://hoooon22.github.io/docs/projects/devzip/devzip/" style="text-decoration: none; display: inline-block; background-color: #27ae60; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">프로젝트 상세</a>
+      <a href="https://devzip.site" style="text-decoration: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">
+        <span style="display: flex; align-items: center; gap: 5px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m12 16 4-4-4-4"/><path d="M8 12h8"/></svg>
+          사이트 방문
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+
 <!-- project 1 -->
 <div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
   <div style="height: 10px; background: linear-gradient(to right, #3498db, #2980b9); width: 100%;"></div>
