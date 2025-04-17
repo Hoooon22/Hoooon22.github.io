@@ -169,4 +169,4 @@ Avoid non-native interactive elements. If using native HTML is not possible, add
 
 ---
 
-DevZip 프로젝트는 [GitHub](https://github.com/Hoooon22/devzip)에서 확인하실 수 있으며, 실제 사이트는 [여기](https://devzip.site/apipage)에서 확인 가능합니다. 
+DevZip 프로젝트는 [GitHub](https://github.com/Hoooon22/devzip)에서 확인하실 수 있으며, 실제 사이트는 [여기](https://devzip.site/apiPage)에서 확인 가능합니다. 
