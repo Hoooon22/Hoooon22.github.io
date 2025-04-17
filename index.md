@@ -186,6 +186,7 @@ permalink: /
     </div>
     <div style="margin-top: 20px; display: flex; gap: 10px;">
       <a href="javascript:void(0)" class="detail-btn" data-modal="devzipModal" style="text-decoration: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 상세</a>
+      <a href="javascript:void(0)" class="detail-btn" data-modal="devzipSummaryModal" style="text-decoration: none; display: inline-block; background-color: #34db98; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 요약</a>
       <a href="https://devzip.site" style="text-decoration: none; display: inline-block; background-color: #2980b9; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">사이트 방문</a>
       <a href="https://github.com/Hoooon22/" style="text-decoration: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">
         <span style="display: flex; align-items: center; gap: 5px;">
@@ -553,6 +554,68 @@ permalink: /
     <div class="modal-footer">
       <a href="https://devzip.site" class="modal-btn">사이트 방문</a>
       <a href="https://github.com/Hoooon22/" class="modal-btn">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<!-- DevZip 프로젝트 요약 모달 -->
+<div id="devzipSummaryModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>DEV ZIP - 개발 과정 요약</h3>
+      <span class="close-modal">&times;</span>
+    </div>
+    <div class="modal-description">
+      <h4>개발 과정 타임라인</h4>
+      <ul style="list-style-type: none; padding-left: 0;">
+        <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
+          <span style="position: absolute; left: 0; color: #3498db;">🔹</span>
+          <strong>2024년 7월 초 - 프로젝트 시작</strong>
+          <p>AWS 환경 구축 (EC2, RDS), 도메인 구매 (devzip.site), SpringBoot + React 개발환경 설정</p>
+        </li>
+        <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
+          <span style="position: absolute; left: 0; color: #3498db;">🔹</span>
+          <strong>2024년 7월 중순 - 기본 기능 개발</strong>
+          <p>메인 페이지 레이아웃 디자인, 게스트북 기능 구현, 데이터베이스 연동</p>
+        </li>
+        <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
+          <span style="position: absolute; left: 0; color: #3498db;">🔹</span>
+          <strong>2025년 2월 - TrendChat 개발</strong>
+          <p>Python 스크립트 자동화로 트렌드 데이터 수집, JSON 파일 저장 시스템 구현</p>
+        </li>
+        <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
+          <span style="position: absolute; left: 0; color: #3498db;">🔹</span>
+          <strong>2025년 2월 말 - 배포 파이프라인 개선</strong>
+          <p>GitHub Actions를 활용한 4단계 배포 파이프라인 구성 (코드 체크아웃, 서비스 중지, 빌드, 배포)</p>
+        </li>
+        <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
+          <span style="position: absolute; left: 0; color: #3498db;">🔹</span>
+          <strong>2025년 4월 - 트레이스보드 개발</strong>
+          <p>웹사이트 분석을 위한 경량화된 솔루션 개발, 방문자 지표, 사용자 행동 차트, 실시간 이벤트 로그 기능 구현</p>
+        </li>
+      </ul>
+
+      <h4>주요 도전 과제와 해결책</h4>
+      <ul>
+        <li style="margin-bottom: 10px;"><strong>IP 주소 수집 이슈</strong> - AWS 로드 밸런서 설정 조정으로 X-Forwarded-For 헤더를 활용해 해결</li>
+        <li style="margin-bottom: 10px;"><strong>데이터 수집 자동화</strong> - GitHub Actions와 pm2를 활용한 Python 스크립트 자동화로 해결</li>
+        <li style="margin-bottom: 10px;"><strong>배포 프로세스 안정성</strong> - 단일 작업에서 4단계 파이프라인으로 개선하여 에러 추적 용이</li>
+        <li style="margin-bottom: 10px;"><strong>사용자 행동 추적 개인정보 보호</strong> - IP 주소 마스킹 처리 등 개인정보 보호 방안 구현</li>
+      </ul>
+
+      <h4>기술 스택</h4>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+        <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">SpringBoot</span>
+        <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">React</span>
+        <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">Next.js</span>
+        <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">AWS EC2</span>
+        <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">AWS RDS</span>
+        <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">GitHub Actions</span>
+        <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">Python</span>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="https://hoooon22.github.io/docs/projects/devzip/devzip/" class="modal-btn">모든 글 보기</a>
     </div>
   </div>
 </div>
