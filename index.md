@@ -187,7 +187,8 @@ permalink: /
       <span style="background-color: #e3f2fd; color: #1565c0; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">SpringBoot</span>
     </div>
     <div style="margin-top: 20px; display: flex; gap: 10px;">
-      <a href="https://hoooon22.github.io/docs/projects/pongdang/pongdang/" style="text-decoration: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">프로젝트 상세</a>
+      <a href="#" class="detail-btn" data-modal="pongdangModal" style="text-decoration: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">프로젝트 상세</a>
+      <a href="https://hoooon22.github.io/docs/projects/pongdang/pongdang/" style="text-decoration: none; display: inline-block; background-color: #2980b9; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">페이지 이동</a>
       <a href="https://github.com/Hoooon22/Pongdang_Server2" style="text-decoration: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">
         <span style="display: flex; align-items: center; gap: 5px;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
@@ -217,6 +218,7 @@ permalink: /
       <span style="background-color: #fef5f5; color: #e74c3c; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Back-end</span>
     </div>
     <div style="margin-top: 20px; display: flex; gap: 10px;">
+      <a href="#" class="detail-btn" data-modal="cctvModal" style="text-decoration: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">프로젝트 상세</a>
       <a href="https://github.com/CSID-DGU/2022-2-CECD4-STEPBACK-1" style="text-decoration: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">
         <span style="display: flex; align-items: center; gap: 5px;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
@@ -246,6 +248,9 @@ permalink: /
       <span style="background-color: #fef6e7; color: #f39c12; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Node.js</span>
       <span style="background-color: #fef6e7; color: #f39c12; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">MySQL</span>
     </div>
+    <div style="margin-top: 20px; display: flex; gap: 10px;">
+      <a href="#" class="detail-btn" data-modal="archiveModal" style="text-decoration: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">프로젝트 상세</a>
+    </div>
   </div>
 </div>
 
@@ -269,6 +274,7 @@ permalink: /
       <span style="background-color: #f5eef8; color: #9b59b6; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Blender</span>
     </div>
     <div style="margin-top: 20px; display: flex; gap: 10px;">
+      <a href="#" class="detail-btn" data-modal="vrLabModal" style="text-decoration: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">프로젝트 상세</a>
       <a href="https://github.com/Hoooon22/ChemicalLab" style="text-decoration: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">
         <span style="display: flex; align-items: center; gap: 5px;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
@@ -643,14 +649,21 @@ permalink: /
 document.addEventListener('DOMContentLoaded', function() {
   // 모달 요소들
   const modals = {
-    'pongdang': document.getElementById('pongdangModal'),
-    'cctv': document.getElementById('cctvModal'),
-    'archive': document.getElementById('archiveModal'),
-    'vrLab': document.getElementById('vrLabModal')
+    'pongdangModal': document.getElementById('pongdangModal'),
+    'cctvModal': document.getElementById('cctvModal'),
+    'archiveModal': document.getElementById('archiveModal'),
+    'vrLabModal': document.getElementById('vrLabModal')
   };
   
-  // 프로젝트 카드에 모달 버튼 추가하기
-  addModalButtonsToProjects();
+  // 모달 버튼에 이벤트 리스너 추가
+  const detailButtons = document.querySelectorAll('.detail-btn');
+  detailButtons.forEach(button => {
+    const modalId = button.getAttribute('data-modal');
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      openModal(modalId);
+    });
+  });
   
   // 모달 열기 함수
   function openModal(id) {
@@ -678,135 +691,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-  
-  // 프로젝트 카드에 모달 버튼 추가하는 함수
-  function addModalButtonsToProjects() {
-    // 퐁당 프로젝트 (project 1)
-    const pongdangCard = document.querySelector('.project-card h3:contains("퐁당 매거진")').closest('.project-card');
-    if (pongdangCard) {
-      const buttonContainer = pongdangCard.querySelector('div[style*="margin-top: 20px"]');
-      if (buttonContainer) {
-        const detailButton = createDetailButton('pongdang', '프로젝트 상세', '#3498db');
-        // GitHub 버튼 앞에 삽입
-        buttonContainer.insertBefore(detailButton, buttonContainer.querySelector('a[href*="github"]'));
-      }
-    }
-    
-    // CCTV 프로젝트 (project 2)
-    const cctvCard = document.querySelector('.project-card h3:contains("어린이집 CCTV")').closest('.project-card');
-    if (cctvCard) {
-      const buttonContainer = cctvCard.querySelector('div[style*="margin-top: 20px"]');
-      if (buttonContainer) {
-        const detailButton = createDetailButton('cctv', '프로젝트 상세', '#3498db');
-        // GitHub 버튼 앞에 삽입
-        buttonContainer.insertBefore(detailButton, buttonContainer.firstChild);
-      }
-    }
-    
-    // 아카이브 프로젝트 (project 3)
-    const archiveCard = document.querySelector('.project-card h3:contains("동국대학교 전자불전문화콘텐츠연구소")').closest('.project-card');
-    if (archiveCard) {
-      const contentDiv = archiveCard.querySelector('div[style*="padding: 20px"]');
-      
-      // 버튼 컨테이너가 없으면 추가
-      let buttonContainer = contentDiv.querySelector('div[style*="margin-top: 20px"]');
-      if (!buttonContainer) {
-        buttonContainer = document.createElement('div');
-        buttonContainer.style.marginTop = '20px';
-        buttonContainer.style.display = 'flex';
-        buttonContainer.style.gap = '10px';
-        contentDiv.appendChild(buttonContainer);
-      }
-      
-      const detailButton = createDetailButton('archive', '프로젝트 상세', '#3498db');
-      buttonContainer.appendChild(detailButton);
-    }
-    
-    // VR 실험실 프로젝트 (project 4)
-    const vrLabCard = document.querySelector('.project-card h3:contains("VR실험실")').closest('.project-card');
-    if (vrLabCard) {
-      const buttonContainer = vrLabCard.querySelector('div[style*="margin-top: 20px"]');
-      if (buttonContainer) {
-        const detailButton = createDetailButton('vrLab', '프로젝트 상세', '#3498db');
-        // GitHub 버튼 앞에 삽입
-        buttonContainer.insertBefore(detailButton, buttonContainer.firstChild);
-      }
-    }
-  }
-  
-  // 모달 상세 버튼 생성 함수
-  function createDetailButton(modalId, text, bgColor) {
-    const detailButton = document.createElement('a');
-    detailButton.href = '#';
-    detailButton.style.textDecoration = 'none';
-    detailButton.style.display = 'inline-block';
-    detailButton.style.backgroundColor = bgColor;
-    detailButton.style.color = 'white';
-    detailButton.style.padding = '8px 15px';
-    detailButton.style.borderRadius = '5px';
-    detailButton.style.fontSize = '0.9rem';
-    detailButton.style.transition = 'background-color 0.3s ease';
-    detailButton.style.marginRight = '10px';
-    detailButton.innerHTML = text;
-    
-    detailButton.addEventListener('click', function(e) {
-      e.preventDefault();
-      openModal(modalId);
-    });
-    
-    return detailButton;
-  }
-  
-  // 특정 텍스트를 포함하는 요소를 찾는 유틸리티 함수
-  HTMLElement.prototype.querySelector = (function(querySelector) {
-    return function(selector) {
-      try {
-        if (selector.includes(':contains(')) {
-          const matches = selector.match(/:contains\((.*?)\)/);
-          if (matches) {
-            const containsText = matches[1].replace(/["']/g, '');
-            const newSelector = selector.replace(/:contains\(.*?\)/, '');
-            const elements = this.querySelectorAll(newSelector || '*');
-            
-            for (let i = 0; i < elements.length; i++) {
-              if (elements[i].textContent.includes(containsText)) {
-                return elements[i];
-              }
-            }
-            return null;
-          }
-        }
-        return querySelector.call(this, selector);
-      } catch (e) {
-        return querySelector.call(this, selector);
-      }
-    };
-  })(HTMLElement.prototype.querySelector);
-  
-  document.querySelector = (function(querySelector) {
-    return function(selector) {
-      try {
-        if (selector.includes(':contains(')) {
-          const matches = selector.match(/:contains\((.*?)\)/);
-          if (matches) {
-            const containsText = matches[1].replace(/["']/g, '');
-            const newSelector = selector.replace(/:contains\(.*?\)/, '');
-            const elements = document.querySelectorAll(newSelector || '*');
-            
-            for (let i = 0; i < elements.length; i++) {
-              if (elements[i].textContent.includes(containsText)) {
-                return elements[i];
-              }
-            }
-            return null;
-          }
-        }
-        return querySelector.call(document, selector);
-      } catch (e) {
-        return querySelector.call(document, selector);
-      }
-    };
-  })(document.querySelector);
 });
 </script>
 
