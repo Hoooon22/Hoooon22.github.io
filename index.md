@@ -6,6 +6,120 @@ description: "Hoooon22 is logging..."
 permalink: /
 ---
 
+<!-- 스크립트를 페이지 상단에 배치 -->
+<script>
+// 팝오버 관련 변수
+let activePopover = null;
+
+// 팝오버 열기 함수
+function toggleCustomPopover(popoverId, button) {
+  console.log("toggleCustomPopover 호출됨", popoverId);
+  
+  // 이미 열린 팝오버가 있으면 닫기
+  if (activePopover) {
+    closePopover(activePopover);
+  }
+  
+  const popover = document.getElementById(popoverId);
+  if (!popover) {
+    console.error("Popover not found:", popoverId);
+    return;
+  }
+  
+  // 버튼 위치 기준으로 팝오버 위치 설정
+  const buttonRect = button.getBoundingClientRect();
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+  // 팝오버 위치 설정 (버튼 아래에 표시)
+  popover.style.top = (buttonRect.bottom + scrollTop + 10) + 'px';
+  popover.style.left = buttonRect.left + 'px';
+  
+  // 팝오버가 화면 오른쪽 경계를 벗어나지 않도록 조정
+  setTimeout(() => {
+    const popoverRect = popover.getBoundingClientRect();
+    const windowWidth = window.innerWidth;
+    
+    if (popoverRect.right > windowWidth) {
+      popover.style.left = (windowWidth - popoverRect.width - 20) + 'px';
+    }
+  }, 0);
+  
+  // 팝오버 표시
+  popover.classList.add('show');
+  activePopover = popover;
+  
+  // 클릭 이벤트 리스너 추가 (팝오버 외부 클릭 시 닫기)
+  setTimeout(() => {
+    document.addEventListener('click', documentClickHandler);
+  }, 10);
+  
+  console.log("Popover opened:", popoverId);
+}
+
+// 팝오버 닫기 함수
+function closePopover(popover) {
+  if (!popover) return;
+  
+  popover.classList.remove('show');
+  activePopover = null;
+  
+  // 클릭 이벤트 리스너 제거
+  document.removeEventListener('click', documentClickHandler);
+  
+  console.log("Popover closed");
+}
+
+// 문서 클릭 이벤트 핸들러 (팝오버 외부 클릭 시 닫기)
+function documentClickHandler(e) {
+  if (activePopover) {
+    const isClickInside = activePopover.contains(e.target) || 
+                         e.target.classList.contains('popover-btn') || 
+                         e.target.hasAttribute('data-popover') || 
+                         (e.target.tagName === 'BUTTON' && e.target.getAttribute('onclick') && e.target.getAttribute('onclick').includes('toggleCustomPopover'));
+    
+    if (!isClickInside) {
+      closePopover(activePopover);
+    }
+  }
+}
+
+// 모달 열기 함수 (기존 모달용)
+function openModal(modalId) {
+  console.log("Opening modal:", modalId);
+  const modal = document.getElementById(modalId);
+  if (!modal) {
+    console.error("Modal not found:", modalId);
+    return;
+  }
+  
+  // 모달 표시
+  modal.classList.add('show');
+  
+  // 배경 스크롤 방지
+  document.body.style.overflow = 'hidden';
+  
+  console.log("Modal opened:", modalId);
+}
+
+// 모달 닫기 함수
+function closeModal(modal) {
+  console.log("Closing modal");
+  modal.classList.remove('show');
+  
+  // 배경 스크롤 다시 활성화
+  document.body.style.overflow = '';
+}
+</script>
+
+<style>
+details summary {
+  list-style: none;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+</style>
+
 <h1 style="color:black; margin-top: 0; font-weight:bold; font-size: 3rem;">Hoooon22</h1>
 {: .fs-9 }
 
@@ -185,10 +299,10 @@ permalink: /
       <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">AWS</span>
     </div>
     <div style="margin-top: 20px; display: flex; gap: 10px;">
-      <a href="javascript:void(0)" class="detail-btn" data-modal="devzipModal" style="text-decoration: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 상세</a>
-      <a href="javascript:void(0)" class="detail-btn" data-modal="devzipSummaryModal" style="text-decoration: none; display: inline-block; background-color: #34db98; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 요약</a>
-      <a href="https://devzip.site" style="text-decoration: none; display: inline-block; background-color: #2980b9; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">사이트 방문</a>
-      <a href="https://github.com/Hoooon22/" style="text-decoration: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">
+      <a href="https://hoooon22.github.io/docs/projects/devzip/detail" style="text-decoration: none; border: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 상세</a>
+      <a href="https://hoooon22.github.io/docs/projects/devzip/devzip" style="text-decoration: none; border: none; display: inline-block; background-color: #34db98; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 요약</a>
+      <a href="https://devzip.site" style="text-decoration: none; border: none; display: inline-block; background-color: #2980b9; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">사이트 방문</a>
+      <a href="https://github.com/Hoooon22/" style="text-decoration: none; border: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">
         <span style="display: flex; align-items: center; gap: 5px;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
           GitHub
@@ -221,13 +335,13 @@ permalink: /
       <span style="background-color: #e3f2fd; color: #3498db; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">SpringBoot</span>
     </div>
     <div style="margin-top: 20px; display: flex; gap: 10px;">
-      <a href="https://hoooon22.github.io/docs/projects/pongdang/pongdang/" style="text-decoration: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">프로젝트 상세</a>
-      <a href="https://github.com/Hoooon22/Pongdang_Server2" style="text-decoration: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">
+      <button onclick="window.location.href='https://hoooon22.github.io/docs/projects/pongdang/pongdang/';" style="text-decoration: none; border: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 상세</button>
+      <button onclick="window.location.href='https://github.com/Hoooon22/Pongdang_Server2';" style="text-decoration: none; border: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">
         <span style="display: flex; align-items: center; gap: 5px;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
           GitHub
         </span>
-      </a>
+      </button>
     </div>
 </div>
 </div>
@@ -251,12 +365,12 @@ permalink: /
       <span style="background-color: #fef5f5; color: #e74c3c; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Back-end</span>
     </div>
     <div style="margin-top: 20px; display: flex; gap: 10px;">
-      <a href="https://github.com/CSID-DGU/2022-2-CECD4-STEPBACK-1" style="text-decoration: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">
+      <button onclick="window.location.href='https://github.com/CSID-DGU/2022-2-CECD4-STEPBACK-1';" style="text-decoration: none; border: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">
         <span style="display: flex; align-items: center; gap: 5px;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
           GitHub
         </span>
-      </a>
+      </button>
     </div>
 </div>
 </div>
@@ -303,12 +417,12 @@ permalink: /
       <span style="background-color: #f5eef8; color: #9b59b6; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Blender</span>
     </div>
     <div style="margin-top: 20px; display: flex; gap: 10px;">
-      <a href="https://github.com/Hoooon22/ChemicalLab" style="text-decoration: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">
+      <button onclick="window.location.href='https://github.com/Hoooon22/ChemicalLab';" style="text-decoration: none; border: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">
         <span style="display: flex; align-items: center; gap: 5px;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
           GitHub
         </span>
-      </a>
+      </button>
     </div>
 </div>
 </div>
@@ -353,12 +467,12 @@ permalink: /
       <span style="background-color: #e8f6f3; color: #16a085; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">연구 논문</span>
     </div>
     <div style="margin-top: 20px; display: flex; gap: 10px;">
-      <a href="../../../../assets/files/김지훈_한국지능시스템학회논문.pdf" style="text-decoration: none; display: inline-block; background-color: #16a085; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">
+      <button onclick="window.location.href='../../../../assets/files/김지훈_한국지능시스템학회논문.pdf';" style="text-decoration: none; border: none; display: inline-block; background-color: #2980b9; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">
         <span style="display: flex; align-items: center; gap: 5px;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><line x1="10" y1="9" x2="8" y2="9"></line></svg>
           논문 보기
         </span>
-      </a>
+      </button>
     </div>
   </div>
 </div>
@@ -383,12 +497,12 @@ permalink: /
       <span style="background-color: #ebf5fb; color: #2980b9; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">접근성</span>
     </div>
     <div style="margin-top: 20px; display: flex; gap: 10px;">
-      <a href="../../../../assets/files/김지훈_한국지능시스템학회논문.pdf" style="text-decoration: none; display: inline-block; background-color: #2980b9; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">
+      <button onclick="window.location.href='../../../../assets/files/김지훈_한국지능시스템학회논문.pdf';" style="text-decoration: none; border: none; display: inline-block; background-color: #2980b9; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">
         <span style="display: flex; align-items: center; gap: 5px;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><line x1="10" y1="9" x2="8" y2="9"></line></svg>
           논문 보기
         </span>
-      </a>
+      </button>
     </div>
   </div>
 </div>
@@ -433,6 +547,78 @@ permalink: /
 
 <!-- 모달 스타일 -->
 <style>
+/* 팝오버 스타일 */
+.popover {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  padding: 15px;
+  max-width: 450px;
+  z-index: 1000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.popover.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.popover-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.popover-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.close-popover {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #999;
+}
+
+.popover-content {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.popover-footer {
+  margin-top: 15px;
+  text-align: right;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.popover-btn {
+  padding: 6px 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.popover-btn:hover {
+  background-color: #2980b9;
+}
+
+/* 모달 스타일은 유지(다른 모달이 있을 수 있음) */
 .modal {
   display: none;
   position: fixed;
@@ -552,80 +738,150 @@ permalink: /
       </ul>
     </div>
     <div class="modal-footer">
-      <a href="https://devzip.site" class="modal-btn">사이트 방문</a>
-      <a href="https://github.com/Hoooon22/" class="modal-btn">GitHub</a>
+      <button onclick="window.location.href='https://devzip.site';" style="text-decoration: none; border: none; display: inline-block; background-color: #333; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">사이트 방문</button>
+      <button onclick="window.location.href='https://github.com/Hoooon22/';" style="text-decoration: none; border: none; display: inline-block; background-color: #333; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">GitHub</button>
     </div>
   </div>
 </div>
 
-<!-- DevZip 프로젝트 요약 모달 -->
-<div id="devzipSummaryModal" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h3>DEV ZIP - 개발 과정 요약</h3>
-      <span class="close-modal">&times;</span>
-    </div>
-    <div class="modal-description">
-      <h4>개발 과정 타임라인</h4>
-      <ul style="list-style-type: none; padding-left: 0;">
-        <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
-          <span style="position: absolute; left: 0; color: #3498db;">🔹</span>
-          <strong>2024년 7월 초 - 프로젝트 시작</strong>
-          <p>AWS 환경 구축 (EC2, RDS), 도메인 구매 (devzip.site), SpringBoot + React 개발환경 설정</p>
-        </li>
-        <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
-          <span style="position: absolute; left: 0; color: #3498db;">🔹</span>
-          <strong>2024년 7월 중순 - 기본 기능 개발</strong>
-          <p>메인 페이지 레이아웃 디자인, 게스트북 기능 구현, 데이터베이스 연동</p>
-        </li>
-        <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
-          <span style="position: absolute; left: 0; color: #3498db;">🔹</span>
-          <strong>2025년 2월 - TrendChat 개발</strong>
-          <p>Python 스크립트 자동화로 트렌드 데이터 수집, JSON 파일 저장 시스템 구현</p>
-        </li>
-        <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
-          <span style="position: absolute; left: 0; color: #3498db;">🔹</span>
-          <strong>2025년 2월 말 - 배포 파이프라인 개선</strong>
-          <p>GitHub Actions를 활용한 4단계 배포 파이프라인 구성 (코드 체크아웃, 서비스 중지, 빌드, 배포)</p>
-        </li>
-        <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
-          <span style="position: absolute; left: 0; color: #3498db;">🔹</span>
-          <strong>2025년 4월 - 트레이스보드 개발</strong>
-          <p>웹사이트 분석을 위한 경량화된 솔루션 개발, 방문자 지표, 사용자 행동 차트, 실시간 이벤트 로그 기능 구현</p>
-        </li>
-      </ul>
+<!-- DevZip 프로젝트 요약 팝오버 -->
+<div id="devzipSummaryPopover" class="popover">
+  <div class="popover-header">
+    <h3>DEV ZIP - 개발 과정 요약</h3>
+    <span class="close-popover">&times;</span>
+  </div>
+  <div class="popover-content">
+    <h4>개발 과정 타임라인</h4>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
+        <span style="position: absolute; left: 0; color: #3498db;">🔹</span>
+        <strong>2024년 7월 초 - 프로젝트 시작</strong>
+        <p>AWS 환경 구축 (EC2, RDS), 도메인 구매 (devzip.site), SpringBoot + React 개발환경 설정</p>
+      </li>
+      <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
+        <span style="position: absolute; left: 0; color: #3498db;">🔹</span>
+        <strong>2024년 7월 중순 - 기본 기능 개발</strong>
+        <p>메인 페이지 레이아웃 디자인, 게스트북 기능 구현, 데이터베이스 연동</p>
+      </li>
+      <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
+        <span style="position: absolute; left: 0; color: #3498db;">🔹</span>
+        <strong>2025년 2월 - TrendChat 개발</strong>
+        <p>Python 스크립트 자동화로 트렌드 데이터 수집, JSON 파일 저장 시스템 구현</p>
+      </li>
+      <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
+        <span style="position: absolute; left: 0; color: #3498db;">🔹</span>
+        <strong>2025년 4월 - 트레이스보드 개발</strong>
+        <p>웹사이트 분석을 위한 경량화된 솔루션 개발, 방문자 지표, 사용자 행동 차트, 실시간 이벤트 로그 기능 구현</p>
+      </li>
+    </ul>
 
-      <h4>주요 도전 과제와 해결책</h4>
-      <ul>
-        <li style="margin-bottom: 10px;"><strong>IP 주소 수집 이슈</strong> - AWS 로드 밸런서 설정 조정으로 X-Forwarded-For 헤더를 활용해 해결</li>
-        <li style="margin-bottom: 10px;"><strong>데이터 수집 자동화</strong> - GitHub Actions와 pm2를 활용한 Python 스크립트 자동화로 해결</li>
-        <li style="margin-bottom: 10px;"><strong>배포 프로세스 안정성</strong> - 단일 작업에서 4단계 파이프라인으로 개선하여 에러 추적 용이</li>
-        <li style="margin-bottom: 10px;"><strong>사용자 행동 추적 개인정보 보호</strong> - IP 주소 마스킹 처리 등 개인정보 보호 방안 구현</li>
-      </ul>
+    <h4>주요 도전 과제와 해결책</h4>
+    <ul>
+      <li style="margin-bottom: 10px;"><strong>IP 주소 수집 이슈</strong> - AWS 로드 밸런서 설정 조정으로 X-Forwarded-For 헤더를 활용해 해결</li>
+      <li style="margin-bottom: 10px;"><strong>데이터 수집 자동화</strong> - GitHub Actions와 pm2를 활용한 Python 스크립트 자동화로 해결</li>
+      <li style="margin-bottom: 10px;"><strong>배포 프로세스 안정성</strong> - 단일 작업에서 4단계 파이프라인으로 개선하여 에러 추적 용이</li>
+      <li style="margin-bottom: 10px;"><strong>사용자 행동 추적 개인정보 보호</strong> - IP 주소 마스킹 처리 등 개인정보 보호 방안 구현</li>
+    </ul>
 
-      <h4>기술 스택</h4>
-      <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
-        <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">SpringBoot</span>
-        <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">React</span>
-        <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">Next.js</span>
-        <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">AWS EC2</span>
-        <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">AWS RDS</span>
-        <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">GitHub Actions</span>
-        <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">Python</span>
-      </div>
+    <h4>기술 스택</h4>
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+      <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">SpringBoot</span>
+      <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">React</span>
+      <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">Next.js</span>
+      <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">AWS EC2</span>
+      <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">AWS RDS</span>
+      <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">GitHub Actions</span>
+      <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">Python</span>
     </div>
-    <div class="modal-footer">
-      <a href="https://hoooon22.github.io/docs/projects/devzip/devzip/" class="modal-btn">모든 글 보기</a>
-    </div>
+  </div>
+  <div class="popover-footer">
+    <a href="https://hoooon22.github.io/docs/projects/devzip/devzip/" class="popover-btn">모든 글 보기</a>
   </div>
 </div>
 
 <!-- 프로젝트 카드에 버튼 추가 -->
 <script>
-// 모달 열기 함수
+// 팝오버 관련 변수
+let activePopover = null;
+
+// 팝오버 열기 함수
+function toggleCustomPopover(popoverId, button) {
+  // 이미 열린 팝오버가 있으면 닫기
+  if (activePopover) {
+    closePopover(activePopover);
+  }
+  
+  const popover = document.getElementById(popoverId);
+  if (!popover) {
+    console.error("Popover not found:", popoverId);
+    return;
+  }
+  
+  // 버튼 위치 기준으로 팝오버 위치 설정
+  const buttonRect = button.getBoundingClientRect();
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+  // 팝오버 위치 설정 (버튼 아래에 표시)
+  popover.style.top = (buttonRect.bottom + scrollTop + 10) + 'px';
+  popover.style.left = buttonRect.left + 'px';
+  
+  // 팝오버가 화면 오른쪽 경계를 벗어나지 않도록 조정
+  setTimeout(() => {
+    const popoverRect = popover.getBoundingClientRect();
+    const windowWidth = window.innerWidth;
+    
+    if (popoverRect.right > windowWidth) {
+      popover.style.left = (windowWidth - popoverRect.width - 20) + 'px';
+    }
+  }, 0);
+  
+  // 팝오버 표시
+  popover.classList.add('show');
+  activePopover = popover;
+  
+  // 클릭 이벤트 리스너 추가 (팝오버 외부 클릭 시 닫기)
+  setTimeout(() => {
+    document.addEventListener('click', documentClickHandler);
+  }, 10);
+  
+  console.log("Popover opened:", popoverId);
+}
+
+// 팝오버 닫기 함수
+function closePopover(popover) {
+  if (!popover) return;
+  
+  popover.classList.remove('show');
+  activePopover = null;
+  
+  // 클릭 이벤트 리스너 제거
+  document.removeEventListener('click', documentClickHandler);
+  
+  console.log("Popover closed");
+}
+
+// 문서 클릭 이벤트 핸들러 (팝오버 외부 클릭 시 닫기)
+function documentClickHandler(e) {
+  if (activePopover) {
+    const isClickInside = activePopover.contains(e.target) || 
+                          e.target.classList.contains('popover-btn') || 
+                          e.target.hasAttribute('data-popover') || 
+                          (e.target.tagName === 'BUTTON' && e.target.getAttribute('onclick') && e.target.getAttribute('onclick').includes('toggleCustomPopover'));
+    
+    if (!isClickInside) {
+      closePopover(activePopover);
+    }
+  }
+}
+
+// 모달 열기 함수 (기존 모달용)
 function openModal(modalId) {
+  console.log("Opening modal:", modalId);
   const modal = document.getElementById(modalId);
-  if (!modal) return;
+  if (!modal) {
+    console.error("Modal not found:", modalId);
+    return;
+  }
   
   // 모달 표시
   modal.classList.add('show');
@@ -633,49 +889,156 @@ function openModal(modalId) {
   // 배경 스크롤 방지
   document.body.style.overflow = 'hidden';
   
-  // 외부 클릭 시 닫기 이벤트 리스너
-  modal.addEventListener('click', function(e) {
-    if (e.target === modal) {
-      closeModal(modal);
-    }
-  });
-  
-  // ESC 키 누를 때 모달 닫기
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
-      closeModal(modal);
-    }
-  });
+  console.log("Modal opened:", modalId);
 }
 
 // 모달 닫기 함수
 function closeModal(modal) {
+  console.log("Closing modal");
   modal.classList.remove('show');
   
   // 배경 스크롤 다시 활성화
   document.body.style.overflow = '';
 }
 
-// 모달 열기 버튼에 이벤트 리스너 추가
+// ESC 키 누를 때 모달과 팝오버 닫기
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    const openModal = document.querySelector('.modal.show');
+    if (openModal) {
+      closeModal(openModal);
+    }
+    
+    if (activePopover) {
+      closePopover(activePopover);
+    }
+  }
+});
+
+// 모달 배경 클릭 시 닫기
+document.addEventListener('click', function(e) {
+  const openModal = document.querySelector('.modal.show');
+  if (openModal && e.target === openModal) {
+    closeModal(openModal);
+  }
+});
+
+// 스크롤 시 팝오버 닫기
+window.addEventListener('scroll', function() {
+  if (activePopover) {
+    closePopover(activePopover);
+  }
+});
+
+// 창 크기 변경 시 팝오버 닫기
+window.addEventListener('resize', function() {
+  if (activePopover) {
+    closePopover(activePopover);
+  }
+});
+
+// 페이지 로드 완료 후 모달 버튼에 이벤트 리스너 추가
 document.addEventListener('DOMContentLoaded', function() {
   // 모달 버튼에 이벤트 리스너 추가
   const detailBtns = document.querySelectorAll('.detail-btn');
   detailBtns.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      const modalId = this.getAttribute('data-modal');
+    const modalId = btn.getAttribute('data-modal');
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
       openModal(modalId);
     });
   });
-  
+
   // 모달 닫기 버튼에 이벤트 리스너 추가
-  const closeBtns = document.querySelectorAll('.close-modal');
-  closeBtns.forEach(function(btn) {
+  const closeModalBtns = document.querySelectorAll('.close-modal');
+  closeModalBtns.forEach(function(btn) {
     btn.addEventListener('click', function() {
       const modal = this.closest('.modal');
       closeModal(modal);
     });
   });
+
+  // 팝오버 닫기 버튼에 이벤트 리스너 추가
+  const closePopoverBtns = document.querySelectorAll('.close-popover');
+  closePopoverBtns.forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const popover = this.closest('.popover');
+      closePopover(popover);
+    });
+  });
 });
+
+// 이미 문서가 로드되었다면 즉시 실행
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+  setTimeout(function() {
+    // 모달 버튼에 이벤트 리스너 추가
+    const detailBtns = document.querySelectorAll('.detail-btn');
+    detailBtns.forEach(function(btn) {
+      const modalId = btn.getAttribute('data-modal');
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        openModal(modalId);
+      });
+    });
+
+    // 모달 닫기 버튼에 이벤트 리스너 추가
+    const closeModalBtns = document.querySelectorAll('.close-modal');
+    closeModalBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const modal = this.closest('.modal');
+        closeModal(modal);
+      });
+    });
+
+    // 팝오버 닫기 버튼에 이벤트 리스너 추가
+    const closePopoverBtns = document.querySelectorAll('.close-popover');
+    closePopoverBtns.forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const popover = this.closest('.popover');
+        closePopover(popover);
+      });
+    });
+  }, 0);
+}
+</script>
+
+<!-- 인라인 스크립트로 직접 실행 -->
+<script>
+// 함수가 정의되었는지 확인
+window.checkFunctionsInterval = setInterval(function() {
+  if (typeof toggleCustomPopover === 'function' && typeof openModal === 'function') {
+    clearInterval(window.checkFunctionsInterval);
+    console.log("모든 함수가 로드되었습니다.");
+    
+    // 모달 버튼에 이벤트 리스너 추가
+    document.querySelectorAll('.detail-btn').forEach(function(btn) {
+      const modalId = btn.getAttribute('data-modal');
+      btn.onclick = function(e) {
+        e.preventDefault();
+        openModal(modalId);
+      };
+    });
+    
+    // 모달 닫기 버튼에 이벤트 리스너 추가
+    document.querySelectorAll('.close-modal').forEach(function(btn) {
+      btn.onclick = function() {
+        const modal = this.closest('.modal');
+        closeModal(modal);
+      };
+    });
+    
+    // 팝오버 닫기 버튼에 이벤트 리스너 추가
+    document.querySelectorAll('.close-popover').forEach(function(btn) {
+      btn.onclick = function(e) {
+        e.stopPropagation();
+        const popover = this.closest('.popover');
+        closePopover(popover);
+      };
+    });
+  }
+}, 100);
 </script>
 
 ---
