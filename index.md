@@ -164,6 +164,39 @@ permalink: /
 
 <div class="projects-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 25px; margin-top: 30px;">
 
+<!-- DevZip 프로젝트 -->
+<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
+  <div style="height: 10px; background: linear-gradient(to right, #0077b5, #00c6ff); width: 100%;"></div>
+  <div style="padding: 20px;">
+    <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">DEV ZIP - 개발자를 위한 대시보드 & 커뮤니티</h3>
+    <div style="display: flex; margin: 15px 0;">
+      <div style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; margin-right: 10px;">2024-현재</div>
+      <div style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">웹 서비스</div>
+    </div>
+    <div style="display: flex; justify-content: center; margin: 15px 0;">
+      <img src="../../../../assets/images/devzip/logdashboard.png" alt="DEV ZIP 대시보드" style="max-width: 80%; border-radius: 10px; transition: transform 0.3s ease;">
+    </div>
+    <p style="color: #7f8c8d; font-size: 0.95rem; line-height: 1.5;">개발자를 위한 통합 대시보드 및 커뮤니티 플랫폼 'DEV ZIP'을 개발했습니다. 시스템 모니터링, 로그 분석, 사용자 행동 추적 등 여러 도구를 하나의 대시보드에서 관리할 수 있습니다.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px;">
+      <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Next.js</span>
+      <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">React</span>
+      <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Node.js</span>
+      <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">MongoDB</span>
+      <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">AWS</span>
+    </div>
+    <div style="margin-top: 20px; display: flex; gap: 10px;">
+      <a href="javascript:void(0)" class="detail-btn" data-modal="devzipModal" style="text-decoration: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 상세</a>
+      <a href="https://devzip.site" style="text-decoration: none; display: inline-block; background-color: #2980b9; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">사이트 방문</a>
+      <a href="https://github.com/Hoooon22/" style="text-decoration: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">
+        <span style="display: flex; align-items: center; gap: 5px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          GitHub
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+
 <!-- project 1 -->
 <div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
   <div style="height: 10px; background: linear-gradient(to right, #3498db, #2980b9); width: 100%;"></div>
@@ -180,11 +213,11 @@ permalink: /
 </div>
     <p style="color: #7f8c8d; font-size: 0.95rem; line-height: 1.5;">청소년들에게 세상에 있는 다양한 직업들을 소개해주는 웹매거진 '매거진 퐁당'의 풀스택 개발을 맡았습니다.</p>
     <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px;">
-      <span style="background-color: #e3f2fd; color: #1565c0; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">AWS</span>
-      <span style="background-color: #e3f2fd; color: #1565c0; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">HTML/CSS/JS</span>
-      <span style="background-color: #e3f2fd; color: #1565c0; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Node.js</span>
-      <span style="background-color: #e3f2fd; color: #1565c0; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">React</span>
-      <span style="background-color: #e3f2fd; color: #1565c0; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">SpringBoot</span>
+      <span style="background-color: #e3f2fd; color: #3498db; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">AWS</span>
+      <span style="background-color: #e3f2fd; color: #3498db; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">HTML/CSS/JS</span>
+      <span style="background-color: #e3f2fd; color: #3498db; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Node.js</span>
+      <span style="background-color: #e3f2fd; color: #3498db; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">React</span>
+      <span style="background-color: #e3f2fd; color: #3498db; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">SpringBoot</span>
     </div>
     <div style="margin-top: 20px; display: flex; gap: 10px;">
       <a href="https://hoooon22.github.io/docs/projects/pongdang/pongdang/" style="text-decoration: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">프로젝트 상세</a>
@@ -397,10 +430,194 @@ permalink: /
 }
 </style>
 
+<!-- 모달 스타일 -->
+<style>
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.show {
+  display: block;
+  opacity: 1;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transform: translateY(-50px);
+  transition: transform 0.3s ease;
+}
+
+.modal.show .modal-content {
+  transform: translateY(0);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.close-modal {
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-image-gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.modal-description {
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.modal-btn {
+  padding: 8px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.modal-btn:hover {
+  background-color: #555;
+}
+</style>
+
+<!-- DevZip 프로젝트 모달 -->
+<div id="devzipModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>DEV ZIP - 개발자를 위한 대시보드 & 커뮤니티</h3>
+      <span class="close-modal">&times;</span>
+    </div>
+    <div class="modal-image-gallery">
+      <img src="../../../../assets/images/devzip/logdashboard.png" alt="로그 대시보드">
+      <img src="../../../../assets/images/devzip/eventlog.png" alt="이벤트 로그 분석">
+      <img src="../../../../assets/images/devzip/humantrace.png" alt="히트맵 분석">
+    </div>
+    <div class="modal-description">
+      <p>개발자를 위한 통합 대시보드 및 커뮤니티 플랫폼 'DEV ZIP'을 개발했습니다. 시스템 모니터링, 로그 분석, 사용자 행동 추적 등 여러 도구를 하나의 대시보드에서 관리할 수 있습니다.</p>
+      <ul>
+        <li>사용 기술: Next.js, React, Node.js, Express, MongoDB, AWS</li>
+        <li>개발 기간: 2024 ~ 현재</li>
+        <li>주요 기능:
+          <ul>
+            <li>시스템 모니터링 및 실시간 알림</li>
+            <li>사용자 행동 추적 및 분석 대시보드</li>
+            <li>개발자 커뮤니티 및 지식 공유</li>
+            <li>통합 알림 시스템</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <a href="https://devzip.site" class="modal-btn">사이트 방문</a>
+      <a href="https://github.com/Hoooon22/" class="modal-btn">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<!-- 프로젝트 카드에 버튼 추가 -->
+<script>
+// 모달 열기 함수
+function openModal(modalId) {
+  const modal = document.getElementById(modalId);
+  if (!modal) return;
+  
+  // 모달 표시
+  modal.classList.add('show');
+  
+  // 배경 스크롤 방지
+  document.body.style.overflow = 'hidden';
+  
+  // 외부 클릭 시 닫기 이벤트 리스너
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      closeModal(modal);
+    }
+  });
+  
+  // ESC 키 누를 때 모달 닫기
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeModal(modal);
+    }
+  });
+}
+
+// 모달 닫기 함수
+function closeModal(modal) {
+  modal.classList.remove('show');
+  
+  // 배경 스크롤 다시 활성화
+  document.body.style.overflow = '';
+}
+
+// 모달 열기 버튼에 이벤트 리스너 추가
+document.addEventListener('DOMContentLoaded', function() {
+  // 모달 버튼에 이벤트 리스너 추가
+  const detailBtns = document.querySelectorAll('.detail-btn');
+  detailBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      const modalId = this.getAttribute('data-modal');
+      openModal(modalId);
+    });
+  });
+  
+  // 모달 닫기 버튼에 이벤트 리스너 추가
+  const closeBtns = document.querySelectorAll('.close-modal');
+  closeBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      const modal = this.closest('.modal');
+      closeModal(modal);
+    });
+  });
+});
+</script>
+
 ---
 
 ```java
 if (code.isWorks()) {
     return Best_Moment; // :)
 }
-```
