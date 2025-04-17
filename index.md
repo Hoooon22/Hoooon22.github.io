@@ -414,26 +414,28 @@ permalink: /
   overflow: auto;
   background-color: rgba(0,0,0,0.6);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .modal.show {
   display: block;
   opacity: 1;
+  visibility: visible;
 }
 
 .modal-content {
   position: relative;
   background-color: #fefefe;
-  margin: 5% auto;
+  margin: 10% auto;
   padding: 25px;
   border-radius: 10px;
   width: 80%;
   max-width: 900px;
   box-shadow: 0 5px 25px rgba(0,0,0,0.2);
-  transform: translateY(-50px);
-  transition: transform 0.3s ease;
-  max-height: 85vh;
+  transform: translateY(-30px);
+  transition: transform 0.4s ease;
+  max-height: 80vh;
   overflow-y: auto;
 }
 
@@ -667,18 +669,40 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // 모달 열기 함수
   function openModal(id) {
-    if (modals[id]) {
-      modals[id].classList.add('show');
+    const modal = modals[id];
+    if (modal) {
+      // 모달 표시 전에 레이아웃 계산을 위해 display 속성만 변경
+      modal.style.display = 'block';
+      
+      // 강제로 레이아웃 재계산을 트리거하기 위해 offsetHeight 속성 접근
+      modal.offsetHeight;
+      
+      // CSS 트랜지션을 위한 클래스 추가
+      modal.classList.add('show');
       document.body.style.overflow = 'hidden'; // 배경 스크롤 방지
+      
+      console.log('Modal opened:', id); // 디버깅용
     }
+  }
+  
+  // 모달 닫기 함수
+  function closeModal(modal) {
+    modal.classList.remove('show');
+    document.body.style.overflow = ''; // 배경 스크롤 복원
+    
+    // 트랜지션이 끝난 후 display 속성 변경
+    setTimeout(function() {
+      if (!modal.classList.contains('show')) {
+        modal.style.display = 'none';
+      }
+    }, 300); // 트랜지션 시간과 일치시킴
   }
   
   // 모달 닫기 버튼에 이벤트 리스너 추가
   document.querySelectorAll('.close-modal').forEach(closeBtn => {
     closeBtn.addEventListener('click', function() {
       const modal = this.closest('.modal');
-      modal.classList.remove('show');
-      document.body.style.overflow = ''; // 배경 스크롤 복원
+      closeModal(modal);
     });
   });
   
@@ -686,10 +710,14 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('click', function(e) {
     Object.values(modals).forEach(modal => {
       if (e.target === modal) {
-        modal.classList.remove('show');
-        document.body.style.overflow = ''; // 배경 스크롤 복원
+        closeModal(modal);
       }
     });
+  });
+  
+  // 페이지 로드 후 모든 모달 초기 상태 설정
+  Object.values(modals).forEach(modal => {
+    modal.style.display = 'none';
   });
 });
 </script>
