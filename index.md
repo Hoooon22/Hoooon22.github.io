@@ -187,7 +187,7 @@ permalink: /
       <span style="background-color: #e3f2fd; color: #1565c0; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">SpringBoot</span>
     </div>
     <div style="margin-top: 20px; display: flex; gap: 10px;">
-      <a href="#" class="detail-btn" data-modal="pongdangModal" style="text-decoration: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">프로젝트 상세</a>
+      <a href="javascript:void(0)" class="detail-btn" data-modal="pongdangModal" style="text-decoration: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 상세</a>
       <a href="https://hoooon22.github.io/docs/projects/pongdang/pongdang/" style="text-decoration: none; display: inline-block; background-color: #2980b9; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">페이지 이동</a>
       <a href="https://github.com/Hoooon22/Pongdang_Server2" style="text-decoration: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">
         <span style="display: flex; align-items: center; gap: 5px;">
@@ -218,7 +218,7 @@ permalink: /
       <span style="background-color: #fef5f5; color: #e74c3c; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Back-end</span>
     </div>
     <div style="margin-top: 20px; display: flex; gap: 10px;">
-      <a href="#" class="detail-btn" data-modal="cctvModal" style="text-decoration: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">프로젝트 상세</a>
+      <a href="javascript:void(0)" class="detail-btn" data-modal="cctvModal" style="text-decoration: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 상세</a>
       <a href="https://github.com/CSID-DGU/2022-2-CECD4-STEPBACK-1" style="text-decoration: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">
         <span style="display: flex; align-items: center; gap: 5px;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
@@ -249,7 +249,7 @@ permalink: /
       <span style="background-color: #fef6e7; color: #f39c12; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">MySQL</span>
     </div>
     <div style="margin-top: 20px; display: flex; gap: 10px;">
-      <a href="#" class="detail-btn" data-modal="archiveModal" style="text-decoration: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">프로젝트 상세</a>
+      <a href="javascript:void(0)" class="detail-btn" data-modal="archiveModal" style="text-decoration: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 상세</a>
     </div>
   </div>
 </div>
@@ -274,7 +274,7 @@ permalink: /
       <span style="background-color: #f5eef8; color: #9b59b6; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Blender</span>
     </div>
     <div style="margin-top: 20px; display: flex; gap: 10px;">
-      <a href="#" class="detail-btn" data-modal="vrLabModal" style="text-decoration: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">프로젝트 상세</a>
+      <a href="javascript:void(0)" class="detail-btn" data-modal="vrLabModal" style="text-decoration: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 상세</a>
       <a href="https://github.com/Hoooon22/ChemicalLab" style="text-decoration: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease;">
         <span style="display: flex; align-items: center; gap: 5px;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
@@ -648,7 +648,10 @@ permalink: /
 
 <!-- 모달 팝업 스크립트 -->
 <script>
+// 페이지 로드 완료 후 스크립트 실행
 document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM fully loaded - initializing modals'); // 디버깅 로그
+  
   // 모달 요소들
   const modals = {
     'pongdangModal': document.getElementById('pongdangModal'),
@@ -657,12 +660,27 @@ document.addEventListener('DOMContentLoaded', function() {
     'vrLabModal': document.getElementById('vrLabModal')
   };
   
+  // 모달 디버깅 - 모달 요소가 존재하는지 확인
+  for (const [id, element] of Object.entries(modals)) {
+    if (element) {
+      console.log(`Modal found: ${id}`);
+    } else {
+      console.error(`Modal not found: ${id}`);
+    }
+  }
+  
   // 모달 버튼에 이벤트 리스너 추가
   const detailButtons = document.querySelectorAll('.detail-btn');
+  console.log(`Found ${detailButtons.length} detail buttons`); // 디버깅 로그
+  
   detailButtons.forEach(button => {
     const modalId = button.getAttribute('data-modal');
+    console.log(`Button setup for modal: ${modalId}`); // 디버깅 로그
+    
     button.addEventListener('click', function(e) {
-      e.preventDefault();
+      e.preventDefault(); // 기본 동작 방지
+      e.stopPropagation(); // 이벤트 버블링 방지
+      console.log(`Button clicked for ${modalId}`); // 클릭 이벤트 확인
       openModal(modalId);
     });
   });
@@ -670,6 +688,8 @@ document.addEventListener('DOMContentLoaded', function() {
   // 모달 열기 함수
   function openModal(id) {
     const modal = modals[id];
+    console.log(`Attempting to open modal: ${id}`); // 디버깅 로그
+    
     if (modal) {
       // 모달 표시 전에 레이아웃 계산을 위해 display 속성만 변경
       modal.style.display = 'block';
@@ -681,12 +701,17 @@ document.addEventListener('DOMContentLoaded', function() {
       modal.classList.add('show');
       document.body.style.overflow = 'hidden'; // 배경 스크롤 방지
       
-      console.log('Modal opened:', id); // 디버깅용
+      console.log(`Modal opened: ${id}`); // 디버깅용
+    } else {
+      console.error(`Modal not found: ${id}`);
     }
   }
   
   // 모달 닫기 함수
   function closeModal(modal) {
+    if (!modal) return;
+    
+    console.log('Closing modal');
     modal.classList.remove('show');
     document.body.style.overflow = ''; // 배경 스크롤 복원
     
@@ -700,7 +725,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // 모달 닫기 버튼에 이벤트 리스너 추가
   document.querySelectorAll('.close-modal').forEach(closeBtn => {
-    closeBtn.addEventListener('click', function() {
+    closeBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
       const modal = this.closest('.modal');
       closeModal(modal);
     });
@@ -717,7 +744,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // 페이지 로드 후 모든 모달 초기 상태 설정
   Object.values(modals).forEach(modal => {
-    modal.style.display = 'none';
+    if (modal) {
+      modal.style.display = 'none';
+    }
   });
 });
 </script>
