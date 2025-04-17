@@ -514,24 +514,24 @@ permalink: /
 <div id="project-modal-1" class="modal">
   <div class="modal-content">
     <div class="modal-header">
-      <h3>프로젝트 제목 1</h3>
+      <h3>퐁당 매거진 웹사이트 제작</h3>
       <span class="close-modal">&times;</span>
     </div>
     <div class="modal-image-gallery">
-      <img src="../../../../assets/images/projects/project1-image1.jpg" alt="프로젝트 1 이미지 1">
-      <img src="../../../../assets/images/projects/project1-image2.jpg" alt="프로젝트 1 이미지 2">
+      <img src="../../../../assets/images/pongdang/1_퐁당로고.png" alt="퐁당 로고">
+      <img src="../../../../assets/images/profile/스크린샷 2023-03-01 오후 2.40.40.png" alt="프로젝트 스크린샷">
     </div>
     <div class="modal-description">
-      <p>이 프로젝트는 웹 개발에 관한 것입니다. 여기에 프로젝트에 대한 자세한 설명이 들어갑니다. 프로젝트의 목적, 사용된 기술, 개발 과정 등을 상세히 기술하면 됩니다.</p>
+      <p>청소년들에게 세상에 있는 다양한 직업들을 소개해주는 웹매거진 '매거진 퐁당'의 풀스택 개발을 맡았습니다.</p>
       <ul>
-        <li>사용 기술: HTML, CSS, JavaScript</li>
-        <li>개발 기간: 2023.01 ~ 2023.03</li>
+        <li>사용 기술: SpringBoot, React, Node.js, AWS</li>
+        <li>개발 기간: 2022 ~ 2023</li>
         <li>주요 특징: 반응형 디자인, 모던 UI/UX</li>
       </ul>
     </div>
     <div class="modal-footer">
-      <a href="#" class="modal-btn">링크 1</a>
-      <a href="#" class="modal-btn">링크 2</a>
+      <a href="https://stoneinwell.com/" class="modal-btn">사이트 방문</a>
+      <a href="https://github.com/Hoooon22/Pongdang_Server2" class="modal-btn">GitHub</a>
     </div>
   </div>
 </div>
@@ -539,24 +539,23 @@ permalink: /
 <div id="project-modal-2" class="modal">
   <div class="modal-content">
     <div class="modal-header">
-      <h3>프로젝트 제목 2</h3>
+      <h3>어린이집 CCTV 영상처리 시스템</h3>
       <span class="close-modal">&times;</span>
     </div>
     <div class="modal-image-gallery">
-      <img src="../../../../assets/images/projects/project2-image1.jpg" alt="프로젝트 2 이미지 1">
-      <img src="../../../../assets/images/projects/project2-image2.jpg" alt="프로젝트 2 이미지 2">
+      <img src="../../../../assets/images/profile/스크린샷 2023-03-01 오후 2.40.40.png" alt="프로젝트 스크린샷">
     </div>
     <div class="modal-description">
-      <p>이것은 두 번째 프로젝트에 대한 설명입니다. 여기에 프로젝트에 대한 자세한 설명이 들어갑니다. 프로젝트의 목적, 사용된 기술, 개발 과정 등을 상세히 기술하면 됩니다.</p>
+      <p>아동학대 방지를 위해 어린이집 내 CCTV 영상을 효율적으로 반출하는 시스템 개발. 학대 의심 구간 탐지 및 프라이버시 보호를 위한 영상처리 기능 구현.</p>
       <ul>
-        <li>사용 기술: React, Node.js, MongoDB</li>
-        <li>개발 기간: 2023.04 ~ 2023.06</li>
-        <li>주요 특징: 데이터 시각화, 사용자 인증</li>
+        <li>사용 기술: Python, OpenCV, TensorFlow, Flask, React</li>
+        <li>개발 기간: 2022</li>
+        <li>주요 특징: 영상처리, 프라이버시 보호</li>
       </ul>
     </div>
     <div class="modal-footer">
-      <a href="#" class="modal-btn">데모 보기</a>
-      <a href="#" class="modal-btn">GitHub</a>
+      <a href="#" class="modal-btn">자세히 보기</a>
+      <a href="https://github.com/CSID-DGU/2022-2-CECD4-STEPBACK-1" class="modal-btn">GitHub</a>
     </div>
   </div>
 </div>
@@ -564,16 +563,16 @@ permalink: /
 <!-- 모달 열기 버튼 예시 -->
 <div class="project-container">
   <div class="project-card">
-    <img src="../../../../assets/images/projects/project1-thumbnail.jpg" alt="프로젝트 1 썸네일">
-    <h3>프로젝트 1</h3>
-    <p>간단한 프로젝트 설명입니다.</p>
+    <img src="../../../../assets/images/pongdang/1_퐁당로고.png" alt="퐁당 매거진 썸네일">
+    <h3>퐁당 매거진 웹사이트</h3>
+    <p>청소년들을 위한 웹매거진 풀스택 개발</p>
     <button class="modal-btn" data-modal="project-modal-1">자세히 보기</button>
   </div>
   
   <div class="project-card">
-    <img src="../../../../assets/images/projects/project2-thumbnail.jpg" alt="프로젝트 2 썸네일">
-    <h3>프로젝트 2</h3>
-    <p>간단한 프로젝트 설명입니다.</p>
+    <img src="../../../../assets/images/profile/스크린샷 2023-03-01 오후 2.40.40.png" alt="CCTV 시스템 썸네일">
+    <h3>어린이집 CCTV 영상처리 시스템</h3>
+    <p>아동학대 방지를 위한 영상처리 시스템</p>
     <button class="modal-btn" data-modal="project-modal-2">자세히 보기</button>
   </div>
 </div>
@@ -615,8 +614,20 @@ function closeModal(modal) {
 
 // 모달 열기 버튼에 이벤트 리스너 추가
 document.addEventListener('DOMContentLoaded', function() {
-  const modalBtns = document.querySelectorAll('.modal-btn');
+  // 새로운 모달 버튼
+  const modalBtns = document.querySelectorAll('.modal-btn[data-modal]');
   modalBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      const modalId = this.getAttribute('data-modal');
+      if (modalId) {
+        openModal(modalId);
+      }
+    });
+  });
+  
+  // 기존 detail-btn 버튼도 지원
+  const detailBtns = document.querySelectorAll('.detail-btn[data-modal]');
+  detailBtns.forEach(function(btn) {
     btn.addEventListener('click', function() {
       const modalId = this.getAttribute('data-modal');
       if (modalId) {
