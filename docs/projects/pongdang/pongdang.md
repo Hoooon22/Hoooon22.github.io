@@ -2,7 +2,7 @@
 layout: default
 title: 퐁당 웹 매거진 프로젝트
 nav_order: 1
-has_children: true
+has_children: false
 parent: Projects
 ---
 
