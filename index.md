@@ -649,90 +649,8 @@ document.addEventListener('DOMContentLoaded', function() {
     'vrLab': document.getElementById('vrLabModal')
   };
   
-  // 프로젝트 상세 버튼들에 이벤트 리스너 추가
-  const projectLinks = document.querySelectorAll('.project-card a[href*="projects"]');
-  projectLinks.forEach(link => {
-    const href = link.getAttribute('href');
-    
-    // 링크 URL에 따라 모달 ID 할당
-    let modalId = null;
-    if (href.includes('pongdang')) {
-      modalId = 'pongdang';
-      // 기존 링크 동작 제거
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        openModal(modalId);
-      });
-    } else if (href.includes('CECD4-STEPBACK')) {
-      // 두 번째 프로젝트 (CCTV 프로젝트)
-      modalId = 'cctv';
-      // 부모 요소에 새 버튼 추가
-      const parentDiv = link.closest('.project-card').querySelector('div[style*="margin-top: 20px"]');
-      if (parentDiv) {
-        const detailButton = document.createElement('a');
-        detailButton.href = '#';
-        detailButton.className = link.className;
-        detailButton.innerHTML = '프로젝트 상세';
-        detailButton.style.backgroundColor = '#3498db';
-        detailButton.addEventListener('click', function(e) {
-          e.preventDefault();
-          openModal('cctv');
-        });
-        parentDiv.insertBefore(detailButton, parentDiv.firstChild);
-      }
-    } else if (href.includes('ChemicalLab')) {
-      // VR 실험실 프로젝트
-      modalId = 'vrLab';
-      const parentDiv = link.closest('.project-card').querySelector('div[style*="margin-top: 20px"]');
-      if (parentDiv) {
-        const detailButton = document.createElement('a');
-        detailButton.href = '#';
-        detailButton.className = link.className;
-        detailButton.innerHTML = '프로젝트 상세';
-        detailButton.style.backgroundColor = '#3498db';
-        detailButton.style.marginRight = '10px';
-        detailButton.addEventListener('click', function(e) {
-          e.preventDefault();
-          openModal('vrLab');
-        });
-        parentDiv.insertBefore(detailButton, parentDiv.firstChild);
-      }
-    }
-  });
-  
-  // 세 번째 프로젝트(아카이브)는 상세 버튼이 없으므로 추가
-  const archiveProject = document.querySelector('.project-card h3[style*="color: #2c3e50"]:contains("동국대학교 전자불전문화콘텐츠연구소")');
-  if (archiveProject) {
-    const projectCard = archiveProject.closest('.project-card');
-    const contentDiv = projectCard.querySelector('div[style*="padding: 20px"]');
-    
-    // 버튼 컨테이너 추가
-    const buttonContainer = document.createElement('div');
-    buttonContainer.style.marginTop = '20px';
-    buttonContainer.style.display = 'flex';
-    buttonContainer.style.gap = '10px';
-    
-    // 프로젝트 상세 버튼 추가
-    const detailButton = document.createElement('a');
-    detailButton.href = '#';
-    detailButton.style.textDecoration = 'none';
-    detailButton.style.display = 'inline-block';
-    detailButton.style.backgroundColor = '#3498db';
-    detailButton.style.color = 'white';
-    detailButton.style.padding = '8px 15px';
-    detailButton.style.borderRadius = '5px';
-    detailButton.style.fontSize = '0.9rem';
-    detailButton.style.transition = 'background-color 0.3s ease';
-    detailButton.innerHTML = '프로젝트 상세';
-    
-    detailButton.addEventListener('click', function(e) {
-      e.preventDefault();
-      openModal('archive');
-    });
-    
-    buttonContainer.appendChild(detailButton);
-    contentDiv.appendChild(buttonContainer);
-  }
+  // 프로젝트 카드에 모달 버튼 추가하기
+  addModalButtonsToProjects();
   
   // 모달 열기 함수
   function openModal(id) {
@@ -760,6 +678,135 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+  
+  // 프로젝트 카드에 모달 버튼 추가하는 함수
+  function addModalButtonsToProjects() {
+    // 퐁당 프로젝트 (project 1)
+    const pongdangCard = document.querySelector('.project-card h3:contains("퐁당 매거진")').closest('.project-card');
+    if (pongdangCard) {
+      const buttonContainer = pongdangCard.querySelector('div[style*="margin-top: 20px"]');
+      if (buttonContainer) {
+        const detailButton = createDetailButton('pongdang', '프로젝트 상세', '#3498db');
+        // GitHub 버튼 앞에 삽입
+        buttonContainer.insertBefore(detailButton, buttonContainer.querySelector('a[href*="github"]'));
+      }
+    }
+    
+    // CCTV 프로젝트 (project 2)
+    const cctvCard = document.querySelector('.project-card h3:contains("어린이집 CCTV")').closest('.project-card');
+    if (cctvCard) {
+      const buttonContainer = cctvCard.querySelector('div[style*="margin-top: 20px"]');
+      if (buttonContainer) {
+        const detailButton = createDetailButton('cctv', '프로젝트 상세', '#3498db');
+        // GitHub 버튼 앞에 삽입
+        buttonContainer.insertBefore(detailButton, buttonContainer.firstChild);
+      }
+    }
+    
+    // 아카이브 프로젝트 (project 3)
+    const archiveCard = document.querySelector('.project-card h3:contains("동국대학교 전자불전문화콘텐츠연구소")').closest('.project-card');
+    if (archiveCard) {
+      const contentDiv = archiveCard.querySelector('div[style*="padding: 20px"]');
+      
+      // 버튼 컨테이너가 없으면 추가
+      let buttonContainer = contentDiv.querySelector('div[style*="margin-top: 20px"]');
+      if (!buttonContainer) {
+        buttonContainer = document.createElement('div');
+        buttonContainer.style.marginTop = '20px';
+        buttonContainer.style.display = 'flex';
+        buttonContainer.style.gap = '10px';
+        contentDiv.appendChild(buttonContainer);
+      }
+      
+      const detailButton = createDetailButton('archive', '프로젝트 상세', '#3498db');
+      buttonContainer.appendChild(detailButton);
+    }
+    
+    // VR 실험실 프로젝트 (project 4)
+    const vrLabCard = document.querySelector('.project-card h3:contains("VR실험실")').closest('.project-card');
+    if (vrLabCard) {
+      const buttonContainer = vrLabCard.querySelector('div[style*="margin-top: 20px"]');
+      if (buttonContainer) {
+        const detailButton = createDetailButton('vrLab', '프로젝트 상세', '#3498db');
+        // GitHub 버튼 앞에 삽입
+        buttonContainer.insertBefore(detailButton, buttonContainer.firstChild);
+      }
+    }
+  }
+  
+  // 모달 상세 버튼 생성 함수
+  function createDetailButton(modalId, text, bgColor) {
+    const detailButton = document.createElement('a');
+    detailButton.href = '#';
+    detailButton.style.textDecoration = 'none';
+    detailButton.style.display = 'inline-block';
+    detailButton.style.backgroundColor = bgColor;
+    detailButton.style.color = 'white';
+    detailButton.style.padding = '8px 15px';
+    detailButton.style.borderRadius = '5px';
+    detailButton.style.fontSize = '0.9rem';
+    detailButton.style.transition = 'background-color 0.3s ease';
+    detailButton.style.marginRight = '10px';
+    detailButton.innerHTML = text;
+    
+    detailButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      openModal(modalId);
+    });
+    
+    return detailButton;
+  }
+  
+  // 특정 텍스트를 포함하는 요소를 찾는 유틸리티 함수
+  HTMLElement.prototype.querySelector = (function(querySelector) {
+    return function(selector) {
+      try {
+        if (selector.includes(':contains(')) {
+          const matches = selector.match(/:contains\((.*?)\)/);
+          if (matches) {
+            const containsText = matches[1].replace(/["']/g, '');
+            const newSelector = selector.replace(/:contains\(.*?\)/, '');
+            const elements = this.querySelectorAll(newSelector || '*');
+            
+            for (let i = 0; i < elements.length; i++) {
+              if (elements[i].textContent.includes(containsText)) {
+                return elements[i];
+              }
+            }
+            return null;
+          }
+        }
+        return querySelector.call(this, selector);
+      } catch (e) {
+        return querySelector.call(this, selector);
+      }
+    };
+  })(HTMLElement.prototype.querySelector);
+  
+  document.querySelector = (function(querySelector) {
+    return function(selector) {
+      try {
+        if (selector.includes(':contains(')) {
+          const matches = selector.match(/:contains\((.*?)\)/);
+          if (matches) {
+            const containsText = matches[1].replace(/["']/g, '');
+            const newSelector = selector.replace(/:contains\(.*?\)/, '');
+            const elements = document.querySelectorAll(newSelector || '*');
+            
+            for (let i = 0; i < elements.length; i++) {
+              if (elements[i].textContent.includes(containsText)) {
+                return elements[i];
+              }
+            }
+            return null;
+          }
+        }
+        return querySelector.call(document, selector);
+      } catch (e) {
+        return querySelector.call(document, selector);
+      }
+    };
+  })(document.querySelector);
 });
 </script>
 
