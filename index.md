@@ -299,7 +299,7 @@ details summary::-webkit-details-marker {
       <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">AWS</span>
     </div>
     <div style="margin-top: 20px; display: flex; gap: 10px;">
-      <a href="https://hoooon22.github.io/docs/projects/devzip/detail" style="text-decoration: none; border: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 상세</a>
+      <a href="https://hoooon22.github.io/docs/projects/devzip/devzip" style="text-decoration: none; border: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 상세</a>
       <a href="https://devzip.site" style="text-decoration: none; border: none; display: inline-block; background-color: #2980b9; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">사이트 방문</a>
       <a href="https://github.com/Hoooon22/" style="text-decoration: none; border: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">
         <span style="display: flex; align-items: center; gap: 5px;">
