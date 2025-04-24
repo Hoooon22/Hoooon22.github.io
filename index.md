@@ -301,28 +301,34 @@ details summary::-webkit-details-marker {
             트레이스보드
           </span>
         </a>
-        <a href="https://devzip.site/trend" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
+        <a href="https://devzip.site/trendchat" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
           <span style="display: flex; align-items: center; gap: 5px;">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
             트렌드챗
           </span>
         </a>
-        <a href="https://devzip.site/map" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
+        <a href="https://devzip.site/dashboard" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
           <span style="display: flex; align-items: center; gap: 5px;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" x2="8" y1="2" y2="18"></line><line x1="16" x2="16" y1="6" y2="22"></line></svg>
-            더 맵
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><line x1="3" x2="21" y1="9" y2="9"></line><line x1="9" x2="9" y1="21" y2="9"></line></svg>
+            대시보드
           </span>
         </a>
-        <a href="https://devzip.site/api" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
+        <a href="https://devzip.site/apiPage" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
           <span style="display: flex; align-items: center; gap: 5px;">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"></path><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"></polygon></svg>
             API 문서
           </span>
         </a>
-        <a href="https://devzip.site/fast" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
+        <a href="https://devzip.site/Guestbook" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
           <span style="display: flex; align-items: center; gap: 5px;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
-            FastServe
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5Z"></path><path d="M19 21v-2a7 7 0 0 0-14 0v2"></path></svg>
+            방명록
+          </span>
+        </a>
+        <a href="https://devzip.site/Joke" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
+          <span style="display: flex; align-items: center; gap: 5px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" x2="9.01" y1="9" y2="9"></line><line x1="15" x2="15.01" y1="9" y2="9"></line></svg>
+            농담
           </span>
         </a>
       </div>
