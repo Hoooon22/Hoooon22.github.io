@@ -344,6 +344,7 @@ details summary::-webkit-details-marker {
     <div style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
       <a href="https://hoooon22.github.io/docs/projects/devzip/devzip" style="text-decoration: none; border: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 상세</a>
       <a href="https://devzip.site" style="text-decoration: none; border: none; display: inline-block; background-color: #2980b9; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">사이트 방문</a>
+      <span style="color: #e74c3c; font-size: 0.9rem; margin-left: 8px;">(※ 현재 서버 비용 문제로 서비스가 일시 중단되었습니다)</span>
       <a href="https://github.com/Hoooon22/" style="text-decoration: none; border: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">
         <span style="display: flex; align-items: center; gap: 5px;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
@@ -782,6 +783,7 @@ details summary::-webkit-details-marker {
     </div>
     <div class="modal-footer" style="display: flex; gap: 10px; justify-content: flex-end; flex-wrap: wrap;">
       <button onclick="window.location.href='https://devzip.site';" style="text-decoration: none; border: none; display: inline-block; background-color: #333; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">사이트 방문</button>
+      <span style="color: #e74c3c; font-size: 0.9rem; margin-left: 8px;">(※ 현재 서버 비용 문제로 서비스가 일시 중단되었습니다)</span>
       <button onclick="window.location.href='https://github.com/Hoooon22/';" style="text-decoration: none; border: none; display: inline-block; background-color: #333; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">GitHub</button>
     </div>
   </div>
