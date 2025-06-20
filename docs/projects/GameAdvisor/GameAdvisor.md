@@ -1,6 +1,6 @@
 ---
 layout: default
-title: GameAdvisor
+title: gameadvisor
 nav_order: 6
 parent: Projects
 has_children: false
