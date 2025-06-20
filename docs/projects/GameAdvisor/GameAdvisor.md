@@ -4,6 +4,7 @@ title: GameAdvisor
 nav_order: 6
 parent: Projects
 has_children: false
+date: 2025-06-20 13:56:33
 ---
 
 # GameAdvisor: 당신의 게임 플레이를 돕는 AI 조언자!
