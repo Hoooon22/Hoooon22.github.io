@@ -3,7 +3,7 @@ layout: default
 title: gameadvisor
 nav_order: 6
 parent: Projects
-has_children: false
+has_children: true
 date: 2025-06-20 13:56:33
 ---
 
