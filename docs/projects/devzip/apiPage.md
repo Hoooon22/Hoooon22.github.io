@@ -3,7 +3,7 @@ layout: default
 title: DevZip API 목록 페이지 개발기
 parent: 사이드 프로젝트 - DevZip
 grand_parent: Projects
-date: 2025-07-22 14:30:25
+date: 2025-05-22 14:30:25
 ---
 
 # DevZip API 목록 페이지 개발기: 반응형 디자인과 접근성 개선
