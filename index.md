@@ -186,6 +186,12 @@ details summary::-webkit-details-marker {
             개발 프로젝트 모음집 - DevZip
         </div>
     </a>
+    <a href="https://www.instagram.com/j.ihoon22/" style="text-decoration: none;">
+        <div style="background-color: #E4405F; color: white; padding: 10px 15px; border-radius: 10px; display: flex; align-items: center; gap: 8px; transition: transform 0.3s ease;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            Instagram
+        </div>
+    </a>
 </div>
 
 ---

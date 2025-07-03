@@ -85,6 +85,10 @@ parent: Projects
 ## Links
 {: .fs-4 .fw-300 }
 
+[퐁당 웹 매거진 사이트](https://stoneinwell.com/)
+
+[퐁당 웹 매거진 Instagram](https://www.instagram.com/j.ihoon22/)
+
 [퐁당 웹 매거진 프로젝트 Ver.01 제작 일지](https://congruous-wildebeest-c9e.notion.site/99993255375249b7b058141b0ffbcb13?pvs=4)
 
 [퐁당 웹 매거진 프로젝트 Ver.01 Github(private)](https://github.com/Hoooon22/Pongdang_WebServer)
