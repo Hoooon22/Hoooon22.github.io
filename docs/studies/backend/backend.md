@@ -2,9 +2,8 @@
 layout: default
 title: Backend
 nav_order: 1
-parent: Studies
-has_children: false
-permalink: /docs/studies/backend/
+parent: Study
+has_children: true
 ---
 
 # 백엔드 개발자 학습 로드맵 📚
