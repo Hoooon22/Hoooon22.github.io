@@ -10,9 +10,6 @@ has_children: true
 
 {: .no_toc }
 
-## 목차
-{: .no_toc .text-delta }
-
 1. TOC
 {:toc}
 
