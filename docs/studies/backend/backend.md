@@ -2,22 +2,20 @@
 layout: default
 title: Backend
 nav_order: 1
-parent: STUDY
-has_children: true
+parent: Studies
+has_children: false
+permalink: /docs/studies/backend/
 ---
 
 # 백엔드 개발자 학습 로드맵 📚
 
 {: .no_toc }
 
-<details>
-<summary><strong>📑 목차</strong></summary>
+## 목차
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
-
-</details>
 
 ---
 
