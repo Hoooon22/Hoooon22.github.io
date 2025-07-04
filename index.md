@@ -186,12 +186,6 @@ details summary::-webkit-details-marker {
             개발 프로젝트 모음집 - DevZip
         </div>
     </a>
-    <a href="https://www.instagram.com/j.ihoon22/" style="text-decoration: none;">
-        <div style="background-color: #E4405F; color: white; padding: 10px 15px; border-radius: 10px; display: flex; align-items: center; gap: 8px; transition: transform 0.3s ease;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-            Instagram
-        </div>
-    </a>
 </div>
 
 ---
@@ -389,6 +383,12 @@ details summary::-webkit-details-marker {
         <span style="display: flex; align-items: center; gap: 5px;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
           GitHub
+        </span>
+      </button>
+      <button onclick="window.location.href='https://www.instagram.com/mz.pongdang/';" style="text-decoration: none; border: none; display: inline-block; background-color: #E4405F; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">
+        <span style="display: flex; align-items: center; gap: 5px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          Instagram
         </span>
       </button>
     </div>
