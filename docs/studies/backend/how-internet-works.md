@@ -4,6 +4,7 @@ title: 인터넷의 작동원리
 nav_order: 1
 parent: Backend
 grand_parent: Study
+date: 2025-07-07 18:22:33
 ---
 
 # 인터넷의 작동원리 🌐
