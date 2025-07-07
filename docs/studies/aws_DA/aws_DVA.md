@@ -3,7 +3,7 @@ layout: default
 title: AWS (DVA)
 nav_order: 3
 has_children: true
-parent: STUDY
+parent: Study
 ---
 
 # AWS 자격증 - AWS Certified Developer Associate (DVA)
