@@ -395,6 +395,39 @@ details summary::-webkit-details-marker {
 </div>
 </div>
 
+<!-- GameAdvisor 프로젝트 -->
+<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
+  <div style="height: 10px; background: linear-gradient(to right, #2ecc71, #27ae60); width: 100%;"></div>
+  <div style="padding: 20px;">
+    <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">GameAdvisor - 게임 화면 분석 어시스턴트</h3>
+    <div style="display: flex; margin: 15px 0;">
+      <div style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; margin-right: 10px;">2025-현재</div>
+      <div style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">데스크톱 앱</div>
+      <div style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">개발중</div>
+    </div>
+    <div style="display: flex; justify-content: center; margin: 15px 0;">
+      <img src="../../../../assets/images/gameadvisor/bloons-td6-analysis-test.png" alt="GameAdvisor 화면 분석" style="max-width: 80%; border-radius: 10px; transition: transform 0.3s ease;">
+    </div>
+    <p style="color: #7f8c8d; font-size: 0.95rem; line-height: 1.5;">게임 화면을 실시간으로 분석하여 플레이어에게 최적의 전략과 조언을 제공하는 데스크톱 어플리케이션입니다. Spring Boot 백엔드와 JavaFX 클라이언트로 구현되었습니다.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px;">
+      <span style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Spring Boot</span>
+      <span style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">JavaFX</span>
+      <span style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">OpenCV</span>
+      <span style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Deep Learning</span>
+    </div>
+    <div style="margin-top: 20px; display: flex; gap: 10px;">
+      <button onclick="window.location.href='https://hoooon22.github.io/docs/projects/Gameadvisor/Gameadvisor/';" style="text-decoration: none; border: none; display: inline-block; background-color: #27ae60; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 상세</button>
+      <button onclick="window.location.href='https://github.com/Hoooon22/GameAdvisor';" style="text-decoration: none; border: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">
+        <span style="display: flex; align-items: center; gap: 5px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          GitHub
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+
 <!-- project 2 -->
 <div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
   <div style="height: 10px; background: linear-gradient(to right, #e74c3c, #c0392b); width: 100%;"></div>
@@ -576,40 +609,6 @@ details summary::-webkit-details-marker {
       <span style="background-color: #f5eef8; color: #8e44ad; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">OpenAI API</span>
     </div>
   </div>
-</div>
-
-<!-- GameAdvisor 프로젝트 -->
-<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
-  <div style="height: 10px; background: linear-gradient(to right, #2ecc71, #27ae60); width: 100%;"></div>
-  <div style="padding: 20px;">
-    <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">GameAdvisor - 게임 화면 분석 어시스턴트</h3>
-    <div style="display: flex; margin: 15px 0;">
-      <div style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; margin-right: 10px;">2025-현재</div>
-      <div style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">데스크톱 앱</div>
-      <div style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">개발중</div>
-    </div>
-    <div style="display: flex; justify-content: center; margin: 15px 0;">
-      <img src="../../../../assets/images/gameadvisor/bloons-td6-analysis-test.png" alt="GameAdvisor 화면 분석" style="max-width: 80%; border-radius: 10px; transition: transform 0.3s ease;">
-    </div>
-    <p style="color: #7f8c8d; font-size: 0.95rem; line-height: 1.5;">게임 화면을 실시간으로 분석하여 플레이어에게 최적의 전략과 조언을 제공하는 데스크톱 어플리케이션입니다. Spring Boot 백엔드와 JavaFX 클라이언트로 구현되었습니다.</p>
-    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px;">
-      <span style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Spring Boot</span>
-      <span style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">JavaFX</span>
-      <span style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">OpenCV</span>
-      <span style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Deep Learning</span>
-    </div>
-    <div style="margin-top: 20px; display: flex; gap: 10px;">
-      <button onclick="window.location.href='https://hoooon22.github.io/docs/projects/gameadvisor/gameadvisor/';" style="text-decoration: none; border: none; display: inline-block; background-color: #27ae60; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 상세</button>
-      <button onclick="window.location.href='https://github.com/Hoooon22/';" style="text-decoration: none; border: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">
-        <span style="display: flex; align-items: center; gap: 5px;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-          GitHub
-        </span>
-      </button>
-    </div>
-  </div>
-</div>
-
 </div>
 
 <!-- 프로젝트 카드에 호버 효과를 추가하는 스타일 -->
