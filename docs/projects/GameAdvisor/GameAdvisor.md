@@ -11,7 +11,7 @@ date: 2025-06-20 13:56:33
 
 안녕하세요! 오늘은 새롭게 시작하는 사이드 프로젝트, **GameAdvisor**를 소개하고자 합니다. GameAdvisor는 복잡한 게임 상황에 어려움을 겪는 신규 플레이어나 숙련도를 높이고 싶은 게이머들을 위한 실시간 플레이 가이드 데스크톱 애플리케이션입니다.
 
-<img src="../../../../assets/images/profile/스크린샷 2025-01-07 오후 4.08.28.png" alt="GameAdvisor 예시 이미지" style="max-width: 25%; border-radius: 10px; transition: transform 0.3s ease;">
+<img src="../../../../assets/images/gameadvisor/bloons-td6-analysis-test.png" alt="GameAdvisor 예시 이미지" style="max-width: 25%; border-radius: 10px; transition: transform 0.3s ease;">
 
 ## 🚀 프로젝트 목표
 
