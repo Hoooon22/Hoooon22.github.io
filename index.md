@@ -276,10 +276,10 @@ details summary::-webkit-details-marker {
 ---
 <h1 style="color:#2c3e50; margin-top: -2%; font-weight:bold; padding-bottom: 10px; border-bottom: 2px solid #3498db;">Projects</h1>
 
-<div class="projects-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 25px; margin-top: 30px;">
+<div class="projects-container" style="display: grid; grid-template-columns: minmax(0, 1fr); gap: 25px; margin-top: 30px;">
 
 <!-- DevZip 프로젝트 -->
-<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
+<div class="project-card" style="width: 100%; background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative;">
   <div style="height: 10px; background: linear-gradient(to right, #0077b5, #00c6ff); width: 100%;"></div>
   <div style="padding: 20px;">
     <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">DEV ZIP - 개발자를 위한 대시보드 & 커뮤니티</h3>
@@ -356,7 +356,7 @@ details summary::-webkit-details-marker {
 </div>
 
 <!-- project 1 -->
-<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
+<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative;">
   <div style="height: 10px; background: linear-gradient(to right, #3498db, #2980b9); width: 100%;"></div>
   <div style="padding: 20px;">
     <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">퐁당 매거진 웹사이트 제작</h3>
@@ -396,7 +396,7 @@ details summary::-webkit-details-marker {
 </div>
 
 <!-- GameAdvisor 프로젝트 -->
-<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
+<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative;">
   <div style="height: 10px; background: linear-gradient(to right, #2ecc71, #27ae60); width: 100%;"></div>
   <div style="padding: 20px;">
     <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">GameAdvisor - 게임 화면 분석 어시스턴트</h3>
@@ -416,7 +416,7 @@ details summary::-webkit-details-marker {
       <span style="background-color: #e8f8f5; color: #27ae60; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Deep Learning</span>
     </div>
     <div style="margin-top: 20px; display: flex; gap: 10px;">
-      <button onclick="window.location.href='https://hoooon22.github.io/docs/projects/Gameadvisor/Gameadvisor/';" style="text-decoration: none; border: none; display: inline-block; background-color: #27ae60; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 상세</button>
+      <button onclick="window.location.href='https://hoooon22.github.io/docs/projects/GameAdvisor/GameAdvisor/';" style="text-decoration: none; border: none; display: inline-block; background-color: #27ae60; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 상세</button>
       <button onclick="window.location.href='https://github.com/Hoooon22/GameAdvisor';" style="text-decoration: none; border: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">
         <span style="display: flex; align-items: center; gap: 5px;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
@@ -429,7 +429,7 @@ details summary::-webkit-details-marker {
 </div>
 
 <!-- project 2 -->
-<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
+<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative;">
   <div style="height: 10px; background: linear-gradient(to right, #e74c3c, #c0392b); width: 100%;"></div>
   <div style="padding: 20px;">
     <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">어린이집 CCTV 영상처리 시스템</h3>
@@ -458,7 +458,7 @@ details summary::-webkit-details-marker {
 </div>
 
 <!-- project 3 -->
-<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
+<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative;">
   <div style="height: 10px; background: linear-gradient(to right, #f39c12, #d35400); width: 100%;"></div>
   <div style="padding: 20px;">
     <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">동국대학교 전자불전문화콘텐츠연구소 아카이브</h3>
@@ -480,7 +480,7 @@ details summary::-webkit-details-marker {
 </div>
 
 <!-- project 4 -->
-<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
+<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative;">
   <div style="height: 10px; background: linear-gradient(to right, #9b59b6, #8e44ad); width: 100%;"></div>
   <div style="padding: 20px;">
     <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">안전사고 예방과 과학 교육을 위한 VR실험실</h3>
@@ -510,7 +510,7 @@ details summary::-webkit-details-marker {
 </div>
 
 <!-- project 5 -->
-<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
+<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative;">
   <div style="height: 10px; background: linear-gradient(to right, #27ae60, #2ecc71); width: 100%;"></div>
   <div style="padding: 20px;">
     <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">동국대학교 C언어 프로그래밍 교안 제작</h3>
@@ -531,7 +531,7 @@ details summary::-webkit-details-marker {
 </div>
 
 <!-- project 6 -->
-<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
+<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative;">
   <div style="height: 10px; background: linear-gradient(to right, #16a085, #1abc9c); width: 100%;"></div>
   <div style="padding: 20px;">
     <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">시각장애인을 위한 스마트 점자 패널</h3>
@@ -560,7 +560,7 @@ details summary::-webkit-details-marker {
 </div>
 
 <!-- project 7 -->
-<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
+<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative;">
   <div style="height: 10px; background: linear-gradient(to right, #2980b9, #3498db); width: 100%;"></div>
   <div style="padding: 20px;">
     <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">스마트미러 청각장애인 구화훈련 앱</h3>
@@ -590,7 +590,7 @@ details summary::-webkit-details-marker {
 </div>
 
 <!-- project 8 -->
-<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; height: 100%;">
+<div class="project-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative;">
   <div style="height: 10px; background: linear-gradient(to right, #8e44ad, #9b59b6); width: 100%;"></div>
   <div style="padding: 20px;">
     <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">Chrome Extension 개발 - Github_Summary</h3>
