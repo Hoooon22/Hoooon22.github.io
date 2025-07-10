@@ -10,12 +10,6 @@ date: 2025-07-10 15:14:30
 # 브라우저의 작동 원리
 {: .no_toc }
 
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
 ---
 
 ## 웹 브라우저

@@ -2,19 +2,13 @@
 layout: default
 title: DNS 시스템의 작동 원리
 parent: Backend
-grand_parent: Studies
-nav_order: 3
+grand_parent: Study
+nav_order: 2
 date: 2025-07-10 15:00:22
 ---
 
 # DNS(Domain Name System)의 작동 원리
 {: .no_toc }
-
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
 
 ---
 

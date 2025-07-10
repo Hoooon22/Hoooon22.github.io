@@ -25,7 +25,7 @@ has_children: true
 ### 1.1 인터넷의 작동 원리
 - [x] [인터넷의 작동원리](how-internet-works)
 - [x] [도메인 네임 시스템 (DNS)의 작동 원리](dns-system)
-- [ ] 브라우저의 작동 원리
+- [x] [브라우저의 작동 원리](how-browser-works)
 - [ ] HTTP/HTTPS 프로토콜 이해
 - [ ] 호스팅의 개념과 종류
 
