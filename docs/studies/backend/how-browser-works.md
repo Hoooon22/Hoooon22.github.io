@@ -2,8 +2,8 @@
 layout: default
 title: 브라우저의 작동 원리
 parent: Backend
-grand_parent: Studies
-nav_order: 4
+grand_parent: Study
+nav_order: 3
 date: 2025-07-10 15:14:30
 ---
 
