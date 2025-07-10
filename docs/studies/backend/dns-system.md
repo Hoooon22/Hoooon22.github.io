@@ -8,7 +8,6 @@ date: 2025-07-10 15:00:22
 ---
 
 # DNS(Domain Name System)의 작동 원리
-{: .no_toc }
 
 ---
 
