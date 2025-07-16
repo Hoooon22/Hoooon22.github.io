@@ -180,7 +180,7 @@ details summary::-webkit-details-marker {
             Gmail
         </div>
     </a>
-    <a href="https://devzip.site" style="text-decoration: none;">
+    <a href="https://devzip.cloud" style="text-decoration: none;">
         <div style="background-color: #0077b5; color: white; padding: 10px 15px; border-radius: 10px; display: flex; align-items: center; gap: 8px; transition: transform 0.3s ease;">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path d="M12 4v1.5M18 6l-1.1 1.1M20 12h-1.5M18 18l-1.1-1.1M12 20v-1.5M6 18l1.1-1.1M4 12h1.5M6 6l1.1 1.1"/></svg>
             개발 프로젝트 모음집 - DevZip
@@ -295,37 +295,37 @@ details summary::-webkit-details-marker {
     <div style="margin-top: 10px; margin-bottom: 15px;">
       <h4 style="color: #0077b5; font-size: 1rem; margin-bottom: 10px; border-left: 3px solid #0077b5; padding-left: 10px;">DevZip 서비스</h4>
       <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-        <a href="https://devzip.site/traceboard" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
+        <a href="https://devzip.cloud/traceboard" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
           <span style="display: flex; align-items: center; gap: 5px;">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg>
             트레이스보드
           </span>
         </a>
-        <a href="https://devzip.site/trendchat" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
+        <a href="https://devzip.cloud/trendchat" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
           <span style="display: flex; align-items: center; gap: 5px;">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
             트렌드챗
           </span>
         </a>
-        <a href="https://devzip.site/dashboard" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
+        <a href="https://devzip.cloud/dashboard" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
           <span style="display: flex; align-items: center; gap: 5px;">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><line x1="3" x2="21" y1="9" y2="9"></line><line x1="9" x2="9" y1="21" y2="9"></line></svg>
             대시보드
           </span>
         </a>
-        <a href="https://devzip.site/apiPage" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
+        <a href="https://devzip.cloud/apiPage" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
           <span style="display: flex; align-items: center; gap: 5px;">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"></path><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"></polygon></svg>
             API 문서
           </span>
         </a>
-        <a href="https://devzip.site/Guestbook" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
+        <a href="https://devzip.cloud/Guestbook" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
           <span style="display: flex; align-items: center; gap: 5px;">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5Z"></path><path d="M19 21v-2a7 7 0 0 0-14 0v2"></path></svg>
             방명록
           </span>
         </a>
-        <a href="https://devzip.site/Joke" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
+        <a href="https://devzip.cloud/Joke" style="text-decoration: none; display: inline-block; background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; transition: background-color 0.2s ease;">
           <span style="display: flex; align-items: center; gap: 5px;">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" x2="9.01" y1="9" y2="9"></line><line x1="15" x2="15.01" y1="9" y2="9"></line></svg>
             농담
@@ -343,9 +343,9 @@ details summary::-webkit-details-marker {
     </div>
     <div style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
       <a href="https://hoooon22.github.io/docs/projects/devzip/devzip" style="text-decoration: none; border: none; display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">프로젝트 상세</a>
-      <a href="https://devzip.site" style="text-decoration: none; border: none; display: inline-block; background-color: #2980b9; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">사이트 방문</a>
-      <span style="color: #e74c3c; font-size: 0.9rem; margin-left: 8px;">(※ 현재 서버 비용 문제로 서비스가 일시 중단되었습니다)</span>
-      <a href="https://github.com/Hoooon22/" style="text-decoration: none; border: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">
+      <a href="https://devzip.cloud" style="text-decoration: none; border: none; display: inline-block; background-color: #2980b9; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">사이트 방문</a>
+      <span style="color: #e74c3c; font-size: 0.9rem; margin-left: 8px;">AWS(※ 현재 서버 비용 문제로 서비스가 일시 중단) -> **Local 서버 서비스 중**</span>
+      <a href="https://github.com/Hoooon22/devzip" style="text-decoration: none; border: none; display: inline-block; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">
         <span style="display: flex; align-items: center; gap: 5px;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
           GitHub
@@ -821,7 +821,7 @@ details summary::-webkit-details-marker {
       </ul>
     </div>
     <div class="modal-footer" style="display: flex; gap: 10px; justify-content: flex-end; flex-wrap: wrap;">
-      <button onclick="window.location.href='https://devzip.site';" style="text-decoration: none; border: none; display: inline-block; background-color: #333; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">사이트 방문</button>
+      <button onclick="window.location.href='https://devzip.cloud';" style="text-decoration: none; border: none; display: inline-block; background-color: #333; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">사이트 방문</button>
       <span style="color: #e74c3c; font-size: 0.9rem; margin-left: 8px;">(※ 현재 서버 비용 문제로 서비스가 일시 중단되었습니다)</span>
       <button onclick="window.location.href='https://github.com/Hoooon22/';" style="text-decoration: none; border: none; display: inline-block; background-color: #333; color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; transition: background-color 0.3s ease; cursor: pointer;">GitHub</button>
     </div>
@@ -840,7 +840,7 @@ details summary::-webkit-details-marker {
       <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
         <span style="position: absolute; left: 0; color: #3498db;">🔹</span>
         <strong>2024년 7월 초 - 프로젝트 시작</strong>
-        <p>AWS 환경 구축 (EC2, RDS), 도메인 구매 (devzip.site), SpringBoot + React 개발환경 설정</p>
+        <p>AWS 환경 구축 (EC2, RDS), 도메인 구매 (devzip.cloud), SpringBoot + React 개발환경 설정</p>
       </li>
       <li style="margin-bottom: 15px; position: relative; padding-left: 25px;">
         <span style="position: absolute; left: 0; color: #3498db;">🔹</span>

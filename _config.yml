@@ -104,7 +104,7 @@ aux_links:
   "💾 GitHub of Hoooon22":
     - "https://github.com/Hoooon22"
   "💻 Dev Space - Devzip":
-    - "https://devzip.site"
+    - "https://devzip.cloud"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
@@ -118,7 +118,7 @@ nav_external_links:
   - title: 💾 GitHub of Hoooon22
     url: https://github.com/Hoooon22
   - title: 💻 Dev Space - Devzip
-    url: https://devzip.site
+    url: https://devzip.cloud
 
 # Footer content
 # appears at the bottom of every page's main content

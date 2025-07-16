@@ -81,7 +81,7 @@ DevZip은 개발자를 위한 통합 대시보드 및 커뮤니티 플랫폼입�
 ## Links
 {: .fs-4 .fw-300 }
 
-- [DevZip 사이트 방문](https://devzip.site)
+- [DevZip 사이트 방문](https://devzip.cloud)
   
   <span style="color: #e74c3c; font-size: 0.95rem;">※ 현재 서버 비용 문제로 서비스가 일시 중단되었습니다.</span>
-- [GitHub 저장소](https://github.com/Hoooon22/)
+- [GitHub 저장소](https://github.com/Hoooon22/devzip)
