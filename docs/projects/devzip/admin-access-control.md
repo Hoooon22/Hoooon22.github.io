@@ -1,6 +1,5 @@
 ---
 title: "DevZip의 보안과 관리자 권한 시스템 설계"
-nav_order: 2
 parent: 사이드 프로젝트 - DevZip
 grand_parent: Projects
 layout: default
