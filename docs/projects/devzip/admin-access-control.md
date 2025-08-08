@@ -3,6 +3,7 @@ title: "DevZip의 보안과 관리자 권한 시스템 설계"
 parent: 사이드 프로젝트 - DevZip
 grand_parent: Projects
 layout: default
+date: 2025-08-08 20:48:37
 ---
 
 # DevZip 프로젝트의 보안: 관리자 권한 및 접근 제어 시스템
