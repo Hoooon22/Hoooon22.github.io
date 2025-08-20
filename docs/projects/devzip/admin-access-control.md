@@ -105,6 +105,7 @@ public class SecurityConfig {
         return http.build();
     }
 }
+```
 
 ## JWT 토큰 관리
 
