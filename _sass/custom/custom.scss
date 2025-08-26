@@ -114,14 +114,17 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
   position: relative;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .main-content h1 {
   font-size: 2.5rem;
   color: #1a202c;
-  border: 3px solid #667eea;
+  border-left: 6px solid #667eea;
+  border-right: 6px solid #667eea;
   background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  padding: 1rem 2rem 1rem 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-top: 2.5rem;
@@ -130,8 +133,10 @@
 .main-content h2 {
   font-size: 2.1rem;
   color: #2d3748;
-  border: 2.5px solid #764ba2;
+  border-left: 5px solid #764ba2;
+  border-right: 5px solid #764ba2;
   background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  padding: 0.8rem 1.8rem 0.8rem 1.8rem;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
@@ -139,7 +144,9 @@
 .main-content h3 {
   font-size: 1.7rem;
   color: #4a5568;
-  border: 2px solid #9f7aea;
+  border-left: 4px solid #9f7aea;
+  border-right: 4px solid #9f7aea;
+  padding: 0.6rem 1.5rem 0.6rem 1.5rem;
   background: rgba(159, 122, 234, 0.05);
   border-radius: 4px;
 }
@@ -147,7 +154,9 @@
 .main-content h4 {
   font-size: 1.4rem;
   color: #4a5568;
-  border: 2px solid #a0aec0;
+  border-left: 3px solid #a0aec0;
+  border-right: 3px solid #a0aec0;
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
   background: rgba(160, 174, 192, 0.05);
   border-radius: 4px;
 }
@@ -155,7 +164,9 @@
 .main-content h5 {
   font-size: 1.2rem;
   color: #718096;
-  border: 1.5px solid #cbd5e0;
+  border-left: 2px solid #cbd5e0;
+  border-right: 2px solid #cbd5e0;
+  padding: 0.4rem 1rem 0.4rem 1rem;
   background: rgba(203, 213, 224, 0.05);
   border-radius: 3px;
 }
@@ -163,7 +174,9 @@
 .main-content h6 {
   font-size: 1rem;
   color: #718096;
-  border: 1px solid #e2e8f0;
+  border-left: 2px solid #e2e8f0;
+  border-right: 2px solid #e2e8f0;
+  padding: 0.4rem 1rem 0.4rem 1rem;
   background: rgba(226, 232, 240, 0.05);
   border-radius: 3px;
 }
