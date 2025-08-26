@@ -101,3 +101,9 @@
     margin-top: 3px; /* 날짜와 링크 사이 간격 줄이기 */
   }
 
+// 1. 헤더에 하단 테두리와 그림자 추가
+.site-header {
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
