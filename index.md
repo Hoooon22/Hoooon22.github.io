@@ -290,7 +290,20 @@ details summary::-webkit-details-marker {
     <div style="display: flex; justify-content: center; margin: 15px 0;">
       <img src="../../../../assets/images/devzip/logdashboard.png" alt="DEV ZIP 대시보드" style="max-width: 80%; border-radius: 10px; transition: transform 0.3s ease;">
     </div>
-    <p style="color: #7f8c8d; font-size: 0.95rem; line-height: 1.5;">개발자를 위한 통합 대시보드 및 커뮤니티 플랫폼 'DEV ZIP'을 개발했습니다. 시스템 모니터링, 로그 분석, 사용자 행동 추적 등 여러 도구를 하나의 대시보드에서 관리할 수 있습니다.</p>
+        <p style="color: #7f8c8d; font-size: 0.95rem; line-height: 1.5;">
+      개발자를 위한 통합 대시보드 및 커뮤니티 플랫폼 'DEV ZIP'을 개발했습니다. 시스템 모니터링, 로그 분석, 사용자 행동 추적 등 여러 도구를 하나의 대시보드에서 관리할 수 있습니다.
+      <br><br>
+      <strong>주요 기능:</strong>
+      <ul style="list-style-type: disc; padding-left: 20px;">
+        <li><a href="https://devzip.cloud/Guestbook" target="_blank">방명록</a></li>
+        <li><a href="https://devzip.cloud/Joke" target="_blank">농담</a></li>
+        <li><a href="https://devzip.cloud/apiPage" target="_blank">API 문서</a></li>
+        <li><a href="https://devzip.cloud/dashboard" target="_blank">대시보드</a> (관리자)</li>
+        <li><a href="https://devzip.cloud/traceboard" target="_blank">트레이스보드</a> (관리자)</li>
+        <li><a href="https://devzip.cloud/trendchat" target="_blank">트렌드챗</a></li>
+        <li><a href="https://devzip.cloud/physics-quiz" target="_blank">물리 퀴즈</a></li>
+      </ul>
+    </p>
     
     <div style="margin-top: 10px; margin-bottom: 15px;">
       <h4 style="color: #0077b5; font-size: 1rem; margin-bottom: 10px; border-left: 3px solid #0077b5; padding-left: 10px;">DevZip 서비스</h4>
