@@ -21,6 +21,19 @@ DevZip은 제가 개발한 프로젝트들의 모음Zip입니다!
 
 DevZip은 개발자를 위한 통합 대시보드 및 커뮤니티 플랫폼입니다. 시스템 모니터링, 로그 분석, 사용자 행동 추적 등 여러 도구를 하나의 대시보드에서 관리할 수 있으며, 개발자들이 지식을 공유하고 소통할 수 있는 커뮤니티 기능을 제공합니다.
 
+<br>
+
+**주요 기능 바로가기:**
+<ul style="list-style-type: disc; padding-left: 20px;">
+  <li><a href="https://devzip.cloud/Guestbook" target="_blank">방명록</a></li>
+  <li><a href="https://devzip.cloud/Joke" target="_blank">농담</a></li>
+  <li><a href="https://devzip.cloud/apiPage" target="_blank">API 문서</a></li>
+  <li><a href="https://devzip.cloud/dashboard" target="_blank">대시보드</a> (관리자)</li>
+  <li><a href="https://devzip.cloud/traceboard" target="_blank">트레이스보드</a> (관리자)</li>
+  <li><a href="https://devzip.cloud/trendchat" target="_blank">트렌드챗</a></li>
+  <li><a href="https://devzip.cloud/physics-quiz" target="_blank">물리 퀴즈</a></li>
+</ul>
+
 <img src="../../../../assets/images/devzip/logdashboard.png" alt="DEV ZIP 대시보드">
 *DevZip 로그 대시보드 화면*
 
