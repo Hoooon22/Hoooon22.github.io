@@ -1,9 +1,9 @@
 ---
 layout: default
 title: DevZip - 물리 퀴즈
-nav_order: 4
-parent: DevZip
+parent: 사이드 프로젝트 - DevZip
 grand_parent: Projects
+date: 2025-09-02 19:37:02
 ---
 
 # DevZip - 물리 퀴즈 개발 과정
