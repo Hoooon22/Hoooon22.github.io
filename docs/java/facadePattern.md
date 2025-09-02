@@ -3,6 +3,7 @@ layout: default
 title: Facade 패턴
 layout: default
 parent: ★ Java
+date: 2025-01-02 20:24:32
 ---
 
 > [!NOTE]
