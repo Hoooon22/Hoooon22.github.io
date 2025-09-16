@@ -295,6 +295,7 @@ details summary::-webkit-details-marker {
       <br><br>
       <strong>주요 기능:</strong>
       <ul style="list-style-type: disc; padding-left: 20px;">
+        <li><a href="https://devzip.cloud/livechat" target="_blank">실시간 채팅</a></li>
         <li><a href="https://devzip.cloud/Guestbook" target="_blank">방명록</a></li>
         <li><a href="https://devzip.cloud/Joke" target="_blank">농담</a></li>
         <li><a href="https://devzip.cloud/apiPage" target="_blank">API 문서</a></li>
