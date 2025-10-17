@@ -282,7 +282,7 @@ details summary::-webkit-details-marker {
 <div class="project-card" style="width: 100%; background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative;">
   <div style="height: 10px; background: linear-gradient(to right, #0077b5, #00c6ff); width: 100%;"></div>
   <div style="padding: 20px;">
-    <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">DEV ZIP - 개발자를 위한 대시보드 & 커뮤니티</h3>
+    <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.3rem;">DEV ZIP - 실험적 아이디어와 실서비스 프로젝트 쇼케이스</h3>
     <div style="display: flex; margin: 15px 0;">
       <div style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; margin-right: 10px;">2024-현재</div>
       <div style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">웹 서비스</div>
@@ -291,7 +291,7 @@ details summary::-webkit-details-marker {
       <img src="../../../../assets/images/devzip/logdashboard.png" alt="DEV ZIP 대시보드" style="max-width: 80%; border-radius: 10px; transition: transform 0.3s ease;">
     </div>
         <p style="color: #7f8c8d; font-size: 0.95rem; line-height: 1.5;">
-      개발자를 위한 통합 대시보드 및 커뮤니티 플랫폼 'DEV ZIP'을 개발했습니다. 시스템 모니터링, 로그 분석, 사용자 행동 추적 등 여러 도구를 하나의 대시보드에서 관리할 수 있습니다.
+      다양한 실험적 아이디어와 실서비스 프로젝트를 한곳에 모아놓은 플랫폼입니다. 방명록, 농담 API, 물리 퀴즈 등 재미있는 실험부터 트레이스보드, 트렌드챗 같은 실용적인 서비스까지 다양한 프로젝트를 선보입니다.
       <br><br>
       <strong>주요 기능:</strong>
       <ul style="list-style-type: disc; padding-left: 20px;">
@@ -811,7 +811,7 @@ details summary::-webkit-details-marker {
 <div id="devzipModal" class="modal">
   <div class="modal-content">
     <div class="modal-header">
-      <h3>DEV ZIP - 개발자를 위한 대시보드 & 커뮤니티</h3>
+      <h3>DEV ZIP - 실험적 아이디어와 실서비스 프로젝트 쇼케이스</h3>
       <span class="close-modal">&times;</span>
     </div>
     <div class="modal-image-gallery">
@@ -820,16 +820,16 @@ details summary::-webkit-details-marker {
       <img src="../../../../assets/images/devzip/humantrace.png" alt="히트맵 분석">
     </div>
     <div class="modal-description">
-      <p>개발자를 위한 통합 대시보드 및 커뮤니티 플랫폼 'DEV ZIP'을 개발했습니다. 시스템 모니터링, 로그 분석, 사용자 행동 추적 등 여러 도구를 하나의 대시보드에서 관리할 수 있습니다.</p>
+      <p>다양한 실험적 아이디어와 실서비스 프로젝트를 한곳에 모아놓은 플랫폼입니다. 방명록, 농담 API, 물리 퀴즈 등 재미있는 실험부터 트레이스보드, 트렌드챗 같은 실용적인 서비스까지 다양한 프로젝트를 선보입니다.</p>
       <ul>
         <li>사용 기술: Next.js, React, Node.js, Express, MongoDB, AWS</li>
         <li>개발 기간: 2024 ~ 현재</li>
-        <li>주요 기능:
+        <li>주요 프로젝트:
           <ul>
-            <li>시스템 모니터링 및 실시간 알림</li>
-            <li>사용자 행동 추적 및 분석 대시보드</li>
-            <li>개발자 커뮤니티 및 지식 공유</li>
-            <li>통합 알림 시스템</li>
+            <li>트레이스보드: 웹사이트 분석을 위한 경량화된 솔루션</li>
+            <li>트렌드챗: 실시간 기술 트렌드 정보 제공</li>
+            <li>방명록, 농담 API, 물리 퀴즈 등 다양한 실험 프로젝트</li>
+            <li>대시보드: 시스템 모니터링 및 로그 분석</li>
           </ul>
         </li>
       </ul>
