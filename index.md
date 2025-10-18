@@ -288,7 +288,7 @@ details summary::-webkit-details-marker {
       <div style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">웹 서비스</div>
     </div>
     <div style="display: flex; justify-content: center; margin: 15px 0;">
-      <img src="../../../../assets/images/devzip/logdashboard.png" alt="DEV ZIP 대시보드" style="max-width: 80%; border-radius: 10px; transition: transform 0.3s ease;">
+      <img src="../../../../assets/images/devzip/스크린샷 2025-10-18 오후 1.03.50.png" alt="DEV ZIP 대시보드" style="max-width: 80%; border-radius: 10px; transition: transform 0.3s ease;">
     </div>
         <p style="color: #7f8c8d; font-size: 0.95rem; line-height: 1.5;">
       다양한 실험적 아이디어와 실서비스 프로젝트를 한곳에 모아놓은 플랫폼입니다. 방명록, 농담 API, 물리 퀴즈 등 재미있는 실험부터 트레이스보드, 트렌드챗 같은 실용적인 서비스까지 다양한 프로젝트를 선보입니다.
