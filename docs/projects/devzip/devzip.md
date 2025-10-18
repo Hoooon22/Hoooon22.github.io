@@ -34,7 +34,7 @@ DevZip은 다양한 실험적 아이디어와 실서비스 프로젝트를 한�
   <li><a href="https://devzip.cloud/physics-quiz" target="_blank">물리 퀴즈</a></li>
 </ul>
 
-<img src="../../../../assets/images/devzip/스크린샷 2025-10-18 오후 1.03.50.png" alt="DEV ZIP 대시보드">
+<img src="../../../../assets/images/devzip/mainpage.png" alt="DEV ZIP">
 *DevZip 로그 대시보드 화면*
 
 ## 주요 기능
