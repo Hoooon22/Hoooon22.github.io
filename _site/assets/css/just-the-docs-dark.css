@@ -8054,4 +8054,117 @@ blockquote.warning-title > p:last-child {
   margin-top: 0.8rem;
 }
 
+.devzip-floating-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+}
+.devzip-floating-button .devzip-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  background: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  overflow: hidden;
+}
+.devzip-floating-button .devzip-link:hover {
+  background: #0077b5;
+  border-color: #0077b5;
+  color: #ffffff;
+  box-shadow: 0 8px 30px rgba(0, 119, 181, 0.3);
+  transform: translateY(-4px);
+  padding-right: 28px;
+}
+.devzip-floating-button .devzip-link:hover .devzip-icon {
+  stroke: #ffffff;
+  transform: rotate(180deg) scale(1.1);
+}
+.devzip-floating-button .devzip-link:hover .devzip-text-sub {
+  max-width: 200px;
+  opacity: 1;
+  margin-left: 0;
+}
+.devzip-floating-button .devzip-link:active {
+  transform: translateY(-2px) scale(0.98);
+}
+.devzip-floating-button .devzip-link .devzip-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  stroke: #0077b5;
+  stroke-width: 2.5;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.devzip-floating-button .devzip-link .devzip-text {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+.devzip-floating-button .devzip-link .devzip-text-main {
+  display: inline-block;
+}
+.devzip-floating-button .devzip-link .devzip-text-sub {
+  display: inline-block;
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: -5px;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+@media (max-width: 768px) {
+  .devzip-floating-button {
+    bottom: 20px;
+    right: 20px;
+  }
+  .devzip-floating-button .devzip-link {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+  .devzip-floating-button .devzip-link:hover {
+    padding-right: 24px;
+  }
+  .devzip-floating-button .devzip-link:hover .devzip-text-sub {
+    max-width: 150px;
+  }
+  .devzip-floating-button .devzip-link .devzip-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .devzip-floating-button .devzip-link .devzip-text {
+    font-size: 0.9rem;
+  }
+  .devzip-floating-button .devzip-link .devzip-text-sub {
+    font-size: 0.85rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .devzip-floating-button .devzip-link {
+    background: #1f2937;
+    border-color: #374151;
+    color: #f9fafb;
+  }
+  .devzip-floating-button .devzip-link:hover {
+    background: #0077b5;
+    border-color: #0077b5;
+    color: #ffffff;
+  }
+  .devzip-floating-button .devzip-link .devzip-icon {
+    stroke: #60a5fa;
+  }
+}
+
 /*# sourceMappingURL=just-the-docs-dark.css.map */
