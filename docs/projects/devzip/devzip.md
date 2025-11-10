@@ -79,7 +79,7 @@ DevZip은 다양한 실험적 아이디어와 실서비스 프로젝트를 한�
 
 - **프론트엔드**: React, Next.js, CSS
 - **백엔드**: SpringBoot, Node.js, Express
-- **데이터베이스**: MongoDB, MySQL(RDS)
+- **데이터베이스**: MySQL(RDS)
 - **인프라**: AWS EC2, AWS RDS, GitHub Actions
 - **기타 도구**: Python, pm2
 

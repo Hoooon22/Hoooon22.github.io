@@ -352,7 +352,6 @@ details summary::-webkit-details-marker {
       <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Next.js</span>
       <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">React</span>
       <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">Node.js</span>
-      <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">MongoDB</span>
       <span style="background-color: #e3f2fd; color: #0077b5; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">AWS</span>
     </div>
     <div style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
@@ -822,7 +821,7 @@ details summary::-webkit-details-marker {
     <div class="modal-description">
       <p>다양한 실험적 아이디어와 실서비스 프로젝트를 한곳에 모아놓은 플랫폼입니다. 방명록, 농담 API, 물리 퀴즈 등 재미있는 실험부터 트레이스보드, 트렌드챗 같은 실용적인 서비스까지 다양한 프로젝트를 선보입니다.</p>
       <ul>
-        <li>사용 기술: Next.js, React, Node.js, Express, MongoDB, AWS</li>
+        <li>사용 기술: Next.js, React, Node.js, Express, AWS</li>
         <li>개발 기간: 2024 ~ 현재</li>
         <li>주요 프로젝트:
           <ul>
