@@ -23,11 +23,11 @@ has_children: true
 ## 🌟 1단계: 기초 지식 (Foundation) 
 
 ### 1.1 인터넷의 작동 원리
-- [x] [인터넷의 작동원리](1.1-how-internet-works)
-- [x] [도메인 네임 시스템 (DNS)의 작동 원리](1.1-how-internet-works#-7-dnsdomain-name-system의-작동-원리)
-- [x] [브라우저의 작동 원리](1.1-how-internet-works#-8-브라우저의-작동-원리)
-- [x] [HTTP/HTTPS 프로토콜 이해](1.1-how-internet-works#-9-httphttps-프로토콜-이해)
-- [x] [호스팅의 개념과 종류](1.1-how-internet-works#-6-호스팅-hosting)
+- [x] [인터넷의 작동원리](./1.1-how-internet-works)
+- [x] [도메인 네임 시스템 (DNS)의 작동 원리](./1.1-how-internet-works)
+- [x] [브라우저의 작동 원리](./1.1-how-internet-works)
+- [x] [HTTP/HTTPS 프로토콜 이해](./1.1-how-internet-works)
+- [x] [호스팅의 개념과 종류](./1.1-how-internet-works)
 
 ### 1.2 버전 관리 시스템
 - [ ] Git 기초 명령어 학습
