@@ -124,3 +124,6 @@ Always use HTML tags for image insertion rather than Markdown syntax:
 - Package.json handles CSS/JS linting and formatting
 - Docker support available via docker-compose.yml
 - Analytics integration with Google Analytics (G-WTK357S14E)
+
+## Backend note rules
+- '/Users/kimjihoon/Desktop/Github.io/Hoooon22.github.io/docs/studies/backend'\ 해당 디렉토리의 내용 정리 글은 1.1 인터넷의 작동 원리, 1.2 버전 관리 시스템 등으로 묶어서 글을 하나로 합치고 싶어.\
