@@ -23,17 +23,17 @@ has_children: true
 ## 🌟 1단계: 기초 지식 (Foundation) 
 
 ### 1.1 인터넷의 작동 원리
-- [x] [인터넷의 작동원리](1.1-how-internet-works)
-- [x] [도메인 네임 시스템 (DNS)의 작동 원리](1.1-how-internet-works)
-- [x] [브라우저의 작동 원리](1.1-how-internet-works)
-- [x] [HTTP/HTTPS 프로토콜 이해](1.1-how-internet-works)
-- [x] [호스팅의 개념과 종류](1.1-how-internet-works)
+- [x] [인터넷의 작동원리](../1.1-how-internet-works)
+- [x] [도메인 네임 시스템 (DNS)의 작동 원리](../1.1-how-internet-works)
+- [x] [브라우저의 작동 원리](../1.1-how-internet-works)
+- [x] [HTTP/HTTPS 프로토콜 이해](../1.1-how-internet-works)
+- [x] [호스팅의 개념과 종류](../1.1-how-internet-works)
 
 ### 1.2 버전 관리 시스템
-- [x] [Git 기초 명령어 학습](1.2-version-control-system)
-- [x] [GitHub 사용법 익히기](1.2-version-control-system)
-- [x] [GitLab, Bitbucket 등 다른 플랫폼 이해](1.2-version-control-system)
-- [x] [브랜치 전략 및 협업 워크플로우](1.2-version-control-system)
+- [x] [Git 기초 명령어 학습](../1.2-version-control-system)
+- [x] [GitHub 사용법 익히기](../1.2-version-control-system)
+- [x] [GitLab, Bitbucket 등 다른 플랫폼 이해](../1.2-version-control-system)
+- [x] [브랜치 전략 및 협업 워크플로우](../1.2-version-control-system)
 
 ### 1.3 터미널 및 명령어 기초
 - [ ] 기본 터미널 명령어 (`cd`, `ls`, `mkdir`, `rm`)
