@@ -30,10 +30,10 @@ has_children: true
 - [x] [호스팅의 개념과 종류](./1.1-how-internet-works)
 
 ### 1.2 버전 관리 시스템
-- [ ] Git 기초 명령어 학습
-- [ ] GitHub 사용법 익히기
-- [ ] GitLab, Bitbucket 등 다른 플랫폼 이해
-- [ ] 브랜치 전략 및 협업 워크플로우
+- [x] [Git 기초 명령어 학습](./1.2-version-control-system)
+- [x] [GitHub 사용법 익히기](./1.2-version-control-system)
+- [x] [GitLab, Bitbucket 등 다른 플랫폼 이해](./1.2-version-control-system)
+- [x] [브랜치 전략 및 협업 워크플로우](./1.2-version-control-system)
 
 ### 1.3 터미널 및 명령어 기초
 - [ ] 기본 터미널 명령어 (`cd`, `ls`, `mkdir`, `rm`)
