@@ -26,6 +26,8 @@ Command Stack은 개발자의 사고방식을 그대로 반영한 개인 관리 
 
 일반적인 투두 리스트가 아닌, 마치 작업 관리자(Task Manager)에서 프로세스를 관리하듯이 나의 작업들을 제어할 수 있다. 각 작업은 실행 중(EXECUTING), 성공(EXIT_SUCCESS), 중단(SIGKILL) 등의 상태를 가지며, Context별로 그룹화되어 관리된다.
 
+<img src="../../../assets/images/devzip/command-detail.png" alt="Command Stack 작업 상세 화면">
+
 ## 주요 기능
 
 ### 터미널 중심 작업 관리
@@ -79,11 +81,17 @@ Command Stack은 두 가지 방식으로 작업을 시각화한다.
 
 **캘린더 그리드 뷰**는 마감일을 중심으로 작업을 배치한다. 각 날짜에 어떤 작업이 예정되어 있는지 한눈에 파악할 수 있으며, 데드라인이 다가오는 작업을 놓치지 않게 해준다.
 
+<img src="../../../assets/images/devzip/calendar-view.png" alt="Command Stack 캘린더 뷰">
+
 **타임라인 뷰**는 주/월/년 단위로 작업의 흐름을 보여준다. 장기 프로젝트의 진행 상황을 파악하거나, 특정 기간 동안 완료한 작업을 확인할 때 유용하다.
+
+<img src="../../../assets/images/devzip/timeline-view.png" alt="Command Stack 타임라인 뷰">
 
 ### 간편한 Command 생성
 
 새로운 작업을 추가하는 것은 폼 기반 인터페이스를 통해 간단하다. 작업 내용, 마감일, Context, 타입을 선택하면 즉시 Command Stack에 추가되며, 선택한 뷰에 자동으로 반영된다.
+
+<img src="../../../assets/images/devzip/create-command.png" alt="Command Stack 작업 생성 화면">
 
 ## 실전 활용 예시
 
