@@ -26,7 +26,7 @@ Command Stack은 개발자의 사고방식을 그대로 반영한 개인 관리 
 
 일반적인 투두 리스트가 아닌, 마치 작업 관리자(Task Manager)에서 프로세스를 관리하듯이 나의 작업들을 제어할 수 있다. 각 작업은 실행 중(EXECUTING), 성공(EXIT_SUCCESS), 중단(SIGKILL) 등의 상태를 가지며, Context별로 그룹화되어 관리된다.
 
-<img src="../../../assets/images/devzip/command-detail.png" alt="Command Stack 작업 상세 화면">
+<img src="../../../../assets/images/devzip/command-detail.png" alt="Command Stack 작업 상세 화면">
 
 ## 주요 기능
 
@@ -81,17 +81,17 @@ Command Stack은 두 가지 방식으로 작업을 시각화한다.
 
 **캘린더 그리드 뷰**는 마감일을 중심으로 작업을 배치한다. 각 날짜에 어떤 작업이 예정되어 있는지 한눈에 파악할 수 있으며, 데드라인이 다가오는 작업을 놓치지 않게 해준다.
 
-<img src="../../../assets/images/devzip/calendar-view.png" alt="Command Stack 캘린더 뷰">
+<img src="../../../../assets/images/devzip/calendar-view.png" alt="Command Stack 캘린더 뷰">
 
 **타임라인 뷰**는 주/월/년 단위로 작업의 흐름을 보여준다. 장기 프로젝트의 진행 상황을 파악하거나, 특정 기간 동안 완료한 작업을 확인할 때 유용하다.
 
-<img src="../../../assets/images/devzip/timeline-view.png" alt="Command Stack 타임라인 뷰">
+<img src="../../../../assets/images/devzip/timeline-view.png" alt="Command Stack 타임라인 뷰">
 
 ### 간편한 Command 생성
 
 새로운 작업을 추가하는 것은 폼 기반 인터페이스를 통해 간단하다. 작업 내용, 마감일, Context, 타입을 선택하면 즉시 Command Stack에 추가되며, 선택한 뷰에 자동으로 반영된다.
 
-<img src="../../../assets/images/devzip/create-command.png" alt="Command Stack 작업 생성 화면">
+<img src="../../../../assets/images/devzip/create-command.png" alt="Command Stack 작업 생성 화면">
 
 ## 실전 활용 예시
 
@@ -110,43 +110,6 @@ Command Stack은 두 가지 방식으로 작업을 시각화한다.
 매일 아침 캘린더 뷰를 확인하여 오늘 해야 할 작업들을 점검한다. EXECUTING 상태인 작업들을 우선적으로 처리하고, 완료되면 EXIT_SUCCESS로 변경한다.
 
 타임라인 뷰로 전환하여 이번 주에 완료해야 할 작업들을 확인하고, 우선순위를 조정할 수 있다.
-
-### Console을 활용한 빠른 작업 추가
-
-아침 스탠드업 미팅이 끝나고 오늘 해야 할 작업이 정해졌다면, 브라우저 Console을 열고 한 줄씩 명령어를 입력한다:
-
-```javascript
-addCommand({ title: "유저 인증 버그 수정", context: "backend", deadline: "today", type: "bugfix" });
-addCommand({ title: "PR 리뷰 - #342", context: "code-review", deadline: "today", type: "review" });
-addCommand({ title: "성능 테스트 보고서 작성", context: "testing", deadline: "2025-01-08", type: "documentation" });
-```
-
-GUI를 클릭하는 것보다 훨씬 빠르게 여러 작업을 일괄 추가할 수 있다.
-
-### 스크립트를 활용한 반복 작업 자동화
-
-매주 월요일마다 주간 회의가 있다면, 스크립트로 자동화할 수 있다:
-
-```javascript
-// 다음 월요일 날짜 계산
-const nextMonday = getNextMonday();
-
-// 주간 회의 작업 자동 생성
-addCommand({
-  title: "주간 스프린트 미팅 참석",
-  context: "meetings",
-  deadline: nextMonday,
-  type: "meeting"
-});
-
-// 회의 전 준비 작업도 함께 생성
-addCommand({
-  title: "스프린트 진행상황 정리",
-  context: "meetings",
-  deadline: getPreviousDay(nextMonday),
-  type: "preparation"
-});
-```
 
 ## 기술 스택
 
