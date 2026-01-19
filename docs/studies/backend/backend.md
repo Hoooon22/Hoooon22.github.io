@@ -44,6 +44,8 @@ has_children: true
 - [x] [Migration](../1.3-relational-database)
 - [x] [N+1 문제](../1.3-relational-database)
 
+### 1.4 API에 대해
+
 ---
 
 ## 🎯 학습 진행 상황
