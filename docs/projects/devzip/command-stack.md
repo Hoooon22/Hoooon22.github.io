@@ -27,6 +27,7 @@ date: 2026-01-05 16:00:00
 | **v1.0.1** | 2025.01.05 | Windows 인스톨러 아이콘 256x256으로 재생성 |
 
 [전체 릴리즈 보기 →](https://github.com/Hoooon22/Command_Stack/releases){: .btn .btn-outline }
+[소개 사이트 →](https://www.devzip.cloud/commandstack){: .btn .btn-outline }
 
 ---
 
