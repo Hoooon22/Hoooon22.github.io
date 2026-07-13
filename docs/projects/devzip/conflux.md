@@ -118,4 +118,4 @@ Conflux는 개발자의 집중력을 지키고 중요한 알림을 놓치지 않
 ## Links
 
 - [Conflux GitHub 저장소](https://github.com/Hoooon22/conflux)
-- [데모 사이트](https://devzip.cloud/conflux)
+- [데모 사이트](https://devzip.site/conflux)

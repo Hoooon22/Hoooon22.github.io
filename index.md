@@ -661,7 +661,7 @@ permalink: /
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
         GitHub
       </a>
-      <a href="https://devzip.cloud" class="cta-btn cta-secondary">
+      <a href="https://devzip.site" class="cta-btn cta-secondary">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path d="M12 4v1.5M18 6l-1.1 1.1M20 12h-1.5M18 18l-1.1-1.1M12 20v-1.5M6 18l1.1-1.1M4 12h1.5M6 6l1.1 1.1"/></svg>
         DevZip
       </a>
@@ -739,7 +739,7 @@ permalink: /
         <div class="live-services">
           <h4 class="live-services-title">운영 중인 서비스</h4>
           <div class="service-list">
-            <a href="https://www.devzip.cloud/commandstack" class="service-item">
+            <a href="https://www.devzip.site/commandstack" class="service-item">
               <div class="service-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
               </div>
@@ -748,7 +748,7 @@ permalink: /
                 <p class="service-desc">터미널 스타일의 개발자용 스케줄러 - 할 일을 명령어처럼 관리</p>
               </div>
             </a>
-            <a href="https://www.devzip.cloud/conflux" class="service-item">
+            <a href="https://www.devzip.site/conflux" class="service-item">
               <div class="service-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
               </div>
@@ -767,7 +767,7 @@ permalink: /
           <span class="tech-tag">AWS</span>
         </div>
         <div class="project-links">
-          <a href="https://devzip.cloud" class="project-link link-primary">
+          <a href="https://devzip.site" class="project-link link-primary">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             사이트 방문
           </a>

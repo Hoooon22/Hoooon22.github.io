@@ -26,7 +26,7 @@ DevZip 프로젝트는 Spring Boot 3.3.1 기반의 웹 분석 플랫폼으로, J
 # JWT 설정
 app.jwt.secret=${JWT_SECRET_KEY:defaultSecretKey}
 app.jwt.expiration=86400000
-app.cors.allowed-origins=http://localhost:3000,https://devzip.cloud
+app.cors.allowed-origins=http://localhost:3000,https://devzip.site
 ```
 
 ### 사용자 엔티티 구현
@@ -201,7 +201,7 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 ```java
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = {"http://localhost:3000", "https://devzip.cloud"})
+@CrossOrigin(origins = {"http://localhost:3000", "https://devzip.site"})
 public class AuthController {
     
     @Autowired
@@ -262,7 +262,7 @@ public class AuthController {
 @RestController
 @RequestMapping("/api/admin")
 @PreAuthorize("hasRole('ADMIN')")
-@CrossOrigin(origins = {"http://localhost:3000", "https://devzip.cloud"})
+@CrossOrigin(origins = {"http://localhost:3000", "https://devzip.site"})
 public class AdminController {
     
     @Autowired
@@ -383,7 +383,7 @@ public class UserPrincipal implements UserDetails {
 ### CORS 설정 (application.properties)
 ```properties
 # CORS 설정
-app.cors.allowed-origins=http://localhost:3000,https://devzip.cloud
+app.cors.allowed-origins=http://localhost:3000,https://devzip.site
 app.cors.allowed-methods=GET,POST,PUT,DELETE,OPTIONS
 app.cors.allowed-headers=*
 app.cors.allow-credentials=true
